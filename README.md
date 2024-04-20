@@ -26,6 +26,7 @@ Each article is presented in the following way so that you can browse **the titl
 ## Work completed
 
 :white_check_mark: [NIPS 2023](NIPS/2023/README.md)
+
 :white_check_mark: [NIPS 2022](NIPS/2022/README.md)
 
 
