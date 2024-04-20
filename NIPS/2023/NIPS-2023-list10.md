@@ -2800,7 +2800,7 @@ In this work, we improve on the upper and lower bounds for the regret of online 
 
 
 
-[Go to the previous page](NIPS-2023-list9.md)
+[Go to the previous page](NIPS-2023-list09.md)
 
 [Go to the next page](NIPS-2023-list11.md)
 
