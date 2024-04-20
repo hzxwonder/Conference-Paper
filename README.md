@@ -27,27 +27,19 @@ Each article is presented in the following way so that you can browse **the titl
 
 :white_check_mark: [NIPS 2021-2023](NIPS/README.md)
 
-:white_check_mark: [AAAI 2023](AAAI/2023/README.md)
+:white_check_mark: [AAAI 2022-2024](AAAI/README.md)
 
-:white_check_mark: [CVPR 2023](CVPR/2023/README.md)
+:white_check_mark: [CVPR 2022-2023](CVPR/README.md)
 
-:white_check_mark: [ICML 2023](ICML/2023/README.md)
+:white_check_mark: [ICML 2021-2023](ICML/README.md)
 
-:white_check_mark: [ICML 2022](ICML/2022/README.md)
-
-:white_check_mark: [IJCAI 2023](ICML/2023/README.md)
+:white_check_mark: [IJCAI 2021-2023](IJCAI/README.md)
 
 
 ## Work in progress
 
-:o: CVPR 2022-2024
+:o: CVPR 2021
 
 :o: KDD 2021-2023
 
-:o: IJCAI 2021-2023
-
 :o: ICLR 2022-2024
-
-:o: AAAI 2021-2023
-
-:o: ICML 2021-2023

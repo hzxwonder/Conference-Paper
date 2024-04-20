@@ -162,7 +162,7 @@ Combinatorial optimisation has numerous practical applications, such as planning
 
 **Abstract**:
 
-Partially ordered models of time occur naturally in applications where agents/processes cannot perfectly communicate with each other, and can be traced back to the seminal work of Lamport. In this paper we consider the problem of deciding if a (likely incomplete) description of a system of events is consistent, the network consistency problem for the point algebra of partially ordered time (POT). While the classical complexity of this problem has been fully settled, comparably little is known of the fine-grained complexity of POT except that it can
+Partially ordered models of time occur naturally in applications where agents/processes cannot perfectly communicate with each other, and can be traced back to the seminal work of Lamport. In this paper we consider the problem of deciding if a (likely incomplete) description of a system of events is consistent, the network consistency problem for the point algebra of partially ordered time (POT). While the classical complexity of this problem has been fully settled, comparably little is known of the fine-grained complexity of POT except that it can
 be solved in O*((0.368n)^n) time by enumerating ordered partitions. We construct a much faster algorithm with a run-time bounded by O*((0.26n)^n), which, e.g., is roughly 1000 times faster than the naive enumeration algorithm in a problem with 20 events. This is achieved by a sophisticated enumeration of structures similar to total orders, which are then greedily expanded toward a solution. While similar ideas have been explored earlier for related problems it turns out that the analysis for POT is non-trivial and requires significant new ideas.
 
 ----
@@ -177,9 +177,9 @@ be solved in O*((0.368n)^n) time by enumerating ordered partitions. We construct
 
 **Abstract**:
 
-Allen's interval algebra is one of the most well-known calculi in qualitative temporal reasoning with numerous applications in artificial intelligence. Very recently, there has been a surge of improvements in the fine-grained complexity of NP-hard reasoning tasks in this algebra, which has improved the running time from the naive 2^O(n^2) to O*((1.0615n)^n), and even faster algorithms are known for unit intervals and the case when we a bounded number of overlapping intervals. 
-Despite these improvements the best known lower bound is still only 2^o(n) under the exponential-time hypothesis and major improvements in either direction seemingly require fundamental advances in computational complexity. 
-In this paper we propose a novel framework for solving NP-hard qualitative reasoning problems which we refer to as dynamic programming with sublinear partitioning. 
+Allen's interval algebra is one of the most well-known calculi in qualitative temporal reasoning with numerous applications in artificial intelligence. Very recently, there has been a surge of improvements in the fine-grained complexity of NP-hard reasoning tasks in this algebra, which has improved the running time from the naive 2^O(n^2) to O*((1.0615n)^n), and even faster algorithms are known for unit intervals and the case when we a bounded number of overlapping intervals. 
+Despite these improvements the best known lower bound is still only 2^o(n) under the exponential-time hypothesis and major improvements in either direction seemingly require fundamental advances in computational complexity. 
+In this paper we propose a novel framework for solving NP-hard qualitative reasoning problems which we refer to as dynamic programming with sublinear partitioning. 
  Using this technique we obtain a major improvement of O*((cn/log(n))^n) for Allen's interval algebra. To demonstrate that the technique is applicable to further problem domains we apply it to a problem in qualitative spatial reasoning, the cardinal direction calculus, and solve it in O*((cn/log(n))^(2n/3)) time. Hence, not only do we significantly advance the state-of-the-art for NP-hard qualitative reasoning problems, but obtain a novel algorithmic technique that is likely applicable to many problems where 2^O(n) time algorithms are unlikely.
 
 ----
@@ -194,12 +194,12 @@ In this paper we propose a novel framework for solving NP-hard qualitative reaso
 
 **Abstract**:
 
-This paper addresses the weighted vertex coloring problem (WVCP) which is an NP-hard variant of the graph coloring problem with various applications.
-Given a vertex-weighted graph, the problem consists of partitioning vertices in independent sets (colors) so as to minimize the sum of the maximum weights of the colors.
-We first present an iterative procedure to reduce the size of WVCP instances and prove new upper bounds on the objective value and the number of colors.
-Alternative constraint programming models are then introduced which rely on primal and dual encodings of the problem and use symmetry breaking constraints.
-A large number of experiments are conducted on benchmark instances.
-We analyze the impact of using specific bounds to reduce the search space and speed up the exact resolution of instances.
+This paper addresses the weighted vertex coloring problem (WVCP) which is an NP-hard variant of the graph coloring problem with various applications.
+Given a vertex-weighted graph, the problem consists of partitioning vertices in independent sets (colors) so as to minimize the sum of the maximum weights of the colors.
+We first present an iterative procedure to reduce the size of WVCP instances and prove new upper bounds on the objective value and the number of colors.
+Alternative constraint programming models are then introduced which rely on primal and dual encodings of the problem and use symmetry breaking constraints.
+A large number of experiments are conducted on benchmark instances.
+We analyze the impact of using specific bounds to reduce the search space and speed up the exact resolution of instances.
 New optimality proofs are reported for some benchmark instances.
 
 ----
@@ -228,7 +228,7 @@ Two of the most central algorithmic paradigms implemented in practical solvers f
 
 **Abstract**:
 
-We present a new SAT-based method for generating all graphs up to isomorphism that satisfy a given co-NP property. Our method extends the SAT Modulo Symmetry (SMS) framework with a technique that we call co-certificate learning. If SMS generates a candidate graph that violates the given  co-NP property,
+We present a new SAT-based method for generating all graphs up to isomorphism that satisfy a given co-NP property. Our method extends the SAT Modulo Symmetry (SMS) framework with a technique that we call co-certificate learning. If SMS generates a candidate graph that violates the given  co-NP property,
 we obtain a certificate for this violation, i.e., `co-certificate' for the co-NP property. The co-certificate gives rise to a clause that the SAT solver, serving as SMS's backend, learns as part of its CDCL procedure. We demonstrate that SMS plus co-certificate learning is a powerful method that allows us to improve the best-known lower bound on the size of Kochen-Specker vector systems, a problem that is central to the foundations of quantum mechanics and has been studied for over half a century. Our approach is orders of magnitude faster and scales significantly better than a recently proposed SAT-based method.
 
 ----
@@ -243,7 +243,7 @@ we obtain a certificate for this violation, i.e., `co-certificate' for the co-NP
 
 **Abstract**:
 
-Model selection is a strategy aimed at creating accurate and robust models by identifying the optimal model for classifying any particular input sample. This paper proposes a novel framework for differentiable selection of groups of models by integrating machine learning and combinatorial optimization.
+Model selection is a strategy aimed at creating accurate and robust models by identifying the optimal model for classifying any particular input sample. This paper proposes a novel framework for differentiable selection of groups of models by integrating machine learning and combinatorial optimization.
 The framework is tailored for ensemble learning with a strategy that learns to combine the predictions of appropriately selected pre-trained ensemble models. It does so by modeling the ensemble learning task as a differentiable selection program trained end-to-end over a pretrained ensemble to optimize task performance. The proposed framework demonstrates its versatility and effectiveness, outperforming conventional and advanced consensus rules across a variety of classification tasks.
 
 ----
@@ -258,7 +258,7 @@ The framework is tailored for ensemble learning with a strategy that learns to c
 
 **Abstract**:
 
-The integration of constrained optimization models as components in deep networks has led to promising advances on many specialized learning tasks. 
+The integration of constrained optimization models as components in deep networks has led to promising advances on many specialized learning tasks. 
 A central challenge in this setting is backpropagation through the solution of an optimization problem, which typically lacks a closed form. One typical strategy is algorithm unrolling, which relies on automatic differentiation through the operations of an iterative solver. While flexible and general, unrolling can encounter accuracy and efficiency issues in practice. These issues can be avoided by analytical differentiation of the optimization, but current frameworks impose rigid requirements on the optimization problem's form. This paper provides theoretical insights into the backward pass of unrolled optimization, leading to a system for generating  efficiently solvable analytical models of backpropagation. Additionally, it proposes a unifying view of unrolling and analytical differentiation through optimization mappings. Experiments over various model-based learning tasks demonstrate the advantages of the approach both computationally and in terms of enhanced expressiveness.
 
 ----
@@ -273,8 +273,8 @@ A central challenge in this setting is backpropagation through the solution of a
 
 **Abstract**:
 
-An important problem in network science is finding an optimal placement of sensors in nodes in order to uniquely detect failures in the network. This problem can be modelled as an identifying code set (ICS) problem, introduced by Karpovsky et al. in 1998. The ICS problem aims to find a cover of a set S, such that the elements in the cover define a unique signature for each of the elements of S, and to minimise the cover’s cardinality. In this work, we study a generalised identifying code set (GICS) problem, where a unique signature must be found for each subset of S that has a cardinality of at most k (instead of just each element of S). The concept of an independent support of a Boolean formula was introduced by Chakraborty et al. in 2014 to speed up propositional model counting, by identifying a subset of variables whose truth assignments uniquely define those of the other variables.
-
+An important problem in network science is finding an optimal placement of sensors in nodes in order to uniquely detect failures in the network. This problem can be modelled as an identifying code set (ICS) problem, introduced by Karpovsky et al. in 1998. The ICS problem aims to find a cover of a set S, such that the elements in the cover define a unique signature for each of the elements of S, and to minimise the cover’s cardinality. In this work, we study a generalised identifying code set (GICS) problem, where a unique signature must be found for each subset of S that has a cardinality of at most k (instead of just each element of S). The concept of an independent support of a Boolean formula was introduced by Chakraborty et al. in 2014 to speed up propositional model counting, by identifying a subset of variables whose truth assignments uniquely define those of the other variables.
+
 In this work, we introduce an extended version of independent support, grouped independent support (GIS), and show how to reduce the GICS problem to the GIS problem. We then propose a new solving method for finding a GICS, based on finding a GIS. We show that the prior state-of-the-art approaches yield integer-linear programming (ILP) models whose sizes grow exponentially with the problem size and k, while our GIS encoding only grows polynomially with the problem size and k. While the ILP approach can solve the GICS problem on networks of at most 494 nodes, the GIS-based method can handle networks of up to 21 363 nodes; a ∼40× improvement. The GIS-based method shows up to a 520× improvement on the ILP-based method in terms of median solving time. For the majority of the instances that can be encoded and solved by both methods, the cardinality of the solution returned by the GIS-based method is less than 10% larger than the cardinality of the solution found by the ILP method.
 
 ----
@@ -345,13 +345,13 @@ We present fast algorithms for the general CNF satisfiability problem (SAT) with
 
 **Abstract**:
 
-The graph width-measure twin-width recently attracted great attention because of its solving power and generality. Many prominent NP-hard problems are tractable on graphs of bounded twin-width if a certificate for the twin-width bound is provided as an input. Bounded twin-width subsumes other prominent structural restrictions such as bounded treewidth and bounded rank-width.
-Computing such a  certificate is NP-hard itself, already for twin-width 4, and the only known implemented algorithm for twin-width computation is based on a SAT encoding.
-
-In this paper, we propose two new algorithmic approaches for computing twin-width that
-significantly improve the state of the art.
-Firstly, we develop a SAT encoding that is far more compact than the known encoding and consequently scales to larger graphs. Secondly, we propose a new Branch & Bound algorithm for twin-width that, on many graphs, is significantly faster than the SAT encoding. It utilizes a sophisticated caching system for partial solutions.
-Both algorithmic approaches are based on new conceptual insights into twin-width computation,
+The graph width-measure twin-width recently attracted great attention because of its solving power and generality. Many prominent NP-hard problems are tractable on graphs of bounded twin-width if a certificate for the twin-width bound is provided as an input. Bounded twin-width subsumes other prominent structural restrictions such as bounded treewidth and bounded rank-width.
+Computing such a  certificate is NP-hard itself, already for twin-width 4, and the only known implemented algorithm for twin-width computation is based on a SAT encoding.
+
+In this paper, we propose two new algorithmic approaches for computing twin-width that
+significantly improve the state of the art.
+Firstly, we develop a SAT encoding that is far more compact than the known encoding and consequently scales to larger graphs. Secondly, we propose a new Branch & Bound algorithm for twin-width that, on many graphs, is significantly faster than the SAT encoding. It utilizes a sophisticated caching system for partial solutions.
+Both algorithmic approaches are based on new conceptual insights into twin-width computation,
 including the reordering of contractions.
 
 ----
@@ -380,11 +380,11 @@ Constrained clustering is a semi-supervised task that employs a limited amount o
 
 **Abstract**:
 
-Model counting is a fundamental problem with many practical applications, including query evaluation in probabilistic databases and failure-probability estimation of networks. In this work, we focus on a variant of this problem where the underlying 
- formula is expressed in Disjunctive Normal Form (DNF), also known as #DNF. This problem has been shown to be #P-complete, making it intractable to solve exactly. Much research has therefore been focused on obtaining approximate solutions, particularly in the form of (epsilon, delta) approximations.
-
-The primary contribution of this paper is a new approach, called pepin, to approximate #DNF counting that achieves (nearly) optimal time complexity and outperforms 
-existing FPRAS. Our approach is based on the recent breakthrough in the context of union of 
+Model counting is a fundamental problem with many practical applications, including query evaluation in probabilistic databases and failure-probability estimation of networks. In this work, we focus on a variant of this problem where the underlying 
+ formula is expressed in Disjunctive Normal Form (DNF), also known as #DNF. This problem has been shown to be #P-complete, making it intractable to solve exactly. Much research has therefore been focused on obtaining approximate solutions, particularly in the form of (epsilon, delta) approximations.
+
+The primary contribution of this paper is a new approach, called pepin, to approximate #DNF counting that achieves (nearly) optimal time complexity and outperforms 
+existing FPRAS. Our approach is based on the recent breakthrough in the context of union of 
 sets in streaming. We demonstrate the effectiveness of our approach through extensive experiments and show that it provides an affirmative answer to the challenge of efficiently computing #DNF.
 
 ----
@@ -721,10 +721,10 @@ To alleviate the burden of software maintenance, bug localization, which aims to
 
 **Abstract**:
 
-The Maximum k-Plex Search (MPS) can find the largest k-plex, which is a generalization of the largest clique.
-Although MPS is commonly used in AI to effectively discover real-world communities of social networks, existing MPS algorithms suffer from high computational costs because they iteratively scan numerous nodes to find the largest k-plex.
-Here, we present an efficient MPS algorithm called Branch-and-Merge (BnM), which outputs an exact maximum k-plex.
-BnM merges unnecessary nodes to explore a smaller graph than the original one.
+The Maximum k-Plex Search (MPS) can find the largest k-plex, which is a generalization of the largest clique.
+Although MPS is commonly used in AI to effectively discover real-world communities of social networks, existing MPS algorithms suffer from high computational costs because they iteratively scan numerous nodes to find the largest k-plex.
+Here, we present an efficient MPS algorithm called Branch-and-Merge (BnM), which outputs an exact maximum k-plex.
+BnM merges unnecessary nodes to explore a smaller graph than the original one.
 Extensive evaluations on real-world social networks demonstrate that BnM significantly outperforms other state-of-the-art MPS algorithms in terms of running time.
 
 ----
@@ -977,8 +977,8 @@ In large-scale e-commerce live-stream recommendation, streamers are classified i
 
 **Abstract**:
 
-Basket representation plays an important role in the task of next-basket recommendation. However, existing methods generally adopts pooling operations to learn a basket's representation, from which two critical issues can be identified. 
-First, they treat a basket as a set of items independent and identically distributed. We find that items occurring in the same basket have much higher correlations than those randomly selected by conducting data analysis on a real dataset. 
+Basket representation plays an important role in the task of next-basket recommendation. However, existing methods generally adopts pooling operations to learn a basket's representation, from which two critical issues can be identified. 
+First, they treat a basket as a set of items independent and identically distributed. We find that items occurring in the same basket have much higher correlations than those randomly selected by conducting data analysis on a real dataset. 
 Second, although some works have recognized the importance of items repeatedly purchased in multiple baskets, they ignore the correlations among the repeated items in a same basket, whose importance is  shown by our data analysis. In this paper, we propose a novel Basket Representation Learning (BRL) model by leveraging the correlations among intra-basket items. Specifically, we first connect all the items (in a basket) as a hyperedge, where the correlations among different items can be well exploited by hypergraph convolution operations. Meanwhile, we also connect all the repeated items in the same basket as a hyperedge, whereby their correlations can be further strengthened. We generate a negative (positive) view of the basket by data augmentation on repeated (non-repeated) items, and apply contrastive learning to force more agreements on repeated items. Finally, experimental results on three real datasets show that our approach performs better than eight baselines in ranking accuracy.
 
 ----
@@ -1077,7 +1077,7 @@ Many real-world streaming data are sequentially collected over time and with ske
 
 **Abstract**:
 
-Recent dynamic hypergraph neural networks (DHGNNs) are designed to adaptively optimize the hypergraph structure to avoid the dependence on the initial hypergraph structure, thus capturing more hidden information for representation learning. However, most existing DHGNNs cannot adjust the hyperedge number and thus fail to fully explore the underlying hypergraph structure. This paper proposes a new method, namely, totally hypergraph neural network (TDHNN), to adjust the hyperedge number for optimizing the hypergraph structure. Specifically, the proposed method first captures hyperedge feature distribution to obtain dynamical hyperedge features rather than fixed ones, by conducting the sampling from the learned distribution.
+Recent dynamic hypergraph neural networks (DHGNNs) are designed to adaptively optimize the hypergraph structure to avoid the dependence on the initial hypergraph structure, thus capturing more hidden information for representation learning. However, most existing DHGNNs cannot adjust the hyperedge number and thus fail to fully explore the underlying hypergraph structure. This paper proposes a new method, namely, totally hypergraph neural network (TDHNN), to adjust the hyperedge number for optimizing the hypergraph structure. Specifically, the proposed method first captures hyperedge feature distribution to obtain dynamical hyperedge features rather than fixed ones, by conducting the sampling from the learned distribution.
 The hypergraph is then constructed based on the attention coefficients of both sampled hyperedges and nodes. The node features are dynamically updated by designing a simple hypergraph convolution algorithm. Experimental results on real datasets demonstrate the effectiveness of the proposed method, compared to SOTA methods. The source code can be accessed via https://github.com/HHW-zhou/TDHNN.
 
 ----
@@ -1106,10 +1106,10 @@ We consider the problem of fairly allocating a set of indivisible goods among n 
 
 **Abstract**:
 
-We study fair division of indivisible chores among n agents with additive disutility functions. Two well-studied fairness notions for indivisible items are envy-freeness up to one/any item (EF1/EFX) and the standard notion of economic efficiency is Pareto optimality (PO). There is a noticeable gap between the results known for both EF1 and EFX in the goods and chores settings. The case of chores turns out to be much more challenging. We reduce this gap by providing slightly relaxed versions of the known results on goods for the chores setting. Interestingly, our algorithms run in polynomial time, unlike their analogous versions in the goods setting.  
-
-We introduce the concept of k surplus in the chores setting which means that up to k more chores are allocated to the agents and each of them is a copy of an original chore. We present a polynomial-time algorithm which gives EF1 and PO allocations with n-1 surplus. 
-    
+We study fair division of indivisible chores among n agents with additive disutility functions. Two well-studied fairness notions for indivisible items are envy-freeness up to one/any item (EF1/EFX) and the standard notion of economic efficiency is Pareto optimality (PO). There is a noticeable gap between the results known for both EF1 and EFX in the goods and chores settings. The case of chores turns out to be much more challenging. We reduce this gap by providing slightly relaxed versions of the known results on goods for the chores setting. Interestingly, our algorithms run in polynomial time, unlike their analogous versions in the goods setting.  
+
+We introduce the concept of k surplus in the chores setting which means that up to k more chores are allocated to the agents and each of them is a copy of an original chore. We present a polynomial-time algorithm which gives EF1 and PO allocations with n-1 surplus. 
+    
 We relax the notion of EFX slightly and define tEFX which requires that the envy from agent i to agent j is removed upon the transfer of any chore from the i's bundle to j's bundle. We give a polynomial-time algorithm that in the chores case for 3 agents returns an allocation which is either proportional or tEFX. Note that proportionality is a very strong criterion in the case of indivisible items, and hence both notions we guarantee are desirable.
 
 ----
@@ -1138,8 +1138,8 @@ Recent work in algorithmic mechanism design focuses on designing mechanisms for 
 
 **Abstract**:
 
-Most networks are not static objects, but instead they change over time. This observation has sparked rigorous research on temporal graphs within the last years. In temporal graphs, we have a fixed set of nodes and the connections between them are only available at certain time steps. This gives rise to a plethora of algorithmic problems on such graphs, most prominently the problem of finding temporal spanners, i.e., the computation of subgraphs that guarantee all pairs reachability via temporal paths. To the best of our knowledge, only centralized approaches for the solution of this problem are known. However, many real-world networks are not shaped by a central designer but instead they emerge and evolve by the interaction of many strategic agents. This observation is the driving force of the recent intensive research on game-theoretic network formation models.      
-
+Most networks are not static objects, but instead they change over time. This observation has sparked rigorous research on temporal graphs within the last years. In temporal graphs, we have a fixed set of nodes and the connections between them are only available at certain time steps. This gives rise to a plethora of algorithmic problems on such graphs, most prominently the problem of finding temporal spanners, i.e., the computation of subgraphs that guarantee all pairs reachability via temporal paths. To the best of our knowledge, only centralized approaches for the solution of this problem are known. However, many real-world networks are not shaped by a central designer but instead they emerge and evolve by the interaction of many strategic agents. This observation is the driving force of the recent intensive research on game-theoretic network formation models.      
+
 In this work we bring together these two recent research directions: temporal graphs and game-theoretic network formation. As a first step into this new realm, we focus on a simplified setting where a complete temporal host graph is given and the agents, corresponding to its nodes, selfishly create incident edges to ensure that they can reach all other nodes via temporal paths in the created network. This yields temporal spanners as equilibria of our game. We prove results on the convergence to and the existence of equilibrium networks, on the complexity of finding best agent strategies, and on the quality of the equilibria. By taking these first important steps, we uncover challenging open problems that call for an in-depth exploration of the creation of temporal graphs by strategic agents.
 
 ----
@@ -1154,8 +1154,8 @@ In this work we bring together these two recent research directions: temporal gr
 
 **Abstract**:
 
-In most major cities and urban areas, residents form homogeneous neighborhoods along ethnic or socioeconomic lines. This phenomenon is widely known as residential segregation and has been studied extensively. Fifty years ago, Schelling proposed a landmark model that explains residential segregation in an elegant agent-based way. A recent stream of papers analyzed Schelling's model using game-theoretic approaches. However, all these works considered models with a given number of discrete types modeling different ethnic groups.
-
+In most major cities and urban areas, residents form homogeneous neighborhoods along ethnic or socioeconomic lines. This phenomenon is widely known as residential segregation and has been studied extensively. Fifty years ago, Schelling proposed a landmark model that explains residential segregation in an elegant agent-based way. A recent stream of papers analyzed Schelling's model using game-theoretic approaches. However, all these works considered models with a given number of discrete types modeling different ethnic groups.
+
 We focus on segregation caused by non-categorical attributes, such as household income or position in a political left-right spectrum. For this, we consider agent types that can be represented as real numbers. This opens up a great variety of reasonable models and, as a proof of concept, we focus on several natural candidates. In particular, we consider agents that evaluate their location by the average type-difference or the maximum type-difference to their neighbors, or by having a certain tolerance range for type-values of neighboring agents.We study the existence and computation of equilibria and provide bounds on the Price of Anarchy and Stability. Also, we present simulation results that compare our models and shed light on the obtained equilibria for our variants.
 
 ----
@@ -1170,8 +1170,8 @@ We focus on segregation caused by non-categorical attributes, such as household 
 
 **Abstract**:
 
-In a delegation problem, a principal P with commitment power tries to pick one out of n options. Each option is drawn independently from a known distribution. Instead of inspecting the options herself, P delegates the information acquisition to a rational and self-interested agent A. After inspection, A proposes one of the options, and P can accept or reject. In this paper, we study a natural online variant of delegation, in which the agent searches through the options in an online fashion. How can we design algorithms for P that approximate the utility of her best option in hindsight?
-
+In a delegation problem, a principal P with commitment power tries to pick one out of n options. Each option is drawn independently from a known distribution. Instead of inspecting the options herself, P delegates the information acquisition to a rational and self-interested agent A. After inspection, A proposes one of the options, and P can accept or reject. In this paper, we study a natural online variant of delegation, in which the agent searches through the options in an online fashion. How can we design algorithms for P that approximate the utility of her best option in hindsight?
+
 We show that P can obtain a Θ(1/n)-approximation and provide more fine-grained bounds independent of n based on two parameters. If the ratio of maximum and minimum utility for A is bounded by a factor α, we obtain an Ω(log log α / log α)-approximation algorithm and show that this is best possible. If P cannot distinguish options with the same value for herself, we show that ratios polynomial in 1/α cannot be avoided. If the utilities of P and A for each option are related by a factor β, we obtain an Ω(1 / log β)-approximation, and O(log log β / log β) is best possible.
 
 ----
@@ -1214,8 +1214,8 @@ We study a scenario where an adjudication task (e.g., the resolution of a binary
 
 **Abstract**:
 
-For the fundamental problem of fairly dividing a set of indivisible items among agents, envy-freeness up to any item (EFX) and maximin fairness (MMS) are arguably the most compelling fairness concepts proposed till now.  Unfortunately, despite significant efforts over the past few years, whether EFX allocations always exist is still an enigmatic open problem, let alone their efficient computation. Furthermore, today we know that MMS allocations are not always guaranteed to exist. These facts weaken the usefulness of both EFX and MMS, albeit their appealing conceptual characteristics. 
-
+For the fundamental problem of fairly dividing a set of indivisible items among agents, envy-freeness up to any item (EFX) and maximin fairness (MMS) are arguably the most compelling fairness concepts proposed till now.  Unfortunately, despite significant efforts over the past few years, whether EFX allocations always exist is still an enigmatic open problem, let alone their efficient computation. Furthermore, today we know that MMS allocations are not always guaranteed to exist. These facts weaken the usefulness of both EFX and MMS, albeit their appealing conceptual characteristics. 
+
 We propose two alternative fairness conceptsâ€”called epistemic EFX (EEFX) and minimum EFX value fairness (MXS)---inspired by EFX and MMS. For both, we explore their relationships to well-studied fairness notions and, more importantly, prove that EEFX and MXS allocations always exist and can be computed efficiently for additive valuations. Our results justify that the new fairness concepts are excellent alternatives to EFX and MMS.
 
 ----
@@ -1244,8 +1244,8 @@ We study four NP-hard optimal seat arrangement problems which each have as input
 
 **Abstract**:
 
-Recently, some studies on the fair allocation of indivisible goods notice a connection between a purely combinatorial problem called the Rainbow Cycle problem and a fairness notion known as EFX: assuming that the rainbow cycle number for parameter d (i.e. R(d)) is O(d^β .log(d)^γ), we can find a (1 − ϵ)-EFX allocation with O_ϵ(n^(β/β+1) .log(n)^(γ/β+1)) number of discarded goods. The best upper bound on R(d) is improved in a series of works to O(d^4), O(d^(2+o(1))), and finally to O(d^2). Also, via a simple observation, we have R(d) ∈ Ω(d).
-In this paper, we introduce another problem in extremal combinatorics. For a parameter l, we define the rainbow path degree and denote it by H(l). We show that any lower bound on H(l) yields an upper bound on R(d). Next, we prove that H(l) ∈ Ω(l^2 / log(l)) which yields an almost tight upper bound of R(d) ∈ Ω(d.log(d)).  This, in turn, proves the existence of (1−ϵ)-EFX allocation with O_ϵ(√n .log(n)) number of discarded goods. In addition, for the special case of the Rainbow Cycle problem that the edges in each part form a permutation, we improve the upper bound to R(d) ≤ 2d−4. We leverage H(l) to achieve this bound.
+Recently, some studies on the fair allocation of indivisible goods notice a connection between a purely combinatorial problem called the Rainbow Cycle problem and a fairness notion known as EFX: assuming that the rainbow cycle number for parameter d (i.e. R(d)) is O(d^β .log(d)^γ), we can find a (1 − ϵ)-EFX allocation with O_ϵ(n^(β/β+1) .log(n)^(γ/β+1)) number of discarded goods. The best upper bound on R(d) is improved in a series of works to O(d^4), O(d^(2+o(1))), and finally to O(d^2). Also, via a simple observation, we have R(d) ∈ Ω(d).
+In this paper, we introduce another problem in extremal combinatorics. For a parameter l, we define the rainbow path degree and denote it by H(l). We show that any lower bound on H(l) yields an upper bound on R(d). Next, we prove that H(l) ∈ Ω(l^2 / log(l)) which yields an almost tight upper bound of R(d) ∈ Ω(d.log(d)).  This, in turn, proves the existence of (1−ϵ)-EFX allocation with O_ϵ(√n .log(n)) number of discarded goods. In addition, for the special case of the Rainbow Cycle problem that the edges in each part form a permutation, we improve the upper bound to R(d) ≤ 2d−4. We leverage H(l) to achieve this bound.
 Our conjecture is that the exact value of H(l) is ⌊l^2/2⌋ − 1. We provide some experiments that support this conjecture. Assuming this conjecture is correct, we have R(d) ∈ θ(d).
 
 ----
@@ -1302,9 +1302,9 @@ We study contention resolution (CR) on a shared channel modelled as a game with 
 
 **Abstract**:
 
-We introduce new power indices to measure the a priori voting power of voters in liquid democracy elections where an underlying network restricts delegations. We argue that our power indices are natural extensions of the standard Penrose-Banzhaf index in simple voting games. 
-We show that computing the criticality of a voter is #P-hard even in weighted games with weights polynomially-bounded in the size of the instance. 
-However, for specific settings, such as when the underlying network is a bipartite or complete graph, recursive formulas can compute these indices for weighted voting games in pseudo-polynomial time. 
+We introduce new power indices to measure the a priori voting power of voters in liquid democracy elections where an underlying network restricts delegations. We argue that our power indices are natural extensions of the standard Penrose-Banzhaf index in simple voting games. 
+We show that computing the criticality of a voter is #P-hard even in weighted games with weights polynomially-bounded in the size of the instance. 
+However, for specific settings, such as when the underlying network is a bipartite or complete graph, recursive formulas can compute these indices for weighted voting games in pseudo-polynomial time. 
 We highlight their theoretical properties and provide numerical results to illustrate how restricting the possible delegations can alter voters' voting power.
 
 ----
@@ -1403,8 +1403,8 @@ We study discrete two player all-pay auction with complete information. We provi
 
 **Abstract**:
 
-We provide a library of participatory budgeting data (Pabulib) and open source tools (Pabutools and Pabustats) for analysing this data.
-    We analyse how the results of participatory budgeting elections would change if a different selection rule was applied. 
+We provide a library of participatory budgeting data (Pabulib) and open source tools (Pabutools and Pabustats) for analysing this data.
+    We analyse how the results of participatory budgeting elections would change if a different selection rule was applied. 
     We provide evidence that the outcomes of the Method of Equal Shares would be considerably fairer than those of the Utilitarian Greedy rule that is currently in use. We also show that the division of the projects into districts and/or categories can in many cases be avoided when using proportional rules. We find that this would increase the overall utility of the voters.
 
 ----
@@ -1447,8 +1447,8 @@ We consider the notions of agreement, diversity, and polarization in ordinal ele
 
 **Abstract**:
 
-Consider a market where a seller owns an item for sale and a buyer wants to purchase it. Each player has private information, known as their type. It can be costly and difficult for the players to reach an agreement through direct communication. However, with a mediator as a trusted third party, both players can communicate privately with the mediator without worrying about leaking too much or too little information. The mediator can design and commit to a multi-round communication protocol for both players, in which they update their beliefs about the other player's type. The mediator cannot force the players to trade but can influence their behaviors by sending messages to them.
-
+Consider a market where a seller owns an item for sale and a buyer wants to purchase it. Each player has private information, known as their type. It can be costly and difficult for the players to reach an agreement through direct communication. However, with a mediator as a trusted third party, both players can communicate privately with the mediator without worrying about leaking too much or too little information. The mediator can design and commit to a multi-round communication protocol for both players, in which they update their beliefs about the other player's type. The mediator cannot force the players to trade but can influence their behaviors by sending messages to them.
+
 We study the problem of designing revenue-maximizing mechanisms for the mediator. We show that the mediator can, without loss of generality, focus on a set of direct and incentive-compatible mechanisms. We then formulate this problem as a mathematical program and provide an optimal solution in closed form under a regularity condition. Our mechanism is simple and has a threshold structure. We also discuss some interesting properties of the optimal mechanism, such as situations where the mediator may lose money.
 
 ----
@@ -1463,10 +1463,10 @@ We study the problem of designing revenue-maximizing mechanisms for the mediator
 
 **Abstract**:
 
-The strategic selection of resources  by selfish agents is a classical research direction, with Resource Selection Games and Congestion Games as prominent examples. In these games, agents select available resources and their utility then depends on the number of agents using the same resources. This implies that there is no distinction between the agents, i.e., they are anonymous.
-
-We depart from this very general setting by proposing Resource Selection Games with heterogeneous agents that strive for a joint resource usage with similar agents. So, instead of the number of other users of a given resource, our model considers agents with different types and the decisive feature is the fraction of same-type agents among the users. More precisely, similarly to Schelling Games, there is a tolerance threshold tau in [0,1] which specifies the agents' desired minimum fraction of same-type agents on a resource. Agents strive to select resources where at least a tau-fraction of those resources' users have the same type as themselves. For tau=1, our model generalizes hedonic diversity games with single-peaked utilities with a peak at 1. 
-
+The strategic selection of resources  by selfish agents is a classical research direction, with Resource Selection Games and Congestion Games as prominent examples. In these games, agents select available resources and their utility then depends on the number of agents using the same resources. This implies that there is no distinction between the agents, i.e., they are anonymous.
+
+We depart from this very general setting by proposing Resource Selection Games with heterogeneous agents that strive for a joint resource usage with similar agents. So, instead of the number of other users of a given resource, our model considers agents with different types and the decisive feature is the fraction of same-type agents among the users. More precisely, similarly to Schelling Games, there is a tolerance threshold tau in [0,1] which specifies the agents' desired minimum fraction of same-type agents on a resource. Agents strive to select resources where at least a tau-fraction of those resources' users have the same type as themselves. For tau=1, our model generalizes hedonic diversity games with single-peaked utilities with a peak at 1. 
+
 For our general model, we consider the existence and quality of equilibria and the complexity of maximizing the social welfare. Additionally, we consider a bounded rationality model, where agents can only estimate the utility of a resource, since they only know the fraction of same-type agents on a given resource, but not the exact numbers. Thus, they cannot know the impact a strategy change would have on a target resource. Interestingly, we show that this type of bounded rationality yields favorable game-theoretic properties and specific equilibria closely approximate equilibria of the full knowledge setting.
 
 ----
@@ -1481,10 +1481,10 @@ For our general model, we consider the existence and quality of equilibria and t
 
 **Abstract**:
 
-We study the problem of fairly and efficiently allocating indivisible chores among agents with additive disutility functions. We consider the widely used envy-based fairness properties of EF1 and EFX in conjunction with the efficiency property of fractional Pareto-optimality (fPO). Existence (and computation) of an allocation that is simultaneously EF1/EFX and fPO are challenging open problems, and we make progress on both of them. We show the existence of an allocation that is
-- EF1 + fPO, when there are three agents,
-- EF1 + fPO, when there are at most two disutility functions,
-- EFX + fPO, for three agents with bivalued disutility functions.
+We study the problem of fairly and efficiently allocating indivisible chores among agents with additive disutility functions. We consider the widely used envy-based fairness properties of EF1 and EFX in conjunction with the efficiency property of fractional Pareto-optimality (fPO). Existence (and computation) of an allocation that is simultaneously EF1/EFX and fPO are challenging open problems, and we make progress on both of them. We show the existence of an allocation that is
+- EF1 + fPO, when there are three agents,
+- EF1 + fPO, when there are at most two disutility functions,
+- EFX + fPO, for three agents with bivalued disutility functions.
 These results are constructive, based on strongly polynomial-time algorithms. We also investigate non-existence and show that an allocation that is EFX+fPO need not exist, even for two agents.
 
 ----
@@ -1653,8 +1653,8 @@ We study the problem of designing truthful and fair mechanisms when allocating a
 
 **Abstract**:
 
-In online advertising markets, an increasing number of advertisers are adopting auto-bidders to buy advertising slots. This tool simplifies the process of optimizing bids based on various financial constraints.
-
+In online advertising markets, an increasing number of advertisers are adopting auto-bidders to buy advertising slots. This tool simplifies the process of optimizing bids based on various financial constraints.
+
 In our study, we focus on second-price auctions where bidders have both private budget and private ROI (return on investment) constraints. We formulate the auto-bidding system design problem as a mathematical program and analyze the auto-bidders' bidding strategy under such constraints. We demonstrate that our design ensures truthfulness, i.e., among all pure and mixed strategies, always reporting the truthful budget and ROI is an optimal strategy for the bidders. Although the program is non-convex, we provide a fast algorithm to compute the optimal bidding strategy for the bidders based on our analysis. We also study the welfare and provide a lower bound for the PoA (price of anarchy). Moreover, we prove that if all bidders utilize our auto-bidding system, a Bayesian Nash equilibrium exists. We provide a sufficient condition under which the iterated best response process converges to such an equilibrium. Finally, we conduct extensive experiments to empirically evaluate the effectiveness of our design.
 
 ----
@@ -1697,12 +1697,12 @@ We study the computational complexity of fair division of indivisible items in a
 
 **Abstract**:
 
-We study the problem of computing an approximate Nash equilibrium of continuous-action game without access to gradients. Such game access is common in reinforcement learning settings, where the environment is typically treated as a black box. To tackle this problem, we apply zeroth-order optimization techniques that combine smoothed gradient estimators with equilibrium-finding dynamics.
-We model players' strategies using artificial neural networks. In particular, we use randomized policy networks to model mixed strategies. These take noise in addition to an observation as input and can flexibly represent arbitrary observation-dependent, continuous-action distributions. Being able to model such mixed strategies is crucial for tackling continuous-action games that lack pure-strategy equilibria.
-We evaluate the performance of our method using an approximation of the Nash convergence metric from game theory, which measures how much players can benefit from unilaterally changing their strategy.
-We apply our method to continuous Colonel Blotto games, single-item and multi-item auctions, and a visibility game.
-The experiments show that our method can quickly find a high-quality approximate equilibrium.
-Furthermore, they show that the dimensionality of the input noise is crucial for performance.
+We study the problem of computing an approximate Nash equilibrium of continuous-action game without access to gradients. Such game access is common in reinforcement learning settings, where the environment is typically treated as a black box. To tackle this problem, we apply zeroth-order optimization techniques that combine smoothed gradient estimators with equilibrium-finding dynamics.
+We model players' strategies using artificial neural networks. In particular, we use randomized policy networks to model mixed strategies. These take noise in addition to an observation as input and can flexibly represent arbitrary observation-dependent, continuous-action distributions. Being able to model such mixed strategies is crucial for tackling continuous-action games that lack pure-strategy equilibria.
+We evaluate the performance of our method using an approximation of the Nash convergence metric from game theory, which measures how much players can benefit from unilaterally changing their strategy.
+We apply our method to continuous Colonel Blotto games, single-item and multi-item auctions, and a visibility game.
+The experiments show that our method can quickly find a high-quality approximate equilibrium.
+Furthermore, they show that the dimensionality of the input noise is crucial for performance.
 To our knowledge, this paper is the first to solve general continuous-action games with unrestricted mixed strategies and without any gradient information.
 
 ----
@@ -1885,15 +1885,15 @@ Equilibrium Propagation (EP) is a powerful and more bio-plausible alternative to
 
 **Abstract**:
 
-Collaborative tasks often begin with partial task knowledge and incomplete plans from each partner. 
-To complete these tasks, partners need to engage in situated communication with their partners and coordinate their partial plans towards a complete plan to achieve a joint task goal. 
-While such collaboration seems effortless in a human-human team, it is highly challenging for human-AI collaboration. 
-To address this limitation, this paper takes a step towards Collaborative Plan Acquisition, where humans and agents strive to learn and communicate with each other to acquire a complete plan for joint tasks. 
-Specifically, we formulate a novel problem for agents to predict the missing task knowledge for themselves and for their partners based on rich perceptual and dialogue history. 
-We extend a situated dialogue benchmark for symmetric collaborative tasks in a 3D blocks world and investigate computational strategies for plan acquisition. 
-Our empirical results suggest that predicting the partner's missing knowledge is a more viable approach than predicting one's own. 
-We show that explicit modeling of the partner's dialogue moves and mental states produces improved and more stable results than without.
-These results provide insight for future AI agents that 
+Collaborative tasks often begin with partial task knowledge and incomplete plans from each partner. 
+To complete these tasks, partners need to engage in situated communication with their partners and coordinate their partial plans towards a complete plan to achieve a joint task goal. 
+While such collaboration seems effortless in a human-human team, it is highly challenging for human-AI collaboration. 
+To address this limitation, this paper takes a step towards Collaborative Plan Acquisition, where humans and agents strive to learn and communicate with each other to acquire a complete plan for joint tasks. 
+Specifically, we formulate a novel problem for agents to predict the missing task knowledge for themselves and for their partners based on rich perceptual and dialogue history. 
+We extend a situated dialogue benchmark for symmetric collaborative tasks in a 3D blocks world and investigate computational strategies for plan acquisition. 
+Our empirical results suggest that predicting the partner's missing knowledge is a more viable approach than predicting one's own. 
+We show that explicit modeling of the partner's dialogue moves and mental states produces improved and more stable results than without.
+These results provide insight for future AI agents that 
 can predict what knowledge their partner is missing and, therefore, can proactively communicate such information to help the partner acquire such missing knowledge toward a common understanding of joint tasks.
 
 ----
@@ -2104,12 +2104,12 @@ The brain-inspired spiking neural networks (SNNs) are receiving increasing atten
 
 **Abstract**:
 
-In recent years there has been an increasing interest in extending Dung's framework to facilitate the knowledge representation and reasoning process.
-In this paper, we present an extension of Abstract Argumentation Framework (AF) that allows for the representation of preferences over arguments' truth values (3-valued preferences).
-For instance, we can express a preference stating that extensions where argument a is false (i.e. defeated) are preferred to extensions where argument b is false. 
-Interestingly, such a framework generalizes the well-known Preference-based AF  with no additional cost in terms of computational complexity for most of the classical argumentation semantics.
-Then, we further extend AF by considering both (3-valued) preferences and 3-valued constraints, that is constraints of the form \varphi \Rightarrow v or v \Rightarrow \varphi, where \varphi is a logical formula and v is a 3-valued truth value. 
-After investigating the complexity of the resulting framework,as both constraints and preferences may represent subjective knowledge of agents, 
+In recent years there has been an increasing interest in extending Dung's framework to facilitate the knowledge representation and reasoning process.
+In this paper, we present an extension of Abstract Argumentation Framework (AF) that allows for the representation of preferences over arguments' truth values (3-valued preferences).
+For instance, we can express a preference stating that extensions where argument a is false (i.e. defeated) are preferred to extensions where argument b is false. 
+Interestingly, such a framework generalizes the well-known Preference-based AF  with no additional cost in terms of computational complexity for most of the classical argumentation semantics.
+Then, we further extend AF by considering both (3-valued) preferences and 3-valued constraints, that is constraints of the form \varphi \Rightarrow v or v \Rightarrow \varphi, where \varphi is a logical formula and v is a 3-valued truth value. 
+After investigating the complexity of the resulting framework,as both constraints and preferences may represent subjective knowledge of agents, 
 we extend our framework by considering multiple agents and study the complexity of deciding acceptance of arguments in this context.
 
 ----
@@ -2124,13 +2124,13 @@ we extend our framework by considering multiple agents and study the complexity 
 
 **Abstract**:
 
-Explaining predictions made by inductive classifiers has become crucial with the rise of complex models acting more and more as black-boxes. 
-Abductive explanations are one of the most popular types of explanations that are provided for the purpose. They highlight feature-values that  
-are sufficient for making predictions. In the literature, they are generated by exploring the whole feature space, which is unreasonable in practice. 
-This paper solves the problem by introducing explanation functions that generate abductive explanations from a sample of instances. It shows 
-that such functions should be defined with great care since they cannot satisfy two desirable properties at the same time, namely existence of 
-explanations for every individual decision (success) and correctness of explanations (coherence). The paper provides a parameterized family of 
-argumentation-based explanation functions, each of which satisfies one of the two properties. It studies their formal properties and their experimental 
+Explaining predictions made by inductive classifiers has become crucial with the rise of complex models acting more and more as black-boxes. 
+Abductive explanations are one of the most popular types of explanations that are provided for the purpose. They highlight feature-values that  
+are sufficient for making predictions. In the literature, they are generated by exploring the whole feature space, which is unreasonable in practice. 
+This paper solves the problem by introducing explanation functions that generate abductive explanations from a sample of instances. It shows 
+that such functions should be defined with great care since they cannot satisfy two desirable properties at the same time, namely existence of 
+explanations for every individual decision (success) and correctness of explanations (coherence). The paper provides a parameterized family of 
+argumentation-based explanation functions, each of which satisfies one of the two properties. It studies their formal properties and their experimental 
 behaviour on different datasets.
 
 ----
@@ -2145,8 +2145,8 @@ behaviour on different datasets.
 
 **Abstract**:
 
-We develop a general framework for abstracting the behavior of an agent that operates in a nondeterministic domain, i.e., where the agent does not control
-the outcome of the nondeterministic actions, based on the nondeterministic situation calculus and the ConGolog programming language. We assume that
+We develop a general framework for abstracting the behavior of an agent that operates in a nondeterministic domain, i.e., where the agent does not control
+the outcome of the nondeterministic actions, based on the nondeterministic situation calculus and the ConGolog programming language. We assume that
 we have both an abstract and a concrete nondeterministic basic action theory, and a refinement mapping which  specifies how abstract actions, decomposed into agent actions and environment reactions, are implemented by concrete ConGolog programs. This new setting supports strategic reasoning and strategy synthesis, by allowing us to quantify separately on agent actions and environment reactions. We show that if the agent has a (strong FOND) plan/strategy to achieve a goal/complete a task at the abstract level, and it can always execute the nondeterministic abstract actions to completion at the concrete level, then there exist a refinement of it that is a (strong FOND) plan/strategy to achieve the refinement of the goal/task at the concrete level.
 
 ----
@@ -2161,8 +2161,8 @@ we have both an abstract and a concrete nondeterministic basic action theory, an
 
 **Abstract**:
 
-Abstract dialectical frameworks (ADFs) are one of the most powerful generalizations of classical Dung-style argumentation frameworks (AFs).
-The additional expressive power comes with an increase in computational complexity, namely one level up in the polynomial hierarchy in comparison to
+Abstract dialectical frameworks (ADFs) are one of the most powerful generalizations of classical Dung-style argumentation frameworks (AFs).
+The additional expressive power comes with an increase in computational complexity, namely one level up in the polynomial hierarchy in comparison to
 their AF counterparts. However, there is one important subclass, so-called bipolar ADFs (BADFs) which are as complex as classical AFs while offering strictly more modeling capacities. This property makes BADFs very attractive from a knowledge representation point of view and is the main reason why this class has received much attention recently. The semantics of ADFs rely on the Gamma-operator which takes as an input a three-valued interpretation and returns a new one. However, in order to obtain the output the original definition requires to consider any two-valued completion of a given three-valued interpretation. In this paper we formally prove that in case of BADFs we may bypass the computationally intensive procedure via applying Kleene's three-valued logic K. We therefore introduce the so-called bipolar disjunctive normal form which is simply a disjunctive normal form where any used atom possesses either a positive or a negative polarity. We then show that: First, this normal form is expressive enough to represent any BADF and secondly, the computation can be done via Kleene's K instead of dealing with two-valued completions. Inspired by the main correspondence result we present some first experiments showing the computational benefit of using Kleene.
 
 ----
@@ -2247,19 +2247,19 @@ Circumscription is one of the most powerful ways to extend Description Logics (D
 
 **Abstract**:
 
-Compensation is a strategy that a semantics may follow when it faces  
-dilemmas between quality and quantity of attackers. It allows several weak 
-attacks to compensate one strong attack. It is  based on compensation degree, 
-which is a tuple that indicates (i) to what extent an attack is weak and (ii) the 
-number of weak attacks needed to compensate a strong one. 
-Existing principles on compensation do not specify the parameters, thus it is unclear 
-whether semantics satisfying them compensate at only one degree or several degrees, and which ones.
-This paper proposes a parameterised family of gradual semantics, which 
-unifies multiple semantics that share some principles but differ in their 
-strategy regarding solving dilemmas. Indeed, we show that the two semantics taking 
-the extreme values of the parameter favour respectively  quantity and quality,  while all 
-the remaining ones compensate at some degree. We define three classes of compensation 
-degrees and show that the novel family is able to compensate at all of them while 
+Compensation is a strategy that a semantics may follow when it faces  
+dilemmas between quality and quantity of attackers. It allows several weak 
+attacks to compensate one strong attack. It is  based on compensation degree, 
+which is a tuple that indicates (i) to what extent an attack is weak and (ii) the 
+number of weak attacks needed to compensate a strong one. 
+Existing principles on compensation do not specify the parameters, thus it is unclear 
+whether semantics satisfying them compensate at only one degree or several degrees, and which ones.
+This paper proposes a parameterised family of gradual semantics, which 
+unifies multiple semantics that share some principles but differ in their 
+strategy regarding solving dilemmas. Indeed, we show that the two semantics taking 
+the extreme values of the parameter favour respectively  quantity and quality,  while all 
+the remaining ones compensate at some degree. We define three classes of compensation 
+degrees and show that the novel family is able to compensate at all of them while 
 none of the existing gradual semantics does.
 
 ----
@@ -2274,8 +2274,8 @@ none of the existing gradual semantics does.
 
 **Abstract**:
 
-One favors decision trees (DTs) of the smallest size or depth to facilitate explainability and interpretability. However, learning such an optimal DT from data is well-known to be NP-hard. To overcome this complexity barrier, Ordyniak and Szeider (AAAI 21) initiated the study of optimal DT learning under the parameterized complexity perspective. They showed that solution size (i.e., number of nodes or depth of the DT) is insufficient to obtain fixed-parameter tractability (FPT). Therefore, they proposed an FPT algorithm that utilizes two auxiliary parameters: the maximum difference (as a structural property of the data set) and maximum domain size. They left it as an open question of whether bounding the maximum domain size is necessary.
-
+One favors decision trees (DTs) of the smallest size or depth to facilitate explainability and interpretability. However, learning such an optimal DT from data is well-known to be NP-hard. To overcome this complexity barrier, Ordyniak and Szeider (AAAI 21) initiated the study of optimal DT learning under the parameterized complexity perspective. They showed that solution size (i.e., number of nodes or depth of the DT) is insufficient to obtain fixed-parameter tractability (FPT). Therefore, they proposed an FPT algorithm that utilizes two auxiliary parameters: the maximum difference (as a structural property of the data set) and maximum domain size. They left it as an open question of whether bounding the maximum domain size is necessary.
+
 The main result of this paper answers this question. We present FPT algorithms for learning a smallest or  lowest-depth DT from data, with the only parameters solution size and maximum difference. Thus, our algorithm is significantly more potent than the one by Szeider and Ordyniak as it can handle problem inputs with features that range over unbounded domains. We also close several gaps concerning the quality of approximation one obtains by only considering DTs based on minimum support sets.
 
 ----
@@ -2290,7 +2290,7 @@ The main result of this paper answers this question. We present FPT algorithms f
 
 **Abstract**:
 
-Answer-Set Programming (ASP) is a popular declarative reasoning and problem solving formalism. Due to the increasing interest in explainabilty, several explanation approaches have been developed for ASP. However, support for commonly used advanced language features of ASP, as for example aggregates or choice rules, is still mostly lacking. We deal with explaining ASP programs containing Abstract Constraint Atoms, which encompass the above features and others. We provide justifications for the presence, or absence, of an atom in a given answer-set. To this end, we introduce several formal notions of justification in this setting based on the one hand on a semantic characterisation utilising minimal partial models, and on the other hand on a more ruled-guided approach. We provide complexity results for checking and computing such justifications, and discuss how the semantic and syntactic approaches relate and can be jointly used to offer more insight.
+Answer-Set Programming (ASP) is a popular declarative reasoning and problem solving formalism. Due to the increasing interest in explainabilty, several explanation approaches have been developed for ASP. However, support for commonly used advanced language features of ASP, as for example aggregates or choice rules, is still mostly lacking. We deal with explaining ASP programs containing Abstract Constraint Atoms, which encompass the above features and others. We provide justifications for the presence, or absence, of an atom in a given answer-set. To this end, we introduce several formal notions of justification in this setting based on the one hand on a semantic characterisation utilising minimal partial models, and on the other hand on a more ruled-guided approach. We provide complexity results for checking and computing such justifications, and discuss how the semantic and syntactic approaches relate and can be jointly used to offer more insight.
 Our results contribute to a basis for explaining commonly used language features and thus increase accessibility and usability of ASP as an AI tool.
 
 ----
@@ -2305,7 +2305,7 @@ Our results contribute to a basis for explaining commonly used language features
 
 **Abstract**:
 
-Logic programs are a popular formalism for encoding many problems relevant to knowledge representation and reasoning as well as artificial intelligence. However, for modeling rational behavior it is oftentimes required to represent the concepts of knowledge and possibility. Epistemic logic programs (ELPs) is such an extension that enables both concepts, which correspond to being true in all or some possible worlds or stable models. For these programs, the parameter treewidth has recently regained popularity. We present complexity results for the evaluation of key ELP fragments for treewidth, which are exponentially better than known results for full ELPs. Unfortunately, we prove that obtained runtimes can not be significantly improved, assuming the exponential time hypothesis. Our approach defines treewidth-aware reductions between quantified Boolean formulas and ELPs. We also establish
+Logic programs are a popular formalism for encoding many problems relevant to knowledge representation and reasoning as well as artificial intelligence. However, for modeling rational behavior it is oftentimes required to represent the concepts of knowledge and possibility. Epistemic logic programs (ELPs) is such an extension that enables both concepts, which correspond to being true in all or some possible worlds or stable models. For these programs, the parameter treewidth has recently regained popularity. We present complexity results for the evaluation of key ELP fragments for treewidth, which are exponentially better than known results for full ELPs. Unfortunately, we prove that obtained runtimes can not be significantly improved, assuming the exponential time hypothesis. Our approach defines treewidth-aware reductions between quantified Boolean formulas and ELPs. We also establish
 that the completion of a program, as used in modern solvers, can be turned treewidth-aware, thereby linearly preserving treewidth.
 
 ----
@@ -2390,8 +2390,8 @@ Modeling and verification of dynamic systems operating over a relational represe
 
 **Abstract**:
 
-The tractability of the lightweight description logic EL has allowed for the construction of large and widely used ontologies that support semantic interoperability. However, comprehensive domains with a broad user base are often at odds with strong axiomatisations otherwise useful for inferencing, since these are usually context dependent and subject to diverging perspectives.
-
+The tractability of the lightweight description logic EL has allowed for the construction of large and widely used ontologies that support semantic interoperability. However, comprehensive domains with a broad user base are often at odds with strong axiomatisations otherwise useful for inferencing, since these are usually context dependent and subject to diverging perspectives.
+
 In this paper we introduce Standpoint EL, a multi-modal extension of EL that allows for the integrated representation of domain knowledge relative to diverse, possibly conflicting standpoints (or contexts), which can be hierarchically organised and put in relation to each other. We establish that Standpoint EL still exhibits EL's favourable PTime standard reasoning, whereas introducing additional features like empty standpoints, rigid roles, and nominals makes standard reasoning tasks intractable.
 
 ----
@@ -2406,15 +2406,15 @@ In this paper we introduce Standpoint EL, a multi-modal extension of EL that all
 
 **Abstract**:
 
-In formal argumentation, a distinction can be made between extension-based semantics, where sets of
-arguments are either (jointly) accepted or not, and ranking-based semantics, where grades of accept-
-ability are assigned to arguments. Another important distinction is that between abstract approaches,
-that abstract away from the content of arguments, and structured approaches, that specify a method
-of constructing argument graphs on the basis of a knowledge base. While ranking-based semantics
-have been extensively applied to abstract argumentation, few work has been done on ranking-based
-semantics for structured argumentation. In this paper, we make a systematic investigation into the be-
-haviour of ranking-based semantics applied to existing formalisms for structured argumentation. We
-show that a wide class of ranking-based semantics gives rise to so-called culpability measures, and
+In formal argumentation, a distinction can be made between extension-based semantics, where sets of
+arguments are either (jointly) accepted or not, and ranking-based semantics, where grades of accept-
+ability are assigned to arguments. Another important distinction is that between abstract approaches,
+that abstract away from the content of arguments, and structured approaches, that specify a method
+of constructing argument graphs on the basis of a knowledge base. While ranking-based semantics
+have been extensively applied to abstract argumentation, few work has been done on ranking-based
+semantics for structured argumentation. In this paper, we make a systematic investigation into the be-
+haviour of ranking-based semantics applied to existing formalisms for structured argumentation. We
+show that a wide class of ranking-based semantics gives rise to so-called culpability measures, and
 are relatively robust to specific choices in argument construction methods.
 
 ----
@@ -2429,7 +2429,7 @@ are relatively robust to specific choices in argument construction methods.
 
 **Abstract**:
 
-Existential rules, also known as tuple-generating dependencies (TGDs) or Datalog+/- rules, are heavily studied in the communities of  Knowledge Representation and Reasoning, Semantic Web, and Databases, due to their rich modelling capabilities. In this paper we consider TGDs in the temporal setting, by introducing and studying DatalogMTLE---an extension of metric temporal Datalog (DatalogMTL) obtained by allowing for existential rules in  programs.  We show that DatalogMTLE is undecidable even in the restricted cases of guarded and weakly-acyclic programs. To address this issue we introduce uniform semantics which, on the one hand, is well-suited for modelling temporal knowledge as it prevents from unintended value invention and, on the other hand, provides decidability of reasoning; in particular, it becomes 2-EXPSPACE-complete for weakly-acyclic programs but remains undecidable for guarded programs. We provide an implementation for the decidable case  and demonstrate its practical feasibility.
+Existential rules, also known as tuple-generating dependencies (TGDs) or Datalog+/- rules, are heavily studied in the communities of  Knowledge Representation and Reasoning, Semantic Web, and Databases, due to their rich modelling capabilities. In this paper we consider TGDs in the temporal setting, by introducing and studying DatalogMTLE---an extension of metric temporal Datalog (DatalogMTL) obtained by allowing for existential rules in  programs.  We show that DatalogMTLE is undecidable even in the restricted cases of guarded and weakly-acyclic programs. To address this issue we introduce uniform semantics which, on the one hand, is well-suited for modelling temporal knowledge as it prevents from unintended value invention and, on the other hand, provides decidability of reasoning; in particular, it becomes 2-EXPSPACE-complete for weakly-acyclic programs but remains undecidable for guarded programs. We provide an implementation for the decidable case  and demonstrate its practical feasibility.
 Thus we obtain an expressive, yet decidable,  rule-language and a system which is suitable for complex temporal reasoning with existential rules.
 
 ----
@@ -2542,15 +2542,15 @@ We study the problem of generating interesting integer sequences with a combinat
 
 **Abstract**:
 
-We propose bounded fitting as a scheme for learning
-description logic concepts in the presence of ontologies. A main
-advantage is that the resulting learning algorithms come with
-theoretical guarantees regarding their generalization to unseen
-examples in the sense of PAC learning. We prove that, in contrast,
-several other natural learning algorithms fail to provide such
-guarantees. As a further contribution, we present the system SPELL
-which efficiently implements bounded fitting for the description
-logic ELHr based on a SAT solver, and compare its performance to a
+We propose bounded fitting as a scheme for learning
+description logic concepts in the presence of ontologies. A main
+advantage is that the resulting learning algorithms come with
+theoretical guarantees regarding their generalization to unseen
+examples in the sense of PAC learning. We prove that, in contrast,
+several other natural learning algorithms fail to provide such
+guarantees. As a further contribution, we present the system SPELL
+which efficiently implements bounded fitting for the description
+logic ELHr based on a SAT solver, and compare its performance to a
 state-of-the-art learner.
 
 ----
@@ -2565,7 +2565,7 @@ state-of-the-art learner.
 
 **Abstract**:
 
-We present a method for extracting general modules for ontologies formulated in the description logic ALC. A module for an ontology is an ideally substantially smaller ontology that preserves all entailments for a user-specified set of terms. As such, it has applications such as ontology reuse and ontology analysis. Different from classical modules, general modules may use axioms not explicitly present in the input ontology, which allows for additional conciseness. So far, general modules have only been investigated for lightweight description logics.
+We present a method for extracting general modules for ontologies formulated in the description logic ALC. A module for an ontology is an ideally substantially smaller ontology that preserves all entailments for a user-specified set of terms. As such, it has applications such as ontology reuse and ontology analysis. Different from classical modules, general modules may use axioms not explicitly present in the input ontology, which allows for additional conciseness. So far, general modules have only been investigated for lightweight description logics.
 We present the first work that considers the more expressive description logic ALC. In particular, our contribution is a new method based on uniform interpolation supported by some new theoretical results. Our evaluation indicates that our general modules are often smaller than classical modules and uniform interpolants computed by the state-of-the-art, and compared with uniform interpolants, can be computed in significantly shorter time. Moreover, our method can be used for, and in fact, improves the computation of uniform interpolants and classical modules.
 
 ----
@@ -2748,10 +2748,10 @@ Reinforcement Learning's (RL) ubiquity has instigated research on potential thre
 
 **Abstract**:
 
-Total variation distance (TV distance) is a fundamental notion of distance between probability distributions. In this work, we introduce and study the problem of computing the TV distance of two product distributions over the domain {0,1}^n. In particular, we establish the following results.
-
-1. The problem of exactly computing the TV distance of two product distributions is #P-complete. This is in stark contrast with other distance measures such as KL, Chi-square, and Hellinger which tensorize over the marginals leading to efficient algorithms.
-
+Total variation distance (TV distance) is a fundamental notion of distance between probability distributions. In this work, we introduce and study the problem of computing the TV distance of two product distributions over the domain {0,1}^n. In particular, we establish the following results.
+
+1. The problem of exactly computing the TV distance of two product distributions is #P-complete. This is in stark contrast with other distance measures such as KL, Chi-square, and Hellinger which tensorize over the marginals leading to efficient algorithms.
+
 2. There is a fully polynomial-time deterministic approximation scheme (FPTAS)  for computing the TV distance of two product distributions P and Q where Q is the uniform distribution. This result is extended to the case where Q has a constant number of distinct marginals. In contrast, we show that when P and Q are Bayes net distributions the relative approximation of their TV distance is NP-hard.
 
 ----

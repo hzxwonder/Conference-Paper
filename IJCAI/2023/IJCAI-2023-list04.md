@@ -92,7 +92,7 @@ Interpretability of reinforcement learning policies is essential for many real-w
 
 **Abstract**:
 
-We study a new online assignment problem, called the Online Task Assignment with Controllable Processing Time. In a bipartite graph,  a set of online vertices (tasks) should be assigned to a set of offline vertices (machines) under the known adversarial distribution (KAD) assumption. We are the first to study controllable processing time in this scenario: There are  multiple processing levels for each task and higher level brings larger utility but also larger processing delay.
+We study a new online assignment problem, called the Online Task Assignment with Controllable Processing Time. In a bipartite graph,  a set of online vertices (tasks) should be assigned to a set of offline vertices (machines) under the known adversarial distribution (KAD) assumption. We are the first to study controllable processing time in this scenario: There are  multiple processing levels for each task and higher level brings larger utility but also larger processing delay.
 A machine can reject an assignment at the cost of a rejection penalty, taken from a pre-determined rejection budget. Different processing levels cause different penalties. We propose the Online Machine and Level Assignment  (OMLA) Algorithm to simultaneously assign an offline machine and a processing level to each online task. We prove that OMLA achieves 1/2-competitive ratio if each machine has unlimited rejection budget and Δ/(3Δ-1)- competitive ratio if each machine has an initial rejection budget up to Δ. Interestingly, the competitive ratios do not change under different settings on the controllable processing time and we can conclude that OMLA is "insensitive" to the controllable processing time.
 
 ----
@@ -177,10 +177,10 @@ Evolutionary algorithms (EAs) have been widely and successfully applied to solve
 
 **Abstract**:
 
-The Non-dominated Sorting Genetic Algorithm-II (NSGA-II) is one of the most prominent algorithms to solve multi-objective optimization problems. Recently, the first mathematical runtime guarantees have been obtained for this algorithm, however only for synthetic benchmark problems. 
-
-In this work, we give the first proven performance guarantees for a classic optimization problem, the NP-complete bi-objective minimum spanning tree problem. More specifically, we show that the NSGA-II with population size N >= 4((n-1) wmax + 1) computes all extremal points of the Pareto front in an expected number of O(m^2 n wmax log(n wmax)) iterations, where n is the number of vertices, m the number of edges, and wmax is the maximum edge weight in the problem instance. This result confirms, via mathematical means, the good performance of the NSGA-II observed empirically. It also shows that mathematical analyses of this algorithm are not only possible for synthetic benchmark problems, but also for more complex combinatorial optimization problems. 
-  
+The Non-dominated Sorting Genetic Algorithm-II (NSGA-II) is one of the most prominent algorithms to solve multi-objective optimization problems. Recently, the first mathematical runtime guarantees have been obtained for this algorithm, however only for synthetic benchmark problems. 
+
+In this work, we give the first proven performance guarantees for a classic optimization problem, the NP-complete bi-objective minimum spanning tree problem. More specifically, we show that the NSGA-II with population size N >= 4((n-1) wmax + 1) computes all extremal points of the Pareto front in an expected number of O(m^2 n wmax log(n wmax)) iterations, where n is the number of vertices, m the number of edges, and wmax is the maximum edge weight in the problem instance. This result confirms, via mathematical means, the good performance of the NSGA-II observed empirically. It also shows that mathematical analyses of this algorithm are not only possible for synthetic benchmark problems, but also for more complex combinatorial optimization problems. 
+  
   As a side result, we also obtain a new analysis of the performance of the  global SEMO algorithm on the bi-objective minimum spanning tree problem, which improves the previous best result by a factor of |F|, the number of extremal points of the Pareto front, a set that can be as large as n wmax. The main reason for this improvement is our observation that both multi-objective evolutionary algorithms find the different extremal points in parallel rather than sequentially, as assumed in the previous proofs.
 
 ----
@@ -195,7 +195,7 @@ In this work, we give the first proven performance guarantees for a classic opti
 
 **Abstract**:
 
-In influence maximization (IM), the goal is to find a set of seed nodes in a social network that maximizes the influence spread. While most IM problems focus on classical influence cascades (e.g., Independent Cascade and Linear Threshold) which assume individual influence cascade probability is independent of the number of neighbors, recent studies by sociologists show that many influence cascades follow a pattern called complex contagion (CC), where influence cascade probability is much higher when more neighbors are influenced. Nonetheless, there are very limited studies for complex contagion influence maximization (CCIM) problems. This is partly because CC is non-submodular, the solution of which has been an open challenge. 
+In influence maximization (IM), the goal is to find a set of seed nodes in a social network that maximizes the influence spread. While most IM problems focus on classical influence cascades (e.g., Independent Cascade and Linear Threshold) which assume individual influence cascade probability is independent of the number of neighbors, recent studies by sociologists show that many influence cascades follow a pattern called complex contagion (CC), where influence cascade probability is much higher when more neighbors are influenced. Nonetheless, there are very limited studies for complex contagion influence maximization (CCIM) problems. This is partly because CC is non-submodular, the solution of which has been an open challenge. 
 In this study, we propose the first reinforcement learning (RL) approach to CCIM. We find that a key obstacle in applying existing RL approaches to CCIM is the reward sparseness issue, which comes from two distinct sources. We then design a new RL algorithm that uses the CCIM problem structure to address the issue. Empirical results show that our approach achieves the state-of-the-art performance on 9 real-world networks.
 
 ----
@@ -224,11 +224,11 @@ The recent popularity of Wordle has revived interest in guessing games. We devel
 
 **Abstract**:
 
-In single-objective optimization, it is well known that evolutionary algorithms also without further adjustments can stand a certain amount of noise in the evaluation of the objective function. In contrast, this question is not at all understood for multi-objective optimization.
-
- In this work, we conduct the first mathematical runtime analysis of a simple multi-objective evolutionary algorithm (MOEA) on a classic benchmark in the presence of noise in the objective function. 
- We prove that when bit-wise prior noise with rate p <= alpha/n, alpha a suitable constant, is present, the simple evolutionary multi-objective optimizer (SEMO) without any adjustments to cope with noise finds the Pareto front of the OneMinMax benchmark in time O(n^2 log n), just as in the case without noise. Given that the problem here is to arrive at a population consisting of n+1 individuals witnessing the Pareto front, this is a surprisingly strong robustness to noise (comparably simple evolutionary algorithms cannot optimize the single-objective OneMax problem in polynomial time when p = omega(log(n)/n)). Our proofs suggest that the strong robustness of the MOEA stems from its implicit diversity mechanism designed to enable it to compute a population covering the whole Pareto front. 
- 
+In single-objective optimization, it is well known that evolutionary algorithms also without further adjustments can stand a certain amount of noise in the evaluation of the objective function. In contrast, this question is not at all understood for multi-objective optimization.
+
+ In this work, we conduct the first mathematical runtime analysis of a simple multi-objective evolutionary algorithm (MOEA) on a classic benchmark in the presence of noise in the objective function. 
+ We prove that when bit-wise prior noise with rate p <= alpha/n, alpha a suitable constant, is present, the simple evolutionary multi-objective optimizer (SEMO) without any adjustments to cope with noise finds the Pareto front of the OneMinMax benchmark in time O(n^2 log n), just as in the case without noise. Given that the problem here is to arrive at a population consisting of n+1 individuals witnessing the Pareto front, this is a surprisingly strong robustness to noise (comparably simple evolutionary algorithms cannot optimize the single-objective OneMax problem in polynomial time when p = omega(log(n)/n)). Our proofs suggest that the strong robustness of the MOEA stems from its implicit diversity mechanism designed to enable it to compute a population covering the whole Pareto front. 
+ 
  Interestingly this result only holds when the objective value of a solution is determined only once and the algorithm from that point on works with this, possibly noisy, objective value. We prove that when all solutions are reevaluated in each iteration, then any noise rate p = omega(log(n)/n^2) leads to a super-polynomial runtime. This is very different from single-objective optimization, where it is generally preferred to reevaluate solutions whenever their fitness is important and where examples are known such that not reevaluating solutions can lead to catastrophic performance losses.
 
 ----
@@ -341,14 +341,14 @@ A k-plex of a graph G is an induced subgraph in which every vertex has at most k
 
 **Abstract**:
 
-Levin Tree Search (LTS) is a search algorithm that makes use of a policy (a probability distribution over actions) 
-and comes with a theoretical guarantee on the number of expansions before reaching a goal node, depending on the quality of the policy. 
-This guarantee can be used as a loss function, which we call the LTS loss, to optimize neural networks representing the policy (LTS+NN). 
-In this work we show that the neural network can be substituted with parameterized context models originating from the online compression literature (LTS+CM). 
-We show that the LTS loss is convex under this new model,
-which allows for using standard convex optimization tools,
-and obtain convergence guarantees to the optimal parameters in an online setting for a given set of solution trajectories --- guarantees that cannot be provided for neural networks. 
-The new LTS+CM algorithm compares favorably against LTS+NN on several benchmarks: Sokoban (Boxoban), The Witness, and the 24-Sliding Tile puzzle (STP). The difference is particularly large on STP, where LTS+NN fails to solve most of the test instances while LTS+CM solves each test instance in a fraction of a second.
+Levin Tree Search (LTS) is a search algorithm that makes use of a policy (a probability distribution over actions) 
+and comes with a theoretical guarantee on the number of expansions before reaching a goal node, depending on the quality of the policy. 
+This guarantee can be used as a loss function, which we call the LTS loss, to optimize neural networks representing the policy (LTS+NN). 
+In this work we show that the neural network can be substituted with parameterized context models originating from the online compression literature (LTS+CM). 
+We show that the LTS loss is convex under this new model,
+which allows for using standard convex optimization tools,
+and obtain convergence guarantees to the optimal parameters in an online setting for a given set of solution trajectories --- guarantees that cannot be provided for neural networks. 
+The new LTS+CM algorithm compares favorably against LTS+NN on several benchmarks: Sokoban (Boxoban), The Witness, and the 24-Sliding Tile puzzle (STP). The difference is particularly large on STP, where LTS+NN fails to solve most of the test instances while LTS+CM solves each test instance in a fraction of a second.
 Furthermore, we show that LTS+CM is able to learn a policy that solves the Rubik's cube in only a few hundred expansions, which considerably improves upon previous machine learning techniques.
 
 ----
@@ -405,10 +405,10 @@ Given a graph, the k-plex is a vertex set in which each vertex is not adjacent t
 
 **Abstract**:
 
-The Non-dominated Sorting Genetic Algorithm II (NSGA-II) is the most prominent multi-objective evolutionary algorithm for real-world applications.
-While it performs evidently well on bi-objective optimization problems, empirical studies suggest that it is less effective when applied to problems with more than two objectives. A recent mathematical runtime analysis confirmed this observation by proving the NGSA-II for an exponential number of iterations misses a constant factor of the Pareto front of the simple 3-objective OneMinMax problem.
-
-In this work, we provide the first mathematical runtime analysis of the NSGA-III, a refinement of the NSGA-II aimed at better handling more than two objectives. 
+The Non-dominated Sorting Genetic Algorithm II (NSGA-II) is the most prominent multi-objective evolutionary algorithm for real-world applications.
+While it performs evidently well on bi-objective optimization problems, empirical studies suggest that it is less effective when applied to problems with more than two objectives. A recent mathematical runtime analysis confirmed this observation by proving the NGSA-II for an exponential number of iterations misses a constant factor of the Pareto front of the simple 3-objective OneMinMax problem.
+
+In this work, we provide the first mathematical runtime analysis of the NSGA-III, a refinement of the NSGA-II aimed at better handling more than two objectives. 
 We prove that the NSGA-III with sufficiently many reference points - a small constant factor more than the size of the Pareto front, as suggested for this algorithm - computes the complete Pareto front of the 3-objective OneMinMax benchmark in an expected number of O(n log n) iterations. This result holds for all population sizes (that are at least the size of the Pareto front). It shows a drastic advantage of the NSGA-III over the NSGA-II on this benchmark. The mathematical arguments used here and in the previous work on the NSGA-II suggest that similar findings are likely for other benchmarks with three or more objectives.
 
 ----
@@ -509,16 +509,16 @@ For effective decision support in scenarios with conflicting objectives, sets of
 
 **Abstract**:
 
-This paper addresses the ε-close parameter tuning problem for Bayesian
-networks (BNs): find a minimal ε-close amendment of probability entries
-in a given set of (rows in) conditional probability tables that make a
-given quantitative constraint on the BN valid. Based on the
-state-of-the-art “region verification” techniques for parametric Markov
-chains, we propose an algorithm whose capabilities go
-beyond any existing techniques. Our experiments show that ε-close tuning
-of large BN benchmarks with up to eight parameters is feasible. In
-particular, by allowing (i) varied parameters in multiple CPTs and (ii)
-inter-CPT parameter dependencies, we treat subclasses of parametric BNs
+This paper addresses the ε-close parameter tuning problem for Bayesian
+networks (BNs): find a minimal ε-close amendment of probability entries
+in a given set of (rows in) conditional probability tables that make a
+given quantitative constraint on the BN valid. Based on the
+state-of-the-art “region verification” techniques for parametric Markov
+chains, we propose an algorithm whose capabilities go
+beyond any existing techniques. Our experiments show that ε-close tuning
+of large BN benchmarks with up to eight parameters is feasible. In
+particular, by allowing (i) varied parameters in multiple CPTs and (ii)
+inter-CPT parameter dependencies, we treat subclasses of parametric BNs
 that have received scant attention so far.
 
 ----
@@ -533,10 +533,10 @@ that have received scant attention so far.
 
 **Abstract**:
 
-We study formal languages which are capable of fully expressing quantitative probabilistic reasoning and do-calculus reasoning for causal effects, from a computational complexity perspective. 
-We focus on satisfiability problems whose instance formulas allow expressing many tasks in probabilistic and causal inference.  
-The main contribution of this work is establishing the exact computational complexity of these satisfiability problems. 
-We introduce a new natural complexity class, named succ∃R, which can be viewed as a succinct variant of the well-studied class ∃R, and show that these problems are complete for succ∃R. 
+We study formal languages which are capable of fully expressing quantitative probabilistic reasoning and do-calculus reasoning for causal effects, from a computational complexity perspective. 
+We focus on satisfiability problems whose instance formulas allow expressing many tasks in probabilistic and causal inference.  
+The main contribution of this work is establishing the exact computational complexity of these satisfiability problems. 
+We introduce a new natural complexity class, named succ∃R, which can be viewed as a succinct variant of the well-studied class ∃R, and show that these problems are complete for succ∃R. 
 Our results imply even stronger limitations on the use of algorithmic methods for reasoning about probabilities and causality than  previous state-of-the-art results that rely only on the NP- or ∃R-completeness of the satisfiability problems for some restricted languages.
 
 ----
@@ -565,8 +565,8 @@ Safe Reinforcement learning (Safe RL) aims at learning optimal policies while st
 
 **Abstract**:
 
-Structural causal models provide a formalism to express causal relations between variables of interest. Models and variables can represent a system at different levels of abstraction, whereby relations may be coarsened and refined according to the need of a modeller.
-However, switching between different levels of abstraction requires evaluating a trade-off between the consistency and the information loss among different models.
+Structural causal models provide a formalism to express causal relations between variables of interest. Models and variables can represent a system at different levels of abstraction, whereby relations may be coarsened and refined according to the need of a modeller.
+However, switching between different levels of abstraction requires evaluating a trade-off between the consistency and the information loss among different models.
 In this paper we introduce a family of interventional measures that an agent may use to evaluate such a trade-off. We consider four measures suited for different tasks, analyze their properties, and propose algorithms to evaluate and learn causal abstractions. Finally, we illustrate the flexibility of our setup by empirically showing how different measures and algorithmic choices may lead to different abstractions.
 
 ----
@@ -581,16 +581,16 @@ In this paper we introduce a family of interventional measures that an agent may
 
 **Abstract**:
 
-In this paper, we introduce Max Markov Chain (MMC), a novel model for sequential data with sparse correlations among the state variables.
-It may also be viewed as a special class of approximate models for High-order Markov Chains (HMCs). 
-MMC is desirable for domains where the sparse correlations are long-term and vary in their temporal stretches. 
-Although generally intractable, parameter optimization for MMC can be solved analytically. 
-However, based on this result,
-we derive an approximate solution that is highly efficient empirically.
-When compared with HMC and approximate HMC models, MMC 
-combines  better sample efficiency, model parsimony, and an outstanding computational advantage. 
-Such a quality allows MMC to scale to large domains 
-where the competing models would struggle to perform. 
+In this paper, we introduce Max Markov Chain (MMC), a novel model for sequential data with sparse correlations among the state variables.
+It may also be viewed as a special class of approximate models for High-order Markov Chains (HMCs). 
+MMC is desirable for domains where the sparse correlations are long-term and vary in their temporal stretches. 
+Although generally intractable, parameter optimization for MMC can be solved analytically. 
+However, based on this result,
+we derive an approximate solution that is highly efficient empirically.
+When compared with HMC and approximate HMC models, MMC 
+combines  better sample efficiency, model parsimony, and an outstanding computational advantage. 
+Such a quality allows MMC to scale to large domains 
+where the competing models would struggle to perform. 
 We compare MMC with several baselines with synthetic and real-world datasets to demonstrate MMC as a valuable alternative for  stochastic modeling.
 
 ----
@@ -703,10 +703,10 @@ Drawing images of characters with desired poses is an essential but laborious ta
 
 **Abstract**:
 
-Accurate completion of archaeological artifacts is a critical aspect in several archaeological studies, including documentation of variations in style, inference of chronological and ethnic groups, and trading routes trends, among many others. However, most available pottery is fragmented, leading to missing textural and morphological cues. 
-Currently, the reassembly and completion of fragmented ceramics is a daunting and time-consuming task, done almost exclusively by hand, which requires the physical manipulation of the fragments. 
-To overcome the challenges of manual reconstruction, reduce the materials' exposure and deterioration, and improve the quality of reconstructed samples, we present IberianVoxel, a novel 3D Autoencoder Generative Adversarial Network (3D AE-GAN) framework tested on an extensive database with complete and fragmented references. 
-We generated a collection of 1001 3D voxelized samples and their fragmented references from Iberian wheel-made pottery profiles. The fragments generated are stratified into different size groups and across multiple pottery classes. 
+Accurate completion of archaeological artifacts is a critical aspect in several archaeological studies, including documentation of variations in style, inference of chronological and ethnic groups, and trading routes trends, among many others. However, most available pottery is fragmented, leading to missing textural and morphological cues. 
+Currently, the reassembly and completion of fragmented ceramics is a daunting and time-consuming task, done almost exclusively by hand, which requires the physical manipulation of the fragments. 
+To overcome the challenges of manual reconstruction, reduce the materials' exposure and deterioration, and improve the quality of reconstructed samples, we present IberianVoxel, a novel 3D Autoencoder Generative Adversarial Network (3D AE-GAN) framework tested on an extensive database with complete and fragmented references. 
+We generated a collection of 1001 3D voxelized samples and their fragmented references from Iberian wheel-made pottery profiles. The fragments generated are stratified into different size groups and across multiple pottery classes. 
 Lastly, we provide quantitative and qualitative assessments to measure the quality of the reconstructed voxelized samples by our proposed method and archaeologists' evaluation.
 
 ----
@@ -721,11 +721,11 @@ Lastly, we provide quantitative and qualitative assessments to measure the quali
 
 **Abstract**:
 
-Denoising Diffusion Probabilistic Models (DDPMs) have made great strides in generating high-quality samples in both discrete and continuous domains.
-However, Discrete DDPMs (D3PMs) have yet to be applied to the domain of Symbolic Music.
-This work presents the direct generation of Polyphonic Symbolic Music using D3PMs.
-Our model exhibits state-of-the-art sample quality, according to current quantitative evaluation metrics, and allows for flexible infilling at the note level.
-We further show, that our models are accessible to post-hoc classifier guidance, widening the scope of possible applications.
+Denoising Diffusion Probabilistic Models (DDPMs) have made great strides in generating high-quality samples in both discrete and continuous domains.
+However, Discrete DDPMs (D3PMs) have yet to be applied to the domain of Symbolic Music.
+This work presents the direct generation of Polyphonic Symbolic Music using D3PMs.
+Our model exhibits state-of-the-art sample quality, according to current quantitative evaluation metrics, and allows for flexible infilling at the note level.
+We further show, that our models are accessible to post-hoc classifier guidance, widening the scope of possible applications.
 However, we also cast a critical view on quantitative evaluation of music sample quality via statistical metrics, and present a simple algorithm that can confound our metrics with completely spurious, non-musical samples.
 
 ----
@@ -1118,7 +1118,7 @@ Accurately credit rating on Interbank assets is essential for a healthy financia
 
 **Abstract**:
 
-Accurate prediction of crop yield under the conditions of climate change is crucial to ensure food security. Transformers have shown remarkable success in modeling sequential data and hold the potential for improving crop yield prediction. To understand how weather and meteorological sequence variables affect crop yield, the positional encoding used in Transformers is typically shared across different sample sequences. We argue that it is necessary and beneficial to differentiate the positional encoding for distinct samples based on time-invariant properties of the sequences. Particularly, the sequence variables influencing crop yield vary according to static variables such as geographical locations. Sample data from southern areas may benefit from more tailored positional encoding different from that for northern areas. We propose a novel transformer based architecture for accurate and robust crop yield prediction, by introducing a Customized Positional Encoding (CPE) that encodes a sequence adaptively according to static information associated with the sequence. Empirical studies demonstrate the effectiveness of the proposed novel architecture and show that partially lin-
+Accurate prediction of crop yield under the conditions of climate change is crucial to ensure food security. Transformers have shown remarkable success in modeling sequential data and hold the potential for improving crop yield prediction. To understand how weather and meteorological sequence variables affect crop yield, the positional encoding used in Transformers is typically shared across different sample sequences. We argue that it is necessary and beneficial to differentiate the positional encoding for distinct samples based on time-invariant properties of the sequences. Particularly, the sequence variables influencing crop yield vary according to static variables such as geographical locations. Sample data from southern areas may benefit from more tailored positional encoding different from that for northern areas. We propose a novel transformer based architecture for accurate and robust crop yield prediction, by introducing a Customized Positional Encoding (CPE) that encodes a sequence adaptively according to static information associated with the sequence. Empirical studies demonstrate the effectiveness of the proposed novel architecture and show that partially lin-
 earized attention better captures the bias introduced by side information than softmax re-weighting. The resultant crop yield prediction model is robust to climate change, with mean-absolute-error reduced by up to 26% compared to the best baseline model in extreme drought years.
 
 ----
@@ -1133,8 +1133,8 @@ earized attention better captures the bias introduced by side information than s
 
 **Abstract**:
 
-Given the enormous number of users and items, industrial cascade recommendation systems (RS) are continuously expanded in size and complexity to deliver relevant items, such as news, services, and commodities, to the appropriate users. In a real-world scenario with hundreds of thousands requests per second, significant computation is required to infer personalized results for each request, resulting in a massive energy consumption and carbon emission that raises concern. 
-
+Given the enormous number of users and items, industrial cascade recommendation systems (RS) are continuously expanded in size and complexity to deliver relevant items, such as news, services, and commodities, to the appropriate users. In a real-world scenario with hundreds of thousands requests per second, significant computation is required to infer personalized results for each request, resulting in a massive energy consumption and carbon emission that raises concern. 
+
 This paper proposes GreenFlow, a practical computation allocation framework for RS, that considers both accuracy and carbon emission during inference. For each stage (e.g., recall, pre-ranking, ranking, etc.) of a cascade RS, when a user triggers a request, we define two actions that determine the computation: (1) the trained instances of models with different computational complexity; and (2) the number of items to be inferred in the stage. We refer to the combinations of actions in all stages as action chains. A reward score is estimated for each action chain, followed by dynamic primal-dual optimization considering both the reward and computation budget. Extensive experiments verify the effectiveness of the framework, reducing computation consumption by 41% in an industrial mobile application while maintaining commercial revenue. Moreover, the proposed framework saves approximately 5000kWh of electricity and reduces 3 tons of carbon emissions per day.
 
 ----
@@ -1149,16 +1149,16 @@ This paper proposes GreenFlow, a practical computation allocation framework for 
 
 **Abstract**:
 
-Network alignment aims at finding the correspondence of nodes across different networks, which is significant for many applications, e.g., fraud detection and crime network tracing across platforms. 
-In practice, however, accessing the topological information of different networks is often restricted and even forbidden, considering privacy and security issues. 
-Instead, what we observed might be the event sequences of the networks' nodes in the continuous-time domain. 
-In this study, we develop a coupled neural point process-based (CPP) sequence modeling strategy, which provides a solution to privacy-preserving network alignment based on the event sequences. 
-Our CPP consists of a coupled node embedding layer and a neural point process module. 
-The coupled node embedding layer embeds one network's nodes and explicitly models the alignment matrix between the two networks.
-Accordingly, it parameterizes the node embeddings of the other network by the push-forward operation. 
-Given the node embeddings, the neural point process module jointly captures the dynamics of the two networks' event sequences.
-We learn the CPP model in a maximum likelihood estimation framework with an inverse optimal transport (IOT) regularizer. 
-Experiments show that our CPP is compatible with various point process backbones and is robust to the model misspecification issue, which achieves encouraging performance on network alignment. 
+Network alignment aims at finding the correspondence of nodes across different networks, which is significant for many applications, e.g., fraud detection and crime network tracing across platforms. 
+In practice, however, accessing the topological information of different networks is often restricted and even forbidden, considering privacy and security issues. 
+Instead, what we observed might be the event sequences of the networks' nodes in the continuous-time domain. 
+In this study, we develop a coupled neural point process-based (CPP) sequence modeling strategy, which provides a solution to privacy-preserving network alignment based on the event sequences. 
+Our CPP consists of a coupled node embedding layer and a neural point process module. 
+The coupled node embedding layer embeds one network's nodes and explicitly models the alignment matrix between the two networks.
+Accordingly, it parameterizes the node embeddings of the other network by the push-forward operation. 
+Given the node embeddings, the neural point process module jointly captures the dynamics of the two networks' event sequences.
+We learn the CPP model in a maximum likelihood estimation framework with an inverse optimal transport (IOT) regularizer. 
+Experiments show that our CPP is compatible with various point process backbones and is robust to the model misspecification issue, which achieves encouraging performance on network alignment. 
 The code is available at https://github.com/Dixin-s-Lab/CNPP.
 
 ----
@@ -1173,13 +1173,13 @@ The code is available at https://github.com/Dixin-s-Lab/CNPP.
 
 **Abstract**:
 
-As a fundamental problem in Operations Research, sparse process flexibility design (SPFD) aims to design a manufacturing network across industries that achieves a trade-off between the efficiency and robustness of supply chains. 
-In this study, we propose a novel solution to this problem with the help of computational optimal transport techniques.
-Given a set of supply-demand pairs, we formulate the SPFD task approximately as a group sparse optimal transport (GSOT) problem, in which a group of couplings between the supplies and demands is optimized with a group sparse regularizer. 
-We solve this optimization problem via an algorithmic framework of alternating direction method of multipliers (ADMM), in which the target network topology is updated by soft-thresholding shrinkage, and the couplings of the OT problems are updated via a smooth OT algorithm in parallel. 
-This optimization algorithm has guaranteed convergence and provides a generalized framework for the SPFD task, which is applicable regardless of whether the supplies and demands are balanced. 
-Experiments show that our GSOT-based method can outperform representative heuristic methods in various SPFD tasks.
-Additionally, when implementing the GSOT method, the proposed ADMM-based optimization algorithm is comparable or superior to the commercial software Gurobi. 
+As a fundamental problem in Operations Research, sparse process flexibility design (SPFD) aims to design a manufacturing network across industries that achieves a trade-off between the efficiency and robustness of supply chains. 
+In this study, we propose a novel solution to this problem with the help of computational optimal transport techniques.
+Given a set of supply-demand pairs, we formulate the SPFD task approximately as a group sparse optimal transport (GSOT) problem, in which a group of couplings between the supplies and demands is optimized with a group sparse regularizer. 
+We solve this optimization problem via an algorithmic framework of alternating direction method of multipliers (ADMM), in which the target network topology is updated by soft-thresholding shrinkage, and the couplings of the OT problems are updated via a smooth OT algorithm in parallel. 
+This optimization algorithm has guaranteed convergence and provides a generalized framework for the SPFD task, which is applicable regardless of whether the supplies and demands are balanced. 
+Experiments show that our GSOT-based method can outperform representative heuristic methods in various SPFD tasks.
+Additionally, when implementing the GSOT method, the proposed ADMM-based optimization algorithm is comparable or superior to the commercial software Gurobi. 
 The code is available at https://github.com/Dixin-s-Lab/GSOT.
 
 ----
@@ -1250,7 +1250,7 @@ The problem of audio-to-text alignment has seen significant amount of research u
 
 **Abstract**:
 
-To combat poor health and living conditions, policymakers in Africa require temporally and geographically granular data measuring economic well-being. 
+To combat poor health and living conditions, policymakers in Africa require temporally and geographically granular data measuring economic well-being. 
 Machine learning (ML) offers a promising alternative to expensive and time-consuming survey measurements by training models to predict economic conditions from freely available satellite imagery. However,  previous efforts have failed to utilize the temporal information available in earth observation (EO) data, which may capture developments important to standards of living. In this work, we develop an EO-ML method for inferring neighborhood-level material-asset wealth using multi-temporal imagery and recurrent convolutional neural networks. Our model outperforms state-of-the-art models in several aspects of generalization, explaining  72% of the variance in wealth across held-out countries and 75%  held-out time spans. Using our geographically and temporally aware models, we created spatio-temporal material-asset data maps covering the entire continent of Africa from 1990 to 2019, making our data product the largest dataset of its kind. We showcase these results by analyzing which neighborhoods are likely to escape poverty by the year 2030, which is the deadline for when the Sustainable Development Goals (SDG) are evaluated.
 
 ----
@@ -1433,7 +1433,7 @@ Humanitarian relief operations are often accompanied by regional conflicts aroun
 
 **Abstract**:
 
-Automated image captioning has the potential to be a useful tool for people with vision impairments. Images taken by this user group are often noisy,  which leads to incorrect and even unsafe model predictions. In this paper, we propose a quality-agnostic framework to improve the performance and robustness of image captioning models for visually impaired people. We address this problem from three angles: data, model, and evaluation. First, we show how data augmentation techniques for generating synthetic noise can address data sparsity in this domain. Second, we enhance the robustness of the model by expanding a state-of-the-art model to a dual network architecture, using the augmented data and leveraging different consistency losses. Our results demonstrate increased performance, e.g. an absolute improvement of 2.15 on CIDEr, compared to state-of-the-art image captioning networks, as well as increased robustness to noise with up to 3 points improvement on CIDEr in more noisy settings. Finally, we evaluate the prediction reliability using confidence calibration on images with different difficulty / noise levels, showing that our models perform more reliably
+Automated image captioning has the potential to be a useful tool for people with vision impairments. Images taken by this user group are often noisy,  which leads to incorrect and even unsafe model predictions. In this paper, we propose a quality-agnostic framework to improve the performance and robustness of image captioning models for visually impaired people. We address this problem from three angles: data, model, and evaluation. First, we show how data augmentation techniques for generating synthetic noise can address data sparsity in this domain. Second, we enhance the robustness of the model by expanding a state-of-the-art model to a dual network architecture, using the augmented data and leveraging different consistency losses. Our results demonstrate increased performance, e.g. an absolute improvement of 2.15 on CIDEr, compared to state-of-the-art image captioning networks, as well as increased robustness to noise with up to 3 points improvement on CIDEr in more noisy settings. Finally, we evaluate the prediction reliability using confidence calibration on images with different difficulty / noise levels, showing that our models perform more reliably
 in safety-critical situations. The improved model is part of an assisted living application, which we develop in partnership with the Royal National Institute of Blind People.
 
 ----
@@ -1462,7 +1462,7 @@ Large pre-trained models have revolutionized natural language processing (NLP) r
 
 **Abstract**:
 
-Emotion recognition in conversation,  which aims to predict the emotion for all utterances,  has attracted considerable research attention in recent years. It is a challenging task since the  recognition of the emotion in one  utterance  involves many complex factors, such as the conversational context, the speaker's  background, and the subtle difference between emotion labels. In this paper, we propose a novel framework which mimics the thinking process when modeling these factors. Specifically, we first comprehend the conversational context with a history-oriented prompt to selectively gather  information from predecessors of the target utterance. We then  model the speaker's background with an experience-oriented prompt  to retrieve the similar utterances from all conversations.  We finally  differentiate the subtle label semantics with a paraphrasing mechanism  to elicit the intrinsic label related knowledge.
+Emotion recognition in conversation,  which aims to predict the emotion for all utterances,  has attracted considerable research attention in recent years. It is a challenging task since the  recognition of the emotion in one  utterance  involves many complex factors, such as the conversational context, the speaker's  background, and the subtle difference between emotion labels. In this paper, we propose a novel framework which mimics the thinking process when modeling these factors. Specifically, we first comprehend the conversational context with a history-oriented prompt to selectively gather  information from predecessors of the target utterance. We then  model the speaker's background with an experience-oriented prompt  to retrieve the similar utterances from all conversations.  We finally  differentiate the subtle label semantics with a paraphrasing mechanism  to elicit the intrinsic label related knowledge.
 We conducted extensive experiments on three benchmarks. The empirical results demonstrate the superiority of our proposed framework over the state-of-the-art baselines.
 
 ----
@@ -1547,37 +1547,37 @@ Monitoring and analysis of wildlife are key to conservation planning and conflic
 
 **Abstract**:
 
-According to theWorld Health Organization, Pneumoconiosis
-affects millions of workers globally,
-with an estimated 260,000 deaths annually. The
-burden of Pneumoconiosis is particularly high in
-low-income countries, where occupational safety
-standards are often inadequate, and the prevalence
-of the disease is increasing rapidly. The reduced
-availability of expert medical care in rural areas,
-where these diseases are more prevalent, further
-adds to the delayed screening and unfavourable outcomes
-of the disease. This paper aims to highlight
-the urgent need for early screening and detection
-of Pneumoconiosis, given its significant impact on
-affected individuals, their families, and societies as
-a whole. With the help of low-cost machine learning
-models, early screening, detection, and prevention
-of Pneumoconiosis can help reduce healthcare
-costs, particularly in low-income countries. In this
-direction, this research focuses on designing AI solutions
-for detecting different kinds of Pneumoconiosis
-from chest X-ray data. This will contribute
-to the Sustainable Development Goal 3 of ensuring
-healthy lives and promoting well-being for all at all
-ages, and present the framework for data collection
-and algorithm for detecting Pneumoconiosis
-for early screening. The baseline results show that
-the existing algorithms are unable to address this
-challenge. Therefore, it is our assertion that this
-research will improve state-of-the-art algorithms of
-segmentation, semantic segmentation, and classification
-not only for this disease but in general medical
+According to theWorld Health Organization, Pneumoconiosis
+affects millions of workers globally,
+with an estimated 260,000 deaths annually. The
+burden of Pneumoconiosis is particularly high in
+low-income countries, where occupational safety
+standards are often inadequate, and the prevalence
+of the disease is increasing rapidly. The reduced
+availability of expert medical care in rural areas,
+where these diseases are more prevalent, further
+adds to the delayed screening and unfavourable outcomes
+of the disease. This paper aims to highlight
+the urgent need for early screening and detection
+of Pneumoconiosis, given its significant impact on
+affected individuals, their families, and societies as
+a whole. With the help of low-cost machine learning
+models, early screening, detection, and prevention
+of Pneumoconiosis can help reduce healthcare
+costs, particularly in low-income countries. In this
+direction, this research focuses on designing AI solutions
+for detecting different kinds of Pneumoconiosis
+from chest X-ray data. This will contribute
+to the Sustainable Development Goal 3 of ensuring
+healthy lives and promoting well-being for all at all
+ages, and present the framework for data collection
+and algorithm for detecting Pneumoconiosis
+for early screening. The baseline results show that
+the existing algorithms are unable to address this
+challenge. Therefore, it is our assertion that this
+research will improve state-of-the-art algorithms of
+segmentation, semantic segmentation, and classification
+not only for this disease but in general medical
 image analysis literature.
 
 ----
@@ -1620,7 +1620,7 @@ The conservation and the restoration of biodiversity, in accordance with human w
 
 **Abstract**:
 
-Malnutrition among infants and young children is a pervasive public health concern, particularly in developing countries where resources are limited. Millions of children globally suffer from malnourishment and its complications1. Despite the best efforts of governments and organizations, malnourishment persists and remains a leading cause of morbidity and mortality among children under five. Physical measurements, such as weight, height, middle-upper-arm-circumference (muac), and head circumference are commonly used to assess the nutritional status of children. However, this approach can be resource-intensive and challenging to carry out on a large scale. In this research, we are developing NutriAI, a low-cost solution that leverages
+Malnutrition among infants and young children is a pervasive public health concern, particularly in developing countries where resources are limited. Millions of children globally suffer from malnourishment and its complications1. Despite the best efforts of governments and organizations, malnourishment persists and remains a leading cause of morbidity and mortality among children under five. Physical measurements, such as weight, height, middle-upper-arm-circumference (muac), and head circumference are commonly used to assess the nutritional status of children. However, this approach can be resource-intensive and challenging to carry out on a large scale. In this research, we are developing NutriAI, a low-cost solution that leverages
 small sample size classification approach to detect malnutrition by analyzing 2D images of the subjects in multiple poses. The proposed solution will not only reduce the workload of health workers but also provide a more efficient means of monitoring the nutritional status of children. On the dataset prepared as part of this research, the baseline results highlight that the modern deep learning approaches can facilitate malnutrition detection via anthropometric indicators in the presence of diversity with respect to age, gender, physical characteristics, and accessories including clothing.
 
 ----
@@ -1649,8 +1649,8 @@ Poverty is a multifaceted phenomenon linked to the lack of capabilities of house
 
 **Abstract**:
 
-As many as three million school age children between the ages of 5 and 14 years, live with severe to profound hearing loss in Nigeria. Many of these Deaf or Hard of Hearing (DHH) children developed their hearing loss later in life, non-congenitally, hence their parents are hearing. While their teachers in the Deaf schools they attend can often communicate effectively with them in "dialects" of American Sign Language (ASL), the unofficial sign lingua franca in Nigeria, communication at home with other family members is challenging and sometimes non-existent. This results in adverse social consequences including stigmatization, for the students. 
-
+As many as three million school age children between the ages of 5 and 14 years, live with severe to profound hearing loss in Nigeria. Many of these Deaf or Hard of Hearing (DHH) children developed their hearing loss later in life, non-congenitally, hence their parents are hearing. While their teachers in the Deaf schools they attend can often communicate effectively with them in "dialects" of American Sign Language (ASL), the unofficial sign lingua franca in Nigeria, communication at home with other family members is challenging and sometimes non-existent. This results in adverse social consequences including stigmatization, for the students. 
+
 With the recent successes of AI in natural language understanding, the goal of automated sign language understanding is becoming more realistic using neural deep learning technologies.  To this effect, the proposed project aims at co-designing and developing an ongoing AI-driven two-way sign language interpretation tool that can be deployed in homes, to improve language accessibility and communication between the DHH students and other family members. This ensures inclusive and equitable social interactions and can promote lifelong learning opportunities for them outside of the school environment.
 
 ----
@@ -1679,8 +1679,8 @@ Biodiversity loss is taking place at accelerated rates globally, and a business-
 
 **Abstract**:
 
-The weakest pre-expectation framework from Morgan and McIver for deductive verification of probabilistic programs generalizes binary state assertions to real-valued expectations to measure expected values of expressions over probabilistic program variables. While loop-free programs can be analyzed by mechanically transforming expectations, verifying programs with loops requires finding an invariant expectation.
-
+The weakest pre-expectation framework from Morgan and McIver for deductive verification of probabilistic programs generalizes binary state assertions to real-valued expectations to measure expected values of expressions over probabilistic program variables. While loop-free programs can be analyzed by mechanically transforming expectations, verifying programs with loops requires finding an invariant expectation.
+
 We view invariant expectation synthesis as a regression problem: given an input state, predict the average value of the post-expectation in the output distribution. With this perspective, we develop the first data-driven invariant synthesis method for probabilistic programs. Unlike prior work on probabilistic invariant inference, our approach learns piecewise continuous invariants without relying on template expectations. We also develop a data-driven approach to learn sub-invariants from data, which can be used to upper- or lower-bound expected values. We implement our approaches and demonstrate their effectiveness on a variety of benchmarks from the probabilistic programming literature.
 
 ----
@@ -1695,8 +1695,8 @@ We view invariant expectation synthesis as a regression problem: given an input 
 
 **Abstract**:
 
-In two-player zero-sum games on graphs, the protagonist tries to achieve an objective while the antagonist aims to prevent it. Objectives for which both players do not need to use memory to play optimally are well-understood and characterized both in finite and infinite graphs. Less is known about the larger class of half-positional objectives, i.e., those for which the protagonist does not need memory (but for which the antagonist might). In particular, no characterization of half-positionality is known for the central class of ω-regular objectives.
-
+In two-player zero-sum games on graphs, the protagonist tries to achieve an objective while the antagonist aims to prevent it. Objectives for which both players do not need to use memory to play optimally are well-understood and characterized both in finite and infinite graphs. Less is known about the larger class of half-positional objectives, i.e., those for which the protagonist does not need memory (but for which the antagonist might). In particular, no characterization of half-positionality is known for the central class of ω-regular objectives.
+
 Here, we characterize objectives recognizable by deterministic Büchi automata (a class of ω-regular objectives) that are half-positional, both over finite and infinite graphs. This characterization yields a polynomial-time algorithm to decide half-positionality of an objective recognized by a given deterministic Büchi automaton.
 
 ----
@@ -1739,8 +1739,8 @@ Recommender systems typically suggest to users content similar to what they cons
 
 **Abstract**:
 
-The dramatic improvements in Boolean satisfiability (SAT) solving since the turn of the millennium have made it possible to leverage conflict-driven clause learning (CDCL) solvers for many combinatorial problems in academia and industry, and the use of proof logging has played a crucial role in increasing the confidence that the results these solvers produce are correct. However, the fact that SAT proof logging is performed in conjunctive normal form (CNF) clausal format means that it has not been possible to extend guarantees of correctness to the use of SAT solvers for more expressive combinatorial paradigms, where the first step is an unverified translation of the input to CNF.
-
+The dramatic improvements in Boolean satisfiability (SAT) solving since the turn of the millennium have made it possible to leverage conflict-driven clause learning (CDCL) solvers for many combinatorial problems in academia and industry, and the use of proof logging has played a crucial role in increasing the confidence that the results these solvers produce are correct. However, the fact that SAT proof logging is performed in conjunctive normal form (CNF) clausal format means that it has not been possible to extend guarantees of correctness to the use of SAT solvers for more expressive combinatorial paradigms, where the first step is an unverified translation of the input to CNF.
+
 In this work, we show how cutting-planes-based reasoning can provide proof logging for solvers that translate pseudo-Boolean (a.k.a. 0-1 integer linear) decision problems to CNF and then run CDCL. We are hopeful that this is just a first step towards providing a unified proof logging approach that will extend to maximum satisfiability (MaxSAT) solving and pseudo-Boolean optimization in general.
 
 ----
@@ -1881,8 +1881,8 @@ We approach instantaneous mapping, converting images to a top-down view of the w
 
 **Abstract**:
 
-Causal discovery from observational data provides candidate causal relationships that need to be validated with ad-hoc experiments. Such experiments usually require major resources, and suitable techniques should therefore be applied to identify candidate relations while limiting false positives.
-Local causal discovery provides a detailed overview of the variables influencing a target, and it focuses on two sets of variables. The first one, the Parent-Children set, comprises all the elements that are direct causes of the target or that are its direct consequences, while the second one, called the Markov boundary, is the minimal set of variables for the optimal prediction of the target.
+Causal discovery from observational data provides candidate causal relationships that need to be validated with ad-hoc experiments. Such experiments usually require major resources, and suitable techniques should therefore be applied to identify candidate relations while limiting false positives.
+Local causal discovery provides a detailed overview of the variables influencing a target, and it focuses on two sets of variables. The first one, the Parent-Children set, comprises all the elements that are direct causes of the target or that are its direct consequences, while the second one, called the Markov boundary, is the minimal set of variables for the optimal prediction of the target.
 In this paper we present RAveL, the first suite of algorithms for local causal discovery providing rigorous guarantees on false discoveries. Our algorithms exploit Rademacher averages, a key concept in statistical learning theory, to account for the multiple-hypothesis testing problem in high-dimensional scenarios. Moreover, we prove that state-of-the-art approaches cannot be adapted for the task due to their strong and untestable assumptions, and we complement our analyses with extensive experiments, on synthetic and real-world data.
 
 ----
@@ -1995,13 +1995,13 @@ Insights from cognitive science about how people understand explanations can be 
 
 **Abstract**:
 
-Knowledge graph completion (KGC) predicts missing links and is crucial for real-life knowledge graphs, which widely suffer from incompleteness. 
-KGC methods assume a knowledge graph is static, but that may lead to inaccurate prediction results because many facts in the knowledge graphs change over time. 
-Emerging methods have recently shown improved prediction results by further incorporating the temporal validity of facts; namely, temporal knowledge graph completion (TKGC). 
-With this temporal information, TKGC methods explicitly learn the dynamic evolution of the knowledge graph that KGC methods fail to capture.
-In this paper, for the first time, we comprehensively summarize the recent advances in TKGC research. 
-First, we detail the background of TKGC, including the preliminary knowledge, benchmark datasets, and evaluation metrics. 
-Then, we summarize existing TKGC methods based on how the temporal validity of facts is used to capture the temporal dynamics. 
+Knowledge graph completion (KGC) predicts missing links and is crucial for real-life knowledge graphs, which widely suffer from incompleteness. 
+KGC methods assume a knowledge graph is static, but that may lead to inaccurate prediction results because many facts in the knowledge graphs change over time. 
+Emerging methods have recently shown improved prediction results by further incorporating the temporal validity of facts; namely, temporal knowledge graph completion (TKGC). 
+With this temporal information, TKGC methods explicitly learn the dynamic evolution of the knowledge graph that KGC methods fail to capture.
+In this paper, for the first time, we comprehensively summarize the recent advances in TKGC research. 
+First, we detail the background of TKGC, including the preliminary knowledge, benchmark datasets, and evaluation metrics. 
+Then, we summarize existing TKGC methods based on how the temporal validity of facts is used to capture the temporal dynamics. 
 Finally, we conclude the paper and present future research directions of TKGC.
 
 ----
@@ -2086,8 +2086,8 @@ We survey recent work on machine learning (ML) techniques for selecting cutting 
 
 **Abstract**:
 
-Artificial Intelligence often relies on information obtained from others through crowdsourcing, federated learning, or data markets. It is crucial to ensure that this data is accurate. Over the past 20 years, a variety of incentive mechanisms have been developed that use game theory to reward the accuracy of contributed data. These techniques are applicable to many settings where AI uses contributed data.
-
+Artificial Intelligence often relies on information obtained from others through crowdsourcing, federated learning, or data markets. It is crucial to ensure that this data is accurate. Over the past 20 years, a variety of incentive mechanisms have been developed that use game theory to reward the accuracy of contributed data. These techniques are applicable to many settings where AI uses contributed data.
+
 This survey categorizes the different techniques and their properties, and shows their limits and tradeoffs. It identifies open issues and points to possible directions to address these.
 
 ----
@@ -2158,7 +2158,7 @@ Molecular representation learning (MRL) is a key step to build the connection be
 
 **Abstract**:
 
-Human intelligence comes from the capability to describe and make sense of the world surrounding us, often in a lifelong manner. Online Learning (OL) allows a model to simulate this capability, which involves processing data in sequence, making predictions, and learning from predictive errors. However, traditional OL assumes a fixed set of features to describe data, which can be restrictive. In reality, new features may emerge and old features may vanish or become obsolete, leading to an open
+Human intelligence comes from the capability to describe and make sense of the world surrounding us, often in a lifelong manner. Online Learning (OL) allows a model to simulate this capability, which involves processing data in sequence, making predictions, and learning from predictive errors. However, traditional OL assumes a fixed set of features to describe data, which can be restrictive. In reality, new features may emerge and old features may vanish or become obsolete, leading to an open
 feature space. This dynamism can be caused by more advanced or outdated technology for sensing the world, or it can be a natural process of evolution. This paper reviews recent breakthroughs that strived to enable OL in open feature spaces, referred to as Utilitarian Online Learning (UOL). We taxonomize existing UOL models into three categories, analyze their pros and cons, and discuss their application scenarios. We also benchmark the performance of representative UOL models, highlighting open problems, challenges, and potential future directions of this emerging topic.
 
 ----
@@ -2215,8 +2215,8 @@ Graph machine learning has been extensively studied in both academia and industr
 
 **Abstract**:
 
-Adversarial robustness, domain generalization and dataset biases are three active lines of research contributing to out-of-distribution (OOD) evaluation on neural NLP models.
-
+Adversarial robustness, domain generalization and dataset biases are three active lines of research contributing to out-of-distribution (OOD) evaluation on neural NLP models.
+
 However, a comprehensive, integrated discussion of the three research lines is still lacking in the literature. This survey will 1) compare the three lines of research under a unifying definition; 2) summarize their data-generating processes and evaluation protocols for each line of research; and 3) emphasize the challenges and opportunities for future work.
 
 ----
@@ -2441,11 +2441,11 @@ Recent advances in Transformers have come with a huge requirement on computing r
 
 **Abstract**:
 
-When solving a combinatorial problem, the formulation or model of the problem is critical to the efficiency of the solver. Automating the modelling process has long been of interest given the expertise and time required to develop an effective model of a particular problem. We describe a method to automatically produce constraint models from a problem specification written in the abstract constraint specification language Essence.   Our approach is to incrementally refine the specification into a concrete model by applying a chosen refinement rule at each step. Any non-trivial specification may be refined in multiple ways, creating a diverse space of models to choose from.
-
-The handling of symmetries is a particularly important aspect of automated modelling. 
-We show how modelling symmetries may be broken automatically as they enter a model during refinement, removing the need for an expensive symmetry detection step following model formulation.
-
+When solving a combinatorial problem, the formulation or model of the problem is critical to the efficiency of the solver. Automating the modelling process has long been of interest given the expertise and time required to develop an effective model of a particular problem. We describe a method to automatically produce constraint models from a problem specification written in the abstract constraint specification language Essence.   Our approach is to incrementally refine the specification into a concrete model by applying a chosen refinement rule at each step. Any non-trivial specification may be refined in multiple ways, creating a diverse space of models to choose from.
+
+The handling of symmetries is a particularly important aspect of automated modelling. 
+We show how modelling symmetries may be broken automatically as they enter a model during refinement, removing the need for an expensive symmetry detection step following model formulation.
+
 Our approach is implemented in a system called Conjure. We compare the models produced by Conjure to constraint models from the literature that are known to be effective.  Our empirical results confirm that Conjure can reproduce successfully the kernels of the constraint models of 42 benchmark problems found in the literature.
 
 ----
@@ -2488,8 +2488,8 @@ Time-series data arises in many real-world applications (e.g., mobile health) an
 
 **Abstract**:
 
-The B2B Meeting Scheduling Optimization Problem (B2BSP) consists of scheduling a set of meetings between given pairs of participants to an event, minimizing idle time periods in participants' schedules, while taking into account participants’ availability and accommodation capacity. Therefore, it constitutes a challenging combinatorial problem in many real-world B2B events.
-
+The B2B Meeting Scheduling Optimization Problem (B2BSP) consists of scheduling a set of meetings between given pairs of participants to an event, minimizing idle time periods in participants' schedules, while taking into account participants’ availability and accommodation capacity. Therefore, it constitutes a challenging combinatorial problem in many real-world B2B events.
+
 This work presents a comparative study of several approaches to solve this problem. They are based on Constraint Programming (CP), Mixed Integer Programming (MIP) and Maximum Satisfiability (MaxSAT). The CP approach relies on using global constraints and has been implemented in MiniZinc to be able to compare CP, Lazy Clause Generation and MIP as solving technologies in this setting. A pure MIP encoding is also presented. Finally, an alternative viewpoint is considered under MaxSAT, showing the best performance when considering some implied constraints. Experimental results on real world B2B instances, as well as on crafted ones, show that the MaxSAT approach is the one with the best performance for this problem, exhibiting better solving times, sometimes even orders of magnitude smaller than CP and MIP.
 
 ----
@@ -2504,10 +2504,10 @@ This work presents a comparative study of several approaches to solve this probl
 
 **Abstract**:
 
-When solving a combinatorial problem using propositional satisfiability (SAT), the encoding of the constraints  is of vital importance. 
-Pseudo-Boolean (PB) constraints  appear frequently in a wide variety of problems. When PB constraints occur together with at-most-one (AMO) constraints over the same variables, they can be combined into PB(AMO) constraints. 
-In this paper we present new encodings  for PB(AMO) constraints. 
-Our experiments show that these encodings  can be substantially smaller than those of PB constraints and allow many more instances to be solved within a time limit. 
+When solving a combinatorial problem using propositional satisfiability (SAT), the encoding of the constraints  is of vital importance. 
+Pseudo-Boolean (PB) constraints  appear frequently in a wide variety of problems. When PB constraints occur together with at-most-one (AMO) constraints over the same variables, they can be combined into PB(AMO) constraints. 
+In this paper we present new encodings  for PB(AMO) constraints. 
+Our experiments show that these encodings  can be substantially smaller than those of PB constraints and allow many more instances to be solved within a time limit. 
 We also observed that there is no single overall winner among the considered encodings, but efficiency of each encoding may depend on PB(AMO) characteristics such as the magnitude of coefficient values.
 
 ----
@@ -2522,8 +2522,8 @@ We also observed that there is no single overall winner among the considered enc
 
 **Abstract**:
 
-The growing literature on confidentiality in knowledge representation and reasoning sometimes may cause a false sense of security, due to lack of details about
-the attacker, and some misconceptions about security-related concepts. This paper
+The growing literature on confidentiality in knowledge representation and reasoning sometimes may cause a false sense of security, due to lack of details about
+the attacker, and some misconceptions about security-related concepts. This paper
 analyzes the vulnerabilities of some recent knowledge protection methods to increase the awareness about their actual effectiveness and their mutual differences.
 
 ----
@@ -2538,10 +2538,10 @@ analyzes the vulnerabilities of some recent knowledge protection methods to incr
 
 **Abstract**:
 
-One of the factors that hinder the adoption of nonmonotonic description logics in applications is performance. Even when monotonic and nonmonotonic inferences have the same asymptotic complexity, the implementation of nonmonotonic reasoning may be significantly slower.  The family of nonmonotonic logics DLN is no exception to this behavior.
-
-We address this issue by introducing two provably correct and complete optimizations for reasoning in DLN. The first optimization is a module extractor that has the purpose of focusing reasoning on a relevant subset of the knowledge base. The second, called optimistic evaluation, aims at exploiting incremental reasoning in a better way. 
-    
+One of the factors that hinder the adoption of nonmonotonic description logics in applications is performance. Even when monotonic and nonmonotonic inferences have the same asymptotic complexity, the implementation of nonmonotonic reasoning may be significantly slower.  The family of nonmonotonic logics DLN is no exception to this behavior.
+
+We address this issue by introducing two provably correct and complete optimizations for reasoning in DLN. The first optimization is a module extractor that has the purpose of focusing reasoning on a relevant subset of the knowledge base. The second, called optimistic evaluation, aims at exploiting incremental reasoning in a better way. 
+    
 Extensive experimental evaluation shows that the optimized DLN reasoning is often compatible with interactive query answering, thus bringing nonmonotonic description logics closer to practical applications.
 
 ----
@@ -2710,7 +2710,7 @@ Dealing with planning problems with both logical relations and numeric changes i
 
 **Abstract**:
 
-Multiagent decision-making in partially observable environments is usually modelled as either an extensive-form game (EFG) in game theory or a partially observable stochastic game (POSG) in multiagent reinforcement learning (MARL). One issue with the current situation is that while most practical problems can be modelled in both formalisms, the relationship of the two models is unclear, which hinders the transfer of ideas between the two communities. A second issue is that while EFGs have recently seen significant algorithmic progress, their classical formalization is unsuitable for efficient presentation of the underlying ideas, such as those around decomposition.
+Multiagent decision-making in partially observable environments is usually modelled as either an extensive-form game (EFG) in game theory or a partially observable stochastic game (POSG) in multiagent reinforcement learning (MARL). One issue with the current situation is that while most practical problems can be modelled in both formalisms, the relationship of the two models is unclear, which hinders the transfer of ideas between the two communities. A second issue is that while EFGs have recently seen significant algorithmic progress, their classical formalization is unsuitable for efficient presentation of the underlying ideas, such as those around decomposition.
 To solve the first issue, we introduce factored-observation stochastic games (FOSGs), a minor modification of the POSG formalism which distinguishes between private and public observation and thereby greatly simplifies decomposition. To remedy the second issue, we show that FOSGs and POSGs are naturally connected to EFGs: by "unrolling" a FOSG into its tree form, we obtain an EFG. Conversely, any perfect-recall timeable EFG corresponds to some underlying FOSG in this manner. Moreover, this relationship justifies several minor modifications to the classical EFG formalization that recently appeared as an implicit response to the model's issues with decomposition. Finally, we illustrate the transfer of ideas between EFGs and MARL by presenting three key EFG techniques -- counterfactual regret minimization, sequence form, and decomposition -- in the FOSG framework.
 
 ----
@@ -2739,7 +2739,7 @@ Keeping risk under control is often more crucial than maximizing expected reward
 
 **Abstract**:
 
-Voting is used widely to aggregate preferences to make a collective decision. In this paper, we focus on evaluating and designing voting rules that support both the privacy of the voting agents and a notion of fairness over such agents. First, we introduce a novel notion of group fairness and adopt the existing notion of local differential privacy. We then evaluate the level of group fairness in several existing voting rules, as well as the trade-offs between fairness and privacy, showing that it is not possible to always obtain maximal economic efficiency with high fairness. 
+Voting is used widely to aggregate preferences to make a collective decision. In this paper, we focus on evaluating and designing voting rules that support both the privacy of the voting agents and a notion of fairness over such agents. First, we introduce a novel notion of group fairness and adopt the existing notion of local differential privacy. We then evaluate the level of group fairness in several existing voting rules, as well as the trade-offs between fairness and privacy, showing that it is not possible to always obtain maximal economic efficiency with high fairness. 
 Then, we present both a machine learning and a constrained optimization approach to design new voting rules that are fair while maintaining a high level of economic efficiency. Finally, we empirically examine the effect of adding noise to create local differentially private voting rules and discuss the three-way trade-off between economic efficiency, fairness, and privacy.
 
 ----

@@ -22,7 +22,7 @@ The opinions of members of a population are influenced by opinions of their peer
 
 **Abstract**:
 
-Multi-agent literature explores personifying artificial agents with personality, emotions or cognitive biases to produce “typical”, believable agents. In
+Multi-agent literature explores personifying artificial agents with personality, emotions or cognitive biases to produce “typical”, believable agents. In
 this study, we demonstrate the potential of endowing artificial agents with a motivation, using human implicit motivation psychology theory that introduces 3 motive profiles - power, achievement and affiliation, to create diverse, risk-aware agents. We first devise a framework to model these motivated agents (or agents with any inherent behavior), that can activate different strategies depending on the circumstances. We conduct experiments on a fire-fighting task domain, evaluate how motivated teams perform, and draw conclusions on appropriate team compositions to be deployed in environments with different risk levels. Our framework generates predictable agents as their resulting behaviors align with the inherent characteristics of their motives. We find that motivational diversity within teams is beneficial in dynamic collaborative environments, especially as the task risk level increases. Furthermore, we observed that the best composition in terms of the performance metrics used to evaluate team compositions, does not remain the same as the collaboration level required to achieve goals changes. These results have implications for future designs of risk-aware autonomous teams and Human-AI teams, as they highlight the prospects of creating better artificial teammates and performance gains that could be achieved through anthropomorphized motivated agents.
 
 ----
@@ -51,13 +51,13 @@ We design online algorithms for fair allocation of public goods to a set of N ag
 
 **Abstract**:
 
-We investigate opinion dynamics in a fully-connected system, consisting of n agents, where one of the opinions, called correct, represents a piece of information to disseminate. 
-One source agent initially holds the correct opinion and remains with this opinion throughout the execution. The goal of the remaining agents is to quickly agree on this correct opinion. At each round, one agent chosen uniformly at random is activated: unless it is the source, the agent pulls the opinions of l random agents and then updates its opinion according to some rule. 
-We consider a restricted setting, in which agents have no memory and they only revise their opinions on the basis of those of the agents they currently sample. 
-This setting encompasses very popular opinion dynamics, such as the voter model and best-of-k majority rules. 
-
-Qualitatively speaking, we show that lack of memory prevents efficient  convergence. Specifically, we prove that any dynamics requires Omega(n^2) expected time, even under a strong version of the model in which activated agents have complete access to the current configuration of the entire system, i.e., the case l=n. Conversely, we prove that the simple voter model (in which l=1) correctly solves the problem, while almost matching the aforementioned lower bound. 
-
+We investigate opinion dynamics in a fully-connected system, consisting of n agents, where one of the opinions, called correct, represents a piece of information to disseminate. 
+One source agent initially holds the correct opinion and remains with this opinion throughout the execution. The goal of the remaining agents is to quickly agree on this correct opinion. At each round, one agent chosen uniformly at random is activated: unless it is the source, the agent pulls the opinions of l random agents and then updates its opinion according to some rule. 
+We consider a restricted setting, in which agents have no memory and they only revise their opinions on the basis of those of the agents they currently sample. 
+This setting encompasses very popular opinion dynamics, such as the voter model and best-of-k majority rules. 
+
+Qualitatively speaking, we show that lack of memory prevents efficient  convergence. Specifically, we prove that any dynamics requires Omega(n^2) expected time, even under a strong version of the model in which activated agents have complete access to the current configuration of the entire system, i.e., the case l=n. Conversely, we prove that the simple voter model (in which l=1) correctly solves the problem, while almost matching the aforementioned lower bound. 
+
 These results suggest that, in contrast to symmetric consensus problems (that do not involve a notion of correct opinion), fast convergence on the correct opinion using stochastic opinion dynamics may require the use of memory.
 
 ----
@@ -72,8 +72,8 @@ These results suggest that, in contrast to symmetric consensus problems (that do
 
 **Abstract**:
 
-Opinion diffusion is a crucial phenomenon in social networks, often underlying the way in which a collection of agents develops a consensus on relevant decisions.  Voter models are well-known theoretical models to study opinion spreading in social networks and structured populations. Their simplest version assumes that an updating agent will adopt the opinion of a neighboring agent chosen at random. These models allow us to study, for example, the probability that a certain opinion will fixate into a consensus opinion, as well as the expected time it takes for a consensus opinion to emerge. 
-
+Opinion diffusion is a crucial phenomenon in social networks, often underlying the way in which a collection of agents develops a consensus on relevant decisions.  Voter models are well-known theoretical models to study opinion spreading in social networks and structured populations. Their simplest version assumes that an updating agent will adopt the opinion of a neighboring agent chosen at random. These models allow us to study, for example, the probability that a certain opinion will fixate into a consensus opinion, as well as the expected time it takes for a consensus opinion to emerge. 
+
 Standard voter models are oblivious to the opinions held by the agents involved in the opinion adoption process. We propose and study a context-dependent opinion spreading process on an arbitrary social graph, in which the probability that an agent abandons opinion a in favor of opinion b depends on both a and b. We discuss the relations of the model with existing voter models and then derive theoretical results for both the fixation probability and the expected consensus time for two opinions, for both the synchronous and the asynchronous update models.
 
 ----
@@ -228,7 +228,7 @@ Communication can impressively improve cooperation in multi-agent reinforcement 
 
 **Abstract**:
 
-The behaviour of multi-agent learning in competitive settings is often considered under the restrictive assumption of a zero-sum game. Only under this strict requirement is the behaviour of learning well understood; beyond this, learning dynamics can often display non-convergent behaviours which prevent fixed-point analysis. Nonetheless, many relevant competitive games do not satisfy the zero-sum assumption.
+The behaviour of multi-agent learning in competitive settings is often considered under the restrictive assumption of a zero-sum game. Only under this strict requirement is the behaviour of learning well understood; beyond this, learning dynamics can often display non-convergent behaviours which prevent fixed-point analysis. Nonetheless, many relevant competitive games do not satisfy the zero-sum assumption.
 Motivated by this, we study a smooth variant of Q-Learning, a popular reinforcement learning dynamics which balances the agents' tendency to maximise their payoffs with their propensity to explore the state space. We examine this dynamic in games which are `close' to network zero-sum games and find that Q-Learning converges to a neighbourhood around a unique equilibrium. The size of the neighbourhood is determined by the `distance' to the zero-sum game, as well as the exploration rates of the agents. We complement these results by providing a method whereby, given an arbitrary network game, the `nearest' network zero-sum game can be found efficiently. Importantly, our theoretical guarantees are widely applicable in different game settings, regardless of whether the dynamics ultimately reach an equilibrium, or remain non convergent.
 
 ----
@@ -299,8 +299,8 @@ We consider the problem of synthesizing resilient and stochastically stable stra
 
 **Abstract**:
 
-A temporal graph has an edge set that may change over discrete time steps, and a temporal path (or walk) must traverse edges that appear at increasing time steps. Accordingly, two temporal paths (or walks) are temporally disjoint if they do not visit any vertex at the same time. The study of the computational complexity of finding temporally disjoint paths or walks in temporal graphs has recently been initiated by Klobas et al.. This problem is motivated by applications in multi-agent path finding (MAPF), which include robotics, warehouse management, aircraft management, and traffic routing.
-
+A temporal graph has an edge set that may change over discrete time steps, and a temporal path (or walk) must traverse edges that appear at increasing time steps. Accordingly, two temporal paths (or walks) are temporally disjoint if they do not visit any vertex at the same time. The study of the computational complexity of finding temporally disjoint paths or walks in temporal graphs has recently been initiated by Klobas et al.. This problem is motivated by applications in multi-agent path finding (MAPF), which include robotics, warehouse management, aircraft management, and traffic routing.
+
 We extend Klobas et al.’s research by providing parameterized hardness results for very restricted cases, with a focus on structural parameters of the so-called underlying graph. On the positive side, we identify sufficiently simple cases where we can solve the problem efficiently. Our results reveal some surprising differences between the “path version” and the “walk version” (where vertices may be visited multiple times) of the problem, and answer several open questions posed by Klobas et al.
 
 ----
@@ -357,9 +357,9 @@ Sharing intentions is crucial for efficient cooperation in communication-enabled
 
 **Abstract**:
 
-Deep Neural Networks are increasingly adopted in critical tasks that require a high level of safety, e.g., autonomous driving.
-While state-of-the-art verifiers can be employed to check whether a DNN is unsafe w.r.t. some given property (i.e., whether there is at least one unsafe input configuration), their yes/no output is not informative enough for other purposes, such as shielding, model selection, or training improvements.
-In this paper, we introduce the #DNN-Verification problem, which involves counting the number of input configurations of a DNN that result in a violation of a particular safety property. We analyze the complexity of this problem and propose a novel approach that returns the exact count of violations. Due to the #P-completeness of the problem, we also propose a randomized, approximate method that provides a provable probabilistic bound of the correct count while significantly reducing computational requirements. 
+Deep Neural Networks are increasingly adopted in critical tasks that require a high level of safety, e.g., autonomous driving.
+While state-of-the-art verifiers can be employed to check whether a DNN is unsafe w.r.t. some given property (i.e., whether there is at least one unsafe input configuration), their yes/no output is not informative enough for other purposes, such as shielding, model selection, or training improvements.
+In this paper, we introduce the #DNN-Verification problem, which involves counting the number of input configurations of a DNN that result in a violation of a particular safety property. We analyze the complexity of this problem and propose a novel approach that returns the exact count of violations. Due to the #P-completeness of the problem, we also propose a randomized, approximate method that provides a provable probabilistic bound of the correct count while significantly reducing computational requirements. 
 We present experimental results on a set of safety-critical benchmarks that demonstrate the effectiveness of our approximate method and evaluate the tightness of the bound.
 
 ----
@@ -374,7 +374,7 @@ We present experimental results on a set of safety-critical benchmarks that demo
 
 **Abstract**:
 
-Discounting is an important dimension in multi-agent systems as long as we want to reason about strategies and time. It is a key aspect in economics as it captures the intuition that the far-away future is not as important as the near future. Traditional verification techniques allow to check whether there is a winning strategy for a group of agents but they do not take into account the fact that satisfying a goal sooner is different from satisfying it after a long wait. 
+Discounting is an important dimension in multi-agent systems as long as we want to reason about strategies and time. It is a key aspect in economics as it captures the intuition that the far-away future is not as important as the near future. Traditional verification techniques allow to check whether there is a winning strategy for a group of agents but they do not take into account the fact that satisfying a goal sooner is different from satisfying it after a long wait. 
 In this paper, we augment Strategy Logic with future discounting over a set of discounted functions D, denoted SL[D]. We consider “until” operators with discounting functions: the satisfaction value of a specification in SL[D] is a value in [0, 1], where the longer it takes to fulfill requirements, the smaller the satisfaction value is. We motivate our approach with classical examples from Game Theory and study the complexity of model-checking SL[D]-formulas.
 
 ----
@@ -389,10 +389,10 @@ In this paper, we augment Strategy Logic with future discounting over a set of d
 
 **Abstract**:
 
-We study a rumor spreading model where individuals are connected via a network structure. Initially, only a small subset of the individuals are spreading a rumor. Each individual who is connected to a spreader, starts spreading the rumor with some probability as a function of their trust in the spreader, quantified by the Jaccard similarity index. Furthermore, the probability that a spreader diffuses the rumor decreases over time until they fully lose their interest and stop spreading.
-
-We focus on determining the graph parameters which govern the magnitude and pace that the rumor spreads in this model. We prove that for the rumor to spread to a sizable fraction of the individuals, the network needs to enjoy ``strong'' expansion properties and most nodes should be in ``well-connected'' communities. Both of these characteristics are, arguably, present in real-world social networks up to a certain degree, shedding light on the driving force behind the extremely fast spread of rumors in social networks.
-
+We study a rumor spreading model where individuals are connected via a network structure. Initially, only a small subset of the individuals are spreading a rumor. Each individual who is connected to a spreader, starts spreading the rumor with some probability as a function of their trust in the spreader, quantified by the Jaccard similarity index. Furthermore, the probability that a spreader diffuses the rumor decreases over time until they fully lose their interest and stop spreading.
+
+We focus on determining the graph parameters which govern the magnitude and pace that the rumor spreads in this model. We prove that for the rumor to spread to a sizable fraction of the individuals, the network needs to enjoy ``strong'' expansion properties and most nodes should be in ``well-connected'' communities. Both of these characteristics are, arguably, present in real-world social networks up to a certain degree, shedding light on the driving force behind the extremely fast spread of rumors in social networks.
+
 Furthermore, we formulate a large range of countermeasures to cease the spread of a rumor. We introduce four fundamental criteria which a countermeasure ideally should possess. We evaluate all the proposed countermeasures by conducting experiments on real-world social networks such as Facebook and Twitter. We conclude that our novel decentralized countermeasures (which are executed by the individuals) generally outperform the previously studied centralized ones (which need to be imposed by a third entity such as the government).
 
 ----
@@ -435,8 +435,8 @@ We propose a novel algorithm to solve multi-robot motion planning (MRMP) rapidly
 
 **Abstract**:
 
-Multi-agent task allocation in physical environments with spatial and temporal constraints, are hard problems that are relevant in many realistic applications. A task allocation algorithm based on Fisher market clearing (FMC_TA), that can be performed either centrally or distributively, has been shown to produce high quality allocations in comparison to both centralized and distributed state of the art incomplete optimization algorithms. However, the algorithm is synchronous and therefore depends on perfect communication between agents.
-
+Multi-agent task allocation in physical environments with spatial and temporal constraints, are hard problems that are relevant in many realistic applications. A task allocation algorithm based on Fisher market clearing (FMC_TA), that can be performed either centrally or distributively, has been shown to produce high quality allocations in comparison to both centralized and distributed state of the art incomplete optimization algorithms. However, the algorithm is synchronous and therefore depends on perfect communication between agents.
+
 We propose FMC_ATA, an asynchronous version of FMC_TA, which is robust to message latency and message loss. In contrast to the former version of the algorithm, FMC_ATA allows agents to identify dynamic events and initiate the generation of an updated allocation. Thus, it is more compatible for dynamic environments. We further investigate the conditions in which the distributed version of the algorithm is preferred over the centralized version. Our results indicate that the proposed asynchronous distributed algorithm produces consistent results even when the communication level is extremely poor.
 
 ----
@@ -479,9 +479,9 @@ In the study of reactive systems, qualitative properties are usually easier to m
 
 **Abstract**:
 
-The power of norms in both human societies and sociotechnical systems arises from the facts that (1) societal norms, including laws and policies, characterize acceptable behavior in high-level terms and (2) they are not hard controls and can be deviated from. Thus, the design of responsibly autonomous agents faces an essential tension: these agents must both (1) respect applicable norms and (2) deviate from those norms when blindly following them may lead to diminished outcomes.
-
-We propose a conceptual foundation for norm deviation. As a guiding framework, we adopt Habermas's theory of communicative action comprising objective, subjective, and practical validity claims regarding the suitability of deviation. 
+The power of norms in both human societies and sociotechnical systems arises from the facts that (1) societal norms, including laws and policies, characterize acceptable behavior in high-level terms and (2) they are not hard controls and can be deviated from. Thus, the design of responsibly autonomous agents faces an essential tension: these agents must both (1) respect applicable norms and (2) deviate from those norms when blindly following them may lead to diminished outcomes.
+
+We propose a conceptual foundation for norm deviation. As a guiding framework, we adopt Habermas's theory of communicative action comprising objective, subjective, and practical validity claims regarding the suitability of deviation. 
 Our analysis thus goes beyond previous studies of norm deviation and yields reasoning guidelines uniting norms and values by which to develop responsible agents.
 
 ----
@@ -510,7 +510,7 @@ Trajectory prediction with uncertainty is a critical and challenging task for au
 
 **Abstract**:
 
-Coalition formation is a central approach for multiagent coordination. A crucial part of coalition formation that is extensively studied in AI is coalition structure generation: partitioning agents into coalitions to maximize overall value. 
+Coalition formation is a central approach for multiagent coordination. A crucial part of coalition formation that is extensively studied in AI is coalition structure generation: partitioning agents into coalitions to maximize overall value. 
 In this paper, we propose a novel method for coalition structure generation by introducing a compact and efficient representation of coalition structures. Our representation partitions the solution space into smaller, more manageable subspaces that gather structures containing coalitions of specific sizes. Our proposed method combines two new algorithms, one which leverages our compact representation and a branch-and-bound technique to generate optimal coalition structures, and another that utilizes a preprocessing phase to identify the most promising sets of coalitions to evaluate. Additionally, we show how parts of the solution space can be gathered into groups to avoid their redundant evaluation and we investigate the computational gain that is achieved by avoiding that redundant processing. Through this approach, our algorithm is able to prune the solution space more efficiently. Our results show that the proposed algorithm is superior to prior state-of-the-art methods in generating optimal coalition structures under several value distributions.
 
 ----
@@ -525,8 +525,8 @@ In this paper, we propose a novel method for coalition structure generation by i
 
 **Abstract**:
 
-Practical uses of Artificial Intelligence (AI) in the real world have demonstrated the importance of embedding moral choices into intelligent agents. They have also highlighted that defining top-down ethical constraints on AI according to any one type of morality is extremely challenging and can pose risks. A bottom-up learning approach may be more appropriate for studying and developing ethical behavior in AI agents. In particular, we believe that an interesting and insightful starting point is the analysis of emergent behavior of Reinforcement Learning (RL) agents that act according to a predefined set of moral rewards in social dilemmas.
-
+Practical uses of Artificial Intelligence (AI) in the real world have demonstrated the importance of embedding moral choices into intelligent agents. They have also highlighted that defining top-down ethical constraints on AI according to any one type of morality is extremely challenging and can pose risks. A bottom-up learning approach may be more appropriate for studying and developing ethical behavior in AI agents. In particular, we believe that an interesting and insightful starting point is the analysis of emergent behavior of Reinforcement Learning (RL) agents that act according to a predefined set of moral rewards in social dilemmas.
+
 In this work, we present a systematic analysis of the choices made by intrinsically-motivated RL agents whose rewards are based on moral theories. We aim to design reward structures that are simplified yet representative of a set of key ethical systems. Therefore, we first define moral reward functions that distinguish between consequence- and norm-based agents, between morality based on societal norms or internal virtues, and between single- and mixed-virtue (e.g., multi-objective) methodologies. Then, we evaluate our approach by modeling repeated dyadic interactions between learning moral agents in three iterated social dilemma games (Prisoner's Dilemma, Volunteer's Dilemma and Stag Hunt). We analyze the impact of different types of morality on the emergence of cooperation, defection or exploitation, and the corresponding social outcomes. Finally, we discuss the implications of these findings for the development of moral agents in artificial and mixed human-AI societies.
 
 ----
@@ -639,7 +639,7 @@ Counterfactual explanations have been argued to be one of the most intuitive for
 
 **Abstract**:
 
-Kidney exchange programs (KEPs) typically seek to match incompatible patient-donor pairs based on a utilitarian objective where the number or overall quality of transplants is maximized---implicitly penalizing certain classes of difficult to match (e.g., highly-sensitized) patients. Prioritizing the welfare of highly-sensitized (hard-to-match) patients has been studied as a natural \textit{fairness} criterion. 
+Kidney exchange programs (KEPs) typically seek to match incompatible patient-donor pairs based on a utilitarian objective where the number or overall quality of transplants is maximized---implicitly penalizing certain classes of difficult to match (e.g., highly-sensitized) patients. Prioritizing the welfare of highly-sensitized (hard-to-match) patients has been studied as a natural \textit{fairness} criterion. 
 We formulate the KEP problem as $k$-set packing with a probabilistic group fairness notion of proportionality fairness---namely, fair $k$-set packing (\f{}). In this work we propose algorithms that take arbitrary proportionality vectors (i.e., policy-informed demands of how to prioritize different groups) and return a probabilistically fair solution with provable guarantees. Our main contributions are randomized algorithms as well as hardness results for \f{} variants. Additionally, the tools we introduce serve to audit the price of fairness involved in prioritizing different groups in realistic KEPs and other $k$-set packing applications. We conclude with experiments on synthetic and realistic kidney exchange \textsc{FairSP} instances.
 
 ----
@@ -668,8 +668,8 @@ The increasing automation of high-stakes decisions with direct impact on the liv
 
 **Abstract**:
 
-Randomized rankings have been of recent interest to achieve ex-ante fairer exposure and better robustness than deterministic rankings. We propose a set of natural axioms for randomized group-fair rankings and prove that there exists a unique distribution D that satisfies our axioms and is supported only over ex-post group-fair rankings, i.e., rankings that satisfy given lower and upper bounds on group-wise representation in the top-k ranks. Our problem formulation works even when there is implicit bias, incomplete relevance information, or only ordinal ranking is available instead of relevance scores or utility values. 
-
+Randomized rankings have been of recent interest to achieve ex-ante fairer exposure and better robustness than deterministic rankings. We propose a set of natural axioms for randomized group-fair rankings and prove that there exists a unique distribution D that satisfies our axioms and is supported only over ex-post group-fair rankings, i.e., rankings that satisfy given lower and upper bounds on group-wise representation in the top-k ranks. Our problem formulation works even when there is implicit bias, incomplete relevance information, or only ordinal ranking is available instead of relevance scores or utility values. 
+
 We propose two algorithms to sample a random group-fair ranking from the distribution D mentioned above. Our first dynamic programming-based algorithm samples ex-post group-fair rankings uniformly at random in time O(k^2 ell), where "ell" is the number of groups. Our second random walk-based algorithm samples ex-post group-fair rankings from a distribution epsilon-close to D in total variation distance and has expected running time O*(k^2 ell^2), when there is a sufficient gap between the given upper and lower bounds on the group-wise representation. The former does exact sampling, but the latter runs significantly faster on real-world data sets for larger values of k. We give empirical evidence that our algorithms compare favorably against recent baselines for fairness and ranking utility on real-world data sets.
 
 ----
@@ -810,7 +810,7 @@ Three key properties that are desired of trustworthy machine learning models dep
 
 **Abstract**:
 
-A critical concern in data-driven processes is to build models whose outcomes do not discriminate against some protected groups. In learning tasks, knowledge of the group attributes is essential to ensure non-discrimination, but in practice, these attributes may not be available due to legal and ethical requirements. To address this challenge, this paper studies a model that protects the privacy of individualsâ€™ sensitive information while also allowing it to learn non-discriminatory predictors.
+A critical concern in data-driven processes is to build models whose outcomes do not discriminate against some protected groups. In learning tasks, knowledge of the group attributes is essential to ensure non-discrimination, but in practice, these attributes may not be available due to legal and ethical requirements. To address this challenge, this paper studies a model that protects the privacy of individualsâ€™ sensitive information while also allowing it to learn non-discriminatory predictors.
 A key feature of the proposed model is to enable the use of off-the-shelves and non-private fair models to create a privacy-preserving and fair model. The paper analyzes the relation between accuracy, privacy, and fairness, and assesses the benefits of the proposed models on several prediction tasks. In particular, this proposal allows both scalable and accurate training of private and fair models for very large neural networks.
 
 ----
@@ -825,7 +825,7 @@ A key feature of the proposed model is to enable the use of off-the-shelves and 
 
 **Abstract**:
 
-The Private Aggregation of Teacher Ensembles (PATE) is a machine learning framework that enables the creation of private models through the combination of multiple "teacher" models and a "student" model. The student model learns to predict an output based on the voting of the teachers, and the resulting model satisfies differential privacy. PATE has been shown to be effective in creating private models in semi-supervised settings or when protecting data labels is a priority. 
+The Private Aggregation of Teacher Ensembles (PATE) is a machine learning framework that enables the creation of private models through the combination of multiple "teacher" models and a "student" model. The student model learns to predict an output based on the voting of the teachers, and the resulting model satisfies differential privacy. PATE has been shown to be effective in creating private models in semi-supervised settings or when protecting data labels is a priority. 
 This paper explores whether the use of PATE can result in unfairness, and demonstrates that it can lead to accuracy disparities among groups of individuals. The paper also analyzes the algorithmic and data properties that contribute to these disproportionate impacts, why these aspects are affecting different groups disproportionately, and offers recommendations for mitigating these effects.
 
 ----
@@ -1960,7 +1960,7 @@ Object detection on panoramic/spherical images has been developed rapidly in the
 
 **Abstract**:
 
-Recently, multi-modality scene perception tasks, e.g.,  image fusion and scene understanding, have attracted widespread attention for intelligent vision systems. However, early efforts always consider boosting a single task unilaterally and neglecting others, seldom investigating their underlying connections for joint promotion. To overcome these limitations, we establish the hierarchical dual tasks-driven deep model to bridge these tasks. Concretely, we firstly construct an image fusion module to fuse complementary characteristics and cascade dual task-related modules, including a discriminator for visual effects and a semantic network for feature measurement. 
+Recently, multi-modality scene perception tasks, e.g.,  image fusion and scene understanding, have attracted widespread attention for intelligent vision systems. However, early efforts always consider boosting a single task unilaterally and neglecting others, seldom investigating their underlying connections for joint promotion. To overcome these limitations, we establish the hierarchical dual tasks-driven deep model to bridge these tasks. Concretely, we firstly construct an image fusion module to fuse complementary characteristics and cascade dual task-related modules, including a discriminator for visual effects and a semantic network for feature measurement. 
 We provide a  bi-level perspective to formulate image fusion and follow-up downstream tasks. To incorporate distinct task-related responses for image fusion, we consider image fusion as a primary goal and dual modules as learnable constraints. Furthermore, we develop an efficient first-order approximation to compute corresponding gradients and present dynamic weighted aggregation to balance the gradients for fusion learning. Extensive experiments demonstrate the superiority of our method, which not only produces visually pleasant fused results but also realizes significant promotion for detection and segmentation than the state-of-the-art approaches.
 
 ----
@@ -2087,22 +2087,22 @@ We study visual question answering in a setting where the answer has to be mined
 
 **Abstract**:
 
-Recent advances in interactive segmentation (IS)
-allow speeding up and simplifying image editing
-and labeling greatly. The majority of modern IS
-approaches accept user input in the form of clicks.
-However, using clicks may require too many user
-interactions, especially when selecting small ob-
-jects, minor parts of an object, or a group of ob-
-jects of the same type. In this paper, we consider
-such a natural form of user interaction as a loose
-contour, and introduce a contour-based IS method.
-We evaluate the proposed method on the standard
-segmentation benchmarks, our novel UserContours
-dataset, and its subset UserContours-G containing
-difficult segmentation cases. Through experiments,
-we demonstrate that a single contour provides the
-same accuracy as multiple clicks, thus reducing the
+Recent advances in interactive segmentation (IS)
+allow speeding up and simplifying image editing
+and labeling greatly. The majority of modern IS
+approaches accept user input in the form of clicks.
+However, using clicks may require too many user
+interactions, especially when selecting small ob-
+jects, minor parts of an object, or a group of ob-
+jects of the same type. In this paper, we consider
+such a natural form of user interaction as a loose
+contour, and introduce a contour-based IS method.
+We evaluate the proposed method on the standard
+segmentation benchmarks, our novel UserContours
+dataset, and its subset UserContours-G containing
+difficult segmentation cases. Through experiments,
+we demonstrate that a single contour provides the
+same accuracy as multiple clicks, thus reducing the
 required amount of user interactions.
 
 ----
@@ -2621,8 +2621,8 @@ Continual test-time domain adaptation aims to adapt a source pre-trained model t
 
 **Abstract**:
 
-Action recognition has long been a fundamental and intriguing problem in artificial intelligence. The task is challenging due to the high dimensionality nature of an action, as well as the subtle motion details to be considered. Current state-of-the-art approaches typically learn from articulated motion sequences in the straightforward 3D Euclidean space. However, the vanilla Euclidean space is not efficient for modeling important motion characteristics such as the joint-wise angular acceleration, which reveals the driving force behind the motion. Moreover, current methods typically attend to each channel equally and lack theoretical constrains on extracting task-relevant features from the input. 
-
+Action recognition has long been a fundamental and intriguing problem in artificial intelligence. The task is challenging due to the high dimensionality nature of an action, as well as the subtle motion details to be considered. Current state-of-the-art approaches typically learn from articulated motion sequences in the straightforward 3D Euclidean space. However, the vanilla Euclidean space is not efficient for modeling important motion characteristics such as the joint-wise angular acceleration, which reveals the driving force behind the motion. Moreover, current methods typically attend to each channel equally and lack theoretical constrains on extracting task-relevant features from the input. 
+
 In this paper, we seek to tackle these challenges from three aspects: (1) We propose to incorporate an acceleration representation, explicitly modeling the higher-order variations in motion. (2) We introduce a novel Stream-GCN network equipped with multi-stream components and channel attention, where different representations (i.e., streams) supplement each other towards a more precise action recognition while attention capitalizes on those important channels. (3) We explore feature-level supervision for maximizing the extraction of task-relevant information and formulate this into a mutual information loss. Empirically, our approach sets the new state-of-the-art performance on three benchmark datasets, NTU RGB+D, NTU RGB+D 120, and NW-UCLA.
 
 ----
@@ -2707,10 +2707,10 @@ Vision model have gained increasing attention due to their simplicity and effici
 
 **Abstract**:
 
-Compared to natural images, medical images usually show stronger visual patterns and therefore this adds flexibility and elasticity to resource-limited clinical applications by injecting proper priors into neural networks.
-In this paper, we propose spatially covariant pixel-aligned classifier (SCP) to improve the computational efficiency and meantime maintain or increase accuracy for lesion segmentation.
-SCP relaxes the spatial invariance constraint imposed by convolutional operations and optimizes an underlying implicit function that maps image coordinates to network weights, the parameters of which are obtained along with the backbone network training and later used for generating network weights to capture spatially covariant contextual information. 
-We demonstrate the effectiveness and efficiency of the proposed SCP using two lesion segmentation tasks from different imaging modalities: white matter hyperintensity segmentation in magnetic resonance imaging and liver tumor segmentation in contrast-enhanced abdominal computerized tomography.
+Compared to natural images, medical images usually show stronger visual patterns and therefore this adds flexibility and elasticity to resource-limited clinical applications by injecting proper priors into neural networks.
+In this paper, we propose spatially covariant pixel-aligned classifier (SCP) to improve the computational efficiency and meantime maintain or increase accuracy for lesion segmentation.
+SCP relaxes the spatial invariance constraint imposed by convolutional operations and optimizes an underlying implicit function that maps image coordinates to network weights, the parameters of which are obtained along with the backbone network training and later used for generating network weights to capture spatially covariant contextual information. 
+We demonstrate the effectiveness and efficiency of the proposed SCP using two lesion segmentation tasks from different imaging modalities: white matter hyperintensity segmentation in magnetic resonance imaging and liver tumor segmentation in contrast-enhanced abdominal computerized tomography.
 The network using SCP has achieved 23.8, 64.9 and 74.7 reduction in GPU memory usage, FLOPs, and network size with similar or better accuracy for lesion segmentation.
 
 ----

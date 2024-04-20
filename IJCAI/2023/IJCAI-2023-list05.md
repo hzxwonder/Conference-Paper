@@ -22,7 +22,7 @@ First-order model counting (FOMC) is the task of counting models of a first-orde
 
 **Abstract**:
 
-The advent of large language models (LLMs) has brought about a revolution in the development of tailored machine learning models and sparked debates on redefining data requirements. The automation facilitated by the training and implementation of LLMs has led to discussions and aspirations that human-level labeling interventions may no longer hold the same level of importance as in the era of supervised learning.
+The advent of large language models (LLMs) has brought about a revolution in the development of tailored machine learning models and sparked debates on redefining data requirements. The automation facilitated by the training and implementation of LLMs has led to discussions and aspirations that human-level labeling interventions may no longer hold the same level of importance as in the era of supervised learning.
 This paper presents compelling arguments supporting the ongoing relevance of human-labeled data in the era of LLMs.
 
 ----
@@ -163,7 +163,7 @@ While many forms of belief change exist, the relationship between belief revisio
 
 **Abstract**:
 
-The growing population has accelerated the process of urbanisation, and is putting under stress the urban transport infrastructure. This results in increased traffic congestion, with significant health, economy, and social issues. 
+The growing population has accelerated the process of urbanisation, and is putting under stress the urban transport infrastructure. This results in increased traffic congestion, with significant health, economy, and social issues. 
     Artificial Intelligence techniques are increasingly demonstrating their capabilities in predicting and supporting urban traffic control, by extending the abilities of traffic authorities in planning and reacting to different traffic conditions. In this context, our main research topic fits in the autonomic traffic control theme, with the aim of supporting the design of autonomous traffic control systems.
 
 ----
@@ -248,15 +248,15 @@ My thesis consists of investigating how chest X-ray images, radiologists' eye mo
 
 **Abstract**:
 
-Multilingual Intent Detection and explore its different characteristics are major field of study for last few years. But, detection of intention dynamics from text or voice, especially in the Indian multilingual contexts, is a challenging task. So, my first research question is on intent detection and then I work on the application in Indian Multilingual Healthcare scenario. Speech dialogue systems are designed by a pre-defined set of intents to perform user specified tasks. Newer intentions may surface
-over time that call for retraining. However, the newer intents may not be explicitly announced and need to be inferred dynamically.
-Hence, here are two crucial jobs: (a) recognizing newly emergent intents; and (b) annotating the data of the new intents in order
-to effectively retrain the underlying classifier. The tasks become specially challenging when a large number of new intents emerge
-simultaneously and there is a limited budget of manual annotation. We develop MNID (Multiple Novel Intent Detection), a cluster
-based framework that can identify multiple novel intents while optimized human annotation cost. Empirical findings on numerous
-benchmark datasets (of varying sizes) show that MNID surpasses the baseline approaches in terms of accuracy and F1-score by wisely allocating the budget for annotation. We apply intent detection approach on different domains in Indian multilingual scenarios -
-healthcare, finance etc. The creation of advanced NLU healthcare systems is threatened by the lack of data and technology constraints for resource-poor languages in developing nations like India. We evaluate the current state of several cutting-edge language models used in the healthcare with the goal of detecting query intents and corresponding entities. We conduct comprehensive trials on a 
-number of models different realistic contexts, and we investigate the practical relevance depending on budget and the availability of
+Multilingual Intent Detection and explore its different characteristics are major field of study for last few years. But, detection of intention dynamics from text or voice, especially in the Indian multilingual contexts, is a challenging task. So, my first research question is on intent detection and then I work on the application in Indian Multilingual Healthcare scenario. Speech dialogue systems are designed by a pre-defined set of intents to perform user specified tasks. Newer intentions may surface
+over time that call for retraining. However, the newer intents may not be explicitly announced and need to be inferred dynamically.
+Hence, here are two crucial jobs: (a) recognizing newly emergent intents; and (b) annotating the data of the new intents in order
+to effectively retrain the underlying classifier. The tasks become specially challenging when a large number of new intents emerge
+simultaneously and there is a limited budget of manual annotation. We develop MNID (Multiple Novel Intent Detection), a cluster
+based framework that can identify multiple novel intents while optimized human annotation cost. Empirical findings on numerous
+benchmark datasets (of varying sizes) show that MNID surpasses the baseline approaches in terms of accuracy and F1-score by wisely allocating the budget for annotation. We apply intent detection approach on different domains in Indian multilingual scenarios -
+healthcare, finance etc. The creation of advanced NLU healthcare systems is threatened by the lack of data and technology constraints for resource-poor languages in developing nations like India. We evaluate the current state of several cutting-edge language models used in the healthcare with the goal of detecting query intents and corresponding entities. We conduct comprehensive trials on a 
+number of models different realistic contexts, and we investigate the practical relevance depending on budget and the availability of
 data on English.
 
 ----
@@ -285,9 +285,9 @@ My research focuses on using algorithmic systems alongside human collaborators t
 
 **Abstract**:
 
-Causal reasoning reflects how humans perceive events in the world and establish relationships among them, identifying some as causes and others as effects. Causal discovery is about agreeing on these relationships and drawing them as a causal graph.
-Argumentation is the way humans reason systematically about an idea: the medium we use to exchange opinions, to get to know and trust each other and possibly agree on controversial matters. 
-Developing AI which can argue with humans about causality would allow us to understand and validate the analysis of the AI and would allow the AI to bring evidence for or against humans' prior knowledge.
+Causal reasoning reflects how humans perceive events in the world and establish relationships among them, identifying some as causes and others as effects. Causal discovery is about agreeing on these relationships and drawing them as a causal graph.
+Argumentation is the way humans reason systematically about an idea: the medium we use to exchange opinions, to get to know and trust each other and possibly agree on controversial matters. 
+Developing AI which can argue with humans about causality would allow us to understand and validate the analysis of the AI and would allow the AI to bring evidence for or against humans' prior knowledge.
 This is the goal of this project: to develop a novel scientific paradigm of interactive causal discovery and train AI to recognise causes and effects by debating, with humans, the results of different statistical methods
 
 ----
@@ -428,8 +428,8 @@ SiWare is an AI-powered Knowledge Discovery system, that helps unlock new insigh
 
 **Abstract**:
 
-There is a growing interest in the use of AI techniques for urban traffic control, with a particular focus on traffic signal optimisation. Model-based approaches such as planning demonstrated to be capable of dealing in real-time with unexpected or unusual traffic conditions, as well as with the usual traffic patterns. Further, the knowledge models on which such techniques rely to generate traffic signal strategies are in fact simulation models of traffic, hence can be used by traffic authorities to test and compare different approaches.
-
+There is a growing interest in the use of AI techniques for urban traffic control, with a particular focus on traffic signal optimisation. Model-based approaches such as planning demonstrated to be capable of dealing in real-time with unexpected or unusual traffic conditions, as well as with the usual traffic patterns. Further, the knowledge models on which such techniques rely to generate traffic signal strategies are in fact simulation models of traffic, hence can be used by traffic authorities to test and compare different approaches.
+
 In this work, we present a framework that relies on automated planning to generate and simulate traffic signal strategies in a urban region. To demonstrate the capabilities of the framework, we consider real-world data collected from sensors deployed in a major corridor of the Kirklees region of the United Kingdom.
 
 ----
@@ -486,7 +486,7 @@ We present a demonstration of nighttime light pattern (NTL) analysis system. Our
 
 **Abstract**:
 
-Formal verification of intelligent agents is often computationally infeasible due to state-space explosion.
+Formal verification of intelligent agents is often computationally infeasible due to state-space explosion.
 We present a tool for reducing the impact of the explosion by means of state abstraction that is (a) easy to use and understand by non-experts, and (b) agent-based in the sense that it operates on a modular representation of the system, rather than on its huge explicit state model.
 
 ----

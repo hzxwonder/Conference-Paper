@@ -36,7 +36,7 @@ In the ongoing quest for hybridizing discrete reasoning with neural nets, there 
 
 **Abstract**:
 
-Models computed using deep learning have been effectively applied to tackle various problems in many disciplines. Yet, the predictions of these models are often at most post-hoc and locally explainable. 
+Models computed using deep learning have been effectively applied to tackle various problems in many disciplines. Yet, the predictions of these models are often at most post-hoc and locally explainable. 
 In contrast, class expressions in description logics are ante-hoc and globally explainable. Although state-of-the-art symbolic machine learning approaches are being successfully applied to learn class expressions, their application at large scale has been hindered by their impractical runtimes. Arguably, the reliance on myopic heuristic functions contributes to this limitation. We propose a novel neuro-symbolic class expression learning model, DRILL, to mitigate this limitation. By learning non-myopic heuristic functions with deep Q-learning, DRILL efficiently steers the standard search procedure in a quasi-ordered search space towards goal states. Our extensive experiments on 4 benchmark datasets and 390 learning problems suggest that DRILL converges to goal states at least 2.7 times faster than state-of-the-art models on all learning problems. The results of our statistical significance test confirms that DRILL converges to goal states significantly faster (p-value <1%) than state-of-the-art models on all benchmark datasets. We provide an open-source implementation of DRILL, including pre-trained models, training and evaluation scripts.
 
 ----
@@ -79,8 +79,8 @@ Recently, information-theoretic analysis has become a popular framework for unde
 
 **Abstract**:
 
-TSNE and UMAP are popular dimensionality reduction algorithms due to their speed and interpretable low-dimensional embeddings. Despite their popularity, however, little work has been done to study their full span of differences. We theoretically and experimentally evaluate the space of parameters in the TSNE and UMAP algorithms and observe that a single one -- the normalization -- is responsible for switching between them. This, in turn, implies that a majority of the algorithmic differences can be toggled without affecting the embeddings. We discuss the implications this has on several theoretic claims behind UMAP, as well as how to reconcile them with existing TSNE interpretations.
-
+TSNE and UMAP are popular dimensionality reduction algorithms due to their speed and interpretable low-dimensional embeddings. Despite their popularity, however, little work has been done to study their full span of differences. We theoretically and experimentally evaluate the space of parameters in the TSNE and UMAP algorithms and observe that a single one -- the normalization -- is responsible for switching between them. This, in turn, implies that a majority of the algorithmic differences can be toggled without affecting the embeddings. We discuss the implications this has on several theoretic claims behind UMAP, as well as how to reconcile them with existing TSNE interpretations.
+
 Based on our analysis, we provide a method (GDR) that combines previously incompatible techniques from TSNE and UMAP and can replicate the results of either algorithm. This allows our method to incorporate further improvements, such as an acceleration that obtains either method's outputs faster than UMAP. We release improved versions of TSNE, UMAP, and GDR that are fully plug-and-play with the traditional libraries.
 
 ----
@@ -95,7 +95,7 @@ Based on our analysis, we provide a method (GDR) that combines previously incomp
 
 **Abstract**:
 
-Truss layout design, namely finding a lightweight truss layout satisfying all the physical constraints, is a fundamental problem in the building industry. Generating the optimal layout is a challenging combinatorial optimization problem, which can be extremely expensive to solve by exhaustive search. Directly applying end-to-end reinforcement learning (RL) methods to truss layout design is infeasible either, since only a tiny portion of the entire layout space is valid under the physical constraints, leading to particularly sparse rewards for RL training.
+Truss layout design, namely finding a lightweight truss layout satisfying all the physical constraints, is a fundamental problem in the building industry. Generating the optimal layout is a challenging combinatorial optimization problem, which can be extremely expensive to solve by exhaustive search. Directly applying end-to-end reinforcement learning (RL) methods to truss layout design is infeasible either, since only a tiny portion of the entire layout space is valid under the physical constraints, leading to particularly sparse rewards for RL training.
 In this paper, we develop AutoTruss, a two-stage framework to efficiently generate both lightweight and valid truss layouts. AutoTruss first adopts Monte Carlo tree search to discover a diverse collection of valid layouts. Then RL is applied to iteratively refine the valid solutions. We conduct experiments and ablation studies in popular truss layout design test cases in both 2D and 3D settings.  AutoTruss outperforms the best-reported layouts by 25.1% in the most challenging 3D test cases, resulting in the first effective deep-RL-based approach in the truss layout design literature.
 
 ----
@@ -138,12 +138,12 @@ In recent years, there has been increasing interest in explanation methods for n
 
 **Abstract**:
 
-Recent work on deep clustering has found new promising methods also for constrained clustering problems. 
-Their typically pairwise constraints often can be used to guide the partitioning of the data.
-Many problems however, feature cluster-level constraints, e.g. the Capacitated Clustering Problem (CCP), where each point has a weight and the total weight sum of all points in each cluster is bounded by a prescribed capacity. 
-In this paper we propose a new method for the CCP, Neural Capacited Clustering, that learns a neural network to predict the assignment probabilities of points to cluster centers from a data set of optimal or near optimal past solutions of other problem instances. 
-During inference, the resulting scores are then used in an iterative k-means like procedure to refine the assignment under capacity constraints. 
-In our experiments on artificial data and two real world datasets our approach outperforms several state-of-the-art mathematical and heuristic solvers from the literature. 
+Recent work on deep clustering has found new promising methods also for constrained clustering problems. 
+Their typically pairwise constraints often can be used to guide the partitioning of the data.
+Many problems however, feature cluster-level constraints, e.g. the Capacitated Clustering Problem (CCP), where each point has a weight and the total weight sum of all points in each cluster is bounded by a prescribed capacity. 
+In this paper we propose a new method for the CCP, Neural Capacited Clustering, that learns a neural network to predict the assignment probabilities of points to cluster centers from a data set of optimal or near optimal past solutions of other problem instances. 
+During inference, the resulting scores are then used in an iterative k-means like procedure to refine the assignment under capacity constraints. 
+In our experiments on artificial data and two real world datasets our approach outperforms several state-of-the-art mathematical and heuristic solvers from the literature. 
 Moreover, we apply our method in the context of a cluster-first-route-second approach to the Capacitated Vehicle Routing Problem (CVRP) and show competitive results on the well-known Uchoa benchmark.
 
 ----
@@ -228,8 +228,8 @@ Multi-label learning (MLL) usually requires assigning multiple relevant labels t
 
 **Abstract**:
 
-Training deep learning models on data distributed and local to edge devices such as mobile phones is a prominent recent research direction. In a Gossip Learning (GL) system, each participating device maintains a model trained on its local data and iteratively aggregates it with the models from its neighbours in a communication network. While the fully distributed operation in GL comes with natural advantages over the centralized orchestration in Federated Learning (FL), its convergence becomes particularly slow when the data distribution is heterogeneous and aligns with the clustered structure of the communication network. These characteristics are pervasive across practical applications as people with similar interests (thus producing similar data) tend to create communities.
-
+Training deep learning models on data distributed and local to edge devices such as mobile phones is a prominent recent research direction. In a Gossip Learning (GL) system, each participating device maintains a model trained on its local data and iteratively aggregates it with the models from its neighbours in a communication network. While the fully distributed operation in GL comes with natural advantages over the centralized orchestration in Federated Learning (FL), its convergence becomes particularly slow when the data distribution is heterogeneous and aligns with the clustered structure of the communication network. These characteristics are pervasive across practical applications as people with similar interests (thus producing similar data) tend to create communities.
+
 This paper proposes a data-driven neighbor weighting strategy for aggregating the models: this enables faster diffusion of knowledge across the communities in the network and leads to quicker convergence. We augment the method to make it computationally efficient and fair: the devices quickly converge to the same model. We evaluate our model on real and synthetic datasets that we generate using a novel generative model for communication networks with heterogeneous data. Our exhaustive empirical evaluation  verifies that our proposed method attains a faster convergence rate than the baselines. For example, the median test accuracy for a decentralized bird image classifier application reaches 81% with our proposed method within 80 rounds, whereas the baseline only reaches 46%.
 
 ----
@@ -258,7 +258,7 @@ One of the key problems in model-free deep reinforcement learning is how to obta
 
 **Abstract**:
 
-Vertical federated learning (VFL) allows an active party with labeled data to leverage auxiliary features from the passive parties to improve model performance. Concerns about the private feature and label leakage in both the training and inference phases of VFL have drawn wide research attention. In this paper, we propose a general privacy-preserving vertical federated deep learning framework called FedPass, which leverages adaptive obfuscation to protect the feature and label simultaneously.  Strong privacy-preserving capabilities about private features and labels are theoretically proved (in Theorems 1 and 2). 
+Vertical federated learning (VFL) allows an active party with labeled data to leverage auxiliary features from the passive parties to improve model performance. Concerns about the private feature and label leakage in both the training and inference phases of VFL have drawn wide research attention. In this paper, we propose a general privacy-preserving vertical federated deep learning framework called FedPass, which leverages adaptive obfuscation to protect the feature and label simultaneously.  Strong privacy-preserving capabilities about private features and labels are theoretically proved (in Theorems 1 and 2). 
 Extensive experimental results with different datasets and network architectures also justify the superiority of FedPass against existing methods in light of its near-optimal trade-off between privacy and model performance.
 
 ----
@@ -315,7 +315,7 @@ Multicriteria decision making requires defining the result of conflicting and po
 
 **Abstract**:
 
-Finding a best response policy is a central objective in game theory and multi-agent learning, with modern population-based training approaches employing reinforcement learning algorithms as best-response oracles to improve play against candidate opponents (typically previously learnt policies). We propose Best Response Expert Iteration (BRExIt), which accelerates learning in games by incorporating opponent models into the state-of-the-art learning algorithm Expert Iteration (ExIt). BRExIt aims to (1) improve feature shaping in the apprentice, with a policy head predicting opponent policies as an auxiliary task, and (2) bias opponent moves in planning towards the given or learnt opponent model, to generate apprentice targets that better approximate a best response. In an empirical ablation on BRExIt's algorithmic variants against a set of fixed test agents, we provide statistical evidence that BRExIt learns better performing policies than ExIt. Code available at: https://github.com/Danielhp95/on-opponent-modelling-in-expert-iteration-code. Supplementary material available
+Finding a best response policy is a central objective in game theory and multi-agent learning, with modern population-based training approaches employing reinforcement learning algorithms as best-response oracles to improve play against candidate opponents (typically previously learnt policies). We propose Best Response Expert Iteration (BRExIt), which accelerates learning in games by incorporating opponent models into the state-of-the-art learning algorithm Expert Iteration (ExIt). BRExIt aims to (1) improve feature shaping in the apprentice, with a policy head predicting opponent policies as an auxiliary task, and (2) bias opponent moves in planning towards the given or learnt opponent model, to generate apprentice targets that better approximate a best response. In an empirical ablation on BRExIt's algorithmic variants against a set of fixed test agents, we provide statistical evidence that BRExIt learns better performing policies than ExIt. Code available at: https://github.com/Danielhp95/on-opponent-modelling-in-expert-iteration-code. Supplementary material available
 at https://arxiv.org/abs/2206.00113.
 
 ----
@@ -442,8 +442,8 @@ This paper targets the perceptual task of separating the different interacting v
 
 **Abstract**:
 
-Hyperbolic neural networks can effectively capture the inherent hierarchy of graph datasets, and consequently a powerful choice of GNNs. However, they entangle multiple incongruent (gyro-)vector spaces within a layer, which makes them limited in terms of generalization and scalability. 
-
+Hyperbolic neural networks can effectively capture the inherent hierarchy of graph datasets, and consequently a powerful choice of GNNs. However, they entangle multiple incongruent (gyro-)vector spaces within a layer, which makes them limited in terms of generalization and scalability. 
+
 In this work, we propose the Poincar√© disk model as our search space, and apply all approximations on the disk (as if the disk is a tangent space derived from the origin), thus getting rid of all inter-space transformations. Such an approach enables us to propose a hyperbolic normalization layer and to further simplify the entire hyperbolic model to a Euclidean model cascaded with our hyperbolic normalization layer. We applied our proposed nonlinear hyperbolic normalization to the current state-of-the-art homogeneous and multi-relational graph networks. We demonstrate that our model not only leverages the power of Euclidean networks such as interpretability and efficient execution of various model components, but also outperforms both Euclidean and hyperbolic counterparts on various benchmarks. Our code is made publicly available at https://github.com/oom-debugger/ijcai23.
 
 ----
@@ -850,10 +850,10 @@ This work, for the first time, introduces two constant factor approximation algo
 
 **Abstract**:
 
-Prompts have been shown to be an effective method to adapt a frozen Pretrained Language Model (PLM) to perform well on downstream tasks. Prompts can be represented by a human-engineered word sequence or by a learned continuous embedding. 
-In this work, we investigate conditional and compositional differentiable prompting.
-We propose a new model, Prompt Production System (ProPS), which learns to transform task instructions or input metadata, into continuous prompts that elicit task-specific outputs from the PLM. 
-Our model uses a modular network structure based on our neural formulation of Production Systems, which allows the model to learn discrete rules -- neural functions that learn to specialize in transforming particular prompt input patterns, making it suitable for compositional transfer learning and few-shot learning. 
+Prompts have been shown to be an effective method to adapt a frozen Pretrained Language Model (PLM) to perform well on downstream tasks. Prompts can be represented by a human-engineered word sequence or by a learned continuous embedding. 
+In this work, we investigate conditional and compositional differentiable prompting.
+We propose a new model, Prompt Production System (ProPS), which learns to transform task instructions or input metadata, into continuous prompts that elicit task-specific outputs from the PLM. 
+Our model uses a modular network structure based on our neural formulation of Production Systems, which allows the model to learn discrete rules -- neural functions that learn to specialize in transforming particular prompt input patterns, making it suitable for compositional transfer learning and few-shot learning. 
 We present extensive empirical and theoretical analysis and show that ProPS consistently surpasses other PLM adaptation techniques, and often improves upon fully fine-tuned models, on compositional generalization tasks, controllable summarization and multilingual translation, while needing fewer trainable parameters.
 
 ----
@@ -910,7 +910,7 @@ Constructing decision trees online is a classical machine learning problem. Exis
 
 **Abstract**:
 
-The expressivity of Graph Neural Networks (GNNs) is dependent on the aggregation functions they employ. Theoretical works have pointed towards Sum aggregation GNNs subsuming every other GNNs, while certain practical works have observed a clear advantage to using Mean and Max. An examination of the theoretical guarantee identifies two caveats. First, it is size-restricted, that is, the power of every specific GNN is limited to graphs of a specific size. Successfully processing larger graphs may require an other GNN, and so on. Second, it concerns the power to distinguish non-isomorphic graphs, not the power to approximate general functions on graphs, and the former does not necessarily imply the latter.
+The expressivity of Graph Neural Networks (GNNs) is dependent on the aggregation functions they employ. Theoretical works have pointed towards Sum aggregation GNNs subsuming every other GNNs, while certain practical works have observed a clear advantage to using Mean and Max. An examination of the theoretical guarantee identifies two caveats. First, it is size-restricted, that is, the power of every specific GNN is limited to graphs of a specific size. Successfully processing larger graphs may require an other GNN, and so on. Second, it concerns the power to distinguish non-isomorphic graphs, not the power to approximate general functions on graphs, and the former does not necessarily imply the latter.
 It is desired that a GNN's usability will not be limited to graphs of any specific size. Therefore, we explore the realm of unrestricted-size expressivity. We prove that basic functions, which can be computed exactly by Mean or Max GNNs, are inapproximable by any Sum GNN. We prove that under certain restrictions, every Mean or Max GNN can be approximated by a Sum GNN, but even there, a combination of (Sum, [Mean/Max]) is more expressive than Sum alone. Lastly, we prove further expressivity limitations for GNNs with a broad class of aggregations.
 
 ----
@@ -953,10 +953,10 @@ Local clustering aims at extracting a local structure inside a graph without the
 
 **Abstract**:
 
-Consistency regularization and pseudo labeling-based semi-supervised methods perform co-training using the pseudo labels from multi-view inputs. However, such co-training models tend to converge early to a consensus, degenerating to the self-training ones, and produce low-confidence pseudo labels from the perturbed inputs during training. 
-    To address these issues, we propose an Uncertainty-guided Collaborative Mean-Teacher (UCMT) for semi-supervised semantic segmentation with the high-confidence pseudo labels. Concretely, UCMT consists of two main components: 1) collaborative mean-teacher (CMT) for encouraging model disagreement and performing co-training between the sub-networks, and 2) uncertainty-guided region mix (UMIX) for manipulating the input images according to the uncertainty maps of CMT and facilitating CMT to produce high-confidence pseudo labels. 
-    Combining the strengths of UMIX with CMT, UCMT can retain model disagreement and enhance the quality of pseudo labels for the co-training segmentation.
-    Extensive experiments on four public medical image datasets including 2D and 3D modalities demonstrate the superiority of UCMT over the state-of-the-art. 
+Consistency regularization and pseudo labeling-based semi-supervised methods perform co-training using the pseudo labels from multi-view inputs. However, such co-training models tend to converge early to a consensus, degenerating to the self-training ones, and produce low-confidence pseudo labels from the perturbed inputs during training. 
+    To address these issues, we propose an Uncertainty-guided Collaborative Mean-Teacher (UCMT) for semi-supervised semantic segmentation with the high-confidence pseudo labels. Concretely, UCMT consists of two main components: 1) collaborative mean-teacher (CMT) for encouraging model disagreement and performing co-training between the sub-networks, and 2) uncertainty-guided region mix (UMIX) for manipulating the input images according to the uncertainty maps of CMT and facilitating CMT to produce high-confidence pseudo labels. 
+    Combining the strengths of UMIX with CMT, UCMT can retain model disagreement and enhance the quality of pseudo labels for the co-training segmentation.
+    Extensive experiments on four public medical image datasets including 2D and 3D modalities demonstrate the superiority of UCMT over the state-of-the-art. 
     Code is available at: https://github.com/Senyh/UCMT.
 
 ----
@@ -1055,8 +1055,8 @@ Spiking Neural Networks (SNNs) are the promising models of neuromorphic vision r
 
 **Abstract**:
 
-Auction-based Federated Learning (AFL) enables open collaboration among self-interested data consumers and data owners. Existing AFL approaches cannot manage the mutual influence among multiple data consumers competing to enlist data owners. Moreover, they cannot support a single data owner to join multiple data consumers simultaneously. To bridge these gaps, we propose the Multi-Agent Reinforcement Learning for AFL (MARL-AFL) approach to steer data consumers to bid strategically
-towards an equilibrium with desirable overall system characteristics. We design a temperature-based reward reassignment scheme to make tradeoffs between cooperation and competition among AFL data consumers. In this way, it can reach an equilibrium state that ensures individual data consumers can achieve good utility, while preserving system-level social welfare. To circumvent potential collusion behaviors among data consumers, we introduce a bar agent to set a personalized bidding
+Auction-based Federated Learning (AFL) enables open collaboration among self-interested data consumers and data owners. Existing AFL approaches cannot manage the mutual influence among multiple data consumers competing to enlist data owners. Moreover, they cannot support a single data owner to join multiple data consumers simultaneously. To bridge these gaps, we propose the Multi-Agent Reinforcement Learning for AFL (MARL-AFL) approach to steer data consumers to bid strategically
+towards an equilibrium with desirable overall system characteristics. We design a temperature-based reward reassignment scheme to make tradeoffs between cooperation and competition among AFL data consumers. In this way, it can reach an equilibrium state that ensures individual data consumers can achieve good utility, while preserving system-level social welfare. To circumvent potential collusion behaviors among data consumers, we introduce a bar agent to set a personalized bidding
 lower bound for each data consumer. Extensive experiments on six commonly adopted benchmark datasets show that MARL-AFL is significantly more advantageous compared to six state-of-the-art approaches, outperforming the best by 12.2%, 1.9% and 3.4% in terms of social welfare, revenue and accuracy, respectively.
 
 ----
@@ -1085,8 +1085,8 @@ Confidence calibration - the process to calibrate the output probability distrib
 
 **Abstract**:
 
-We propose a universal Graph Neural Network architecture which can be trained as an end-2-end search heuristic for any Constraint Satisfaction Problem (CSP). Our architecture can be trained unsupervised with policy gradient descent to generate problem specific heuristics for any CSP in a purely data driven manner. 
-The approach is based on a novel graph representation for CSPs that is both generic and compact and enables us to process every possible CSP instance with one GNN, regardless of constraint arity, relations or domain size. Unlike previous RL-based methods, we operate on a global search action space and allow our GNN to modify any number of variables in every step of the stochastic search. This enables our method to properly leverage the inherent parallelism of GNNs. 
+We propose a universal Graph Neural Network architecture which can be trained as an end-2-end search heuristic for any Constraint Satisfaction Problem (CSP). Our architecture can be trained unsupervised with policy gradient descent to generate problem specific heuristics for any CSP in a purely data driven manner. 
+The approach is based on a novel graph representation for CSPs that is both generic and compact and enables us to process every possible CSP instance with one GNN, regardless of constraint arity, relations or domain size. Unlike previous RL-based methods, we operate on a global search action space and allow our GNN to modify any number of variables in every step of the stochastic search. This enables our method to properly leverage the inherent parallelism of GNNs. 
 We perform a thorough empirical evaluation where we learn heuristics for well known and important CSPs, both decision and optimisation problems, from random data, including graph coloring, MAXCUT, and MAX-k-SAT, and the general RB model. Our approach significantly outperforms prior end-2-end approaches for neural combinatorial optimization. It can compete with conventional heuristics and solvers on test instances that are several orders of magnitude larger and structurally more complex than those seen during training.
 
 ----
@@ -1283,10 +1283,10 @@ Recently, adversarial metric learning has been proposed to enhance the robustnes
 
 **Abstract**:
 
-In an offline reinforcement learning setting, the safe policy improvement (SPI) problem aims to improve the performance of a behavior policy according to which sample data has been generated.
-State-of-the-art approaches to SPI require a high number of samples to provide practical probabilistic guarantees on the improved policy's performance.
-We present a novel approach to the SPI problem that provides the means to require less data for such guarantees. 
-Specifically, to prove the correctness of these guarantees, we devise implicit transformations on the data set and the underlying environment model that serve as theoretical foundations to derive tighter improvement bounds for SPI.
+In an offline reinforcement learning setting, the safe policy improvement (SPI) problem aims to improve the performance of a behavior policy according to which sample data has been generated.
+State-of-the-art approaches to SPI require a high number of samples to provide practical probabilistic guarantees on the improved policy's performance.
+We present a novel approach to the SPI problem that provides the means to require less data for such guarantees. 
+Specifically, to prove the correctness of these guarantees, we devise implicit transformations on the data set and the underlying environment model that serve as theoretical foundations to derive tighter improvement bounds for SPI.
 Our empirical evaluation, using the well-established SPI with baseline bootstrapping (SPIBB) algorithm, on standard benchmarks shows that our method indeed significantly reduces the sample complexity of the SPIBB algorithm.
 
 ----
@@ -1553,11 +1553,11 @@ Federated learning (FL) is vulnerable to poisoning attacks, where adversaries co
 
 **Abstract**:
 
-Node classification is the task of predicting the labels of unlabeled nodes in a graph. State-of-the-art methods based on graph neural networks achieve  excellent performance when all labels are available
- during training. But in real-life, models are of ten applied on data with new classes, which can lead to massive misclassification and thus significantly degrade performance. Hence, developing
- open-set classification methods is crucial to determine if a given sample belongs to a known class. Existing methods for open-set node classification generally use transductive learning with part or all
- of the features of real unseen class nodes to help with open-set classification. In this paper, we propose a novel generative open-set node classification method, i.e., G2Pxy, which follows a stricter inductive learning setting where no information about unknown classes is available during training and validation. Two kinds of proxy unknown nodes, inter-class unknown proxies and external unknown proxies are generated via mixup to efficiently anticipate the distribution of novel classes. Using the generated proxies, a closed-set classifier can be transformed into an open-set one, by augmenting it with an extra proxy classifier. Under the constraints
- of both cross entropy loss and complement entropy loss, G2Pxy achieves superior effectiveness for unknown class detection and known class classification, which is validated by experiments on bench
+Node classification is the task of predicting the labels of unlabeled nodes in a graph. State-of-the-art methods based on graph neural networks achieve  excellent performance when all labels are available
+ during training. But in real-life, models are of ten applied on data with new classes, which can lead to massive misclassification and thus significantly degrade performance. Hence, developing
+ open-set classification methods is crucial to determine if a given sample belongs to a known class. Existing methods for open-set node classification generally use transductive learning with part or all
+ of the features of real unseen class nodes to help with open-set classification. In this paper, we propose a novel generative open-set node classification method, i.e., G2Pxy, which follows a stricter inductive learning setting where no information about unknown classes is available during training and validation. Two kinds of proxy unknown nodes, inter-class unknown proxies and external unknown proxies are generated via mixup to efficiently anticipate the distribution of novel classes. Using the generated proxies, a closed-set classifier can be transformed into an open-set one, by augmenting it with an extra proxy classifier. Under the constraints
+ of both cross entropy loss and complement entropy loss, G2Pxy achieves superior effectiveness for unknown class detection and known class classification, which is validated by experiments on bench
 mark graph datasets. Moreover, G2Pxy does not have specific requirement on the GNN architecture and shows good generalizations.
 
 ----
@@ -1600,7 +1600,7 @@ Multi-modal image matching is very challenging due to the significant diversitie
 
 **Abstract**:
 
-Numerous machine learning models can be formulated as a stochastic minimax optimization problem, such as imbalanced data classification with AUC maximization. 
+Numerous machine learning models can be formulated as a stochastic minimax optimization problem, such as imbalanced data classification with AUC maximization. 
 Developing efficient algorithms to optimize such kinds of problems is of importance and necessity. However, most existing algorithms restrict their focus on the single-machine setting so that they are incapable of dealing with the large communication overhead in a distributed training system. Moreover, most existing communication-efficient optimization algorithms only focus on the traditional minimization problem, failing to handle the minimax optimization problem. To address these challenging issues, in this paper, we develop two novel communication-efficient stochastic gradient descent ascent with momentum algorithms for the distributed minimax optimization problem, which can significantly reduce the communication cost via the two-way compression scheme. However, the compressed momentum makes it considerably challenging to investigate the convergence rate of our algorithms, especially in the presence of the interaction between the minimization and maximization subproblems. In this paper, we successfully addressed these challenges and established the convergence rate of our algorithms for nonconvex-strongly-concave problems. To the best of our knowledge, our algorithms are the first communication-efficient algorithm with theoretical guarantees for the minimax optimization problem. Finally, we apply our algorithm to the distributed AUC maximization problem for the imbalanced data classification task. Extensive experimental results confirm the efficacy of our algorithm in saving communication costs.
 
 ----
@@ -1867,7 +1867,7 @@ Typical RL-for-finance solutions directly optimize trading policies over the noi
 
 **Abstract**:
 
-Various strategies for label-scarce object detection have been explored by the computer vision research community. These strategies mainly rely on assumptions that are specific to natural images and not directly applicable to the biological and biomedical vision domains. For example, most semi-supervised learning strategies rely on a small set of labeled data as a confident source of ground truth. In many biological vision applications, however, the ground truth is unknown and indirect information might be available in the form of noisy estimations or orthogonal evidence. In this work, we frame a crucial problem in spatial transcriptomics - decoding barcodes from In-Situ-Sequencing (ISS) images - as a semi-supervised object detection (SSOD) problem. Our proposed framework incorporates additional available sources of information into a semi-supervised learning framework in the form of privileged information. The privileged information is incorporated into the teacher's pseudo-labeling in a teacher-student self-training iteration. Although the available privileged information could be data domain specific, we have introduced a general strategy of pseudo-labeling enhanced by privileged information (PLePI) and exemplified the concept using ISS images, 
+Various strategies for label-scarce object detection have been explored by the computer vision research community. These strategies mainly rely on assumptions that are specific to natural images and not directly applicable to the biological and biomedical vision domains. For example, most semi-supervised learning strategies rely on a small set of labeled data as a confident source of ground truth. In many biological vision applications, however, the ground truth is unknown and indirect information might be available in the form of noisy estimations or orthogonal evidence. In this work, we frame a crucial problem in spatial transcriptomics - decoding barcodes from In-Situ-Sequencing (ISS) images - as a semi-supervised object detection (SSOD) problem. Our proposed framework incorporates additional available sources of information into a semi-supervised learning framework in the form of privileged information. The privileged information is incorporated into the teacher's pseudo-labeling in a teacher-student self-training iteration. Although the available privileged information could be data domain specific, we have introduced a general strategy of pseudo-labeling enhanced by privileged information (PLePI) and exemplified the concept using ISS images, 
 as well on the COCO benchmark using extra evidence provided by CLIP.
 
 ----
@@ -1910,8 +1910,8 @@ Snapshot observation based source localization has been widely studied due to it
 
 **Abstract**:
 
-Set Cover is a fundamental problem in combinatorial optimization which has been studied for many decades due to its various applications across multiple domains. In many of these domains, the input data consists of locations, relationships, and other sensitive information of individuals which may leaked due to the set cover output. Attempts have been made to design privacy-preserving algorithms to solve the Set Cover under privacy constraints. Under differential privacy, it has been proved that the Set Cover problem has strong impossibility results and no explicit forms of the output can be released to the public.
-
+Set Cover is a fundamental problem in combinatorial optimization which has been studied for many decades due to its various applications across multiple domains. In many of these domains, the input data consists of locations, relationships, and other sensitive information of individuals which may leaked due to the set cover output. Attempts have been made to design privacy-preserving algorithms to solve the Set Cover under privacy constraints. Under differential privacy, it has been proved that the Set Cover problem has strong impossibility results and no explicit forms of the output can be released to the public.
+
 In this work, we observe that these hardness results dissolve when we turn to the Partial Set Cover problem, where we only need to cover a ρ ∈ (0,1) fraction of the elements. We show that this relaxation enables us to avoid the impossibility results, and give the first algorithm which outputs an explicit form of set cover with non-trivial utility guarantees under differential privacy. Using our algorithm as a subroutine, we design a differentially private bicriteria algorithm to solve a recently proposed facility location problem for vaccine distribution which generalizes the k-supplier with outliers. Our analysis shows that relaxing the covering requirement to serve only a ρ ∈ (0,1) fraction of the population/universe also allows us to circumvent the inherent hardness of k-supplier and give the first non-trivial guarantees.
 
 ----
@@ -2024,9 +2024,9 @@ In recent years, the state-of-the-art agents for playing abstract board games, l
 
 **Abstract**:
 
-A high-quality program generator is essential to effective automated compiler testing. Engineering such a program generator is difficult, time-consuming, and specific to the language under testing, thus requiring tremendous efforts from human experts with language-specific domain knowledge. To avoid repeatedly writing program generators for different languages, researchers recently proposed a language-agnostic approach based on deep learning techniques to automatically learn a program generator (referred to as DLG) from existing programs. Evaluations show that DLGs outperform Language-Specific Program Generators (LSGs) in testing compilers.
-However, we argue that it is unfair to use LSGs as baselines to evaluate DLGs. LSGs aim to validate compiler optimizations by only generating compilable, well-defined test programs; this restriction inevitably impairs the diversity of the language features used in the generated programs. In contrast, DLGs do not aim to validate the correctness of compiler optimizations, and its generated programs are not guaranteed to be well-defined or even compilable. Therefore, it is not surprising that DLG-generated programs are more diverse in terms of used language features than LSG-generated ones. 
-
+A high-quality program generator is essential to effective automated compiler testing. Engineering such a program generator is difficult, time-consuming, and specific to the language under testing, thus requiring tremendous efforts from human experts with language-specific domain knowledge. To avoid repeatedly writing program generators for different languages, researchers recently proposed a language-agnostic approach based on deep learning techniques to automatically learn a program generator (referred to as DLG) from existing programs. Evaluations show that DLGs outperform Language-Specific Program Generators (LSGs) in testing compilers.
+However, we argue that it is unfair to use LSGs as baselines to evaluate DLGs. LSGs aim to validate compiler optimizations by only generating compilable, well-defined test programs; this restriction inevitably impairs the diversity of the language features used in the generated programs. In contrast, DLGs do not aim to validate the correctness of compiler optimizations, and its generated programs are not guaranteed to be well-defined or even compilable. Therefore, it is not surprising that DLG-generated programs are more diverse in terms of used language features than LSG-generated ones. 
+
 This study revisits the evaluation of DLGs, and proposes a new, fair, simple yet strong baseline named Kitten for evaluating DLGs. Given a dataset consisting of human-written programs, instead of using deep learning techniques to learn a program generator, Kitten directly derives new programs by mutating the programs in the dataset. Extensive experiments with more than 1,500 CPU-hours demonstrate that the state-of-the-art DLGs fail to compete against such a simple baseline: 3 v.s. 1,750 hang bugs, 1 v.s. 34 distinct compiler crashes. We believe that DLGs still have a large room for improvement.
 
 ----
@@ -2125,7 +2125,7 @@ News-driven quantitative trading (NQT) has been popularly studied in recent year
 
 **Abstract**:
 
-Optimizing molecules with desired properties is a crucial step in de novo drug design. While translation-based methods have achieved initial success, they continue to face the challenge of the “exposure bias” problem. The challenge of preventing the “exposure bias” problem of molecule
+Optimizing molecules with desired properties is a crucial step in de novo drug design. While translation-based methods have achieved initial success, they continue to face the challenge of the “exposure bias” problem. The challenge of preventing the “exposure bias” problem of molecule
 optimization lies in the need for both positive and negative molecules of contrastive learning. That is because generating positive molecules through data augmentation requires domain-specific knowledge, and randomly sampled negative molecules are easily distinguished from the real molecules. Hence, in this work, we propose a molecule optimization method called GPMO, which leverages a gradient perturbation-based contrastive learning method to prevent the “exposure bias” problem in translation-based molecule optimization. With the assistance of positive and negative molecules, GPMO is able to effectively handle both real and artificial molecules. GPMO is a molecule optimization method that is conditioned on matched molecule pairs for drug discovery. Our empirical studies show that GPMO outperforms the state-of-the- art molecule optimization methods. Furthermore,  the negative and positive perturbations improve the robustness of GPMO.
 
 ----
@@ -2308,7 +2308,7 @@ Self-training (ST) has come to fruition in language understanding tasks by produ
 
 **Abstract**:
 
-Meta-learning has made tremendous progress in recent years and was demonstrated to be particularly suitable in low-resource settings where training data is very limited. However, meta-learning models still require large amounts of training tasks to achieve good generalisation. Since labelled training data may be sparse, self-supervision-based approaches are able to further improve performance on downstream tasks. Although no labelled data is necessary for this training, a large corpus of unlabelled text needs to be available.  
+Meta-learning has made tremendous progress in recent years and was demonstrated to be particularly suitable in low-resource settings where training data is very limited. However, meta-learning models still require large amounts of training tasks to achieve good generalisation. Since labelled training data may be sparse, self-supervision-based approaches are able to further improve performance on downstream tasks. Although no labelled data is necessary for this training, a large corpus of unlabelled text needs to be available.  
 In this paper, we improve on recent advances in meta-learning for natural language models that allow training on a diverse set of training tasks for few-shot, low-resource target tasks. We introduce a way to generate new training data with the need for neither more supervised nor unsupervised datasets. We evaluate the method on a diverse set of NLP tasks and show that the model decreases in performance when trained on this data without further adjustments. Therefore, we introduce and evaluate two methods for regularising the training process and show that they not only improve performance when used in conjunction with the new training data but also improve average performance when training only on the original data, compared to the baseline.
 
 ----
@@ -2379,7 +2379,7 @@ Text-based games provide a framework for developing natural language understandi
 
 **Abstract**:
 
-Named entity recognition (NER) aims to locate and classify named entities in natural language texts. Most existing high-performance NER models employ a supervised paradigm, which requires a large quantity of high-quality annotated data during training. In order to help NER models perform well in few-shot scenarios, data augmentation approaches attempt to build extra data by means of random editing or by using end-to-end generation with PLMs. 
+Named entity recognition (NER) aims to locate and classify named entities in natural language texts. Most existing high-performance NER models employ a supervised paradigm, which requires a large quantity of high-quality annotated data during training. In order to help NER models perform well in few-shot scenarios, data augmentation approaches attempt to build extra data by means of random editing or by using end-to-end generation with PLMs. 
 However, these methods focus on only the fluency of generated sentences, ignoring the syntactic correlation between the new and raw sentences. Such uncorrelation also brings low diversity and inconsistent labeling of synthetic samples. To fill this gap, we present SAINT (Syntactic-Aware InsertioN Transformer), a hard-constraint controlled text generation model that incorporates syntactic information. The proposed method operates by inserting new tokens between existing entities in a parallel manner. During insertion procedure, new tokens will be added taking both semantic and syntactic factors into account. Hence the resulting sentence can retain the syntactic correctness with respect to the raw data. Experimental results on two benchmark datasets, i.e., Ontonotes and Wikiann, demonstrate the comparable performance of SAINT over the state-of-the-art baselines.
 
 ----
@@ -2464,7 +2464,7 @@ Event Causality Identification (ECI) aims to identify the causality between a pa
 
 **Abstract**:
 
-Text classification is a fundamental task for natural language processing, and adapting text classification models across domains has broad applications. 
+Text classification is a fundamental task for natural language processing, and adapting text classification models across domains has broad applications. 
 Self-training generates pseudo-examples from the model's predictions and iteratively trains on the pseudo-examples, i.e., minimizes the loss on the source domain and the Gibbs entropy on the target domain. However, Gibbs entropy is sensitive to prediction errors, and thus, self-training tends to fail when the domain shift is large. In this paper, we propose Meta-Tsallis Entropy minimization (MTEM). MTEM uses an instance adaptive Tsallis entropy to replace the Gibbs entropy and a meta-learning algorithm to optimize the instance adaptive Tsallis entropy on the target domain. To reduce the computation cost of MTEM, we propose an approximation technique to approximate the second-order derivation involved in the meta-learning. To efficiently generate pseudo labels, we propose an annealing sampling mechanism for exploring the model's prediction probability. Theoretically, we prove the convergence of the meta-learning algorithm in MTEM and analyze the effectiveness of MTEM in achieving domain adaptation. Experimentally, MTEM improves the adaptation performance of BERT with an average of 4 percent on the benchmark dataset.
 
 ----
@@ -2703,12 +2703,12 @@ Multi-label Aspect Category Detection (MACD) is essential for aspect-based senti
 
 **Abstract**:
 
-Vision outlooker improves the performance of vision transformers, which implements a self-attention mechanism by adding an outlook attention, a form of local attention.  
-
-In natural language processing, as has been the case in computer vision and other domains, transformer-based models constitute the state-of-the-art for most processing tasks. In this domain, too, many authors have argued and demonstrated the importance of local context.
-
-We present an outlook attention mechanism, COOL, for natural language processing. COOL, added on top of the self-attention layers of a transformer-based model, encodes local syntactic context considering word proximity and more pair-wise constraints than dynamic convolution used by existing approaches.
-
+Vision outlooker improves the performance of vision transformers, which implements a self-attention mechanism by adding an outlook attention, a form of local attention.  
+
+In natural language processing, as has been the case in computer vision and other domains, transformer-based models constitute the state-of-the-art for most processing tasks. In this domain, too, many authors have argued and demonstrated the importance of local context.
+
+We present an outlook attention mechanism, COOL, for natural language processing. COOL, added on top of the self-attention layers of a transformer-based model, encodes local syntactic context considering word proximity and more pair-wise constraints than dynamic convolution used by existing approaches.
+
 A comparative empirical performance evaluation of an implementation of COOL with different transformer-based models confirms the opportunity for improvement over a baseline using the original models alone for various natural language processing tasks, including question answering. The proposed approach achieves competitive performance with existing state-of-the-art methods on some tasks.
 
 ----
@@ -2723,22 +2723,22 @@ A comparative empirical performance evaluation of an implementation of COOL with
 
 **Abstract**:
 
-The paper introduces DiSProD, an online planner developed for
-environments with probabilistic transitions in continuous state and
-action spaces. DiSProD builds a symbolic graph that captures the
-distribution of future trajectories, conditioned on a given policy,
-using independence assumptions and approximate propagation of
-distributions. The symbolic graph provides a differentiable
-representation of the policy's value, enabling efficient gradient-based
-optimization for long-horizon search. The propagation of approximate
-distributions can be seen as an aggregation of many trajectories, making
-it well-suited for dealing with sparse rewards and stochastic
-environments. An extensive experimental evaluation compares DiSProD to
-state-of-the-art planners in discrete-time planning and real-time
-control of robotic systems. The proposed method improves over existing
-planners in handling stochastic environments, sensitivity to search
-depth, sparsity of rewards, and large action spaces. Additional
-real-world experiments demonstrate that DiSProD can control ground
+The paper introduces DiSProD, an online planner developed for
+environments with probabilistic transitions in continuous state and
+action spaces. DiSProD builds a symbolic graph that captures the
+distribution of future trajectories, conditioned on a given policy,
+using independence assumptions and approximate propagation of
+distributions. The symbolic graph provides a differentiable
+representation of the policy's value, enabling efficient gradient-based
+optimization for long-horizon search. The propagation of approximate
+distributions can be seen as an aggregation of many trajectories, making
+it well-suited for dealing with sparse rewards and stochastic
+environments. An extensive experimental evaluation compares DiSProD to
+state-of-the-art planners in discrete-time planning and real-time
+control of robotic systems. The proposed method improves over existing
+planners in handling stochastic environments, sensitivity to search
+depth, sparsity of rewards, and large action spaces. Additional
+real-world experiments demonstrate that DiSProD can control ground
 vehicles and surface vessels to successfully navigate around obstacles.
 
 ----
