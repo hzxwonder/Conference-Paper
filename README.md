@@ -3,21 +3,21 @@ This repository mainly houses accepted papers from CCF-A conferences in recent y
 
 > Note: This repository is still under construction. More papers will be added soon.
 
-Each article is presented in the following way so that readers can browse **the title and abstract** more quickly, and if they are interested in a particular article, they can click into the **corresponding link** of the article to read it in detail.
+Each article is presented in the following way so that you can browse **the title and abstract** more quickly, and if you are interested in a particular article, you can click into the **corresponding link** of the article to read it in detail.
 
 
 
 ## Example
 
-**Title**:
+**Title**: xxx
 
-**Authors**: 
+**Authors**: xxx
 
-**Conference**: 
+**Conference**:  xxx
 
-**URL**: 
+**URL**: xxx
 
-**Abstract**:
+**Abstract**: xxxxxx
 
 ----
 
