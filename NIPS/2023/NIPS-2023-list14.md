@@ -1,2804 +1,2804 @@
 ## [2600] What Planning Problems Can A Relational Neural Network Solve?
 
-**Authors**: *Jiayuan Mao, Tomás Lozano-Pérez, Joshua B. Tenenbaum, Leslie Pack Kaelbling*
+        **Authors**: *Jiayuan Mao, Tomás Lozano-Pérez, Joshua B. Tenenbaum, Leslie Pack Kaelbling*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/ba90e56a74fd77d0ddec033dc199f0fa-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/ba90e56a74fd77d0ddec033dc199f0fa-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/ba90e56a74fd77d0ddec033dc199f0fa-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/ba90e56a74fd77d0ddec033dc199f0fa-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Goal-conditioned policies are generally understood to be "feed-forward" circuits, in the form of neural networks that map from the current state and the goal specification to the next action to take. However, under what circumstances such a policy can be learned and how efficient the policy will be are not well understood. In this paper, we present a circuit complexity analysis for relational neural networks (such as graph neural networks and transformers) representing policies for planning problems, by drawing connections with serialized goal regression search (S-GRS). We show that there are three general classes of planning problems, in terms of the growth of circuit width and depth as a function of the number of objects and planning horizon, providing constructive proofs. We also illustrate the utility of this analysis for designing neural networks for policy learning.
+        Goal-conditioned policies are generally understood to be "feed-forward" circuits, in the form of neural networks that map from the current state and the goal specification to the next action to take. However, under what circumstances such a policy can be learned and how efficient the policy will be are not well understood. In this paper, we present a circuit complexity analysis for relational neural networks (such as graph neural networks and transformers) representing policies for planning problems, by drawing connections with serialized goal regression search (S-GRS). We show that there are three general classes of planning problems, in terms of the growth of circuit width and depth as a function of the number of objects and planning horizon, providing constructive proofs. We also illustrate the utility of this analysis for designing neural networks for policy learning.
 
-----
+        ----
 
-## [2601] Selectively Sharing Experiences Improves Multi-Agent Reinforcement Learning
+        ## [2601] Selectively Sharing Experiences Improves Multi-Agent Reinforcement Learning
 
-**Authors**: *Matthias Gerstgrasser, Tom Danino, Sarah Keren*
+        **Authors**: *Matthias Gerstgrasser, Tom Danino, Sarah Keren*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/baa7fc022f35b6ea7b8b2a2fe60babe0-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/baa7fc022f35b6ea7b8b2a2fe60babe0-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/baa7fc022f35b6ea7b8b2a2fe60babe0-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/baa7fc022f35b6ea7b8b2a2fe60babe0-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-We present a novel multi-agent RL approach, Selective Multi-Agent Prioritized Experience Relay, in which agents share with other agents a limited number of transitions they observe during training. The intuition behind this is that even a small number of relevant experiences from other agents could help each agent learn. Unlike many other multi-agent RL algorithms, this approach allows for largely decentralized training, requiring only a limited communication channel between agents. We show that our approach outperforms baseline no-sharing decentralized training and state-of-the art multi-agent RL algorithms. Further, sharing only a small number of highly relevant experiences outperforms sharing all experiences between agents, and the performance uplift from selective experience sharing is robust across a range of hyperparameters and DQN variants.
+        We present a novel multi-agent RL approach, Selective Multi-Agent Prioritized Experience Relay, in which agents share with other agents a limited number of transitions they observe during training. The intuition behind this is that even a small number of relevant experiences from other agents could help each agent learn. Unlike many other multi-agent RL algorithms, this approach allows for largely decentralized training, requiring only a limited communication channel between agents. We show that our approach outperforms baseline no-sharing decentralized training and state-of-the art multi-agent RL algorithms. Further, sharing only a small number of highly relevant experiences outperforms sharing all experiences between agents, and the performance uplift from selective experience sharing is robust across a range of hyperparameters and DQN variants.
 
-----
+        ----
 
-## [2602] Learning From Biased Soft Labels
+        ## [2602] Learning From Biased Soft Labels
 
-**Authors**: *Hua Yuan, Yu Shi, Ning Xu, Xu Yang, Xin Geng, Yong Rui*
+        **Authors**: *Hua Yuan, Yu Shi, Ning Xu, Xu Yang, Xin Geng, Yong Rui*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bad8ddaed5feb552f9e8f2e37c0531a1-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bad8ddaed5feb552f9e8f2e37c0531a1-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bad8ddaed5feb552f9e8f2e37c0531a1-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bad8ddaed5feb552f9e8f2e37c0531a1-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Since the advent of knowledge distillation, many researchers have been intrigued by the $\textit{dark knowledge}$ hidden in the soft labels generated by the teacher model. This prompts us to scrutinize the circumstances under which these soft labels are effective. Predominant existing theories implicitly require that the soft labels are close to the ground-truth labels. In this paper, however, we investigate whether biased soft labels are still effective. Here, bias refers to the discrepancy between the soft labels and the ground-truth labels. We present two indicators to measure the effectiveness of the soft labels. Based on the two indicators, we propose moderate conditions to ensure that, the biased soft label learning problem is both $\textit{classifier-consistent}$ and $\textit{Empirical Risk Minimization}$ (ERM) $\textit{learnable}$, which can be applicable even for large-biased soft labels. We further design a heuristic method to train Skillful but Bad Teachers (SBTs), and these teachers with accuracy less than 30\% can teach students to achieve accuracy over 90\% on CIFAR-10, which is comparable to models trained on the original data. The proposed indicators adequately measure the effectiveness of the soft labels generated in this process. Moreover, our theoretical framework can be adapted to elucidate the effectiveness of soft labels in three weakly-supervised learning paradigms, namely incomplete supervision, partial label learning and learning with additive noise. Experimental results demonstrate that our indicators can measure the effectiveness of biased soft labels generated by teachers or in these weakly-supervised learning paradigms.
+        Since the advent of knowledge distillation, many researchers have been intrigued by the $\textit{dark knowledge}$ hidden in the soft labels generated by the teacher model. This prompts us to scrutinize the circumstances under which these soft labels are effective. Predominant existing theories implicitly require that the soft labels are close to the ground-truth labels. In this paper, however, we investigate whether biased soft labels are still effective. Here, bias refers to the discrepancy between the soft labels and the ground-truth labels. We present two indicators to measure the effectiveness of the soft labels. Based on the two indicators, we propose moderate conditions to ensure that, the biased soft label learning problem is both $\textit{classifier-consistent}$ and $\textit{Empirical Risk Minimization}$ (ERM) $\textit{learnable}$, which can be applicable even for large-biased soft labels. We further design a heuristic method to train Skillful but Bad Teachers (SBTs), and these teachers with accuracy less than 30\% can teach students to achieve accuracy over 90\% on CIFAR-10, which is comparable to models trained on the original data. The proposed indicators adequately measure the effectiveness of the soft labels generated in this process. Moreover, our theoretical framework can be adapted to elucidate the effectiveness of soft labels in three weakly-supervised learning paradigms, namely incomplete supervision, partial label learning and learning with additive noise. Experimental results demonstrate that our indicators can measure the effectiveness of biased soft labels generated by teachers or in these weakly-supervised learning paradigms.
 
-----
+        ----
 
-## [2603] Learning from Visual Observation via Offline Pretrained State-to-Go Transformer
+        ## [2603] Learning from Visual Observation via Offline Pretrained State-to-Go Transformer
 
-**Authors**: *Bohan Zhou, Ke Li, Jiechuan Jiang, Zongqing Lu*
+        **Authors**: *Bohan Zhou, Ke Li, Jiechuan Jiang, Zongqing Lu*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bb203e938836544655996d1bb94a0fd7-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bb203e938836544655996d1bb94a0fd7-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bb203e938836544655996d1bb94a0fd7-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bb203e938836544655996d1bb94a0fd7-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Learning from visual observation (LfVO), aiming at recovering policies from only visual observation data, is promising yet a challenging problem. Existing LfVO approaches either only adopt inefficient online learning schemes or require additional task-specific information like goal states, making them not suited for open-ended tasks. To address these issues, we propose a two-stage framework for learning from visual observation. In the first stage, we introduce and pretrain State-to-Go (STG) Transformer offline to predict and differentiate latent transitions of demonstrations. Subsequently, in the second stage, the STG Transformer provides intrinsic rewards for downstream reinforcement learning tasks where an agent learns merely from intrinsic rewards. Empirical results on Atari and Minecraft show that our proposed method outperforms baselines and in some tasks even achieves performance comparable to the policy learned from environmental rewards. These results shed light on the potential of utilizing video-only data to solve difficult visual reinforcement learning tasks rather than relying on complete offline datasets containing states, actions, and rewards. The projectâ€™s website and code can befound at https://sites.google.com/view/stgtransformer.
+        Learning from visual observation (LfVO), aiming at recovering policies from only visual observation data, is promising yet a challenging problem. Existing LfVO approaches either only adopt inefficient online learning schemes or require additional task-specific information like goal states, making them not suited for open-ended tasks. To address these issues, we propose a two-stage framework for learning from visual observation. In the first stage, we introduce and pretrain State-to-Go (STG) Transformer offline to predict and differentiate latent transitions of demonstrations. Subsequently, in the second stage, the STG Transformer provides intrinsic rewards for downstream reinforcement learning tasks where an agent learns merely from intrinsic rewards. Empirical results on Atari and Minecraft show that our proposed method outperforms baselines and in some tasks even achieves performance comparable to the policy learned from environmental rewards. These results shed light on the potential of utilizing video-only data to solve difficult visual reinforcement learning tasks rather than relying on complete offline datasets containing states, actions, and rewards. The projectâ€™s website and code can befound at https://sites.google.com/view/stgtransformer.
 
-----
+        ----
 
-## [2604] Rotating Features for Object Discovery
+        ## [2604] Rotating Features for Object Discovery
 
-**Authors**: *Sindy Löwe, Phillip Lippe, Francesco Locatello, Max Welling*
+        **Authors**: *Sindy Löwe, Phillip Lippe, Francesco Locatello, Max Welling*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bb36593e5e438aac5dd07907e757e087-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bb36593e5e438aac5dd07907e757e087-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bb36593e5e438aac5dd07907e757e087-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bb36593e5e438aac5dd07907e757e087-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-The binding problem in human cognition, concerning how the brain represents and connects objects within a fixed network of neural connections, remains a subject of intense debate. Most machine learning efforts addressing this issue in an unsupervised setting have focused on slot-based methods, which may be limiting due to their discrete nature and difficulty to express uncertainty. Recently, the Complex AutoEncoder was proposed as an alternative that learns continuous and distributed object-centric representations. However, it is only applicable to simple toy data. In this paper, we present Rotating Features, a generalization of complex-valued features to higher dimensions, and a new evaluation procedure for extracting objects from distributed representations. Additionally, we show the applicability of our approach to pre-trained features. Together, these advancements enable us to scale distributed object-centric representations from simple toy to real-world data. We believe this work advances a new paradigm for addressing the binding problem in machine learning and has the potential to inspire further innovation in the field.
+        The binding problem in human cognition, concerning how the brain represents and connects objects within a fixed network of neural connections, remains a subject of intense debate. Most machine learning efforts addressing this issue in an unsupervised setting have focused on slot-based methods, which may be limiting due to their discrete nature and difficulty to express uncertainty. Recently, the Complex AutoEncoder was proposed as an alternative that learns continuous and distributed object-centric representations. However, it is only applicable to simple toy data. In this paper, we present Rotating Features, a generalization of complex-valued features to higher dimensions, and a new evaluation procedure for extracting objects from distributed representations. Additionally, we show the applicability of our approach to pre-trained features. Together, these advancements enable us to scale distributed object-centric representations from simple toy to real-world data. We believe this work advances a new paradigm for addressing the binding problem in machine learning and has the potential to inspire further innovation in the field.
 
-----
+        ----
 
-## [2605] Grounded Decoding: Guiding Text Generation with Grounded Models for Embodied Agents
+        ## [2605] Grounded Decoding: Guiding Text Generation with Grounded Models for Embodied Agents
 
-**Authors**: *Wenlong Huang, Fei Xia, Dhruv Shah, Danny Driess, Andy Zeng, Yao Lu, Pete Florence, Igor Mordatch, Sergey Levine, Karol Hausman, Brian Ichter*
+        **Authors**: *Wenlong Huang, Fei Xia, Dhruv Shah, Danny Driess, Andy Zeng, Yao Lu, Pete Florence, Igor Mordatch, Sergey Levine, Karol Hausman, Brian Ichter*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bb3cfcb0284642a973dd631ec9184f2f-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bb3cfcb0284642a973dd631ec9184f2f-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bb3cfcb0284642a973dd631ec9184f2f-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bb3cfcb0284642a973dd631ec9184f2f-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Recent progress in large language models (LLMs) has demonstrated the ability to learn and leverage Internet-scale knowledge through pre-training with autoregressive models. Unfortunately, applying such models to settings with embodied agents, such as robots, is challenging due to their lack of experience with the physical world, inability to parse non-language observations, and ignorance of rewards or safety constraints that robots may require. On the other hand, language-conditioned robotic policies that learn from interaction data can provide the necessary grounding that allows the agent to be correctly situated in the real world, but such policies are limited by the lack of high-level semantic understanding due to the limited breadth of the interaction data available for training them. Thus, if we want to make use of the semantic knowledge in a language model while still situating it in an embodied setting, we must construct an action sequence that is both likely according to the language model and also realizable according to grounded models of the environment. We frame this as a problem similar to probabilistic filtering: decode a sequence that both has high probability under the language model and high probability under a set of grounded model objectives. We demonstrate how such grounded models can be obtained across three simulation and real-world domains, and that the proposed decoding strategy is able to solve complex, long-horizon embodiment tasks in a robotic setting by leveraging the knowledge of both models.
+        Recent progress in large language models (LLMs) has demonstrated the ability to learn and leverage Internet-scale knowledge through pre-training with autoregressive models. Unfortunately, applying such models to settings with embodied agents, such as robots, is challenging due to their lack of experience with the physical world, inability to parse non-language observations, and ignorance of rewards or safety constraints that robots may require. On the other hand, language-conditioned robotic policies that learn from interaction data can provide the necessary grounding that allows the agent to be correctly situated in the real world, but such policies are limited by the lack of high-level semantic understanding due to the limited breadth of the interaction data available for training them. Thus, if we want to make use of the semantic knowledge in a language model while still situating it in an embodied setting, we must construct an action sequence that is both likely according to the language model and also realizable according to grounded models of the environment. We frame this as a problem similar to probabilistic filtering: decode a sequence that both has high probability under the language model and high probability under a set of grounded model objectives. We demonstrate how such grounded models can be obtained across three simulation and real-world domains, and that the proposed decoding strategy is able to solve complex, long-horizon embodiment tasks in a robotic setting by leveraging the knowledge of both models.
 
-----
+        ----
 
-## [2606] What can Large Language Models do in chemistry? A comprehensive benchmark on eight tasks
+        ## [2606] What can Large Language Models do in chemistry? A comprehensive benchmark on eight tasks
 
-**Authors**: *Taicheng Guo, Kehan Guo, Bozhao Nan, Zhenwen Liang, Zhichun Guo, Nitesh V. Chawla, Olaf Wiest, Xiangliang Zhang*
+        **Authors**: *Taicheng Guo, Kehan Guo, Bozhao Nan, Zhenwen Liang, Zhichun Guo, Nitesh V. Chawla, Olaf Wiest, Xiangliang Zhang*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bbb330189ce02be00cf7346167028ab1-Abstract-Datasets_and_Benchmarks.html](http://papers.nips.cc/paper_files/paper/2023/hash/bbb330189ce02be00cf7346167028ab1-Abstract-Datasets_and_Benchmarks.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bbb330189ce02be00cf7346167028ab1-Abstract-Datasets_and_Benchmarks.html](http://papers.nips.cc/paper_files/paper/2023/hash/bbb330189ce02be00cf7346167028ab1-Abstract-Datasets_and_Benchmarks.html)
 
-**Abstract**:
+        **Abstract**:
 
-Large Language Models (LLMs) with strong abilities in natural language processing tasks have emerged and have been applied in various kinds of areas such as science, finance and software engineering. However, the capability of LLMs to advance the field of chemistry remains unclear. In this paper, rather than pursuing state-of-the-art performance, we aim to evaluate capabilities of LLMs in a wide range of tasks across the chemistry domain. We identify three key chemistry-related capabilities including understanding, reasoning and explaining to explore in LLMs and establish a benchmark containing eight chemistry tasks. Our analysis draws on widely recognized datasets facilitating a broad exploration of the capacities of LLMs within the context of practical chemistry. Five LLMs (GPT-4,GPT-3.5, Davinci-003, Llama and Galactica) are evaluated for each chemistry task in zero-shot and few-shot in-context learning settings with carefully selected demonstration examples and specially crafted prompts. Our investigation found that GPT-4 outperformed other models and LLMs exhibit different competitive levels in eight chemistry tasks. In addition to the key findings from the comprehensive benchmark analysis, our work provides insights into the limitation of current LLMs and the impact of in-context learning settings on LLMsâ€™ performance across various chemistry tasks. The code and datasets used in this study are available at https://github.com/ChemFoundationModels/ChemLLMBench.
+        Large Language Models (LLMs) with strong abilities in natural language processing tasks have emerged and have been applied in various kinds of areas such as science, finance and software engineering. However, the capability of LLMs to advance the field of chemistry remains unclear. In this paper, rather than pursuing state-of-the-art performance, we aim to evaluate capabilities of LLMs in a wide range of tasks across the chemistry domain. We identify three key chemistry-related capabilities including understanding, reasoning and explaining to explore in LLMs and establish a benchmark containing eight chemistry tasks. Our analysis draws on widely recognized datasets facilitating a broad exploration of the capacities of LLMs within the context of practical chemistry. Five LLMs (GPT-4,GPT-3.5, Davinci-003, Llama and Galactica) are evaluated for each chemistry task in zero-shot and few-shot in-context learning settings with carefully selected demonstration examples and specially crafted prompts. Our investigation found that GPT-4 outperformed other models and LLMs exhibit different competitive levels in eight chemistry tasks. In addition to the key findings from the comprehensive benchmark analysis, our work provides insights into the limitation of current LLMs and the impact of in-context learning settings on LLMsâ€™ performance across various chemistry tasks. The code and datasets used in this study are available at https://github.com/ChemFoundationModels/ChemLLMBench.
 
-----
+        ----
 
-## [2607] Focus Your Attention when Few-Shot Classification
+        ## [2607] Focus Your Attention when Few-Shot Classification
 
-**Authors**: *Haoqing Wang, Shibo Jie, Zhihong Deng*
+        **Authors**: *Haoqing Wang, Shibo Jie, Zhihong Deng*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bbb7506579431a85861a05fff048d3e1-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bbb7506579431a85861a05fff048d3e1-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bbb7506579431a85861a05fff048d3e1-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bbb7506579431a85861a05fff048d3e1-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Since many pre-trained vision transformers emerge and provide strong representation for various downstream tasks, we aim to adapt them to few-shot image classification tasks in this work. The input images typically contain multiple entities. The model may not focus on the class-related entities for the current few-shot task, even with fine-tuning on support samples, and the noise information from the class-independent ones harms performance. To this end, we first propose a method that uses the attention and gradient information to automatically locate the positions of key entities, denoted as position prompts, in the support images. Then we employ the cross-entropy loss between their many-hot presentation and the attention logits to optimize the model to focus its attention on the key entities during fine-tuning. This ability then can generalize to the query samples. Our method is applicable to different vision transformers (e.g., columnar or pyramidal ones), and also to different pre-training ways (e.g., single-modal or vision-language pre-training). Extensive experiments show that our method can improve the performance of full or parameter-efficient fine-tuning methods on few-shot tasks. Code is available at https://github.com/Haoqing-Wang/FORT.
+        Since many pre-trained vision transformers emerge and provide strong representation for various downstream tasks, we aim to adapt them to few-shot image classification tasks in this work. The input images typically contain multiple entities. The model may not focus on the class-related entities for the current few-shot task, even with fine-tuning on support samples, and the noise information from the class-independent ones harms performance. To this end, we first propose a method that uses the attention and gradient information to automatically locate the positions of key entities, denoted as position prompts, in the support images. Then we employ the cross-entropy loss between their many-hot presentation and the attention logits to optimize the model to focus its attention on the key entities during fine-tuning. This ability then can generalize to the query samples. Our method is applicable to different vision transformers (e.g., columnar or pyramidal ones), and also to different pre-training ways (e.g., single-modal or vision-language pre-training). Extensive experiments show that our method can improve the performance of full or parameter-efficient fine-tuning methods on few-shot tasks. Code is available at https://github.com/Haoqing-Wang/FORT.
 
-----
+        ----
 
-## [2608] AndroidInTheWild: A Large-Scale Dataset For Android Device Control
+        ## [2608] AndroidInTheWild: A Large-Scale Dataset For Android Device Control
 
-**Authors**: *Christopher Rawles, Alice Li, Daniel Rodriguez, Oriana Riva, Timothy P. Lillicrap*
+        **Authors**: *Christopher Rawles, Alice Li, Daniel Rodriguez, Oriana Riva, Timothy P. Lillicrap*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bbbb6308b402fe909c39dd29950c32e0-Abstract-Datasets_and_Benchmarks.html](http://papers.nips.cc/paper_files/paper/2023/hash/bbbb6308b402fe909c39dd29950c32e0-Abstract-Datasets_and_Benchmarks.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bbbb6308b402fe909c39dd29950c32e0-Abstract-Datasets_and_Benchmarks.html](http://papers.nips.cc/paper_files/paper/2023/hash/bbbb6308b402fe909c39dd29950c32e0-Abstract-Datasets_and_Benchmarks.html)
 
-**Abstract**:
+        **Abstract**:
 
-There is a growing interest in device-control systems that can interpret human natural language instructions and execute them on a digital device by directly controlling its user interface. We present a dataset for device-control research, Android in the Wild (AitW), which is orders of magnitude larger than current datasets. The dataset contains human demonstrations of device interactions, including the screens and actions, and corresponding natural language instructions. It consists of 715k episodes spanning 30k unique instructions, four versions of Android (v10â€“13), and eight device types (Pixel 2 XL to Pixel 6) with varying screen resolutions. It contains multi-step tasks that require semantic understanding of language and visual context. This dataset poses a new challenge: actions available through the user interface must be inferred from their visual appearance, and, instead of simple UI element-based actions, the action space consists of precise gestures (e.g., horizontal scrolls to operate carousel widgets). We organize our dataset to encourage robustness analysis of device-control systems, i.e., how well a system performs in the presence of new task descriptions, new applications, or new platform versions. We develop two agents and report performance across the dataset. The dataset is available at https://github.com/google-research/google-research/tree/master/androidinthe_wild.
+        There is a growing interest in device-control systems that can interpret human natural language instructions and execute them on a digital device by directly controlling its user interface. We present a dataset for device-control research, Android in the Wild (AitW), which is orders of magnitude larger than current datasets. The dataset contains human demonstrations of device interactions, including the screens and actions, and corresponding natural language instructions. It consists of 715k episodes spanning 30k unique instructions, four versions of Android (v10â€“13), and eight device types (Pixel 2 XL to Pixel 6) with varying screen resolutions. It contains multi-step tasks that require semantic understanding of language and visual context. This dataset poses a new challenge: actions available through the user interface must be inferred from their visual appearance, and, instead of simple UI element-based actions, the action space consists of precise gestures (e.g., horizontal scrolls to operate carousel widgets). We organize our dataset to encourage robustness analysis of device-control systems, i.e., how well a system performs in the presence of new task descriptions, new applications, or new platform versions. We develop two agents and report performance across the dataset. The dataset is available at https://github.com/google-research/google-research/tree/master/androidinthe_wild.
 
-----
+        ----
 
-## [2609] Unifying GANs and Score-Based Diffusion as Generative Particle Models
+        ## [2609] Unifying GANs and Score-Based Diffusion as Generative Particle Models
 
-**Authors**: *Jean-Yves Franceschi, Mike Gartrell, Ludovic Dos Santos, Thibaut Issenhuth, Emmanuel de Bézenac, Mickaël Chen, Alain Rakotomamonjy*
+        **Authors**: *Jean-Yves Franceschi, Mike Gartrell, Ludovic Dos Santos, Thibaut Issenhuth, Emmanuel de Bézenac, Mickaël Chen, Alain Rakotomamonjy*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bbc461518c59a2a8d64e70e2c38c4a0e-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bbc461518c59a2a8d64e70e2c38c4a0e-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bbc461518c59a2a8d64e70e2c38c4a0e-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bbc461518c59a2a8d64e70e2c38c4a0e-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Particle-based deep generative models, such as gradient flows and score-based diffusion models, have recently gained traction thanks to their striking performance. Their principle of displacing particle distributions using differential equations is conventionally seen as opposed to the previously widespread generative adversarial networks (GANs), which involve training a pushforward generator network. In this paper we challenge this interpretation, and propose a novel framework that unifies particle and adversarial generative models by framing generator training as a generalization of particle models. This suggests that a generator is an optional addition to any such generative model. Consequently, integrating a generator into a score-based diffusion model and training a GAN without a generator naturally emerge from our framework. We empirically test the viability of these original models as proofs of concepts of potential applications of our framework.
+        Particle-based deep generative models, such as gradient flows and score-based diffusion models, have recently gained traction thanks to their striking performance. Their principle of displacing particle distributions using differential equations is conventionally seen as opposed to the previously widespread generative adversarial networks (GANs), which involve training a pushforward generator network. In this paper we challenge this interpretation, and propose a novel framework that unifies particle and adversarial generative models by framing generator training as a generalization of particle models. This suggests that a generator is an optional addition to any such generative model. Consequently, integrating a generator into a score-based diffusion model and training a GAN without a generator naturally emerge from our framework. We empirically test the viability of these original models as proofs of concepts of potential applications of our framework.
 
-----
+        ----
 
-## [2610] Path Regularization: A Convexity and Sparsity Inducing Regularization for Parallel ReLU Networks
+        ## [2610] Path Regularization: A Convexity and Sparsity Inducing Regularization for Parallel ReLU Networks
 
-**Authors**: *Tolga Ergen, Mert Pilanci*
+        **Authors**: *Tolga Ergen, Mert Pilanci*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bbf38332580c1bed99fa99bc9ee53229-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bbf38332580c1bed99fa99bc9ee53229-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bbf38332580c1bed99fa99bc9ee53229-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bbf38332580c1bed99fa99bc9ee53229-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Understanding the fundamental principles behind the success of deep neural networks is one of the most important open questions in the current literature. To this end, we study the training problem of deep neural networks and introduce an analytic approach to unveil hidden convexity in the optimization landscape. We consider a deep parallel ReLU network architecture, which also includes standard deep networks and ResNets as its special cases. We then show that pathwise regularized training problems can be represented as an exact convex optimization problem. We further prove that the equivalent convex problem is regularized via a group sparsity inducing norm. Thus, a path regularized parallel ReLU network can be viewed as a parsimonious convex model in high dimensions. More importantly, since the original training problem may not be trainable in polynomial-time, we propose an approximate algorithm with a fully polynomial-time complexity in all data dimensions. Then, we prove strong global optimality guarantees for this algorithm. We also provide experiments corroborating our theory.
+        Understanding the fundamental principles behind the success of deep neural networks is one of the most important open questions in the current literature. To this end, we study the training problem of deep neural networks and introduce an analytic approach to unveil hidden convexity in the optimization landscape. We consider a deep parallel ReLU network architecture, which also includes standard deep networks and ResNets as its special cases. We then show that pathwise regularized training problems can be represented as an exact convex optimization problem. We further prove that the equivalent convex problem is regularized via a group sparsity inducing norm. Thus, a path regularized parallel ReLU network can be viewed as a parsimonious convex model in high dimensions. More importantly, since the original training problem may not be trainable in polynomial-time, we propose an approximate algorithm with a fully polynomial-time complexity in all data dimensions. Then, we prove strong global optimality guarantees for this algorithm. We also provide experiments corroborating our theory.
 
-----
+        ----
 
-## [2611] SSL4EO-L: Datasets and Foundation Models for Landsat Imagery
+        ## [2611] SSL4EO-L: Datasets and Foundation Models for Landsat Imagery
 
-**Authors**: *Adam J. Stewart, Nils Lehmann, Isaac A. Corley, Yi Wang, Yi-Chia Chang, Nassim Ait Ali Braham, Shradha Sehgal, Caleb Robinson, Arindam Banerjee*
+        **Authors**: *Adam J. Stewart, Nils Lehmann, Isaac A. Corley, Yi Wang, Yi-Chia Chang, Nassim Ait Ali Braham, Shradha Sehgal, Caleb Robinson, Arindam Banerjee*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bbf7ee04e2aefec136ecf60e346c2e61-Abstract-Datasets_and_Benchmarks.html](http://papers.nips.cc/paper_files/paper/2023/hash/bbf7ee04e2aefec136ecf60e346c2e61-Abstract-Datasets_and_Benchmarks.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bbf7ee04e2aefec136ecf60e346c2e61-Abstract-Datasets_and_Benchmarks.html](http://papers.nips.cc/paper_files/paper/2023/hash/bbf7ee04e2aefec136ecf60e346c2e61-Abstract-Datasets_and_Benchmarks.html)
 
-**Abstract**:
+        **Abstract**:
 
-The Landsat program is the longest-running Earth observation program in history, with 50+ years of data acquisition by 8 satellites. The multispectral imagery captured by sensors onboard these satellites is critical for a wide range of scientific fields. Despite the increasing popularity of deep learning and remote sensing, the majority of researchers still use decision trees and random forests for Landsat image analysis due to the prevalence of small labeled datasets and lack of foundation models. In this paper, we introduce SSL4EO-L, the first ever dataset designed for Self-Supervised Learning for Earth Observation for the Landsat family of satellites (including 3 sensors and 2 product levels) and the largest Landsat dataset in history (5M image patches). Additionally, we modernize and re-release the L7 Irish and L8 Biome cloud detection datasets, and introduce the first ML benchmark datasets for Landsats 4â€“5 TM and Landsat 7 ETM+ SR. Finally, we pre-train the first foundation models for Landsat imagery using SSL4EO-L and evaluate their performance on multiple semantic segmentation tasks. All datasets and model weights are available via the TorchGeo library, making reproducibility and experimentation easy, and enabling scientific advancements in the burgeoning field of remote sensing for a multitude of downstream applications.
+        The Landsat program is the longest-running Earth observation program in history, with 50+ years of data acquisition by 8 satellites. The multispectral imagery captured by sensors onboard these satellites is critical for a wide range of scientific fields. Despite the increasing popularity of deep learning and remote sensing, the majority of researchers still use decision trees and random forests for Landsat image analysis due to the prevalence of small labeled datasets and lack of foundation models. In this paper, we introduce SSL4EO-L, the first ever dataset designed for Self-Supervised Learning for Earth Observation for the Landsat family of satellites (including 3 sensors and 2 product levels) and the largest Landsat dataset in history (5M image patches). Additionally, we modernize and re-release the L7 Irish and L8 Biome cloud detection datasets, and introduce the first ML benchmark datasets for Landsats 4â€“5 TM and Landsat 7 ETM+ SR. Finally, we pre-train the first foundation models for Landsat imagery using SSL4EO-L and evaluate their performance on multiple semantic segmentation tasks. All datasets and model weights are available via the TorchGeo library, making reproducibility and experimentation easy, and enabling scientific advancements in the burgeoning field of remote sensing for a multitude of downstream applications.
 
-----
+        ----
 
-## [2612] Fast Attention Over Long Sequences With Dynamic Sparse Flash Attention
+        ## [2612] Fast Attention Over Long Sequences With Dynamic Sparse Flash Attention
 
-**Authors**: *Matteo Pagliardini, Daniele Paliotta, Martin Jaggi, François Fleuret*
+        **Authors**: *Matteo Pagliardini, Daniele Paliotta, Martin Jaggi, François Fleuret*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bc222e8153a49c1b30a1b8ba96b35117-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bc222e8153a49c1b30a1b8ba96b35117-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bc222e8153a49c1b30a1b8ba96b35117-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bc222e8153a49c1b30a1b8ba96b35117-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Transformer-based language models have found many diverse applications requiring them to process sequences of increasing length. For these applications, the causal self-attention---which is the only component scaling quadratically w.r.t. the sequence length---becomes a central concern. While many works have proposed schemes to sparsify the attention patterns and reduce the computational overhead of self-attention, those are often limited by implementation concerns and end up imposing a simple and static structure over the attention matrix. Conversely, implementing more dynamic sparse attention often results in runtimes significantly slower than computing the full attention using the Flash implementation from Dao et al. (2022). We extend FlashAttention to accommodate a large class of attention sparsity patterns that, in particular, encompass key/query dropping and hashing-based attention. This leads to implementations with no computational complexity overhead and a multi-fold runtime speedup on top of FlashAttention. Even with relatively low degrees of sparsity, our method improves visibly upon FlashAttention as the sequence length increases. Without sacrificing perplexity, we increase the training speed of a transformer language model by $2.0\times$ and $3.3\times$ for sequences of respectively $8k$ and $16k$ tokens.
+        Transformer-based language models have found many diverse applications requiring them to process sequences of increasing length. For these applications, the causal self-attention---which is the only component scaling quadratically w.r.t. the sequence length---becomes a central concern. While many works have proposed schemes to sparsify the attention patterns and reduce the computational overhead of self-attention, those are often limited by implementation concerns and end up imposing a simple and static structure over the attention matrix. Conversely, implementing more dynamic sparse attention often results in runtimes significantly slower than computing the full attention using the Flash implementation from Dao et al. (2022). We extend FlashAttention to accommodate a large class of attention sparsity patterns that, in particular, encompass key/query dropping and hashing-based attention. This leads to implementations with no computational complexity overhead and a multi-fold runtime speedup on top of FlashAttention. Even with relatively low degrees of sparsity, our method improves visibly upon FlashAttention as the sequence length increases. Without sacrificing perplexity, we increase the training speed of a transformer language model by $2.0\times$ and $3.3\times$ for sequences of respectively $8k$ and $16k$ tokens.
 
-----
+        ----
 
-## [2613] Learning Better with Less: Effective Augmentation for Sample-Efficient Visual Reinforcement Learning
+        ## [2613] Learning Better with Less: Effective Augmentation for Sample-Efficient Visual Reinforcement Learning
 
-**Authors**: *Guozheng Ma, Linrui Zhang, Haoyu Wang, Lu Li, Zilin Wang, Zhen Wang, Li Shen, Xueqian Wang, Dacheng Tao*
+        **Authors**: *Guozheng Ma, Linrui Zhang, Haoyu Wang, Lu Li, Zilin Wang, Zhen Wang, Li Shen, Xueqian Wang, Dacheng Tao*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bc26087d3f82e62044fc77752e86737e-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bc26087d3f82e62044fc77752e86737e-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bc26087d3f82e62044fc77752e86737e-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bc26087d3f82e62044fc77752e86737e-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Data augmentation (DA) is a crucial technique for enhancing the sample efficiency of visual reinforcement learning (RL) algorithms.Notably, employing simple observation transformations alone can yield outstanding performance without extra auxiliary representation tasks or pre-trained encoders. However, it remains unclear which attributes of DA account for its effectiveness in achieving sample-efficient visual RL. To investigate this issue and further explore the potential of DA, this work conducts comprehensive experiments to assess the impact of DA's attributes on its efficacy and provides the following insights and improvements: (1) For individual DA operations, we reveal that both ample spatial diversity and slight hardness are indispensable. Building on this finding, we introduce Random PadResize (Rand PR), a new DA operation that offers abundant spatial diversity with minimal hardness. (2) For multi-type DA fusion schemes, the increased DA hardness and unstable data distribution result in the current fusion schemes being unable to achieve higher sample efficiency than their corresponding individual operations. Taking the non-stationary nature of RL into account, we propose a RL-tailored multi-type DA fusion scheme called Cycling Augmentation (CycAug), which performs periodic cycles of different DA operations to increase type diversity while maintaining data distribution consistency. Extensive evaluations on the DeepMind Control suite and CARLA driving simulator demonstrate that our methods achieve superior sample efficiency compared with the prior state-of-the-art methods.
+        Data augmentation (DA) is a crucial technique for enhancing the sample efficiency of visual reinforcement learning (RL) algorithms.Notably, employing simple observation transformations alone can yield outstanding performance without extra auxiliary representation tasks or pre-trained encoders. However, it remains unclear which attributes of DA account for its effectiveness in achieving sample-efficient visual RL. To investigate this issue and further explore the potential of DA, this work conducts comprehensive experiments to assess the impact of DA's attributes on its efficacy and provides the following insights and improvements: (1) For individual DA operations, we reveal that both ample spatial diversity and slight hardness are indispensable. Building on this finding, we introduce Random PadResize (Rand PR), a new DA operation that offers abundant spatial diversity with minimal hardness. (2) For multi-type DA fusion schemes, the increased DA hardness and unstable data distribution result in the current fusion schemes being unable to achieve higher sample efficiency than their corresponding individual operations. Taking the non-stationary nature of RL into account, we propose a RL-tailored multi-type DA fusion scheme called Cycling Augmentation (CycAug), which performs periodic cycles of different DA operations to increase type diversity while maintaining data distribution consistency. Extensive evaluations on the DeepMind Control suite and CARLA driving simulator demonstrate that our methods achieve superior sample efficiency compared with the prior state-of-the-art methods.
 
-----
+        ----
 
-## [2614] Pairwise GUI Dataset Construction Between Android Phones and Tablets
+        ## [2614] Pairwise GUI Dataset Construction Between Android Phones and Tablets
 
-**Authors**: *Han Hu, Haolan Zhan, Yujin Huang, Di Liu*
+        **Authors**: *Han Hu, Haolan Zhan, Yujin Huang, Di Liu*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bc4cff0b37ccab13e98b6128d89ca172-Abstract-Datasets_and_Benchmarks.html](http://papers.nips.cc/paper_files/paper/2023/hash/bc4cff0b37ccab13e98b6128d89ca172-Abstract-Datasets_and_Benchmarks.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bc4cff0b37ccab13e98b6128d89ca172-Abstract-Datasets_and_Benchmarks.html](http://papers.nips.cc/paper_files/paper/2023/hash/bc4cff0b37ccab13e98b6128d89ca172-Abstract-Datasets_and_Benchmarks.html)
 
-**Abstract**:
+        **Abstract**:
 
-In the current landscape of pervasive smartphones and tablets, apps frequently exist across both platforms.Although apps share most graphic user interfaces (GUIs) and functionalities across phones and tablets, developers often rebuild from scratch for tablet versions, escalating costs and squandering existing design resources.Researchers are attempting to collect data and employ deep learning in automated GUIs development to enhance developers' productivity.There are currently several publicly accessible GUI page datasets for phones, but none for pairwise GUIs between phones and tablets.This poses a significant barrier to the employment of deep learning in automated GUI development.In this paper, we introduce the Papt dataset, a pioneering pairwise GUI dataset tailored for Android phones and tablets, encompassing 10,035 phone-tablet GUI page pairs sourced from 5,593 unique app pairs.We propose novel pairwise GUI collection approaches for constructing this dataset and delineate its advantages over currently prevailing datasets in the field.Through preliminary experiments on this dataset, we analyze the present challenges of utilizing deep learning in automated GUI development.
+        In the current landscape of pervasive smartphones and tablets, apps frequently exist across both platforms.Although apps share most graphic user interfaces (GUIs) and functionalities across phones and tablets, developers often rebuild from scratch for tablet versions, escalating costs and squandering existing design resources.Researchers are attempting to collect data and employ deep learning in automated GUIs development to enhance developers' productivity.There are currently several publicly accessible GUI page datasets for phones, but none for pairwise GUIs between phones and tablets.This poses a significant barrier to the employment of deep learning in automated GUI development.In this paper, we introduce the Papt dataset, a pioneering pairwise GUI dataset tailored for Android phones and tablets, encompassing 10,035 phone-tablet GUI page pairs sourced from 5,593 unique app pairs.We propose novel pairwise GUI collection approaches for constructing this dataset and delineate its advantages over currently prevailing datasets in the field.Through preliminary experiments on this dataset, we analyze the present challenges of utilizing deep learning in automated GUI development.
 
-----
+        ----
 
-## [2615] Improved Communication Efficiency in Federated Natural Policy Gradient via ADMM-based Gradient Updates
+        ## [2615] Improved Communication Efficiency in Federated Natural Policy Gradient via ADMM-based Gradient Updates
 
-**Authors**: *Guangchen Lan, Han Wang, James Anderson, Christopher G. Brinton, Vaneet Aggarwal*
+        **Authors**: *Guangchen Lan, Han Wang, James Anderson, Christopher G. Brinton, Vaneet Aggarwal*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bc6a1f968f8b1dae3e880f3f723d7d46-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bc6a1f968f8b1dae3e880f3f723d7d46-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bc6a1f968f8b1dae3e880f3f723d7d46-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bc6a1f968f8b1dae3e880f3f723d7d46-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Federated reinforcement learning (FedRL) enables agents to collaboratively train a global policy without sharing their individual data. However, high communication overhead remains a critical bottleneck, particularly for natural policy gradient (NPG) methods, which are second-order. To address this issue, we propose the FedNPG-ADMM framework, which leverages the alternating direction method of multipliers (ADMM) to approximate global NPG directions efficiently. We theoretically demonstrate that using ADMM-based gradient updates reduces communication complexity from $\mathcal{O}({d^{2}})$ to $\mathcal{O}({d})$ at each iteration, where $d$ is the number of model parameters. Furthermore, we show that achieving an $\epsilon$-error stationary convergence requires $\mathcal{O}(\frac{1}{(1-\gamma)^{2}{\epsilon}})$ iterations for discount factor $\gamma$, demonstrating that FedNPG-ADMM maintains the same convergence rate as standard FedNPG. Through evaluation of the proposed algorithms in MuJoCo environments, we demonstrate that FedNPG-ADMM maintains the reward performance of standard FedNPG, and that its convergence rate improves when the number of federated agents increases.
+        Federated reinforcement learning (FedRL) enables agents to collaboratively train a global policy without sharing their individual data. However, high communication overhead remains a critical bottleneck, particularly for natural policy gradient (NPG) methods, which are second-order. To address this issue, we propose the FedNPG-ADMM framework, which leverages the alternating direction method of multipliers (ADMM) to approximate global NPG directions efficiently. We theoretically demonstrate that using ADMM-based gradient updates reduces communication complexity from $\mathcal{O}({d^{2}})$ to $\mathcal{O}({d})$ at each iteration, where $d$ is the number of model parameters. Furthermore, we show that achieving an $\epsilon$-error stationary convergence requires $\mathcal{O}(\frac{1}{(1-\gamma)^{2}{\epsilon}})$ iterations for discount factor $\gamma$, demonstrating that FedNPG-ADMM maintains the same convergence rate as standard FedNPG. Through evaluation of the proposed algorithms in MuJoCo environments, we demonstrate that FedNPG-ADMM maintains the reward performance of standard FedNPG, and that its convergence rate improves when the number of federated agents increases.
 
-----
+        ----
 
-## [2616] Equivariant flow matching
+        ## [2616] Equivariant flow matching
 
-**Authors**: *Leon Klein, Andreas Krämer, Frank Noé*
+        **Authors**: *Leon Klein, Andreas Krämer, Frank Noé*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bc827452450356f9f558f4e4568d553b-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bc827452450356f9f558f4e4568d553b-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bc827452450356f9f558f4e4568d553b-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bc827452450356f9f558f4e4568d553b-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Normalizing flows are a class of deep generative models that are especially interesting for modeling probability distributions in physics, where the exact likelihood of flows allows reweighting to known target energy functions and computing unbiased observables. For instance, Boltzmann generators tackle the long-standing sampling problem in statistical physics by training flows to produce equilibrium samples of many-body systems such as small molecules and proteins. To build effective models for such systems, it is crucial to incorporate the symmetries of the target energy into the model, which can be achieved by equivariant continuous normalizing flows (CNFs). However, CNFs can be computationally expensive to train and generate samples from, which has hampered their scalability and practical application.In this paper, we introduce equivariant flow matching, a new training objective for equivariant CNFs that is based on the recently proposed optimal transport flow matching. Equivariant flow matching exploits the physical symmetries of the target energy for efficient, simulation-free training of equivariant CNFs.We demonstrate the effectiveness of flow matching on rotation and permutation invariant many-particle systems and a small molecule, alanine dipeptide, where for the first time we obtain a Boltzmann generator with significant sampling efficiency without relying on tailored internal coordinate featurization. Our results show that the equivariant flow matching objective yields flows with shorter integration paths, improved sampling efficiency, and higher scalability compared to existing methods.
+        Normalizing flows are a class of deep generative models that are especially interesting for modeling probability distributions in physics, where the exact likelihood of flows allows reweighting to known target energy functions and computing unbiased observables. For instance, Boltzmann generators tackle the long-standing sampling problem in statistical physics by training flows to produce equilibrium samples of many-body systems such as small molecules and proteins. To build effective models for such systems, it is crucial to incorporate the symmetries of the target energy into the model, which can be achieved by equivariant continuous normalizing flows (CNFs). However, CNFs can be computationally expensive to train and generate samples from, which has hampered their scalability and practical application.In this paper, we introduce equivariant flow matching, a new training objective for equivariant CNFs that is based on the recently proposed optimal transport flow matching. Equivariant flow matching exploits the physical symmetries of the target energy for efficient, simulation-free training of equivariant CNFs.We demonstrate the effectiveness of flow matching on rotation and permutation invariant many-particle systems and a small molecule, alanine dipeptide, where for the first time we obtain a Boltzmann generator with significant sampling efficiency without relying on tailored internal coordinate featurization. Our results show that the equivariant flow matching objective yields flows with shorter integration paths, improved sampling efficiency, and higher scalability compared to existing methods.
 
-----
+        ----
 
-## [2617] InsActor: Instruction-driven Physics-based Characters
+        ## [2617] InsActor: Instruction-driven Physics-based Characters
 
-**Authors**: *Jiawei Ren, Mingyuan Zhang, Cunjun Yu, Xiao Ma, Liang Pan, Ziwei Liu*
+        **Authors**: *Jiawei Ren, Mingyuan Zhang, Cunjun Yu, Xiao Ma, Liang Pan, Ziwei Liu*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bc943cd038a5531d5433b1431c822c01-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bc943cd038a5531d5433b1431c822c01-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bc943cd038a5531d5433b1431c822c01-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bc943cd038a5531d5433b1431c822c01-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Generating animation of physics-based characters with intuitive control has long been a desirable task with numerous applications. However, generating physically simulated animations that reflect high-level human instructions remains a difficult problem due to the complexity of physical environments and the richness of human language. In this paper, we present $\textbf{InsActor}$, a principled generative framework that leverages recent advancements in diffusion-based human motion models to produce instruction-driven animations of physics-based characters.Our framework empowers InsActor to capture complex relationships between high-level human instructions and character motions by employing diffusion policies for flexibly conditioned motion planning.To overcome invalid states and infeasible state transitions in planned motions, InsActor discovers low-level skills and maps plans to latent skill sequences in a compact latent space. Extensive experiments demonstrate that InsActor achieves state-of-the-art results on various tasks, including instruction-driven motion generation and instruction-driven waypoint heading. Notably, the ability of InsActor to generate physically simulated animations using high-level human instructions makes it a valuable tool, particularly in executing long-horizon tasks with a rich set of instructions. Our project page is available at [jiawei-ren.github.io/projects/insactor/index.html](https://jiawei-ren.github.io/projects/insactor/index.html)
+        Generating animation of physics-based characters with intuitive control has long been a desirable task with numerous applications. However, generating physically simulated animations that reflect high-level human instructions remains a difficult problem due to the complexity of physical environments and the richness of human language. In this paper, we present $\textbf{InsActor}$, a principled generative framework that leverages recent advancements in diffusion-based human motion models to produce instruction-driven animations of physics-based characters.Our framework empowers InsActor to capture complex relationships between high-level human instructions and character motions by employing diffusion policies for flexibly conditioned motion planning.To overcome invalid states and infeasible state transitions in planned motions, InsActor discovers low-level skills and maps plans to latent skill sequences in a compact latent space. Extensive experiments demonstrate that InsActor achieves state-of-the-art results on various tasks, including instruction-driven motion generation and instruction-driven waypoint heading. Notably, the ability of InsActor to generate physically simulated animations using high-level human instructions makes it a valuable tool, particularly in executing long-horizon tasks with a rich set of instructions. Our project page is available at [jiawei-ren.github.io/projects/insactor/index.html](https://jiawei-ren.github.io/projects/insactor/index.html)
 
-----
+        ----
 
-## [2618] An Efficient Doubly-Robust Test for the Kernel Treatment Effect
+        ## [2618] An Efficient Doubly-Robust Test for the Kernel Treatment Effect
 
-**Authors**: *Diego Martinez-Taboada, Aaditya Ramdas, Edward Kennedy*
+        **Authors**: *Diego Martinez-Taboada, Aaditya Ramdas, Edward Kennedy*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bccdd196d798a51a4961989984a9ed4a-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bccdd196d798a51a4961989984a9ed4a-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bccdd196d798a51a4961989984a9ed4a-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bccdd196d798a51a4961989984a9ed4a-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-The average treatment effect, which is the difference in expectation of the counterfactuals, is probably the most popular target effect in causal inference with binary treatments. However, treatments may have effects beyond the mean, for instance decreasing or increasing the variance. We propose a new kernel-based test for distributional effects of the treatment. It is, to the best of our knowledge, the first kernel-based, doubly-robust test with provably valid type-I error. Furthermore, our proposed algorithm is computationally efficient, avoiding the use of permutations.
+        The average treatment effect, which is the difference in expectation of the counterfactuals, is probably the most popular target effect in causal inference with binary treatments. However, treatments may have effects beyond the mean, for instance decreasing or increasing the variance. We propose a new kernel-based test for distributional effects of the treatment. It is, to the best of our knowledge, the first kernel-based, doubly-robust test with provably valid type-I error. Furthermore, our proposed algorithm is computationally efficient, avoiding the use of permutations.
 
-----
+        ----
 
-## [2619] Policy Finetuning in Reinforcement Learning via Design of Experiments using Offline Data
+        ## [2619] Policy Finetuning in Reinforcement Learning via Design of Experiments using Offline Data
 
-**Authors**: *Ruiqi Zhang, Andrea Zanette*
+        **Authors**: *Ruiqi Zhang, Andrea Zanette*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bcdaaa1aec3ae2aa39542acefdec4e4b-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bcdaaa1aec3ae2aa39542acefdec4e4b-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bcdaaa1aec3ae2aa39542acefdec4e4b-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bcdaaa1aec3ae2aa39542acefdec4e4b-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-In some applications of reinforcement learning, a dataset of pre-collected experience is already availablebut it is also possible to acquire some additional online data to help improve the quality of the policy.However, it may be preferable to gather additional data with a single, non-reactive exploration policyand avoid the engineering costs associated with switching policies. In this paper we propose an algorithm with provable guarantees that can leverage an offline dataset to design a single non-reactive policy for exploration. We theoretically analyze the algorithm and measure the quality of the final policy as a function of the local coverage of the original dataset and the amount of additional data collected.
+        In some applications of reinforcement learning, a dataset of pre-collected experience is already availablebut it is also possible to acquire some additional online data to help improve the quality of the policy.However, it may be preferable to gather additional data with a single, non-reactive exploration policyand avoid the engineering costs associated with switching policies. In this paper we propose an algorithm with provable guarantees that can leverage an offline dataset to design a single non-reactive policy for exploration. We theoretically analyze the algorithm and measure the quality of the final policy as a function of the local coverage of the original dataset and the amount of additional data collected.
 
-----
+        ----
 
-## [2620] Zero-sum Polymatrix Markov Games: Equilibrium Collapse and Efficient Computation of Nash Equilibria
+        ## [2620] Zero-sum Polymatrix Markov Games: Equilibrium Collapse and Efficient Computation of Nash Equilibria
 
-**Authors**: *Fivos Kalogiannis, Ioannis Panageas*
+        **Authors**: *Fivos Kalogiannis, Ioannis Panageas*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bcdcd565f83a8a6681a8269d325a5304-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bcdcd565f83a8a6681a8269d325a5304-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bcdcd565f83a8a6681a8269d325a5304-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bcdcd565f83a8a6681a8269d325a5304-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-The works of (Daskalakis et al., 2009, 2022; Jin et al., 2022; Deng et al., 2023) indicate that computing Nash equilibria in multi-player Markov games is a computationally hard task.  This fact raises the question of whether or not computational intractability can be circumvented if one focuses on specific classes of Markov games. One such example is two-player zero-sum Markov games, in which efficient ways to compute a Nash equilibrium are known. Inspired by zero-sum polymatrix normal-form games (Cai et al., 2016), we define a class of zero-sum multi-agent Markov games in which there are only pairwise interactions described by a graph that changes per state.For this class of Markov games, we show that an $\epsilon$-approximate Nash equilibrium can be found efficiently. To do so, we generalize the techniques of (Cai et al., 2016), by showing that the set of coarse-correlated equilibria collapses to the set of Nash equilibria. Afterwards, it is possible to use any algorithm in the literature that computes approximate coarse-correlated equilibria Markovian policies to get an approximate Nash equilibrium.
+        The works of (Daskalakis et al., 2009, 2022; Jin et al., 2022; Deng et al., 2023) indicate that computing Nash equilibria in multi-player Markov games is a computationally hard task.  This fact raises the question of whether or not computational intractability can be circumvented if one focuses on specific classes of Markov games. One such example is two-player zero-sum Markov games, in which efficient ways to compute a Nash equilibrium are known. Inspired by zero-sum polymatrix normal-form games (Cai et al., 2016), we define a class of zero-sum multi-agent Markov games in which there are only pairwise interactions described by a graph that changes per state.For this class of Markov games, we show that an $\epsilon$-approximate Nash equilibrium can be found efficiently. To do so, we generalize the techniques of (Cai et al., 2016), by showing that the set of coarse-correlated equilibria collapses to the set of Nash equilibria. Afterwards, it is possible to use any algorithm in the literature that computes approximate coarse-correlated equilibria Markovian policies to get an approximate Nash equilibrium.
 
-----
+        ----
 
-## [2621] Learning to Configure Separators in Branch-and-Cut
+        ## [2621] Learning to Configure Separators in Branch-and-Cut
 
-**Authors**: *Sirui Li, Wenbin Ouyang, Max B. Paulus, Cathy Wu*
+        **Authors**: *Sirui Li, Wenbin Ouyang, Max B. Paulus, Cathy Wu*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bcdec1c2d60f94a93b6e36f937aa0530-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bcdec1c2d60f94a93b6e36f937aa0530-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bcdec1c2d60f94a93b6e36f937aa0530-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bcdec1c2d60f94a93b6e36f937aa0530-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Cutting planes are crucial in solving mixed integer linear programs (MILP) as they facilitate bound improvements on the optimal solution. Modern MILP solvers rely on a variety of separators to generate a diverse set of cutting planes by invoking the separators frequently during the solving process. This work identifies that MILP solvers can be drastically accelerated by appropriately selecting separators to activate. As the combinatorial separator selection space imposes challenges for machine learning, we learn to separate by proposing a novel data-driven strategy to restrict the selection space and a learning-guided algorithm on the restricted space. Our method predicts instance-aware separator configurations which can dynamically adapt during the solve, effectively accelerating the open source MILP solver SCIP by improving the relative solve time up to 72% and 37% on synthetic and real-world MILP benchmarks. Our work complements recent work on learning to select cutting planes and highlights the importance of separator management.
+        Cutting planes are crucial in solving mixed integer linear programs (MILP) as they facilitate bound improvements on the optimal solution. Modern MILP solvers rely on a variety of separators to generate a diverse set of cutting planes by invoking the separators frequently during the solving process. This work identifies that MILP solvers can be drastically accelerated by appropriately selecting separators to activate. As the combinatorial separator selection space imposes challenges for machine learning, we learn to separate by proposing a novel data-driven strategy to restrict the selection space and a learning-guided algorithm on the restricted space. Our method predicts instance-aware separator configurations which can dynamically adapt during the solve, effectively accelerating the open source MILP solver SCIP by improving the relative solve time up to 72% and 37% on synthetic and real-world MILP benchmarks. Our work complements recent work on learning to select cutting planes and highlights the importance of separator management.
 
-----
+        ----
 
-## [2622] Multi-Object Representation Learning via Feature Connectivity and Object-Centric Regularization
+        ## [2622] Multi-Object Representation Learning via Feature Connectivity and Object-Centric Regularization
 
-**Authors**: *Alex Foo, Wynne Hsu, Mong-Li Lee*
+        **Authors**: *Alex Foo, Wynne Hsu, Mong-Li Lee*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bcef27c5825d1ed8757290f237b2d851-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bcef27c5825d1ed8757290f237b2d851-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bcef27c5825d1ed8757290f237b2d851-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bcef27c5825d1ed8757290f237b2d851-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Discovering object-centric representations from images has the potential to greatly improve the robustness, sample efficiency and interpretability of machine learning algorithms. Current works on multi-object images typically follow a generative approach that optimizes for input reconstruction and fail to scale to real-world datasets despite significant increases in model capacity. We address this limitation by proposing a novel method that leverages feature connectivity to cluster neighboring pixels likely to belong to the same object. We further design two object-centric regularization terms to refine object representations in the latent space, enabling our approach to scale to complex real-world images. Experimental results on simulated, real-world, complex texture and common object images demonstrate a substantial improvement in the quality of discovered objects compared to state-of-the-art methods, as well as the sample efficiency and generalizability of our approach. We also show that the discovered object-centric representations can accurately predict key object properties in downstream tasks, highlighting the potential of our method to advance the field of multi-object representation learning.
+        Discovering object-centric representations from images has the potential to greatly improve the robustness, sample efficiency and interpretability of machine learning algorithms. Current works on multi-object images typically follow a generative approach that optimizes for input reconstruction and fail to scale to real-world datasets despite significant increases in model capacity. We address this limitation by proposing a novel method that leverages feature connectivity to cluster neighboring pixels likely to belong to the same object. We further design two object-centric regularization terms to refine object representations in the latent space, enabling our approach to scale to complex real-world images. Experimental results on simulated, real-world, complex texture and common object images demonstrate a substantial improvement in the quality of discovered objects compared to state-of-the-art methods, as well as the sample efficiency and generalizability of our approach. We also show that the discovered object-centric representations can accurately predict key object properties in downstream tasks, highlighting the potential of our method to advance the field of multi-object representation learning.
 
-----
+        ----
 
-## [2623] Ess-InfoGAIL: Semi-supervised Imitation Learning from Imbalanced Demonstrations
+        ## [2623] Ess-InfoGAIL: Semi-supervised Imitation Learning from Imbalanced Demonstrations
 
-**Authors**: *Huiqiao Fu, Kaiqiang Tang, Yuanyang Lu, Yiming Qi, Guizhou Deng, Flood Sung, Chunlin Chen*
+        **Authors**: *Huiqiao Fu, Kaiqiang Tang, Yuanyang Lu, Yiming Qi, Guizhou Deng, Flood Sung, Chunlin Chen*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bcf26768143c94bd36e363cd4bf5daf0-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bcf26768143c94bd36e363cd4bf5daf0-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bcf26768143c94bd36e363cd4bf5daf0-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bcf26768143c94bd36e363cd4bf5daf0-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Imitation learning aims to reproduce expert behaviors without relying on an explicit reward signal. However, real-world demonstrations often present challenges, such as multi-modal, data imbalance, and expensive labeling processes. In this work, we propose a novel semi-supervised imitation learning architecture that learns disentangled behavior representations from imbalanced demonstrations using limited labeled data. Specifically, our method consists of three key components. First, we adapt the concept of semi-supervised generative adversarial networks to the imitation learning context. Second, we employ a learnable latent distribution to align the generated and expert data distributions. Finally, we utilize a regularized information maximization approach in conjunction with an approximate label prior to further improve the semi-supervised learning performance. Experimental results demonstrate the efficiency of our method in learning multi-modal behaviors from imbalanced demonstrations compared to baseline methods.
+        Imitation learning aims to reproduce expert behaviors without relying on an explicit reward signal. However, real-world demonstrations often present challenges, such as multi-modal, data imbalance, and expensive labeling processes. In this work, we propose a novel semi-supervised imitation learning architecture that learns disentangled behavior representations from imbalanced demonstrations using limited labeled data. Specifically, our method consists of three key components. First, we adapt the concept of semi-supervised generative adversarial networks to the imitation learning context. Second, we employ a learnable latent distribution to align the generated and expert data distributions. Finally, we utilize a regularized information maximization approach in conjunction with an approximate label prior to further improve the semi-supervised learning performance. Experimental results demonstrate the efficiency of our method in learning multi-modal behaviors from imbalanced demonstrations compared to baseline methods.
 
-----
+        ----
 
-## [2624] Revisiting Implicit Differentiation for Learning Problems in Optimal Control
+        ## [2624] Revisiting Implicit Differentiation for Learning Problems in Optimal Control
 
-**Authors**: *Ming Xu, Timothy L. Molloy, Stephen Gould*
+        **Authors**: *Ming Xu, Timothy L. Molloy, Stephen Gould*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bcfcf7232cb74e1ef82d751880ff835b-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bcfcf7232cb74e1ef82d751880ff835b-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bcfcf7232cb74e1ef82d751880ff835b-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bcfcf7232cb74e1ef82d751880ff835b-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-This paper proposes a new method for differentiating through optimal trajectories arising from non-convex, constrained discrete-time optimal control (COC) problems using the implicit function theorem (IFT). Previous works solve a differential Karush-Kuhn-Tucker (KKT) system for the trajectory derivative, and achieve this efficiently by solving an auxiliary Linear Quadratic Regulator (LQR) problem. In contrast, we directly evaluate the matrix equations which arise from applying variable elimination on the Lagrange multiplier terms in the (differential) KKT system. By appropriately accounting for the structure of the terms within the resulting equations, we show that the trajectory derivatives scale linearly with the number of timesteps. Furthermore, our approach allows for easy parallelization, significantly improved scalability with model size, direct computation of vector-Jacobian products and improved numerical stability compared to prior works. As an additional contribution, we unify prior works, addressing claims that computing trajectory derivatives using IFT scales quadratically with the number of timesteps. We evaluate our method on a both synthetic benchmark and four challenging, learning from demonstration benchmarks including a 6-DoF maneuvering quadrotor and 6-DoF rocket powered landing.
+        This paper proposes a new method for differentiating through optimal trajectories arising from non-convex, constrained discrete-time optimal control (COC) problems using the implicit function theorem (IFT). Previous works solve a differential Karush-Kuhn-Tucker (KKT) system for the trajectory derivative, and achieve this efficiently by solving an auxiliary Linear Quadratic Regulator (LQR) problem. In contrast, we directly evaluate the matrix equations which arise from applying variable elimination on the Lagrange multiplier terms in the (differential) KKT system. By appropriately accounting for the structure of the terms within the resulting equations, we show that the trajectory derivatives scale linearly with the number of timesteps. Furthermore, our approach allows for easy parallelization, significantly improved scalability with model size, direct computation of vector-Jacobian products and improved numerical stability compared to prior works. As an additional contribution, we unify prior works, addressing claims that computing trajectory derivatives using IFT scales quadratically with the number of timesteps. We evaluate our method on a both synthetic benchmark and four challenging, learning from demonstration benchmarks including a 6-DoF maneuvering quadrotor and 6-DoF rocket powered landing.
 
-----
+        ----
 
-## [2625] p-Poisson surface reconstruction in curl-free flow from point clouds
+        ## [2625] p-Poisson surface reconstruction in curl-free flow from point clouds
 
-**Authors**: *Yesom Park, Taekyung Lee, Jooyoung Hahn, Myungjoo Kang*
+        **Authors**: *Yesom Park, Taekyung Lee, Jooyoung Hahn, Myungjoo Kang*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bd18189308a4c45c7d71ca83acf3deaa-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bd18189308a4c45c7d71ca83acf3deaa-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bd18189308a4c45c7d71ca83acf3deaa-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bd18189308a4c45c7d71ca83acf3deaa-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-The aim of this paper is the reconstruction of a smooth surface from an unorganized point cloud sampled by a closed surface, with the preservation of geometric shapes, without any further information other than the point cloud. Implicit neural representations (INRs) have recently emerged as a promising approach to surface reconstruction. However, the reconstruction quality of existing methods relies on ground truth implicit function values or surface normal vectors. In this paper, we show that proper supervision of partial differential equations and fundamental properties of differential vector fields are sufficient to robustly reconstruct high-quality surfaces. We cast the $p$-Poisson equation to learn a signed distance function (SDF) and the reconstructed surface is implicitly represented by the zero-level set of the SDF. For efficient training, we develop a variable splitting structure by introducing a gradient of the SDF as an auxiliary variable and impose the $p$-Poisson equation directly on the auxiliary variable as a hard constraint. Based on the curl-free property of the gradient field, we impose a curl-free constraint on the auxiliary variable, which leads to a more faithful reconstruction. Experiments on standard benchmark datasets show that the proposed INR provides a superior and robust reconstruction. The code is available at https://github.com/Yebbi/PINC.
+        The aim of this paper is the reconstruction of a smooth surface from an unorganized point cloud sampled by a closed surface, with the preservation of geometric shapes, without any further information other than the point cloud. Implicit neural representations (INRs) have recently emerged as a promising approach to surface reconstruction. However, the reconstruction quality of existing methods relies on ground truth implicit function values or surface normal vectors. In this paper, we show that proper supervision of partial differential equations and fundamental properties of differential vector fields are sufficient to robustly reconstruct high-quality surfaces. We cast the $p$-Poisson equation to learn a signed distance function (SDF) and the reconstructed surface is implicitly represented by the zero-level set of the SDF. For efficient training, we develop a variable splitting structure by introducing a gradient of the SDF as an auxiliary variable and impose the $p$-Poisson equation directly on the auxiliary variable as a hard constraint. Based on the curl-free property of the gradient field, we impose a curl-free constraint on the auxiliary variable, which leads to a more faithful reconstruction. Experiments on standard benchmark datasets show that the proposed INR provides a superior and robust reconstruction. The code is available at https://github.com/Yebbi/PINC.
 
-----
+        ----
 
-## [2626] Binarized Neural Machine Translation
+        ## [2626] Binarized Neural Machine Translation
 
-**Authors**: *Yichi Zhang, Ankush Garg, Yuan Cao, Lukasz Lew, Behrooz Ghorbani, Zhiru Zhang, Orhan Firat*
+        **Authors**: *Yichi Zhang, Ankush Garg, Yuan Cao, Lukasz Lew, Behrooz Ghorbani, Zhiru Zhang, Orhan Firat*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bd1fc5cbedfe4d90d0ac2d23966fa27e-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bd1fc5cbedfe4d90d0ac2d23966fa27e-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bd1fc5cbedfe4d90d0ac2d23966fa27e-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bd1fc5cbedfe4d90d0ac2d23966fa27e-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-The rapid scaling of language models is motivating research using low-bitwidth quantization.In this work, we propose a novel binarization technique for Transformers applied to machine translation (BMT), the first of its kind. We identify and address the problem of inflated dot-product variance when using one-bit weights and activations. Specifically, BMT leverages additional LayerNorms and residual connections to improve binarization quality. Experiments on the WMT dataset show that a one-bit weight-only Transformer can achieve the same quality as a float one, while being 16$\times$ smaller in size. One-bit activations incur varying degrees of quality drop, but mitigated by the proposed architectural changes. We further conduct a scaling law study using production-scale translation datasets, which shows that one-bit weight Transformers scale and generalize well in both in-domain and out-of-domain settings. Implementation in JAX/Flax will be open sourced.
+        The rapid scaling of language models is motivating research using low-bitwidth quantization.In this work, we propose a novel binarization technique for Transformers applied to machine translation (BMT), the first of its kind. We identify and address the problem of inflated dot-product variance when using one-bit weights and activations. Specifically, BMT leverages additional LayerNorms and residual connections to improve binarization quality. Experiments on the WMT dataset show that a one-bit weight-only Transformer can achieve the same quality as a float one, while being 16$\times$ smaller in size. One-bit activations incur varying degrees of quality drop, but mitigated by the proposed architectural changes. We further conduct a scaling law study using production-scale translation datasets, which shows that one-bit weight Transformers scale and generalize well in both in-domain and out-of-domain settings. Implementation in JAX/Flax will be open sourced.
 
-----
+        ----
 
-## [2627] Greedy Pruning with Group Lasso Provably Generalizes for Matrix Sensing
+        ## [2627] Greedy Pruning with Group Lasso Provably Generalizes for Matrix Sensing
 
-**Authors**: *Nived Rajaraman, Devvrit, Aryan Mokhtari, Kannan Ramchandran*
+        **Authors**: *Nived Rajaraman, Devvrit, Aryan Mokhtari, Kannan Ramchandran*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bd2107343c9cc973635d90dbfc122223-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bd2107343c9cc973635d90dbfc122223-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bd2107343c9cc973635d90dbfc122223-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bd2107343c9cc973635d90dbfc122223-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Pruning schemes have been widely used in practice to reduce the complexity of trained models with a massive number of parameters. In fact, several practical studies have shown that if the pruned model is fine-tuned with some gradient-based updates it generalizes well to new samples. Although the above pipeline, which we refer to as pruning + fine-tuning, has been extremely successful in lowering the complexity of trained models, there is very little known about the theory behind this success. In this paper we address this issue by investigating the pruning + fine-tuning framework on the overparameterized matrix sensing problem with the ground truth denoted $U_\star \in \mathbb{R}^{d \times r}$ and the overparameterized model $U \in \mathbb{R}^{d \times k}$ with $k \gg r$. We study the approximate local minima of the mean square error, augmented with a smooth version of a group Lasso regularizer, $\sum_{i=1}^{k} \lVert Ue_i \rVert_2 $. In particular, we provably show that pruning all the columns below a certain explicit $\ell_2$-norm threshold results in a solution $U_{\text{prune}}$ which has the minimum number of columns $r$, yet close to the ground truth in training loss. Moreover, in the subsequent fine-tuning phase, gradient descent initialized at $U_{\text{prune}}$ converges at a linear rate to its limit. While our analysis provides insights into the role of regularization in pruning, we also show that running gradient descent in the absence of regularization results in models which {are not suitable for greedy pruning}, i.e., many columns could have their $\ell_2$ norm comparable to that of the maximum. Lastly, we show that our results also extend for the training and pruning of two-layer neural networks with quadratic activation functions. To the best of our knowledge, our results provide the first rigorous insights on why greedy pruning + fine-tuning leads to smaller models which also generalize well.
+        Pruning schemes have been widely used in practice to reduce the complexity of trained models with a massive number of parameters. In fact, several practical studies have shown that if the pruned model is fine-tuned with some gradient-based updates it generalizes well to new samples. Although the above pipeline, which we refer to as pruning + fine-tuning, has been extremely successful in lowering the complexity of trained models, there is very little known about the theory behind this success. In this paper we address this issue by investigating the pruning + fine-tuning framework on the overparameterized matrix sensing problem with the ground truth denoted $U_\star \in \mathbb{R}^{d \times r}$ and the overparameterized model $U \in \mathbb{R}^{d \times k}$ with $k \gg r$. We study the approximate local minima of the mean square error, augmented with a smooth version of a group Lasso regularizer, $\sum_{i=1}^{k} \lVert Ue_i \rVert_2 $. In particular, we provably show that pruning all the columns below a certain explicit $\ell_2$-norm threshold results in a solution $U_{\text{prune}}$ which has the minimum number of columns $r$, yet close to the ground truth in training loss. Moreover, in the subsequent fine-tuning phase, gradient descent initialized at $U_{\text{prune}}$ converges at a linear rate to its limit. While our analysis provides insights into the role of regularization in pruning, we also show that running gradient descent in the absence of regularization results in models which {are not suitable for greedy pruning}, i.e., many columns could have their $\ell_2$ norm comparable to that of the maximum. Lastly, we show that our results also extend for the training and pruning of two-layer neural networks with quadratic activation functions. To the best of our knowledge, our results provide the first rigorous insights on why greedy pruning + fine-tuning leads to smaller models which also generalize well.
 
-----
+        ----
 
-## [2628] EgoEnv: Human-centric environment representations from egocentric video
+        ## [2628] EgoEnv: Human-centric environment representations from egocentric video
 
-**Authors**: *Tushar Nagarajan, Santhosh Kumar Ramakrishnan, Ruta Desai, James Hillis, Kristen Grauman*
+        **Authors**: *Tushar Nagarajan, Santhosh Kumar Ramakrishnan, Ruta Desai, James Hillis, Kristen Grauman*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bd2605c5d854837aaf095537e82f1883-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bd2605c5d854837aaf095537e82f1883-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bd2605c5d854837aaf095537e82f1883-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bd2605c5d854837aaf095537e82f1883-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-First-person video highlights a camera-wearer's activities in the context of their persistent environment. However, current video understanding approaches reason over visual features from short video clips that are detached from the underlying physical space and  capture only what is immediately visible. To facilitate human-centric environment understanding, we present an approach that links egocentric video and the environment by learning representations that are predictive of the camera-wearer's (potentially unseen) local surroundings. We train such models using videos from agents in simulated 3D environments where the environment is fully observable, and test them on human-captured real-world videos from unseen environments. On two human-centric video tasks, we show that models equipped with our environment-aware features consistently outperform their counterparts with traditional clip features. Moreover, despite being trained exclusively on simulated videos, our approach successfully handles real-world videos from HouseTours and Ego4D, and achieves state-of-the-art results on the Ego4D NLQ challenge.
+        First-person video highlights a camera-wearer's activities in the context of their persistent environment. However, current video understanding approaches reason over visual features from short video clips that are detached from the underlying physical space and  capture only what is immediately visible. To facilitate human-centric environment understanding, we present an approach that links egocentric video and the environment by learning representations that are predictive of the camera-wearer's (potentially unseen) local surroundings. We train such models using videos from agents in simulated 3D environments where the environment is fully observable, and test them on human-captured real-world videos from unseen environments. On two human-centric video tasks, we show that models equipped with our environment-aware features consistently outperform their counterparts with traditional clip features. Moreover, despite being trained exclusively on simulated videos, our approach successfully handles real-world videos from HouseTours and Ego4D, and achieves state-of-the-art results on the Ego4D NLQ challenge.
 
-----
+        ----
 
-## [2629] Revisiting Evaluation Metrics for Semantic Segmentation: Optimization and Evaluation of Fine-grained Intersection over Union
+        ## [2629] Revisiting Evaluation Metrics for Semantic Segmentation: Optimization and Evaluation of Fine-grained Intersection over Union
 
-**Authors**: *Zifu Wang, Maxim Berman, Amal Rannen-Triki, Philip H. S. Torr, Devis Tuia, Tinne Tuytelaars, Luc Van Gool, Jiaqian Yu, Matthew B. Blaschko*
+        **Authors**: *Zifu Wang, Maxim Berman, Amal Rannen-Triki, Philip H. S. Torr, Devis Tuia, Tinne Tuytelaars, Luc Van Gool, Jiaqian Yu, Matthew B. Blaschko*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bd3611971089d466ab4ca96a20f7ab13-Abstract-Datasets_and_Benchmarks.html](http://papers.nips.cc/paper_files/paper/2023/hash/bd3611971089d466ab4ca96a20f7ab13-Abstract-Datasets_and_Benchmarks.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bd3611971089d466ab4ca96a20f7ab13-Abstract-Datasets_and_Benchmarks.html](http://papers.nips.cc/paper_files/paper/2023/hash/bd3611971089d466ab4ca96a20f7ab13-Abstract-Datasets_and_Benchmarks.html)
 
-**Abstract**:
+        **Abstract**:
 
-Semantic segmentation datasets often exhibit two types of imbalance: \textit{class imbalance}, where some classes appear more frequently than others and \textit{size imbalance}, where some objects occupy more pixels than others. This causes traditional evaluation metrics to be biased towards \textit{majority classes} (e.g. overall pixel-wise accuracy) and \textit{large objects} (e.g. mean pixel-wise accuracy and per-dataset mean intersection over union). To address these shortcomings, we propose the use of fine-grained mIoUs along with corresponding worst-case metrics, thereby offering a more holistic evaluation of segmentation techniques. These fine-grained metrics offer less bias towards large objects, richer statistical information, and valuable insights into model and dataset auditing. Furthermore, we undertake an extensive benchmark study, where we train and evaluate 15 modern neural networks with the proposed metrics on 12 diverse natural and aerial segmentation datasets. Our benchmark study highlights the necessity of not basing evaluations on a single metric and confirms that fine-grained mIoUs reduce the bias towards large objects. Moreover, we identify the crucial role played by architecture designs and loss functions, which lead to best practices in optimizing fine-grained metrics. The code is available at \href{https://github.com/zifuwanggg/JDTLosses}{https://github.com/zifuwanggg/JDTLosses}.
+        Semantic segmentation datasets often exhibit two types of imbalance: \textit{class imbalance}, where some classes appear more frequently than others and \textit{size imbalance}, where some objects occupy more pixels than others. This causes traditional evaluation metrics to be biased towards \textit{majority classes} (e.g. overall pixel-wise accuracy) and \textit{large objects} (e.g. mean pixel-wise accuracy and per-dataset mean intersection over union). To address these shortcomings, we propose the use of fine-grained mIoUs along with corresponding worst-case metrics, thereby offering a more holistic evaluation of segmentation techniques. These fine-grained metrics offer less bias towards large objects, richer statistical information, and valuable insights into model and dataset auditing. Furthermore, we undertake an extensive benchmark study, where we train and evaluate 15 modern neural networks with the proposed metrics on 12 diverse natural and aerial segmentation datasets. Our benchmark study highlights the necessity of not basing evaluations on a single metric and confirms that fine-grained mIoUs reduce the bias towards large objects. Moreover, we identify the crucial role played by architecture designs and loss functions, which lead to best practices in optimizing fine-grained metrics. The code is available at \href{https://github.com/zifuwanggg/JDTLosses}{https://github.com/zifuwanggg/JDTLosses}.
 
-----
+        ----
 
-## [2630] Optimal Unbiased Randomizers for Regression with Label Differential Privacy
+        ## [2630] Optimal Unbiased Randomizers for Regression with Label Differential Privacy
 
-**Authors**: *Ashwinkumar Badanidiyuru Varadaraja, Badih Ghazi, Pritish Kamath, Ravi Kumar, Ethan Leeman, Pasin Manurangsi, Avinash V. Varadarajan, Chiyuan Zhang*
+        **Authors**: *Ashwinkumar Badanidiyuru Varadaraja, Badih Ghazi, Pritish Kamath, Ravi Kumar, Ethan Leeman, Pasin Manurangsi, Avinash V. Varadarajan, Chiyuan Zhang*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bd5d436621dd3ee728b11c067d32d488-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bd5d436621dd3ee728b11c067d32d488-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bd5d436621dd3ee728b11c067d32d488-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bd5d436621dd3ee728b11c067d32d488-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-We propose a new family of label randomizers for  training regression models under the constraint of label differential privacy (DP). In particular, we leverage the trade-offs between bias and variance to construct better label randomizers depending on a privately estimated prior distribution over the labels. We demonstrate that these randomizers achieve state-of-the-art privacy-utility trade-offs on several datasets, highlighting the importance of reducing bias when training neural networks with label DP. We also provide theoretical results shedding light on the structural properties of the optimal unbiased randomizers.
+        We propose a new family of label randomizers for  training regression models under the constraint of label differential privacy (DP). In particular, we leverage the trade-offs between bias and variance to construct better label randomizers depending on a privately estimated prior distribution over the labels. We demonstrate that these randomizers achieve state-of-the-art privacy-utility trade-offs on several datasets, highlighting the importance of reducing bias when training neural networks with label DP. We also provide theoretical results shedding light on the structural properties of the optimal unbiased randomizers.
 
-----
+        ----
 
-## [2631] Understanding, Predicting and Better Resolving Q-Value Divergence in Offline-RL
+        ## [2631] Understanding, Predicting and Better Resolving Q-Value Divergence in Offline-RL
 
-**Authors**: *Yang Yue, Rui Lu, Bingyi Kang, Shiji Song, Gao Huang*
+        **Authors**: *Yang Yue, Rui Lu, Bingyi Kang, Shiji Song, Gao Huang*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bd6bb13e78da078d8adcabbe6d9ca737-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bd6bb13e78da078d8adcabbe6d9ca737-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bd6bb13e78da078d8adcabbe6d9ca737-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bd6bb13e78da078d8adcabbe6d9ca737-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-The divergence of the Q-value estimation has been a prominent issue offline reinforcement learning (offline RL), where the agent has no access to real dynamics. Traditional beliefs attribute this instability to querying out-of-distribution actions when bootstrapping value targets. Though this issue can be alleviated with policy constraints or conservative Q estimation, a theoretical understanding of the underlying mechanism causing the divergence has been absent. In this work, we aim to thoroughly comprehend this mechanism and attain an improved solution. We first identify a fundamental pattern, \emph{self-excitation}, as the primary cause of Q-value estimation divergence in offline RL. Then, we propose a novel Self-Excite Eigenvalue Measure (SEEM) metric based on Neural Tangent Kernel (NTK) to measure the evolving property of Q-network at training, which provides an intriguing explanation of the emergence of divergence. For the first time, our theory can reliably decide whether the training will diverge at an early stage, and even predict the order of the growth for the estimated Q-value, the model's norm, and the crashing step when an SGD optimizer is used. The experiments demonstrate perfect alignment with this theoretic analysis. Building on our insights, we propose to resolve divergence from a novel perspective, namely improving the model's architecture for better extrapolating behavior. Through extensive empirical studies, we identify LayerNorm as a good solution to effectively avoid divergence without introducing detrimental bias, leading to superior performance. Experimental results prove that it can still work in some most challenging settings, i.e. using only 1$\%$ transitions of the dataset, where all previous methods fail. Moreover, it can be easily plugged into modern offline RL methods and achieve SOTA results on many challenging tasks. We also give unique insights into its effectiveness.
+        The divergence of the Q-value estimation has been a prominent issue offline reinforcement learning (offline RL), where the agent has no access to real dynamics. Traditional beliefs attribute this instability to querying out-of-distribution actions when bootstrapping value targets. Though this issue can be alleviated with policy constraints or conservative Q estimation, a theoretical understanding of the underlying mechanism causing the divergence has been absent. In this work, we aim to thoroughly comprehend this mechanism and attain an improved solution. We first identify a fundamental pattern, \emph{self-excitation}, as the primary cause of Q-value estimation divergence in offline RL. Then, we propose a novel Self-Excite Eigenvalue Measure (SEEM) metric based on Neural Tangent Kernel (NTK) to measure the evolving property of Q-network at training, which provides an intriguing explanation of the emergence of divergence. For the first time, our theory can reliably decide whether the training will diverge at an early stage, and even predict the order of the growth for the estimated Q-value, the model's norm, and the crashing step when an SGD optimizer is used. The experiments demonstrate perfect alignment with this theoretic analysis. Building on our insights, we propose to resolve divergence from a novel perspective, namely improving the model's architecture for better extrapolating behavior. Through extensive empirical studies, we identify LayerNorm as a good solution to effectively avoid divergence without introducing detrimental bias, leading to superior performance. Experimental results prove that it can still work in some most challenging settings, i.e. using only 1$\%$ transitions of the dataset, where all previous methods fail. Moreover, it can be easily plugged into modern offline RL methods and achieve SOTA results on many challenging tasks. We also give unique insights into its effectiveness.
 
-----
+        ----
 
-## [2632] Online List Labeling with Predictions
+        ## [2632] Online List Labeling with Predictions
 
-**Authors**: *Samuel McCauley, Benjamin Moseley, Aidin Niaparast, Shikha Singh*
+        **Authors**: *Samuel McCauley, Benjamin Moseley, Aidin Niaparast, Shikha Singh*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bd8284e53b6d177cbede82def77d4951-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bd8284e53b6d177cbede82def77d4951-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bd8284e53b6d177cbede82def77d4951-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bd8284e53b6d177cbede82def77d4951-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-A growing line of work shows how learned predictions can be used to break through worst-case barriers to improve the running time of an algorithm. However, incorporating predictions into data structures with strong theoretical guarantees remains underdeveloped.  This paper takes a step in this direction by showing that predictions can be leveraged in the fundamental online list labeling problem. In the problem, $n$ items arrive over time and must be stored in sorted order in an array of size $\Theta(n)$.  The array slot of an element is its label and the goal is to maintain sorted order while minimizing the total number of elements moved (i.e., relabeled). We design a new list labeling data structure and bound its performance in two models.  In the worst-case learning-augmented model, we give guarantees in terms of the error in the predictions.  Our data structure provides strong guarantees: it is optimal for any prediction error and guarantees the best-known worst-case bound even when the predictions are entirely erroneous. We also consider a stochastic error model and bound the performance in terms of the expectation and variance of the error. Finally, the theoretical results are demonstrated empirically.  In particular, we show that our data structure has strong performance on real temporal data sets where predictions are constructed from elements that arrived in the past, as is typically done in a practical use case.
+        A growing line of work shows how learned predictions can be used to break through worst-case barriers to improve the running time of an algorithm. However, incorporating predictions into data structures with strong theoretical guarantees remains underdeveloped.  This paper takes a step in this direction by showing that predictions can be leveraged in the fundamental online list labeling problem. In the problem, $n$ items arrive over time and must be stored in sorted order in an array of size $\Theta(n)$.  The array slot of an element is its label and the goal is to maintain sorted order while minimizing the total number of elements moved (i.e., relabeled). We design a new list labeling data structure and bound its performance in two models.  In the worst-case learning-augmented model, we give guarantees in terms of the error in the predictions.  Our data structure provides strong guarantees: it is optimal for any prediction error and guarantees the best-known worst-case bound even when the predictions are entirely erroneous. We also consider a stochastic error model and bound the performance in terms of the expectation and variance of the error. Finally, the theoretical results are demonstrated empirically.  In particular, we show that our data structure has strong performance on real temporal data sets where predictions are constructed from elements that arrived in the past, as is typically done in a practical use case.
 
-----
+        ----
 
-## [2633] How a Student becomes a Teacher: learning and forgetting through Spectral methods
+        ## [2633] How a Student becomes a Teacher: learning and forgetting through Spectral methods
 
-**Authors**: *Lorenzo Giambagli, Lorenzo Buffoni, Lorenzo Chicchi, Duccio Fanelli*
+        **Authors**: *Lorenzo Giambagli, Lorenzo Buffoni, Lorenzo Chicchi, Duccio Fanelli*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bd9ea5d671ee761a69dba811348d78ba-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bd9ea5d671ee761a69dba811348d78ba-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bd9ea5d671ee761a69dba811348d78ba-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bd9ea5d671ee761a69dba811348d78ba-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-In theoretical Machine Learning, the teacher-student paradigm is often employed as an effective metaphor for real-life tuition.  A student network is trained on data generated by a fixed teacher network until it matches the instructorâ€™s ability to cope with the assigned task. The above scheme proves particularly relevant when the student network is overparameterized (namely, when larger layer sizes are employed) as compared to the underlying teacher network. Under these operating conditions, it is tempting to speculate that the student ability to handle the given task could be eventually stored in a sub-portion of the whole network. This latter should be to some extent reminiscent of the frozen teacher structure, according to suitable metrics, while being approximately invariant across different architectures of the student candidate network. Unfortunately, state-of-the-art conventional learning techniques could not help in identifying the existence of such an invariant subnetwork, due to the inherent degree of non-convexity that characterizes the examined problem. In this work, we take a decisive leap forward by proposing a radically different optimization scheme which builds on a spectral representation of the linear transfer of information between layers. The gradient is hence calculated with respect to both eigenvalues and eigenvectors with negligible increase in terms of computational and complexity load, as compared to standard training algorithms. Working in this framework, we could isolate a stable student substructure, that mirrors the true complexity of the teacher in terms of computing neurons, path distribution and topological attributes. When pruning unimportant nodes of the trained student, as follows a ranking that reflects the optimized eigenvalues, no degradation in the recorded performance is seen above a threshold that corresponds to the effective teacher size. The observed behavior can be pictured as a genuine second-order phase transition that bears universality traits.
+        In theoretical Machine Learning, the teacher-student paradigm is often employed as an effective metaphor for real-life tuition.  A student network is trained on data generated by a fixed teacher network until it matches the instructorâ€™s ability to cope with the assigned task. The above scheme proves particularly relevant when the student network is overparameterized (namely, when larger layer sizes are employed) as compared to the underlying teacher network. Under these operating conditions, it is tempting to speculate that the student ability to handle the given task could be eventually stored in a sub-portion of the whole network. This latter should be to some extent reminiscent of the frozen teacher structure, according to suitable metrics, while being approximately invariant across different architectures of the student candidate network. Unfortunately, state-of-the-art conventional learning techniques could not help in identifying the existence of such an invariant subnetwork, due to the inherent degree of non-convexity that characterizes the examined problem. In this work, we take a decisive leap forward by proposing a radically different optimization scheme which builds on a spectral representation of the linear transfer of information between layers. The gradient is hence calculated with respect to both eigenvalues and eigenvectors with negligible increase in terms of computational and complexity load, as compared to standard training algorithms. Working in this framework, we could isolate a stable student substructure, that mirrors the true complexity of the teacher in terms of computing neurons, path distribution and topological attributes. When pruning unimportant nodes of the trained student, as follows a ranking that reflects the optimized eigenvalues, no degradation in the recorded performance is seen above a threshold that corresponds to the effective teacher size. The observed behavior can be pictured as a genuine second-order phase transition that bears universality traits.
 
-----
+        ----
 
-## [2634] PAPR: Proximity Attention Point Rendering
+        ## [2634] PAPR: Proximity Attention Point Rendering
 
-**Authors**: *Yanshu Zhang, Shichong Peng, Alireza Moazeni, Ke Li*
+        **Authors**: *Yanshu Zhang, Shichong Peng, Alireza Moazeni, Ke Li*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bda5c35eded86adaf0231748e3ce071c-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bda5c35eded86adaf0231748e3ce071c-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bda5c35eded86adaf0231748e3ce071c-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bda5c35eded86adaf0231748e3ce071c-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Learning accurate and parsimonious point cloud representations of scene surfaces from scratch remains a challenge in 3D representation learning.  Existing point-based methods often suffer from the vanishing gradient problem or require a large number of points to accurately model scene geometry and texture. To address these limitations, we propose Proximity Attention Point Rendering (PAPR), a novel method that consists of a point-based scene representation and a differentiable renderer. Our scene representation uses a point cloud where each point is characterized by its spatial position, influence score, and view-independent feature vector. The renderer selects the relevant points for each ray and produces accurate colours using their associated features. PAPR effectively learns point cloud positions to represent the correct scene geometry, even when the initialization drastically differs from the target geometry. Notably, our method captures fine texture details while using only a parsimonious set of points. We also demonstrate four practical applications of our method: zero-shot geometry editing, object manipulation, texture transfer, and exposure control. More results and code are available on our project website at https://zvict.github.io/papr/.
+        Learning accurate and parsimonious point cloud representations of scene surfaces from scratch remains a challenge in 3D representation learning.  Existing point-based methods often suffer from the vanishing gradient problem or require a large number of points to accurately model scene geometry and texture. To address these limitations, we propose Proximity Attention Point Rendering (PAPR), a novel method that consists of a point-based scene representation and a differentiable renderer. Our scene representation uses a point cloud where each point is characterized by its spatial position, influence score, and view-independent feature vector. The renderer selects the relevant points for each ray and produces accurate colours using their associated features. PAPR effectively learns point cloud positions to represent the correct scene geometry, even when the initialization drastically differs from the target geometry. Notably, our method captures fine texture details while using only a parsimonious set of points. We also demonstrate four practical applications of our method: zero-shot geometry editing, object manipulation, texture transfer, and exposure control. More results and code are available on our project website at https://zvict.github.io/papr/.
 
-----
+        ----
 
-## [2635] Enhancing Minority Classes by Mixing: An Adaptative Optimal Transport Approach for Long-tailed Classification
+        ## [2635] Enhancing Minority Classes by Mixing: An Adaptative Optimal Transport Approach for Long-tailed Classification
 
-**Authors**: *Jintong Gao, He Zhao, Zhuo Li, Dandan Guo*
+        **Authors**: *Jintong Gao, He Zhao, Zhuo Li, Dandan Guo*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bdabb5d4262bcfb6a1d529d690a6c82b-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bdabb5d4262bcfb6a1d529d690a6c82b-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bdabb5d4262bcfb6a1d529d690a6c82b-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bdabb5d4262bcfb6a1d529d690a6c82b-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Real-world data usually confronts severe class-imbalance problems, where several majority classes have a significantly larger presence in the training set than minority classes. One effective solution is using mixup-based methods to generate synthetic samples to enhance the presence of minority classes. Previous approaches mix the background images from the majority classes and foreground images from theminority classes in a random manner, which ignores the sample-level semantic similarity, possibly resulting in less reasonable or less useful images. In this work, we propose an adaptive image-mixing method based on optimal transport (OT) to incorporate both class-level and sample-level information, which is able to generate semantically reasonable and meaningful mixed images for minority classes. Due toits flexibility, our method can be combined with existing long-tailed classification methods to enhance their performance and it can also serve as a general data augmentation method for balanced datasets. Extensive experiments indicate that our method achieves effective performance for long-tailed classification tasks. The code is available at https://github.com/JintongGao/Enhancing-Minority-Classes-by-Mixing.
+        Real-world data usually confronts severe class-imbalance problems, where several majority classes have a significantly larger presence in the training set than minority classes. One effective solution is using mixup-based methods to generate synthetic samples to enhance the presence of minority classes. Previous approaches mix the background images from the majority classes and foreground images from theminority classes in a random manner, which ignores the sample-level semantic similarity, possibly resulting in less reasonable or less useful images. In this work, we propose an adaptive image-mixing method based on optimal transport (OT) to incorporate both class-level and sample-level information, which is able to generate semantically reasonable and meaningful mixed images for minority classes. Due toits flexibility, our method can be combined with existing long-tailed classification methods to enhance their performance and it can also serve as a general data augmentation method for balanced datasets. Extensive experiments indicate that our method achieves effective performance for long-tailed classification tasks. The code is available at https://github.com/JintongGao/Enhancing-Minority-Classes-by-Mixing.
 
-----
+        ----
 
-## [2636] Robust Data Valuation with Weighted Banzhaf Values
+        ## [2636] Robust Data Valuation with Weighted Banzhaf Values
 
-**Authors**: *Weida Li, Yaoliang Yu*
+        **Authors**: *Weida Li, Yaoliang Yu*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bdb0596d13cfccf2db6f0cc5280d2a3f-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bdb0596d13cfccf2db6f0cc5280d2a3f-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bdb0596d13cfccf2db6f0cc5280d2a3f-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bdb0596d13cfccf2db6f0cc5280d2a3f-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Data valuation, a principled way to rank the importance of each training datum, has become increasingly important. However, existing value-based approaches (e.g., Shapley) are known to suffer from the stochasticity inherent in utility functions that render consistent and reliable ranking difficult. Recently, Wang and Jia (2023) proposed the noise-structure-agnostic framework to advocate the Banzhaf value for its robustness against such stochasticity as it achieves the largest safe margin among many alternatives. Surprisingly, our empirical study shows that the Banzhaf value is not always the most robust when compared with a broader family: weighted Banzhaf values. To analyze this scenario, we introduce the concept of Kronecker noise to parameterize stochasticity, through which we prove that the uniquely robust semi-value, which can be analytically derived from the underlying Kronecker noise, lies in the family of weighted Banzhaf values while minimizing the worst-case entropy. In addition, we adopt the maximum sample reuse principle to design an estimator to efficiently approximate weighted Banzhaf values, and show that it enjoys the best time complexity in terms of achieving an $(\epsilon, \delta)$-approximation. Our theory is verified under both synthetic and authentic noises. For the latter, we fit a Kronecker noise to the inherent stochasticity, which is then plugged in to generate the predicted most robust semi-value. Our study suggests that weighted Banzhaf values are promising when facing undue noises in data valuation.
+        Data valuation, a principled way to rank the importance of each training datum, has become increasingly important. However, existing value-based approaches (e.g., Shapley) are known to suffer from the stochasticity inherent in utility functions that render consistent and reliable ranking difficult. Recently, Wang and Jia (2023) proposed the noise-structure-agnostic framework to advocate the Banzhaf value for its robustness against such stochasticity as it achieves the largest safe margin among many alternatives. Surprisingly, our empirical study shows that the Banzhaf value is not always the most robust when compared with a broader family: weighted Banzhaf values. To analyze this scenario, we introduce the concept of Kronecker noise to parameterize stochasticity, through which we prove that the uniquely robust semi-value, which can be analytically derived from the underlying Kronecker noise, lies in the family of weighted Banzhaf values while minimizing the worst-case entropy. In addition, we adopt the maximum sample reuse principle to design an estimator to efficiently approximate weighted Banzhaf values, and show that it enjoys the best time complexity in terms of achieving an $(\epsilon, \delta)$-approximation. Our theory is verified under both synthetic and authentic noises. For the latter, we fit a Kronecker noise to the inherent stochasticity, which is then plugged in to generate the predicted most robust semi-value. Our study suggests that weighted Banzhaf values are promising when facing undue noises in data valuation.
 
-----
+        ----
 
-## [2637] Multi-Modal Inverse Constrained Reinforcement Learning from a Mixture of Demonstrations
+        ## [2637] Multi-Modal Inverse Constrained Reinforcement Learning from a Mixture of Demonstrations
 
-**Authors**: *Guanren Qiao, Guiliang Liu, Pascal Poupart, Zhiqiang Xu*
+        **Authors**: *Guanren Qiao, Guiliang Liu, Pascal Poupart, Zhiqiang Xu*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bdc48324d6158a7edef88d673855a3f4-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bdc48324d6158a7edef88d673855a3f4-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bdc48324d6158a7edef88d673855a3f4-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bdc48324d6158a7edef88d673855a3f4-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Inverse Constraint Reinforcement Learning (ICRL) aims to recover the underlying constraints respected by expert agents in a data-driven manner. Existing ICRL algorithms typically assume that the demonstration data is generated by a single type of expert. However, in practice, demonstrations often comprise a mixture of trajectories collected from various expert agents respecting different constraints, making it challenging to explain expert behaviors with a unified constraint function. To tackle this issue, we propose a Multi-Modal Inverse Constrained Reinforcement Learning (MMICRL) algorithm for simultaneously estimating multiple constraints corresponding to different types of experts. MMICRL constructs a flow-based density estimator that enables unsupervised expert identification from demonstrations, so as to infer the agent-specific constraints. Following these constraints, MMICRL imitates expert policies with a novel multi-modal constrained policy optimization objective that minimizes the agent-conditioned policy entropy and maximizes the unconditioned one. To enhance robustness, we incorporate this objective into the contrastive learning framework. This approach enables imitation policies to capture the diversity of behaviors among expert agents. Extensive experiments in both discrete and continuous environments show that MMICRL outperforms other baselines in terms of constraint recovery and control performance.
+        Inverse Constraint Reinforcement Learning (ICRL) aims to recover the underlying constraints respected by expert agents in a data-driven manner. Existing ICRL algorithms typically assume that the demonstration data is generated by a single type of expert. However, in practice, demonstrations often comprise a mixture of trajectories collected from various expert agents respecting different constraints, making it challenging to explain expert behaviors with a unified constraint function. To tackle this issue, we propose a Multi-Modal Inverse Constrained Reinforcement Learning (MMICRL) algorithm for simultaneously estimating multiple constraints corresponding to different types of experts. MMICRL constructs a flow-based density estimator that enables unsupervised expert identification from demonstrations, so as to infer the agent-specific constraints. Following these constraints, MMICRL imitates expert policies with a novel multi-modal constrained policy optimization objective that minimizes the agent-conditioned policy entropy and maximizes the unconditioned one. To enhance robustness, we incorporate this objective into the contrastive learning framework. This approach enables imitation policies to capture the diversity of behaviors among expert agents. Extensive experiments in both discrete and continuous environments show that MMICRL outperforms other baselines in terms of constraint recovery and control performance.
 
-----
+        ----
 
-## [2638] FedFed: Feature Distillation against Data Heterogeneity in Federated Learning
+        ## [2638] FedFed: Feature Distillation against Data Heterogeneity in Federated Learning
 
-**Authors**: *Zhiqin Yang, Yonggang Zhang, Yu Zheng, Xinmei Tian, Hao Peng, Tongliang Liu, Bo Han*
+        **Authors**: *Zhiqin Yang, Yonggang Zhang, Yu Zheng, Xinmei Tian, Hao Peng, Tongliang Liu, Bo Han*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bdcdf38389d7fcefc73c4c3720217155-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bdcdf38389d7fcefc73c4c3720217155-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bdcdf38389d7fcefc73c4c3720217155-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bdcdf38389d7fcefc73c4c3720217155-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Federated learning (FL) typically faces data heterogeneity, i.e., distribution shifting among clients. Sharing clients' information has shown great potentiality in mitigating data heterogeneity, yet incurs a dilemma in preserving privacy and promoting model performance. To alleviate the dilemma, we raise a fundamental question: Is it possible to share partial features in the data to tackle data heterogeneity?In this work, we give an affirmative answer to this question by proposing a novel approach called Federated Feature distillation (FedFed).Specifically, FedFed partitions data into performance-sensitive features (i.e., greatly contributing to model performance) and performance-robust features (i.e., limitedly contributing to model performance).The performance-sensitive features are globally shared to mitigate data heterogeneity, while the performance-robust features are kept locally.FedFed enables clients to train models over local and shared data. Comprehensive experiments demonstrate the efficacy of FedFed in promoting model performance.
+        Federated learning (FL) typically faces data heterogeneity, i.e., distribution shifting among clients. Sharing clients' information has shown great potentiality in mitigating data heterogeneity, yet incurs a dilemma in preserving privacy and promoting model performance. To alleviate the dilemma, we raise a fundamental question: Is it possible to share partial features in the data to tackle data heterogeneity?In this work, we give an affirmative answer to this question by proposing a novel approach called Federated Feature distillation (FedFed).Specifically, FedFed partitions data into performance-sensitive features (i.e., greatly contributing to model performance) and performance-robust features (i.e., limitedly contributing to model performance).The performance-sensitive features are globally shared to mitigate data heterogeneity, while the performance-robust features are kept locally.FedFed enables clients to train models over local and shared data. Comprehensive experiments demonstrate the efficacy of FedFed in promoting model performance.
 
-----
+        ----
 
-## [2639] A Privacy-Friendly Approach to Data Valuation
+        ## [2639] A Privacy-Friendly Approach to Data Valuation
 
-**Authors**: *Jiachen T. Wang, Yuqing Zhu, Yu-Xiang Wang, Ruoxi Jia, Prateek Mittal*
+        **Authors**: *Jiachen T. Wang, Yuqing Zhu, Yu-Xiang Wang, Ruoxi Jia, Prateek Mittal*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bdd5522a32b3a959a6d81fb6ddc1cb38-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bdd5522a32b3a959a6d81fb6ddc1cb38-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bdd5522a32b3a959a6d81fb6ddc1cb38-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bdd5522a32b3a959a6d81fb6ddc1cb38-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Data valuation, a growing field that aims at quantifying the usefulness of individual data sources for training machine learning (ML) models, faces notable yet often overlooked privacy challenges. This paper studies these challenges with a focus on KNN-Shapley, one of the most practical data valuation methods nowadays. We first emphasize the inherent privacy risks of KNN-Shapley, and demonstrate the significant technical challenges in adapting KNN-Shapley to accommodate differential privacy (DP). To overcome these challenges, we introduce TKNN-Shapley, a refined variant of KNN-Shapley that is privacy-friendly, allowing for straightforward modifications to incorporate DP guarantee (DP-TKNN-Shapley). We show that DP-TKNN-Shapley has several advantages and offers a superior privacy-utility tradeoff compared to naively privatized KNN-Shapley. Moreover, even non-private TKNN-Shapley matches KNN-Shapley's performance in discerning data quality. Overall, our findings suggest that TKNN-Shapley is a promising alternative to KNN-Shapley, particularly for real-world applications involving sensitive data.
+        Data valuation, a growing field that aims at quantifying the usefulness of individual data sources for training machine learning (ML) models, faces notable yet often overlooked privacy challenges. This paper studies these challenges with a focus on KNN-Shapley, one of the most practical data valuation methods nowadays. We first emphasize the inherent privacy risks of KNN-Shapley, and demonstrate the significant technical challenges in adapting KNN-Shapley to accommodate differential privacy (DP). To overcome these challenges, we introduce TKNN-Shapley, a refined variant of KNN-Shapley that is privacy-friendly, allowing for straightforward modifications to incorporate DP guarantee (DP-TKNN-Shapley). We show that DP-TKNN-Shapley has several advantages and offers a superior privacy-utility tradeoff compared to naively privatized KNN-Shapley. Moreover, even non-private TKNN-Shapley matches KNN-Shapley's performance in discerning data quality. Overall, our findings suggest that TKNN-Shapley is a promising alternative to KNN-Shapley, particularly for real-world applications involving sensitive data.
 
-----
+        ----
 
-## [2640] Learning Nonparametric Latent Causal Graphs with Unknown Interventions
+        ## [2640] Learning Nonparametric Latent Causal Graphs with Unknown Interventions
 
-**Authors**: *Yibo Jiang, Bryon Aragam*
+        **Authors**: *Yibo Jiang, Bryon Aragam*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bdeab378efe6eb289714e2a5abc6ed42-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bdeab378efe6eb289714e2a5abc6ed42-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bdeab378efe6eb289714e2a5abc6ed42-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bdeab378efe6eb289714e2a5abc6ed42-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-We establish conditions under which latent causal graphs are nonparametrically identifiable and can be reconstructed from unknown interventions in the latent space. Our primary focus is the identification of the latent structure in measurement models without parametric assumptions such as linearity or Gaussianity. Moreover, we do not assume the number of hidden variables is known, and we show that at most one unknown intervention per hidden variable is needed. This extends a recent line of work on learning causal representations from observations and interventions. The proofs are constructive and introduce two new graphical concepts---imaginary subsets and isolated edges---that may be useful in their own right. As a matter of independent interest, the proofs also involve a novel characterization of the limits of edge orientations within the equivalence class of DAGs induced by unknown interventions. These are the first results to characterize the conditions under which causal representations are identifiable without making any parametric assumptions in a general setting with unknown interventions and without faithfulness.
+        We establish conditions under which latent causal graphs are nonparametrically identifiable and can be reconstructed from unknown interventions in the latent space. Our primary focus is the identification of the latent structure in measurement models without parametric assumptions such as linearity or Gaussianity. Moreover, we do not assume the number of hidden variables is known, and we show that at most one unknown intervention per hidden variable is needed. This extends a recent line of work on learning causal representations from observations and interventions. The proofs are constructive and introduce two new graphical concepts---imaginary subsets and isolated edges---that may be useful in their own right. As a matter of independent interest, the proofs also involve a novel characterization of the limits of edge orientations within the equivalence class of DAGs induced by unknown interventions. These are the first results to characterize the conditions under which causal representations are identifiable without making any parametric assumptions in a general setting with unknown interventions and without faithfulness.
 
-----
+        ----
 
-## [2641] Kullback-Leibler Maillard Sampling for Multi-armed Bandits with Bounded Rewards
+        ## [2641] Kullback-Leibler Maillard Sampling for Multi-armed Bandits with Bounded Rewards
 
-**Authors**: *Hao Qin, Kwang-Sung Jun, Chicheng Zhang*
+        **Authors**: *Hao Qin, Kwang-Sung Jun, Chicheng Zhang*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bdebb4549d5a79501bc151411abdb6d7-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bdebb4549d5a79501bc151411abdb6d7-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bdebb4549d5a79501bc151411abdb6d7-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bdebb4549d5a79501bc151411abdb6d7-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-We study $K$-armed bandit problems where the reward distributions of the arms are all supported on the $[0,1]$ interval. Maillard sampling\cite{maillard13apprentissage}, an attractive alternative to Thompson sampling, has recently been shown to achieve competitive regret guarantees in the sub-Gaussian reward setting\cite{bian2022maillard} while maintaining closed-form action probabilities, which is useful for offline policy evaluation. In this work, we analyze the Kullback-Leibler Maillard Sampling (KL-MS) algorithm, a natural extension of Maillard sampling {and a special case of Minimum Empirical Divergence (MED)~\cite{honda2011asymptotically}} for achieving a KL-style finite-time gap-dependent regret bound. We show that KL-MS enjoys the asymptotic optimality when the rewards are Bernoulli and has an {adaptive} worst-case regret bound of the form $O(\sqrt{\mu^*(1-\mu^*) K T \ln K} + K \ln T)$, where $\mu^*$ is the expected reward of the optimal arm, and $T$ is the time horizon length; {this is the first time such adaptivity is reported in the literature for an algorithm with asymptotic optimality guarantees.}
+        We study $K$-armed bandit problems where the reward distributions of the arms are all supported on the $[0,1]$ interval. Maillard sampling\cite{maillard13apprentissage}, an attractive alternative to Thompson sampling, has recently been shown to achieve competitive regret guarantees in the sub-Gaussian reward setting\cite{bian2022maillard} while maintaining closed-form action probabilities, which is useful for offline policy evaluation. In this work, we analyze the Kullback-Leibler Maillard Sampling (KL-MS) algorithm, a natural extension of Maillard sampling {and a special case of Minimum Empirical Divergence (MED)~\cite{honda2011asymptotically}} for achieving a KL-style finite-time gap-dependent regret bound. We show that KL-MS enjoys the asymptotic optimality when the rewards are Bernoulli and has an {adaptive} worst-case regret bound of the form $O(\sqrt{\mu^*(1-\mu^*) K T \ln K} + K \ln T)$, where $\mu^*$ is the expected reward of the optimal arm, and $T$ is the time horizon length; {this is the first time such adaptivity is reported in the literature for an algorithm with asymptotic optimality guarantees.}
 
-----
+        ----
 
-## [2642] The Pursuit of Human Labeling: A New Perspective on Unsupervised Learning
+        ## [2642] The Pursuit of Human Labeling: A New Perspective on Unsupervised Learning
 
-**Authors**: *Artyom Gadetsky, Maria Brbic*
+        **Authors**: *Artyom Gadetsky, Maria Brbic*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/be38c74290c251820e396680a82ce12d-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/be38c74290c251820e396680a82ce12d-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/be38c74290c251820e396680a82ce12d-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/be38c74290c251820e396680a82ce12d-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-We present HUME, a simple model-agnostic framework for inferring human labeling of a given dataset without any external supervision. The key insight behind our approach is that classes defined by many human labelings are linearly separable regardless of the representation space used to represent a dataset. HUME utilizes this insight to guide the search over all possible labelings of a dataset to discover an underlying human labeling. We show that the proposed optimization objective is strikingly well-correlated with the ground truth labeling of the dataset. In effect, we only train linear classifiers on top of pretrained representations that remain fixed during training, making our framework compatible with any large pretrained and self-supervised model. Despite its simplicity, HUME outperforms a supervised linear classifier on top of self-supervised representations on the STL-10 dataset by a large margin and achieves comparable performance on the CIFAR-10 dataset. Compared to the existing unsupervised baselines, HUME achieves state-of-the-art performance on four benchmark image classification datasets including the large-scale ImageNet-1000 dataset. Altogether, our work provides a fundamentally new view to tackle unsupervised learning by searching for consistent labelings between different representation spaces.
+        We present HUME, a simple model-agnostic framework for inferring human labeling of a given dataset without any external supervision. The key insight behind our approach is that classes defined by many human labelings are linearly separable regardless of the representation space used to represent a dataset. HUME utilizes this insight to guide the search over all possible labelings of a dataset to discover an underlying human labeling. We show that the proposed optimization objective is strikingly well-correlated with the ground truth labeling of the dataset. In effect, we only train linear classifiers on top of pretrained representations that remain fixed during training, making our framework compatible with any large pretrained and self-supervised model. Despite its simplicity, HUME outperforms a supervised linear classifier on top of self-supervised representations on the STL-10 dataset by a large margin and achieves comparable performance on the CIFAR-10 dataset. Compared to the existing unsupervised baselines, HUME achieves state-of-the-art performance on four benchmark image classification datasets including the large-scale ImageNet-1000 dataset. Altogether, our work provides a fundamentally new view to tackle unsupervised learning by searching for consistent labelings between different representation spaces.
 
-----
+        ----
 
-## [2643] Improving Compositional Generalization using Iterated Learning and Simplicial Embeddings
+        ## [2643] Improving Compositional Generalization using Iterated Learning and Simplicial Embeddings
 
-**Authors**: *Yi Ren, Samuel Lavoie, Michael Galkin, Danica J. Sutherland, Aaron C. Courville*
+        **Authors**: *Yi Ren, Samuel Lavoie, Michael Galkin, Danica J. Sutherland, Aaron C. Courville*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/be7430d22a4dae8516894e32f2fcc6db-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/be7430d22a4dae8516894e32f2fcc6db-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/be7430d22a4dae8516894e32f2fcc6db-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/be7430d22a4dae8516894e32f2fcc6db-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Compositional generalization, the ability of an agent to generalize to unseen combinations of latent factors, is easy for humans but hard for deep neural networks. A line of research in cognitive science has hypothesized a process, "iterated learning," to help explain how human language developed this ability; the theory rests on simultaneous pressures towards compressibility (when an ignorant agent learns from an informed one) and expressivity (when it uses the representation for downstream tasks). Inspired by this process, we propose to improve the compositional generalization of deep networks by using iterated learning on models with simplicial embeddings, which can approximately discretize representations. This approach is further motivated by an analysis of compositionality based on Kolmogorov complexity. We show that this combination of changes improves compositional generalization over other approaches, demonstrating these improvements both on vision tasks with well-understood latent factors and on real molecular graph prediction tasks where the latent structure is unknown.
+        Compositional generalization, the ability of an agent to generalize to unseen combinations of latent factors, is easy for humans but hard for deep neural networks. A line of research in cognitive science has hypothesized a process, "iterated learning," to help explain how human language developed this ability; the theory rests on simultaneous pressures towards compressibility (when an ignorant agent learns from an informed one) and expressivity (when it uses the representation for downstream tasks). Inspired by this process, we propose to improve the compositional generalization of deep networks by using iterated learning on models with simplicial embeddings, which can approximately discretize representations. This approach is further motivated by an analysis of compositionality based on Kolmogorov complexity. We show that this combination of changes improves compositional generalization over other approaches, demonstrating these improvements both on vision tasks with well-understood latent factors and on real molecular graph prediction tasks where the latent structure is unknown.
 
-----
+        ----
 
-## [2644] Geometric Analysis of Matrix Sensing over Graphs
+        ## [2644] Geometric Analysis of Matrix Sensing over Graphs
 
-**Authors**: *Haixiang Zhang, Ying Chen, Javad Lavaei*
+        **Authors**: *Haixiang Zhang, Ying Chen, Javad Lavaei*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/be7b70477c8fca697f14b1dbb1c086d1-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/be7b70477c8fca697f14b1dbb1c086d1-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/be7b70477c8fca697f14b1dbb1c086d1-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/be7b70477c8fca697f14b1dbb1c086d1-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-In this work, we consider the problem of matrix sensing over graphs (MSoG). As a general case of matrix completion and matrix sensing problems, the MSoG problem has not been analyzed in the literature and the existing results cannot be directly applied to the MSoG problem. This work provides the first theoretical results on the optimization landscape of the MSoG problem. More specifically, we propose a new condition, named the $\Omega$-RIP condition, to characterize the optimization complexity of the problem. In addition, with an improved regularizer of the incoherence, we prove that the strict saddle property holds for the MSoG problem with high probability under the incoherence condition and the $\Omega$-RIP condition, which guarantees the polynomial-time global convergence of saddle-avoiding methods. Compared with state-of-the-art results, the bounds in this work are tight up to a constant. Besides the theoretical guarantees, we numerically illustrate the close relation between the $\Omega$-RIP condition and the optimization complexity.
+        In this work, we consider the problem of matrix sensing over graphs (MSoG). As a general case of matrix completion and matrix sensing problems, the MSoG problem has not been analyzed in the literature and the existing results cannot be directly applied to the MSoG problem. This work provides the first theoretical results on the optimization landscape of the MSoG problem. More specifically, we propose a new condition, named the $\Omega$-RIP condition, to characterize the optimization complexity of the problem. In addition, with an improved regularizer of the incoherence, we prove that the strict saddle property holds for the MSoG problem with high probability under the incoherence condition and the $\Omega$-RIP condition, which guarantees the polynomial-time global convergence of saddle-avoiding methods. Compared with state-of-the-art results, the bounds in this work are tight up to a constant. Besides the theoretical guarantees, we numerically illustrate the close relation between the $\Omega$-RIP condition and the optimization complexity.
 
-----
+        ----
 
-## [2645] Towards Combinatorial Generalization for Catalysts: A Kohn-Sham Charge-Density Approach
+        ## [2645] Towards Combinatorial Generalization for Catalysts: A Kohn-Sham Charge-Density Approach
 
-**Authors**: *Phillip Pope, David Jacobs*
+        **Authors**: *Phillip Pope, David Jacobs*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/be82bb4bf8333107b0fe430e1017831a-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/be82bb4bf8333107b0fe430e1017831a-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/be82bb4bf8333107b0fe430e1017831a-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/be82bb4bf8333107b0fe430e1017831a-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-The Kohn-Sham equations underlie many important applications such as the discovery of new catalysts. Recent machine learning work on catalyst modeling has focused on prediction of the energy, but has so far not yet demonstrated significant out-of-distribution generalization. Here we investigate another approach based on the pointwise learning of the Kohn-Sham charge-density. On a new dataset of bulk catalysts with charge densities, we show density models can generalize to new structures with combinations of elements not seen at train time, a form of combinatorial generalization. We show that over 80% of binary and ternary test cases achieve faster convergence than standard baselines in Density Functional Theory, amounting to an average reduction of 13% in the number of iterations required to reach convergence, which may be of independent interest. Our results suggest that density learning is a viable alternative, trading greater inference costs for a step towards combinatorial generalization, a key property for applications.
+        The Kohn-Sham equations underlie many important applications such as the discovery of new catalysts. Recent machine learning work on catalyst modeling has focused on prediction of the energy, but has so far not yet demonstrated significant out-of-distribution generalization. Here we investigate another approach based on the pointwise learning of the Kohn-Sham charge-density. On a new dataset of bulk catalysts with charge densities, we show density models can generalize to new structures with combinations of elements not seen at train time, a form of combinatorial generalization. We show that over 80% of binary and ternary test cases achieve faster convergence than standard baselines in Density Functional Theory, amounting to an average reduction of 13% in the number of iterations required to reach convergence, which may be of independent interest. Our results suggest that density learning is a viable alternative, trading greater inference costs for a step towards combinatorial generalization, a key property for applications.
 
-----
+        ----
 
-## [2646] Reward-Directed Conditional Diffusion: Provable Distribution Estimation and Reward Improvement
+        ## [2646] Reward-Directed Conditional Diffusion: Provable Distribution Estimation and Reward Improvement
 
-**Authors**: *Hui Yuan, Kaixuan Huang, Chengzhuo Ni, Minshuo Chen, Mengdi Wang*
+        **Authors**: *Hui Yuan, Kaixuan Huang, Chengzhuo Ni, Minshuo Chen, Mengdi Wang*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/be93b16564e96859da8401b917f307c6-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/be93b16564e96859da8401b917f307c6-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/be93b16564e96859da8401b917f307c6-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/be93b16564e96859da8401b917f307c6-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-We explore the methodology and theory of reward-directed generation via conditional diffusion models. Directed generation aims to generate samples with desired properties as measured by a reward function, which has broad applications in generative AI, reinforcement learning, and computational biology. We consider the common learning scenario where the dataset consists of majorly unlabeled data and a small set of data with noisy reward labels. Our approach leverages a learned reward function on the smaller data set as a pseudolabeler to label the unlabelled data. After pseudo-labelling, a conditional diffusion model (CDM) is trained on the data and samples are generated by setting a target value $a$ as the condition in CDM. From a theoretical standpoint, we show that this directed generator can effectively learn and sample from the reward-conditioned data distribution: 1. our model is capable of recovering the data's latent subspace representation. 2. the model generates samples moving closer to the user-specified target. The improvement in rewards of samples is influenced by a interplay between the strength of the reward signal, the distribution shift, and the cost of off-support extrapolation. We provide empirical results to validate our theory and highlight the relationship between the strength of extrapolation and the quality of generated samples.
+        We explore the methodology and theory of reward-directed generation via conditional diffusion models. Directed generation aims to generate samples with desired properties as measured by a reward function, which has broad applications in generative AI, reinforcement learning, and computational biology. We consider the common learning scenario where the dataset consists of majorly unlabeled data and a small set of data with noisy reward labels. Our approach leverages a learned reward function on the smaller data set as a pseudolabeler to label the unlabelled data. After pseudo-labelling, a conditional diffusion model (CDM) is trained on the data and samples are generated by setting a target value $a$ as the condition in CDM. From a theoretical standpoint, we show that this directed generator can effectively learn and sample from the reward-conditioned data distribution: 1. our model is capable of recovering the data's latent subspace representation. 2. the model generates samples moving closer to the user-specified target. The improvement in rewards of samples is influenced by a interplay between the strength of the reward signal, the distribution shift, and the cost of off-support extrapolation. We provide empirical results to validate our theory and highlight the relationship between the strength of extrapolation and the quality of generated samples.
 
-----
+        ----
 
-## [2647] Unifying Predictions of Deterministic and Stochastic Physics in Mesh-reduced Space with Sequential Flow Generative Model
+        ## [2647] Unifying Predictions of Deterministic and Stochastic Physics in Mesh-reduced Space with Sequential Flow Generative Model
 
-**Authors**: *Luning Sun, Xu Han, Han Gao, Jian-Xun Wang, Liping Liu*
+        **Authors**: *Luning Sun, Xu Han, Han Gao, Jian-Xun Wang, Liping Liu*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bea78e2bb0abccc14404b24b90d9299f-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bea78e2bb0abccc14404b24b90d9299f-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bea78e2bb0abccc14404b24b90d9299f-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bea78e2bb0abccc14404b24b90d9299f-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Accurate prediction of dynamical systems in unstructured meshes has recently shown successes in scientific simulations. Many dynamical systems have a nonnegligible level of stochasticity introduced by various factors (e.g. chaoticity), so there is a need for a unified framework that captures both deterministic and stochastic components in the rollouts of these systems. Inspired by regeneration learning, we propose a new model that combines generative and sequential networks to model dynamical systems. Specifically, we use an autoencoder to learn compact representations of full-space physical variables in a low-dimensional space. We then integrate a transformer with a conditional normalizing flow model to model the temporal sequence of latent representations. We evaluate the new model in both deterministic and stochastic systems. The model outperforms several competitive baseline models and makes more accurate predictions of deterministic systems. Its own prediction error is also reflected in its uncertainty estimations. When predicting stochastic systems, the proposed model generates high-quality rollout samples. The mean and variance of these samples well match the statistics of samples computed from expensive numerical simulations.
+        Accurate prediction of dynamical systems in unstructured meshes has recently shown successes in scientific simulations. Many dynamical systems have a nonnegligible level of stochasticity introduced by various factors (e.g. chaoticity), so there is a need for a unified framework that captures both deterministic and stochastic components in the rollouts of these systems. Inspired by regeneration learning, we propose a new model that combines generative and sequential networks to model dynamical systems. Specifically, we use an autoencoder to learn compact representations of full-space physical variables in a low-dimensional space. We then integrate a transformer with a conditional normalizing flow model to model the temporal sequence of latent representations. We evaluate the new model in both deterministic and stochastic systems. The model outperforms several competitive baseline models and makes more accurate predictions of deterministic systems. Its own prediction error is also reflected in its uncertainty estimations. When predicting stochastic systems, the proposed model generates high-quality rollout samples. The mean and variance of these samples well match the statistics of samples computed from expensive numerical simulations.
 
-----
+        ----
 
-## [2648] Transitivity Recovering Decompositions: Interpretable and Robust Fine-Grained Relationships
+        ## [2648] Transitivity Recovering Decompositions: Interpretable and Robust Fine-Grained Relationships
 
-**Authors**: *Abhra Chaudhuri, Massimiliano Mancini, Zeynep Akata, Anjan Dutta*
+        **Authors**: *Abhra Chaudhuri, Massimiliano Mancini, Zeynep Akata, Anjan Dutta*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/beba7cfdac084a0f53f378d42cbe2824-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/beba7cfdac084a0f53f378d42cbe2824-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/beba7cfdac084a0f53f378d42cbe2824-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/beba7cfdac084a0f53f378d42cbe2824-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Recent advances in fine-grained representation learning leverage local-to-global (emergent) relationships for achieving state-of-the-art results. The relational representations relied upon by such methods, however, are abstract. We aim to deconstruct this abstraction by expressing them as interpretable graphs over image views. We begin by theoretically showing that abstract relational representations are nothing but a way of recovering transitive relationships among local views. Based on this, we design Transitivity Recovering Decompositions (TRD), a graph-space search algorithm that identifies interpretable equivalents of abstract emergent relationships at both instance and class levels, and with no post-hoc computations. We additionally show that TRD is provably robust to noisy views, with empirical evidence also supporting this finding. The latter allows TRD to perform at par or even better than the state-of-the-art, while being fully interpretable. Implementation is available at https://github.com/abhrac/trd.
+        Recent advances in fine-grained representation learning leverage local-to-global (emergent) relationships for achieving state-of-the-art results. The relational representations relied upon by such methods, however, are abstract. We aim to deconstruct this abstraction by expressing them as interpretable graphs over image views. We begin by theoretically showing that abstract relational representations are nothing but a way of recovering transitive relationships among local views. Based on this, we design Transitivity Recovering Decompositions (TRD), a graph-space search algorithm that identifies interpretable equivalents of abstract emergent relationships at both instance and class levels, and with no post-hoc computations. We additionally show that TRD is provably robust to noisy views, with empirical evidence also supporting this finding. The latter allows TRD to perform at par or even better than the state-of-the-art, while being fully interpretable. Implementation is available at https://github.com/abhrac/trd.
 
-----
+        ----
 
-## [2649] Dynamic Regret of Adversarial Linear Mixture MDPs
+        ## [2649] Dynamic Regret of Adversarial Linear Mixture MDPs
 
-**Authors**: *Long-Fei Li, Peng Zhao, Zhi-Hua Zhou*
+        **Authors**: *Long-Fei Li, Peng Zhao, Zhi-Hua Zhou*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/becd02b89259774da2ede23116a80648-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/becd02b89259774da2ede23116a80648-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/becd02b89259774da2ede23116a80648-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/becd02b89259774da2ede23116a80648-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-We study reinforcement learning in episodic inhomogeneous MDPs with adversarial full-information rewards and the unknown transition kernel. We consider the linear mixture MDPs whose transition kernel is a linear mixture model and choose the \emph{dynamic regret} as the performance measure. Denote by $d$ the dimension of the feature mapping, $H$ the horizon, $K$ the number of episodes, $P_T$ the non-stationary measure, we propose a novel algorithm that enjoys an $\widetilde{\mathcal{O}}\big(\sqrt{d^2 H^3K} + \sqrt{H^4(K+P_T)(1+P_T)}\big)$ dynamic regret under the condition that $P_T$ is known, which improves previously best-known dynamic regret for adversarial linear mixture MDP and adversarial tabular MDPs. We also establish an $\Omega\big(\sqrt{d^2 H^3 K} + \sqrt{H K (H+P_T)}\big)$ lower bound, indicating our algorithm is \emph{optimal} in $K$ and $P_T$. Furthermore, when the non-stationary measure $P_T$ is unknown, we design an online ensemble algorithm with a meta-base structure, which is proved to achieve an $\widetilde{\mathcal{O}}\big(\sqrt{d^2 H^3K} + \sqrt{H^4(K+P_T)(1+P_T) + H^2 S_T^2}\big)$ dynamic regret and here $S_T$ is the expected switching number of the best base-learner. The result can be optimal under certain regimes.
+        We study reinforcement learning in episodic inhomogeneous MDPs with adversarial full-information rewards and the unknown transition kernel. We consider the linear mixture MDPs whose transition kernel is a linear mixture model and choose the \emph{dynamic regret} as the performance measure. Denote by $d$ the dimension of the feature mapping, $H$ the horizon, $K$ the number of episodes, $P_T$ the non-stationary measure, we propose a novel algorithm that enjoys an $\widetilde{\mathcal{O}}\big(\sqrt{d^2 H^3K} + \sqrt{H^4(K+P_T)(1+P_T)}\big)$ dynamic regret under the condition that $P_T$ is known, which improves previously best-known dynamic regret for adversarial linear mixture MDP and adversarial tabular MDPs. We also establish an $\Omega\big(\sqrt{d^2 H^3 K} + \sqrt{H K (H+P_T)}\big)$ lower bound, indicating our algorithm is \emph{optimal} in $K$ and $P_T$. Furthermore, when the non-stationary measure $P_T$ is unknown, we design an online ensemble algorithm with a meta-base structure, which is proved to achieve an $\widetilde{\mathcal{O}}\big(\sqrt{d^2 H^3K} + \sqrt{H^4(K+P_T)(1+P_T) + H^2 S_T^2}\big)$ dynamic regret and here $S_T$ is the expected switching number of the best base-learner. The result can be optimal under certain regimes.
 
-----
+        ----
 
-## [2650] Neural Harmonics: Bridging Spectral Embedding and Matrix Completion in Self-Supervised Learning
+        ## [2650] Neural Harmonics: Bridging Spectral Embedding and Matrix Completion in Self-Supervised Learning
 
-**Authors**: *Marina Munkhoeva, Ivan V. Oseledets*
+        **Authors**: *Marina Munkhoeva, Ivan V. Oseledets*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bede8c7d5ed2348494d2b0621d613592-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bede8c7d5ed2348494d2b0621d613592-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bede8c7d5ed2348494d2b0621d613592-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bede8c7d5ed2348494d2b0621d613592-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Self-supervised methods received tremendous attention thanks to their seemingly heuristic approach to learning representations that respect the semantics of the data without any apparent supervision in the form of labels. A growing body of literature is already being published in an attempt to build a coherent and theoretically grounded understanding of the workings of a zoo of losses used in modern self-supervised representation learning methods. In this paper, we attempt to provide an understanding from the perspective of a Laplace operator and connect the inductive bias stemming from the augmentation process to a low-rank matrix completion problem.To this end, we leverage the results from low-rank matrix completion to provide theoretical analysis on the convergence of modern SSL methods and a key property that affects their downstream performance.
+        Self-supervised methods received tremendous attention thanks to their seemingly heuristic approach to learning representations that respect the semantics of the data without any apparent supervision in the form of labels. A growing body of literature is already being published in an attempt to build a coherent and theoretically grounded understanding of the workings of a zoo of losses used in modern self-supervised representation learning methods. In this paper, we attempt to provide an understanding from the perspective of a Laplace operator and connect the inductive bias stemming from the augmentation process to a low-rank matrix completion problem.To this end, we leverage the results from low-rank matrix completion to provide theoretical analysis on the convergence of modern SSL methods and a key property that affects their downstream performance.
 
-----
+        ----
 
-## [2651] Keypoint-Augmented Self-Supervised Learning for Medical Image Segmentation with Limited Annotation
+        ## [2651] Keypoint-Augmented Self-Supervised Learning for Medical Image Segmentation with Limited Annotation
 
-**Authors**: *Zhangsihao Yang, Mengwei Ren, Kaize Ding, Guido Gerig, Yalin Wang*
+        **Authors**: *Zhangsihao Yang, Mengwei Ren, Kaize Ding, Guido Gerig, Yalin Wang*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bee3d6218d7414f8cadfff0eafd0d7be-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bee3d6218d7414f8cadfff0eafd0d7be-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bee3d6218d7414f8cadfff0eafd0d7be-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bee3d6218d7414f8cadfff0eafd0d7be-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Pretraining CNN models (i.e., UNet) through self-supervision has become a powerful approach to facilitate medical image segmentation under low annotation regimes. Recent contrastive learning methods encourage similar global representations when the same image undergoes different transformations, or enforce invariance across different image/patch features that are intrinsically correlated. However, CNN-extracted global and local features are limited in capturing long-range spatial dependencies that are essential in biological anatomy. To this end, we present a keypoint-augmented fusion layer that extracts representations preserving both short- and long-range self-attention. In particular, we augment the CNN feature map at multiple scales by incorporating an additional input that learns long-range spatial self-attention among localized keypoint features. Further, we introduce both global and local self-supervised pretraining for the framework. At the global scale, we obtain global representations from both the bottleneck of the UNet, and by aggregating multiscale keypoint features. These global features are subsequently regularized through image-level contrastive objectives. At the local scale, we define a distance-based criterion to first establish correspondences among keypoints and encourage similarity between their features. Through extensive experiments on both MRI and CT segmentation tasks, we demonstrate the architectural advantages of our proposed method in comparison to both CNN and Transformer-based UNets, when all architectures are trained with randomly initialized weights. With our proposed pretraining strategy, our method further outperforms existing SSL methods by producing more robust self-attention and achieving state-of-the-art segmentation results. The code is available at https://github.com/zshyang/kaf.git.
+        Pretraining CNN models (i.e., UNet) through self-supervision has become a powerful approach to facilitate medical image segmentation under low annotation regimes. Recent contrastive learning methods encourage similar global representations when the same image undergoes different transformations, or enforce invariance across different image/patch features that are intrinsically correlated. However, CNN-extracted global and local features are limited in capturing long-range spatial dependencies that are essential in biological anatomy. To this end, we present a keypoint-augmented fusion layer that extracts representations preserving both short- and long-range self-attention. In particular, we augment the CNN feature map at multiple scales by incorporating an additional input that learns long-range spatial self-attention among localized keypoint features. Further, we introduce both global and local self-supervised pretraining for the framework. At the global scale, we obtain global representations from both the bottleneck of the UNet, and by aggregating multiscale keypoint features. These global features are subsequently regularized through image-level contrastive objectives. At the local scale, we define a distance-based criterion to first establish correspondences among keypoints and encourage similarity between their features. Through extensive experiments on both MRI and CT segmentation tasks, we demonstrate the architectural advantages of our proposed method in comparison to both CNN and Transformer-based UNets, when all architectures are trained with randomly initialized weights. With our proposed pretraining strategy, our method further outperforms existing SSL methods by producing more robust self-attention and achieving state-of-the-art segmentation results. The code is available at https://github.com/zshyang/kaf.git.
 
-----
+        ----
 
-## [2652] Aiming towards the minimizers: fast convergence of SGD for overparametrized problems
+        ## [2652] Aiming towards the minimizers: fast convergence of SGD for overparametrized problems
 
-**Authors**: *Chaoyue Liu, Dmitriy Drusvyatskiy, Misha Belkin, Damek Davis, Yi-An Ma*
+        **Authors**: *Chaoyue Liu, Dmitriy Drusvyatskiy, Misha Belkin, Damek Davis, Yi-An Ma*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bef2af7a1199ec7a134b15ac00bd5377-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bef2af7a1199ec7a134b15ac00bd5377-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bef2af7a1199ec7a134b15ac00bd5377-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bef2af7a1199ec7a134b15ac00bd5377-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Modern machine learning paradigms, such as deep learning, occur in or close to the interpolation regime, wherein the number of model parameters is much larger than the number of data samples. In this work, we propose a regularity condition within the interpolation regime which endows the stochastic gradient method with the same worst-case iteration complexity as the deterministic gradient method, while using only a single sampled gradient (or a minibatch) in each iteration. In contrast, all existing guarantees require the stochastic gradient method to take small steps, thereby resulting in a much slower linear rate of convergence. Finally, we demonstrate that our condition holds when training sufficiently wide feedforward neural networks with a linear output layer.
+        Modern machine learning paradigms, such as deep learning, occur in or close to the interpolation regime, wherein the number of model parameters is much larger than the number of data samples. In this work, we propose a regularity condition within the interpolation regime which endows the stochastic gradient method with the same worst-case iteration complexity as the deterministic gradient method, while using only a single sampled gradient (or a minibatch) in each iteration. In contrast, all existing guarantees require the stochastic gradient method to take small steps, thereby resulting in a much slower linear rate of convergence. Finally, we demonstrate that our condition holds when training sufficiently wide feedforward neural networks with a linear output layer.
 
-----
+        ----
 
-## [2653] ResMem: Learn what you can and memorize the rest
+        ## [2653] ResMem: Learn what you can and memorize the rest
 
-**Authors**: *Zitong Yang, Michal Lukasik, Vaishnavh Nagarajan, Zonglin Li, Ankit Singh Rawat, Manzil Zaheer, Aditya Krishna Menon, Sanjiv Kumar*
+        **Authors**: *Zitong Yang, Michal Lukasik, Vaishnavh Nagarajan, Zonglin Li, Ankit Singh Rawat, Manzil Zaheer, Aditya Krishna Menon, Sanjiv Kumar*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bf0857cb9a41c73639f028a80301cdf0-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bf0857cb9a41c73639f028a80301cdf0-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bf0857cb9a41c73639f028a80301cdf0-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bf0857cb9a41c73639f028a80301cdf0-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-The impressive generalization performance of modern neural networks is attributed in part to their ability to implicitly memorize complex training patterns.Inspired by this, we explore a novel mechanism to improve model generalization via explicit memorization.Specifically, we propose the residual-memorization (ResMem) algorithm, a new method that augments an existing prediction model (e.g., a neural network) by fitting the model's residuals with a nearest-neighbor based regressor.The final prediction is then the sum of the original model and the fitted residual regressor.By construction, ResMem can explicitly memorize the training labels.We start by formulating a stylized linear regression problem and rigorously show that ResMem results in a more favorable test risk over a base linear neural network.Then, we empirically show that ResMem consistently improves the test set generalization of the original prediction model across standard vision and natural language processing benchmarks.
+        The impressive generalization performance of modern neural networks is attributed in part to their ability to implicitly memorize complex training patterns.Inspired by this, we explore a novel mechanism to improve model generalization via explicit memorization.Specifically, we propose the residual-memorization (ResMem) algorithm, a new method that augments an existing prediction model (e.g., a neural network) by fitting the model's residuals with a nearest-neighbor based regressor.The final prediction is then the sum of the original model and the fitted residual regressor.By construction, ResMem can explicitly memorize the training labels.We start by formulating a stylized linear regression problem and rigorously show that ResMem results in a more favorable test risk over a base linear neural network.Then, we empirically show that ResMem consistently improves the test set generalization of the original prediction model across standard vision and natural language processing benchmarks.
 
-----
+        ----
 
-## [2654] Generalized Semi-Supervised Learning via Self-Supervised Feature Adaptation
+        ## [2654] Generalized Semi-Supervised Learning via Self-Supervised Feature Adaptation
 
-**Authors**: *Jiachen Liang, Ruibing Hou, Hong Chang, Bingpeng Ma, Shiguang Shan, Xilin Chen*
+        **Authors**: *Jiachen Liang, Ruibing Hou, Hong Chang, Bingpeng Ma, Shiguang Shan, Xilin Chen*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bf145010b30dc5f14fa87dc152074e4d-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bf145010b30dc5f14fa87dc152074e4d-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bf145010b30dc5f14fa87dc152074e4d-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bf145010b30dc5f14fa87dc152074e4d-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Traditional semi-supervised learning (SSL) assumes that the feature distributions of labeled and unlabeled data are consistent which rarely holds in realistic scenarios. In this paper, we propose a novel SSL setting, where unlabeled samples are drawn from a mixed distribution that deviates from the feature distribution of labeled samples.Under this setting, previous SSL methods tend to predict wrong pseudo-labels with the model fitted on labeled data, resulting in noise accumulation. To tackle this issue, we propose \emph{Self-Supervised Feature Adaptation} (SSFA), a generic framework for improving SSL performance when labeled and unlabeled data come from different distributions. SSFA decouples the prediction of pseudo-labels from the current model to improve the quality of pseudo-labels. Particularly, SSFA incorporates a self-supervised task into the SSL framework and uses it to adapt the feature extractor of the model to the unlabeled data. In this way, the extracted features better fit the distribution of unlabeled data, thereby generating high-quality pseudo-labels. Extensive experiments show that our proposed SSFA is applicable to various pseudo-label-based SSL learners and significantly improves performance in labeled, unlabeled, and even unseen distributions.
+        Traditional semi-supervised learning (SSL) assumes that the feature distributions of labeled and unlabeled data are consistent which rarely holds in realistic scenarios. In this paper, we propose a novel SSL setting, where unlabeled samples are drawn from a mixed distribution that deviates from the feature distribution of labeled samples.Under this setting, previous SSL methods tend to predict wrong pseudo-labels with the model fitted on labeled data, resulting in noise accumulation. To tackle this issue, we propose \emph{Self-Supervised Feature Adaptation} (SSFA), a generic framework for improving SSL performance when labeled and unlabeled data come from different distributions. SSFA decouples the prediction of pseudo-labels from the current model to improve the quality of pseudo-labels. Particularly, SSFA incorporates a self-supervised task into the SSL framework and uses it to adapt the feature extractor of the model to the unlabeled data. In this way, the extracted features better fit the distribution of unlabeled data, thereby generating high-quality pseudo-labels. Extensive experiments show that our proposed SSFA is applicable to various pseudo-label-based SSL learners and significantly improves performance in labeled, unlabeled, and even unseen distributions.
 
-----
+        ----
 
-## [2655] Soft-Unification in Deep Probabilistic Logic
+        ## [2655] Soft-Unification in Deep Probabilistic Logic
 
-**Authors**: *Jaron Maene, Luc De Raedt*
+        **Authors**: *Jaron Maene, Luc De Raedt*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bf215fa7fe70a38c5e967e59c44a99d0-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bf215fa7fe70a38c5e967e59c44a99d0-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bf215fa7fe70a38c5e967e59c44a99d0-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bf215fa7fe70a38c5e967e59c44a99d0-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-A fundamental challenge in neuro-symbolic AI is to devise primitives that fuse the logical and neural concepts. The Neural Theorem Prover has proposed the notion of soft-unification to turn the symbolic comparison between terms (i.e. unification) into a comparison in embedding space. It has been shown that soft-unification is a powerful mechanism that can be used to learn logic rules in an end-to-end differentiable manner. We study soft-unification from a conceptual point and outline several desirable properties of this operation. These include non-redundancy in the proof, well-defined proof scores, and non-sparse gradients. Unfortunately, these properties are not satisfied by previous systems such as the Neural Theorem Prover. Therefore, we introduce a more principled framework called DeepSoftLog based on probabilistic rather than fuzzy semantics. Our experiments demonstrate that DeepSoftLog can outperform the state-of-the-art on neuro-symbolic benchmarks, highlighting the benefits of these properties.
+        A fundamental challenge in neuro-symbolic AI is to devise primitives that fuse the logical and neural concepts. The Neural Theorem Prover has proposed the notion of soft-unification to turn the symbolic comparison between terms (i.e. unification) into a comparison in embedding space. It has been shown that soft-unification is a powerful mechanism that can be used to learn logic rules in an end-to-end differentiable manner. We study soft-unification from a conceptual point and outline several desirable properties of this operation. These include non-redundancy in the proof, well-defined proof scores, and non-sparse gradients. Unfortunately, these properties are not satisfied by previous systems such as the Neural Theorem Prover. Therefore, we introduce a more principled framework called DeepSoftLog based on probabilistic rather than fuzzy semantics. Our experiments demonstrate that DeepSoftLog can outperform the state-of-the-art on neuro-symbolic benchmarks, highlighting the benefits of these properties.
 
-----
+        ----
 
-## [2656] Scaling MLPs: A Tale of Inductive Bias
+        ## [2656] Scaling MLPs: A Tale of Inductive Bias
 
-**Authors**: *Gregor Bachmann, Sotiris Anagnostidis, Thomas Hofmann*
+        **Authors**: *Gregor Bachmann, Sotiris Anagnostidis, Thomas Hofmann*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bf2a5ce85aea9ff40d9bf8b2c2561cae-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bf2a5ce85aea9ff40d9bf8b2c2561cae-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bf2a5ce85aea9ff40d9bf8b2c2561cae-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bf2a5ce85aea9ff40d9bf8b2c2561cae-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-In this work we revisit the most fundamental building block in deep learning, the multi-layer perceptron (MLP), and study the limits of its performance on vision tasks. Empirical insights into MLPs are important for multiple reasons. (1) Given the recent narrative "less inductive bias is better", popularized due to transformers eclipsing convolutional models, it is natural to explore the limits of this hypothesis. To that end, MLPs offer an ideal test bed, as they lack any vision-specific inductive bias. (2) MLPs have almost exclusively been the main protagonist in the deep learning theory literature due to their mathematical simplicity, serving as a proxy to explain empirical phenomena observed for more complex architectures. Surprisingly, experimental datapoints for MLPs are very difficult to find in the literature, especially when coupled with large pre-training protocols. This discrepancy between practice and theory is worrying: \textit{Do MLPs reflect the empirical advances exhibited by practical models?} Or do theorists need to rethink the role of MLPs as a proxy? We provide insights into both these aspects.We show that the performance of MLPs drastically improves with scale (95% on CIFAR10, 82% on CIFAR100, 58% on ImageNet ReaL), highlighting that lack of inductive bias can indeed be compensated. We observe that MLPs mimic the behaviour of their modern counterparts faithfully, with some components in the learning setting however exhibiting stronger or unexpected behaviours. Due to their inherent computational efficiency, large pre-training experiments become more accessible for academic researchers. All of our experiments were run on a single GPU.
+        In this work we revisit the most fundamental building block in deep learning, the multi-layer perceptron (MLP), and study the limits of its performance on vision tasks. Empirical insights into MLPs are important for multiple reasons. (1) Given the recent narrative "less inductive bias is better", popularized due to transformers eclipsing convolutional models, it is natural to explore the limits of this hypothesis. To that end, MLPs offer an ideal test bed, as they lack any vision-specific inductive bias. (2) MLPs have almost exclusively been the main protagonist in the deep learning theory literature due to their mathematical simplicity, serving as a proxy to explain empirical phenomena observed for more complex architectures. Surprisingly, experimental datapoints for MLPs are very difficult to find in the literature, especially when coupled with large pre-training protocols. This discrepancy between practice and theory is worrying: \textit{Do MLPs reflect the empirical advances exhibited by practical models?} Or do theorists need to rethink the role of MLPs as a proxy? We provide insights into both these aspects.We show that the performance of MLPs drastically improves with scale (95% on CIFAR10, 82% on CIFAR100, 58% on ImageNet ReaL), highlighting that lack of inductive bias can indeed be compensated. We observe that MLPs mimic the behaviour of their modern counterparts faithfully, with some components in the learning setting however exhibiting stronger or unexpected behaviours. Due to their inherent computational efficiency, large pre-training experiments become more accessible for academic researchers. All of our experiments were run on a single GPU.
 
-----
+        ----
 
-## [2657] Local Convergence of Gradient Methods for Min-Max Games: Partial Curvature Generically Suffices
+        ## [2657] Local Convergence of Gradient Methods for Min-Max Games: Partial Curvature Generically Suffices
 
-**Authors**: *Guillaume Wang, Lénaïc Chizat*
+        **Authors**: *Guillaume Wang, Lénaïc Chizat*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bf331c87e29f473b610336f00fe1cb51-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bf331c87e29f473b610336f00fe1cb51-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bf331c87e29f473b610336f00fe1cb51-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bf331c87e29f473b610336f00fe1cb51-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-We study the convergence to local Nash equilibria of gradient methods for two-player zero-sum differentiable games.It is well-known that, in the continuous-time setting, such dynamics converge locally when $S \succ 0$ and may diverge when $S=0$, where $S\succeq 0$ is the symmetric part of the Jacobian at equilibrium that accounts for the "potential" component of the game. We show that these dynamics also converge as soon as $S$ is nonzero (*partial curvature*) and the eigenvectors of the antisymmetric part $A$ are in general position with respect to the kernel of $S$.We then study the convergence rate when $S \ll A$ and prove that it typically depends on the *average* of the eigenvalues of $S$, instead of the minimum as an analogy with minimization problems would suggest.To illustrate our results, we consider the problem of computing mixed Nash equilibria of continuous games. We show that, thanks to partial curvature, conic particle methods -- which optimize over both weights and supports of the mixed strategies -- generically converge faster than fixed-support methods.For min-max games, it is thus beneficial to add degrees of freedom "with curvature": this can be interpreted as yet another benefit of over-parameterization.
+        We study the convergence to local Nash equilibria of gradient methods for two-player zero-sum differentiable games.It is well-known that, in the continuous-time setting, such dynamics converge locally when $S \succ 0$ and may diverge when $S=0$, where $S\succeq 0$ is the symmetric part of the Jacobian at equilibrium that accounts for the "potential" component of the game. We show that these dynamics also converge as soon as $S$ is nonzero (*partial curvature*) and the eigenvectors of the antisymmetric part $A$ are in general position with respect to the kernel of $S$.We then study the convergence rate when $S \ll A$ and prove that it typically depends on the *average* of the eigenvalues of $S$, instead of the minimum as an analogy with minimization problems would suggest.To illustrate our results, we consider the problem of computing mixed Nash equilibria of continuous games. We show that, thanks to partial curvature, conic particle methods -- which optimize over both weights and supports of the mixed strategies -- generically converge faster than fixed-support methods.For min-max games, it is thus beneficial to add degrees of freedom "with curvature": this can be interpreted as yet another benefit of over-parameterization.
 
-----
+        ----
 
-## [2658] Going Beyond Linear Mode Connectivity: The Layerwise Linear Feature Connectivity
+        ## [2658] Going Beyond Linear Mode Connectivity: The Layerwise Linear Feature Connectivity
 
-**Authors**: *Zhanpeng Zhou, Yongyi Yang, Xiaojiang Yang, Junchi Yan, Wei Hu*
+        **Authors**: *Zhanpeng Zhou, Yongyi Yang, Xiaojiang Yang, Junchi Yan, Wei Hu*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bf3ee5a5422b0e2a88b0c9c6ed3b6144-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bf3ee5a5422b0e2a88b0c9c6ed3b6144-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bf3ee5a5422b0e2a88b0c9c6ed3b6144-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bf3ee5a5422b0e2a88b0c9c6ed3b6144-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Recent work has revealed many intriguing empirical phenomena in neural network training, despite the poorly understood and highly complex loss landscapes and training dynamics. One of these phenomena, Linear Mode Connectivity (LMC), has gained considerable attention due to the intriguing observation that different solutions can be connected by a linear path in the parameter space while maintaining near-constant training and test losses. In this work, we introduce a stronger notion of linear connectivity, Layerwise Linear Feature Connectivity (LLFC), which says that the feature maps of every layer in different trained networks are also linearly connected. We provide comprehensive empirical evidence for LLFC across a wide range of settings, demonstrating that whenever two trained networks satisfy LMC (via either spawning or permutation methods), they also satisfy LLFC in nearly all the layers. Furthermore, we delve deeper into the underlying factors contributing to LLFC, which reveal new insights into the permutation approaches. The study of LLFC transcends and advances our understanding of LMC by adopting a feature-learning perspective.
+        Recent work has revealed many intriguing empirical phenomena in neural network training, despite the poorly understood and highly complex loss landscapes and training dynamics. One of these phenomena, Linear Mode Connectivity (LMC), has gained considerable attention due to the intriguing observation that different solutions can be connected by a linear path in the parameter space while maintaining near-constant training and test losses. In this work, we introduce a stronger notion of linear connectivity, Layerwise Linear Feature Connectivity (LLFC), which says that the feature maps of every layer in different trained networks are also linearly connected. We provide comprehensive empirical evidence for LLFC across a wide range of settings, demonstrating that whenever two trained networks satisfy LMC (via either spawning or permutation methods), they also satisfy LLFC in nearly all the layers. Furthermore, we delve deeper into the underlying factors contributing to LLFC, which reveal new insights into the permutation approaches. The study of LLFC transcends and advances our understanding of LMC by adopting a feature-learning perspective.
 
-----
+        ----
 
-## [2659] Dream the Impossible: Outlier Imagination with Diffusion Models
+        ## [2659] Dream the Impossible: Outlier Imagination with Diffusion Models
 
-**Authors**: *Xuefeng Du, Yiyou Sun, Jerry Zhu, Yixuan Li*
+        **Authors**: *Xuefeng Du, Yiyou Sun, Jerry Zhu, Yixuan Li*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bf5311df07f3efce97471921e6d2f159-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bf5311df07f3efce97471921e6d2f159-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bf5311df07f3efce97471921e6d2f159-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bf5311df07f3efce97471921e6d2f159-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Utilizing auxiliary outlier datasets to regularize the machine learning model has demonstrated promise for out-of-distribution (OOD) detection and safe prediction. Due to the labor intensity in data collection and cleaning, automating outlier data generation has been a long-desired alternative. Despite the appeal, generating photo-realistic outliers in the high dimensional pixel space has been an open challenge for the field. To tackle the problem, this paper proposes a new framework Dream-OOD, which enables imagining photo-realistic outliers by way of diffusion models, provided with only the in-distribution (ID) data and classes. Specifically, Dream-OOD learns a text-conditioned latent space based on ID data, and then samples outliers in the low-likelihood region via the latent, which can be decoded into images by the diffusion model. Different from prior works [16, 95], Dream-OOD enables visualizing and understanding the imagined outliers, directly in the pixel space. We conduct comprehensive quantitative and qualitative studies to understand the efficacy of Dream-OOD, and show that training with the samples generated by Dream-OOD can significantly benefit  OOD detection performance.
+        Utilizing auxiliary outlier datasets to regularize the machine learning model has demonstrated promise for out-of-distribution (OOD) detection and safe prediction. Due to the labor intensity in data collection and cleaning, automating outlier data generation has been a long-desired alternative. Despite the appeal, generating photo-realistic outliers in the high dimensional pixel space has been an open challenge for the field. To tackle the problem, this paper proposes a new framework Dream-OOD, which enables imagining photo-realistic outliers by way of diffusion models, provided with only the in-distribution (ID) data and classes. Specifically, Dream-OOD learns a text-conditioned latent space based on ID data, and then samples outliers in the low-likelihood region via the latent, which can be decoded into images by the diffusion model. Different from prior works [16, 95], Dream-OOD enables visualizing and understanding the imagined outliers, directly in the pixel space. We conduct comprehensive quantitative and qualitative studies to understand the efficacy of Dream-OOD, and show that training with the samples generated by Dream-OOD can significantly benefit  OOD detection performance.
 
-----
+        ----
 
-## [2660] RETVec: Resilient and Efficient Text Vectorizer
+        ## [2660] RETVec: Resilient and Efficient Text Vectorizer
 
-**Authors**: *Elie Bursztein, Marina Zhang, Owen Vallis, Xinyu Jia, Alexey Kurakin*
+        **Authors**: *Elie Bursztein, Marina Zhang, Owen Vallis, Xinyu Jia, Alexey Kurakin*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bf64451da212313c5ef1a00f49232c47-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bf64451da212313c5ef1a00f49232c47-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bf64451da212313c5ef1a00f49232c47-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bf64451da212313c5ef1a00f49232c47-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-This paper describes RETVec, an efficient, resilient, and multilingual text vectorizer designed for neural-based text processing. RETVec combines a novel character encoding with an optional small embedding model to embed words into a 256-dimensional vector space. The RETVec embedding model is pre-trained using pair-wise metric learning to be robust against typos and character-level adversarial attacks. In this paper, we evaluate and compare RETVec to state-of-the-art vectorizers and word embeddings on popular model architectures and datasets. These comparisons demonstrate that RETVec leads to competitive, multilingual models that are significantly more resilient to typos and adversarial text attacks. RETVec is available under the Apache 2 license at https://github.com/google-research/retvec.
+        This paper describes RETVec, an efficient, resilient, and multilingual text vectorizer designed for neural-based text processing. RETVec combines a novel character encoding with an optional small embedding model to embed words into a 256-dimensional vector space. The RETVec embedding model is pre-trained using pair-wise metric learning to be robust against typos and character-level adversarial attacks. In this paper, we evaluate and compare RETVec to state-of-the-art vectorizers and word embeddings on popular model architectures and datasets. These comparisons demonstrate that RETVec leads to competitive, multilingual models that are significantly more resilient to typos and adversarial text attacks. RETVec is available under the Apache 2 license at https://github.com/google-research/retvec.
 
-----
+        ----
 
-## [2661] An Alternative to Variance: Gini Deviation for Risk-averse Policy Gradient
+        ## [2661] An Alternative to Variance: Gini Deviation for Risk-averse Policy Gradient
 
-**Authors**: *Yudong Luo, Guiliang Liu, Pascal Poupart, Yangchen Pan*
+        **Authors**: *Yudong Luo, Guiliang Liu, Pascal Poupart, Yangchen Pan*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bf665e1cf271faa5037374c884ba3808-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bf665e1cf271faa5037374c884ba3808-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bf665e1cf271faa5037374c884ba3808-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bf665e1cf271faa5037374c884ba3808-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Restricting the variance of a policyâ€™s return is a popular choice in risk-averse Reinforcement Learning (RL) due to its clear mathematical definition and easy interpretability. Traditional methods directly restrict the total return variance. Recent methods restrict the per-step reward variance as a proxy. We thoroughly examine the limitations of these variance-based methods, such as sensitivity to numerical scale and hindering of policy learning, and propose to use an alternative risk measure, Gini deviation, as a substitute. We study various properties of this new risk measure and derive a policy gradient algorithm to minimize it. Empirical evaluation in domains where risk-aversion can be clearly defined, shows that our algorithm can mitigate the limitations of variance-based risk measures and achieves high return with low risk in terms of variance and Gini deviation when others fail to learn a reasonable policy.
+        Restricting the variance of a policyâ€™s return is a popular choice in risk-averse Reinforcement Learning (RL) due to its clear mathematical definition and easy interpretability. Traditional methods directly restrict the total return variance. Recent methods restrict the per-step reward variance as a proxy. We thoroughly examine the limitations of these variance-based methods, such as sensitivity to numerical scale and hindering of policy learning, and propose to use an alternative risk measure, Gini deviation, as a substitute. We study various properties of this new risk measure and derive a policy gradient algorithm to minimize it. Empirical evaluation in domains where risk-aversion can be clearly defined, shows that our algorithm can mitigate the limitations of variance-based risk measures and achieves high return with low risk in terms of variance and Gini deviation when others fail to learn a reasonable policy.
 
-----
+        ----
 
-## [2662] Do Not Marginalize Mechanisms, Rather Consolidate!
+        ## [2662] Do Not Marginalize Mechanisms, Rather Consolidate!
 
-**Authors**: *Moritz Willig, Matej Zecevic, Devendra Singh Dhami, Kristian Kersting*
+        **Authors**: *Moritz Willig, Matej Zecevic, Devendra Singh Dhami, Kristian Kersting*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bf73c283ed3108ee9f84da2e29bcc336-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bf73c283ed3108ee9f84da2e29bcc336-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bf73c283ed3108ee9f84da2e29bcc336-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bf73c283ed3108ee9f84da2e29bcc336-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Structural causal models (SCMs) are a powerful tool for understanding the complex causal relationships that underlie many real-world systems. As these systems grow in size, the number of variables and complexity of interactions between them does, too. Thus, becoming convoluted and difficult to analyze. This is particularly true in the context of machine learning and artificial intelligence, where an ever increasing amount of data demands for new methods to simplify and compress large scale SCM. While methods for marginalizing and abstracting SCM already exist today, they may destroy the causality of the marginalized model. To alleviate this, we introduce the concept of consolidating causal mechanisms to transform large-scale SCM while preserving consistent interventional behaviour. We show consolidation is a powerful method for simplifying SCM, discuss reduction of computational complexity and give a perspective on generalizing abilities of consolidated SCM.
+        Structural causal models (SCMs) are a powerful tool for understanding the complex causal relationships that underlie many real-world systems. As these systems grow in size, the number of variables and complexity of interactions between them does, too. Thus, becoming convoluted and difficult to analyze. This is particularly true in the context of machine learning and artificial intelligence, where an ever increasing amount of data demands for new methods to simplify and compress large scale SCM. While methods for marginalizing and abstracting SCM already exist today, they may destroy the causality of the marginalized model. To alleviate this, we introduce the concept of consolidating causal mechanisms to transform large-scale SCM while preserving consistent interventional behaviour. We show consolidation is a powerful method for simplifying SCM, discuss reduction of computational complexity and give a perspective on generalizing abilities of consolidated SCM.
 
-----
+        ----
 
-## [2663] Learning Environment-Aware Affordance for 3D Articulated Object Manipulation under Occlusions
+        ## [2663] Learning Environment-Aware Affordance for 3D Articulated Object Manipulation under Occlusions
 
-**Authors**: *Ruihai Wu, Kai Cheng, Yan Zhao, Chuanruo Ning, Guanqi Zhan, Hao Dong*
+        **Authors**: *Ruihai Wu, Kai Cheng, Yan Zhao, Chuanruo Ning, Guanqi Zhan, Hao Dong*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bf78fc727cf882df66e6dbc826161e86-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bf78fc727cf882df66e6dbc826161e86-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bf78fc727cf882df66e6dbc826161e86-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bf78fc727cf882df66e6dbc826161e86-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Perceiving and manipulating 3D articulated objects in diverse environments is essential for home-assistant robots. Recent studies have shown that point-level affordance provides actionable priors for downstream manipulation tasks. However, existing works primarily focus on single-object scenarios with homogeneous agents, overlooking the realistic constraints imposed by the environment and the agent's morphology, e.g., occlusions and physical limitations. In this paper, we propose an environment-aware affordance framework that incorporates both object-level actionable priors and environment constraints. Unlike object-centric affordance approaches, learning environment-aware affordance faces the challenge of combinatorial explosion due to the complexity of various occlusions, characterized by their quantities, geometries, positions and poses. To address this and enhance data efficiency, we introduce a novel contrastive affordance learning framework capable of training on scenes containing a single occluder and generalizing to scenes with complex occluder combinations. Experiments demonstrate the effectiveness of our proposed approach in learning affordance considering environment constraints.
+        Perceiving and manipulating 3D articulated objects in diverse environments is essential for home-assistant robots. Recent studies have shown that point-level affordance provides actionable priors for downstream manipulation tasks. However, existing works primarily focus on single-object scenarios with homogeneous agents, overlooking the realistic constraints imposed by the environment and the agent's morphology, e.g., occlusions and physical limitations. In this paper, we propose an environment-aware affordance framework that incorporates both object-level actionable priors and environment constraints. Unlike object-centric affordance approaches, learning environment-aware affordance faces the challenge of combinatorial explosion due to the complexity of various occlusions, characterized by their quantities, geometries, positions and poses. To address this and enhance data efficiency, we introduce a novel contrastive affordance learning framework capable of training on scenes containing a single occluder and generalizing to scenes with complex occluder combinations. Experiments demonstrate the effectiveness of our proposed approach in learning affordance considering environment constraints.
 
-----
+        ----
 
-## [2664] Enhancing CLIP with CLIP: Exploring Pseudolabeling for Limited-Label Prompt Tuning
+        ## [2664] Enhancing CLIP with CLIP: Exploring Pseudolabeling for Limited-Label Prompt Tuning
 
-**Authors**: *Cristina Menghini, Andrew Delworth, Stephen H. Bach*
+        **Authors**: *Cristina Menghini, Andrew Delworth, Stephen H. Bach*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bf85879363044ca21f7868a3d1b4021c-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bf85879363044ca21f7868a3d1b4021c-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bf85879363044ca21f7868a3d1b4021c-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bf85879363044ca21f7868a3d1b4021c-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Fine-tuning vision-language models (VLMs) like CLIP to downstream tasks is often necessary to optimize their performance. However, a major obstacle is the limited availability of labeled data. We study the use of pseudolabels, i.e., heuristic labels for unlabeled data, to enhance CLIP via prompt tuning. Conventional pseudolabeling trains a model on labeled data and then generates labels for unlabeled data. VLMs' zero-shot capabilities enable a ``second generation'' of pseudolabeling approaches that do not require task-specific training on labeled data. By using zero-shot pseudolabels as a source of supervision, we observe that learning paradigms such as semi-supervised, transductive zero-shot, and unsupervised learning can all be seen as optimizing the same loss function. This unified view enables the development of versatile training strategies that are applicable across learning paradigms. We investigate them on image classification tasks where CLIP exhibits limitations, by varying prompt modalities, e.g., textual or visual prompts, and learning paradigms. We find that(1) unexplored prompt tuning strategies that iteratively refine pseudolabels consistently improve CLIP accuracy, by 19.5 points in semi-supervised learning, by 28.4 points in transductive zero-shot learning, and by 15.2 points in unsupervised learning, and (2) unlike conventional semi-supervised pseudolabeling, which exacerbates model biases toward classes with higher-quality pseudolabels, prompt tuning leads to a more equitable distribution of per-class accuracy. The code to reproduce the experiments is at https://github.com/BatsResearch/menghini-neurips23-code.
+        Fine-tuning vision-language models (VLMs) like CLIP to downstream tasks is often necessary to optimize their performance. However, a major obstacle is the limited availability of labeled data. We study the use of pseudolabels, i.e., heuristic labels for unlabeled data, to enhance CLIP via prompt tuning. Conventional pseudolabeling trains a model on labeled data and then generates labels for unlabeled data. VLMs' zero-shot capabilities enable a ``second generation'' of pseudolabeling approaches that do not require task-specific training on labeled data. By using zero-shot pseudolabels as a source of supervision, we observe that learning paradigms such as semi-supervised, transductive zero-shot, and unsupervised learning can all be seen as optimizing the same loss function. This unified view enables the development of versatile training strategies that are applicable across learning paradigms. We investigate them on image classification tasks where CLIP exhibits limitations, by varying prompt modalities, e.g., textual or visual prompts, and learning paradigms. We find that(1) unexplored prompt tuning strategies that iteratively refine pseudolabels consistently improve CLIP accuracy, by 19.5 points in semi-supervised learning, by 28.4 points in transductive zero-shot learning, and by 15.2 points in unsupervised learning, and (2) unlike conventional semi-supervised pseudolabeling, which exacerbates model biases toward classes with higher-quality pseudolabels, prompt tuning leads to a more equitable distribution of per-class accuracy. The code to reproduce the experiments is at https://github.com/BatsResearch/menghini-neurips23-code.
 
-----
+        ----
 
-## [2665] Accelerating Monte Carlo Tree Search with Probability Tree State Abstraction
+        ## [2665] Accelerating Monte Carlo Tree Search with Probability Tree State Abstraction
 
-**Authors**: *Yangqing Fu, Ming Sun, Buqing Nie, Yue Gao*
+        **Authors**: *Yangqing Fu, Ming Sun, Buqing Nie, Yue Gao*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bf89c9fcd0ef605571a03666f6a6a44d-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bf89c9fcd0ef605571a03666f6a6a44d-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bf89c9fcd0ef605571a03666f6a6a44d-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bf89c9fcd0ef605571a03666f6a6a44d-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Monte Carlo Tree Search (MCTS) algorithms such as AlphaGo and MuZero have achieved superhuman performance in many challenging tasks. However, the computational complexity of MCTS-based algorithms is influenced by the size of the search space. To address this issue, we propose a novel probability tree state abstraction (PTSA) algorithm to improve the search efficiency of MCTS. A general tree state abstraction with path transitivity is defined. In addition, the probability tree state abstraction is proposed for fewer mistakes during the aggregation step. Furthermore, the theoretical guarantees of the transitivity and aggregation error bound are justified. To evaluate the effectiveness of the PTSA algorithm, we integrate it with state-of-the-art MCTS-based algorithms, such as Sampled MuZero and Gumbel MuZero. Experimental results on different tasks demonstrate that our method can accelerate the training process of state-of-the-art algorithms with 10%-45% search space reduction.
+        Monte Carlo Tree Search (MCTS) algorithms such as AlphaGo and MuZero have achieved superhuman performance in many challenging tasks. However, the computational complexity of MCTS-based algorithms is influenced by the size of the search space. To address this issue, we propose a novel probability tree state abstraction (PTSA) algorithm to improve the search efficiency of MCTS. A general tree state abstraction with path transitivity is defined. In addition, the probability tree state abstraction is proposed for fewer mistakes during the aggregation step. Furthermore, the theoretical guarantees of the transitivity and aggregation error bound are justified. To evaluate the effectiveness of the PTSA algorithm, we integrate it with state-of-the-art MCTS-based algorithms, such as Sampled MuZero and Gumbel MuZero. Experimental results on different tasks demonstrate that our method can accelerate the training process of state-of-the-art algorithms with 10%-45% search space reduction.
 
-----
+        ----
 
-## [2666] MeCo: Zero-Shot NAS with One Data and Single Forward Pass via Minimum Eigenvalue of Correlation
+        ## [2666] MeCo: Zero-Shot NAS with One Data and Single Forward Pass via Minimum Eigenvalue of Correlation
 
-**Authors**: *Tangyu Jiang, Haodi Wang, Rongfang Bie*
+        **Authors**: *Tangyu Jiang, Haodi Wang, Rongfang Bie*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bfa815ac6f08f4ada34fe22be054f2b9-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bfa815ac6f08f4ada34fe22be054f2b9-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bfa815ac6f08f4ada34fe22be054f2b9-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bfa815ac6f08f4ada34fe22be054f2b9-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Neural Architecture Search (NAS) is a promising paradigm in automatic architecture engineering. Zero-shot NAS can evaluate the network without training via some specific metrics called zero-cost proxies. Though effective, the existing zero-cost proxies either invoke at least one backpropagation or depend highly on the data and labels. To alleviate the above issues, in this paper, we first reveal how the Pearson correlation matrix of the feature maps impacts the convergence rate and the generalization capacity of an over-parameterized neural network. Enlightened by the theoretical analysis, we propose a novel zero-cost proxy called $\mathsf{MeCo}$, which requires only one random data for a single forward pass. We further propose an optimization approach $\mathsf{MeCo_{opt}}$ to improve the performance of our method. We design comprehensive experiments and extensively evaluate $\mathsf{MeCo}$ on multiple popular benchmarks. $\mathsf{MeCo}$ achieves the highest correlation with the ground truth (e.g., 0.89 on NATS-Bench-TSS with CIFAR-10) among all the state-of-the-art proxies, which is also fully independent of the data and labels. Moreover, we integrate $\mathsf{MeCo}$ with the existing generation method to comprise a complete NAS. The experimental results illustrate that $\mathsf{MeCo}$-based NAS can select the architecture with the highest accuracy and a low search cost. For instance, the best network searched by $\mathsf{MeCo}$-based NAS achieves 97.31% on CIFAR-10, which is 0.04% higher than the baselines under the same settings. Our code is available at https://github.com/HamsterMimi/MeCo
+        Neural Architecture Search (NAS) is a promising paradigm in automatic architecture engineering. Zero-shot NAS can evaluate the network without training via some specific metrics called zero-cost proxies. Though effective, the existing zero-cost proxies either invoke at least one backpropagation or depend highly on the data and labels. To alleviate the above issues, in this paper, we first reveal how the Pearson correlation matrix of the feature maps impacts the convergence rate and the generalization capacity of an over-parameterized neural network. Enlightened by the theoretical analysis, we propose a novel zero-cost proxy called $\mathsf{MeCo}$, which requires only one random data for a single forward pass. We further propose an optimization approach $\mathsf{MeCo_{opt}}$ to improve the performance of our method. We design comprehensive experiments and extensively evaluate $\mathsf{MeCo}$ on multiple popular benchmarks. $\mathsf{MeCo}$ achieves the highest correlation with the ground truth (e.g., 0.89 on NATS-Bench-TSS with CIFAR-10) among all the state-of-the-art proxies, which is also fully independent of the data and labels. Moreover, we integrate $\mathsf{MeCo}$ with the existing generation method to comprise a complete NAS. The experimental results illustrate that $\mathsf{MeCo}$-based NAS can select the architecture with the highest accuracy and a low search cost. For instance, the best network searched by $\mathsf{MeCo}$-based NAS achieves 97.31% on CIFAR-10, which is 0.04% higher than the baselines under the same settings. Our code is available at https://github.com/HamsterMimi/MeCo
 
-----
+        ----
 
-## [2667] On the Constrained Time-Series Generation Problem
+        ## [2667] On the Constrained Time-Series Generation Problem
 
-**Authors**: *Andrea Coletta, Sriram Gopalakrishnan, Daniel Borrajo, Svitlana Vyetrenko*
+        **Authors**: *Andrea Coletta, Sriram Gopalakrishnan, Daniel Borrajo, Svitlana Vyetrenko*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bfb6a69c0d9e2bc596e1cd31f16fcdde-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bfb6a69c0d9e2bc596e1cd31f16fcdde-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/bfb6a69c0d9e2bc596e1cd31f16fcdde-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/bfb6a69c0d9e2bc596e1cd31f16fcdde-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Synthetic time series are often used in practical applications to augment the historical time series dataset, amplify the occurrence of rare events and also create counterfactual scenarios.Distributional-similarity (which we refer to as realism) as well as the satisfaction of certain numerical constraints are common requirements for counterfactual time series generation. For instance, the US Federal Reserve publishes synthetic market stress scenarios given by the constrained time series for financial institutions to assess their performance in hypothetical recessions.Existing approaches for generating constrained time series usually penalize training loss to enforce constraints, and reject non-conforming samples. However, these approaches would require re-training if we change constraints, and rejection sampling can be computationally expensive, or impractical for complex constraints.In this paper, we propose a novel set of methods to tackle the constrained time series generation problem and provide efficient sampling while ensuring the realism of generated time series.  In particular, we frame the problem using a constrained optimization framework and then we propose a set of generative methods including 'GuidedDiffTime', a guided diffusion model. We empirically evaluate our work on several datasets for financial and energy data, where incorporating constraints is critical. We show that our approaches outperform existing work both qualitatively and quantitatively, and that 'GuidedDiffTime' does not require re-training for new constraints, resulting in a significant carbon footprint reduction, up to 92% w.r.t. existing deep learning methods.
+        Synthetic time series are often used in practical applications to augment the historical time series dataset, amplify the occurrence of rare events and also create counterfactual scenarios.Distributional-similarity (which we refer to as realism) as well as the satisfaction of certain numerical constraints are common requirements for counterfactual time series generation. For instance, the US Federal Reserve publishes synthetic market stress scenarios given by the constrained time series for financial institutions to assess their performance in hypothetical recessions.Existing approaches for generating constrained time series usually penalize training loss to enforce constraints, and reject non-conforming samples. However, these approaches would require re-training if we change constraints, and rejection sampling can be computationally expensive, or impractical for complex constraints.In this paper, we propose a novel set of methods to tackle the constrained time series generation problem and provide efficient sampling while ensuring the realism of generated time series.  In particular, we frame the problem using a constrained optimization framework and then we propose a set of generative methods including 'GuidedDiffTime', a guided diffusion model. We empirically evaluate our work on several datasets for financial and energy data, where incorporating constraints is critical. We show that our approaches outperform existing work both qualitatively and quantitatively, and that 'GuidedDiffTime' does not require re-training for new constraints, resulting in a significant carbon footprint reduction, up to 92% w.r.t. existing deep learning methods.
 
-----
+        ----
 
-## [2668] InfoPrompt: Information-Theoretic Soft Prompt Tuning for Natural Language Understanding
+        ## [2668] InfoPrompt: Information-Theoretic Soft Prompt Tuning for Natural Language Understanding
 
-**Authors**: *Junda Wu, Tong Yu, Rui Wang, Zhao Song, Ruiyi Zhang, Handong Zhao, Chaochao Lu, Shuai Li, Ricardo Henao*
+        **Authors**: *Junda Wu, Tong Yu, Rui Wang, Zhao Song, Ruiyi Zhang, Handong Zhao, Chaochao Lu, Shuai Li, Ricardo Henao*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c01c0da4fe2ef2df9863f55261e2e924-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c01c0da4fe2ef2df9863f55261e2e924-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c01c0da4fe2ef2df9863f55261e2e924-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c01c0da4fe2ef2df9863f55261e2e924-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Soft prompt tuning achieves superior performances across a wide range of few-shot tasks. However, the performances of prompt tuning can be highly sensitive to the initialization of the prompts. We have also empirically observed that conventional prompt tuning methods cannot encode and learn sufficient task-relevant information from prompt tokens. In this work, we develop an information-theoretic framework that formulates soft prompt tuning as maximizing the mutual information between prompts and other model parameters (or encoded representations). This novel view helps us to develop a more efficient, accurate and robust soft prompt tuning method, InfoPrompt. With this framework, we develop two novel mutual information based loss functions, to (i) explore proper prompt initialization for the downstream tasks and learn sufficient task-relevant information from prompt tokens and (ii) encourage the output representation from the pretrained language model to be more aware of the task-relevant information captured in the learnt prompts. Extensive experiments validate that InfoPrompt can significantly accelerate the convergence of the prompt tuning and outperform traditional prompt tuning methods. Finally, we provide a formal theoretical result to show that a gradient descent type algorithm can be used to train our mutual information loss.
+        Soft prompt tuning achieves superior performances across a wide range of few-shot tasks. However, the performances of prompt tuning can be highly sensitive to the initialization of the prompts. We have also empirically observed that conventional prompt tuning methods cannot encode and learn sufficient task-relevant information from prompt tokens. In this work, we develop an information-theoretic framework that formulates soft prompt tuning as maximizing the mutual information between prompts and other model parameters (or encoded representations). This novel view helps us to develop a more efficient, accurate and robust soft prompt tuning method, InfoPrompt. With this framework, we develop two novel mutual information based loss functions, to (i) explore proper prompt initialization for the downstream tasks and learn sufficient task-relevant information from prompt tokens and (ii) encourage the output representation from the pretrained language model to be more aware of the task-relevant information captured in the learnt prompts. Extensive experiments validate that InfoPrompt can significantly accelerate the convergence of the prompt tuning and outperform traditional prompt tuning methods. Finally, we provide a formal theoretical result to show that a gradient descent type algorithm can be used to train our mutual information loss.
 
-----
+        ----
 
-## [2669] On the Size and Approximation Error of Distilled Datasets
+        ## [2669] On the Size and Approximation Error of Distilled Datasets
 
-**Authors**: *Alaa Maalouf, Murad Tukan, Noel Loo, Ramin M. Hasani, Mathias Lechner, Daniela Rus*
+        **Authors**: *Alaa Maalouf, Murad Tukan, Noel Loo, Ramin M. Hasani, Mathias Lechner, Daniela Rus*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c03a9ccdb3e95f2c2dcfc3f4bc16bf42-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c03a9ccdb3e95f2c2dcfc3f4bc16bf42-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c03a9ccdb3e95f2c2dcfc3f4bc16bf42-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c03a9ccdb3e95f2c2dcfc3f4bc16bf42-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Dataset Distillation is the task of synthesizing small datasets from large ones while still retaining comparable predictive accuracy to the original uncompressed dataset. Despite significant empirical progress in recent years, there is little understanding of the theoretical limitations/guarantees of dataset distillation, specifically, what excess risk is achieved by distillation compared to the original dataset, and how large are distilled datasets? In this work, we take a theoretical view on kernel ridge regression (KRR) based methods of dataset distillation such as Kernel Inducing Points. By transforming ridge regression in random Fourier features (RFF) space, we provide the first proof of the existence of small (size) distilled datasets and their corresponding excess risk for shift-invariant kernels. We prove that a small set of instances exists in the original input space such that its solution in the RFF space coincides with the solution of the original data. We further show that a KRR solution can be generated using this distilled set of instances which gives an approximation towards the KRR solution optimized on the full input data. The size of this set is linear in the dimension of the RFF space of the input set or alternatively near linear in the number of effective degrees of freedom, which is a function of the kernel, number of data points, and the regularization parameter $\lambda$. The error bound of this distilled set is also a function of $\lambda$.  We verify our bounds analytically and empirically.
+        Dataset Distillation is the task of synthesizing small datasets from large ones while still retaining comparable predictive accuracy to the original uncompressed dataset. Despite significant empirical progress in recent years, there is little understanding of the theoretical limitations/guarantees of dataset distillation, specifically, what excess risk is achieved by distillation compared to the original dataset, and how large are distilled datasets? In this work, we take a theoretical view on kernel ridge regression (KRR) based methods of dataset distillation such as Kernel Inducing Points. By transforming ridge regression in random Fourier features (RFF) space, we provide the first proof of the existence of small (size) distilled datasets and their corresponding excess risk for shift-invariant kernels. We prove that a small set of instances exists in the original input space such that its solution in the RFF space coincides with the solution of the original data. We further show that a KRR solution can be generated using this distilled set of instances which gives an approximation towards the KRR solution optimized on the full input data. The size of this set is linear in the dimension of the RFF space of the input set or alternatively near linear in the number of effective degrees of freedom, which is a function of the kernel, number of data points, and the regularization parameter $\lambda$. The error bound of this distilled set is also a function of $\lambda$.  We verify our bounds analytically and empirically.
 
-----
+        ----
 
-## [2670] A Unified Approach for Maximizing Continuous DR-submodular Functions
+        ## [2670] A Unified Approach for Maximizing Continuous DR-submodular Functions
 
-**Authors**: *Mohammad Pedramfar, Christopher J. Quinn, Vaneet Aggarwal*
+        **Authors**: *Mohammad Pedramfar, Christopher J. Quinn, Vaneet Aggarwal*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c041d58d2250e67f70a5b004655315b5-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c041d58d2250e67f70a5b004655315b5-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c041d58d2250e67f70a5b004655315b5-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c041d58d2250e67f70a5b004655315b5-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-This paper presents a unified approach for maximizing continuous DR-submodular functions that encompasses a range of settings and oracle access types. Our approach includes a Frank-Wolfe type offline algorithm for both monotone and non-monotone functions, with different restrictions on the general convex set. We consider settings where the oracle provides access to either the gradient of the function or only the function value, and where the oracle access is either deterministic or stochastic. We determine the number of required oracle accesses in all cases. Our approach gives new/improved results for nine out of the sixteen considered cases, avoids computationally expensive projections in three cases, with the proposed framework matching performance of state-of-the-art approaches in the remaining four cases. Notably, our approach for the stochastic function value-based oracle enables the first regret bounds with bandit feedback for stochastic DR-submodular functions.
+        This paper presents a unified approach for maximizing continuous DR-submodular functions that encompasses a range of settings and oracle access types. Our approach includes a Frank-Wolfe type offline algorithm for both monotone and non-monotone functions, with different restrictions on the general convex set. We consider settings where the oracle provides access to either the gradient of the function or only the function value, and where the oracle access is either deterministic or stochastic. We determine the number of required oracle accesses in all cases. Our approach gives new/improved results for nine out of the sixteen considered cases, avoids computationally expensive projections in three cases, with the proposed framework matching performance of state-of-the-art approaches in the remaining four cases. Notably, our approach for the stochastic function value-based oracle enables the first regret bounds with bandit feedback for stochastic DR-submodular functions.
 
-----
+        ----
 
-## [2671] On Sample-Efficient Offline Reinforcement Learning: Data Diversity, Posterior Sampling and Beyond
+        ## [2671] On Sample-Efficient Offline Reinforcement Learning: Data Diversity, Posterior Sampling and Beyond
 
-**Authors**: *Thanh Nguyen-Tang, Raman Arora*
+        **Authors**: *Thanh Nguyen-Tang, Raman Arora*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c056d6cf7b7108418f2b8c307dfaab02-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c056d6cf7b7108418f2b8c307dfaab02-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c056d6cf7b7108418f2b8c307dfaab02-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c056d6cf7b7108418f2b8c307dfaab02-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-We seek to understand what facilitates sample-efficient learning from historical datasets for sequential decision-making, a problem that is popularly known as offline reinforcement learning (RL). Further, we are interested in algorithms that enjoy sample efficiency while leveraging (value) function approximation. In this paper, we address these fundamental questions by (i) proposing a notion of data diversity that subsumes the previous notions of coverage measures in offline RL and (ii) using this notion to \emph{unify} three distinct classes of offline RL algorithms based on version spaces (VS), regularized optimization (RO), and posterior sampling (PS). We establish that VS-based, RO-based, and PS-based algorithms, under standard assumptions, achieve \emph{comparable} sample efficiency, which recovers the state-of-the-art sub-optimality bounds for finite and linear model classes with the standard assumptions. This result is surprising, given that the prior work suggested an unfavorable sample complexity of the RO-based algorithm compared to the VS-based algorithm, whereas posterior sampling is rarely considered in offline RL due to its explorative nature. Notably, our proposed model-free PS-based algorithm for offline RL is \emph{novel}, with sub-optimality bounds that are \emph{frequentist} (i.e., worst-case) in nature.
+        We seek to understand what facilitates sample-efficient learning from historical datasets for sequential decision-making, a problem that is popularly known as offline reinforcement learning (RL). Further, we are interested in algorithms that enjoy sample efficiency while leveraging (value) function approximation. In this paper, we address these fundamental questions by (i) proposing a notion of data diversity that subsumes the previous notions of coverage measures in offline RL and (ii) using this notion to \emph{unify} three distinct classes of offline RL algorithms based on version spaces (VS), regularized optimization (RO), and posterior sampling (PS). We establish that VS-based, RO-based, and PS-based algorithms, under standard assumptions, achieve \emph{comparable} sample efficiency, which recovers the state-of-the-art sub-optimality bounds for finite and linear model classes with the standard assumptions. This result is surprising, given that the prior work suggested an unfavorable sample complexity of the RO-based algorithm compared to the VS-based algorithm, whereas posterior sampling is rarely considered in offline RL due to its explorative nature. Notably, our proposed model-free PS-based algorithm for offline RL is \emph{novel}, with sub-optimality bounds that are \emph{frequentist} (i.e., worst-case) in nature.
 
-----
+        ----
 
-## [2672] GRAND-SLAMIN' Interpretable Additive Modeling with Structural Constraints
+        ## [2672] GRAND-SLAMIN' Interpretable Additive Modeling with Structural Constraints
 
-**Authors**: *Shibal Ibrahim, Gabriel Afriat, Kayhan Behdin, Rahul Mazumder*
+        **Authors**: *Shibal Ibrahim, Gabriel Afriat, Kayhan Behdin, Rahul Mazumder*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c057cb81b8d3c67093427bf1c16a4e9f-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c057cb81b8d3c67093427bf1c16a4e9f-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c057cb81b8d3c67093427bf1c16a4e9f-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c057cb81b8d3c67093427bf1c16a4e9f-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Generalized Additive Models (GAMs) are a family of flexible and interpretable models with old roots in statistics. GAMs are often used with pairwise interactions to improve model accuracy while still retaining flexibility and interpretability but lead to computational challenges as we are dealing with order of $p^2$ terms. It is desirable to restrict the number of components (i.e., encourage sparsity) for easier interpretability, and better computational and statistical properties. Earlier approaches, considering sparse pairwise interactions, have limited scalability, especially when imposing additional structural interpretability constraints. We propose a flexible GRAND-SLAMIN framework that can learn GAMs with interactions under sparsity and additional structural constraints in a differentiable end-to-end fashion. We customize first-order gradient-based optimization to perform sparse backpropagation to exploit sparsity in additive effects for any differentiable loss function in a GPU-compatible manner. Additionally, we establish novel non-asymptotic prediction bounds for our estimators with tree-based shape functions. Numerical experiments on real-world datasets show that our toolkit performs favorably in terms of performance, variable selection and scalability when compared with popular toolkits to fit GAMs with interactions. Our work expands the landscape of interpretable modeling while maintaining prediction accuracy competitive with non-interpretable black-box models. Our code is available at https://github.com/mazumder-lab/grandslamin.
+        Generalized Additive Models (GAMs) are a family of flexible and interpretable models with old roots in statistics. GAMs are often used with pairwise interactions to improve model accuracy while still retaining flexibility and interpretability but lead to computational challenges as we are dealing with order of $p^2$ terms. It is desirable to restrict the number of components (i.e., encourage sparsity) for easier interpretability, and better computational and statistical properties. Earlier approaches, considering sparse pairwise interactions, have limited scalability, especially when imposing additional structural interpretability constraints. We propose a flexible GRAND-SLAMIN framework that can learn GAMs with interactions under sparsity and additional structural constraints in a differentiable end-to-end fashion. We customize first-order gradient-based optimization to perform sparse backpropagation to exploit sparsity in additive effects for any differentiable loss function in a GPU-compatible manner. Additionally, we establish novel non-asymptotic prediction bounds for our estimators with tree-based shape functions. Numerical experiments on real-world datasets show that our toolkit performs favorably in terms of performance, variable selection and scalability when compared with popular toolkits to fit GAMs with interactions. Our work expands the landscape of interpretable modeling while maintaining prediction accuracy competitive with non-interpretable black-box models. Our code is available at https://github.com/mazumder-lab/grandslamin.
 
-----
+        ----
 
-## [2673] S-CLIP: Semi-supervised Vision-Language Learning using Few Specialist Captions
+        ## [2673] S-CLIP: Semi-supervised Vision-Language Learning using Few Specialist Captions
 
-**Authors**: *Sangwoo Mo, Minkyu Kim, Kyungmin Lee, Jinwoo Shin*
+        **Authors**: *Sangwoo Mo, Minkyu Kim, Kyungmin Lee, Jinwoo Shin*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c06f788963f0ce069f5b2dbf83fe7822-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c06f788963f0ce069f5b2dbf83fe7822-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c06f788963f0ce069f5b2dbf83fe7822-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c06f788963f0ce069f5b2dbf83fe7822-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Vision-language models, such as contrastive language-image pre-training (CLIP), have demonstrated impressive results in natural image domains. However, these models often struggle when applied to specialized domains like remote sensing, and adapting to such domains is challenging due to the limited number of image-text pairs available for training. To address this, we propose S-CLIP, a semi-supervised learning method for training CLIP that utilizes additional unpaired images. S-CLIP employs two pseudo-labeling strategies specifically designed for contrastive learning and the language modality. The caption-level pseudo-label is given by a combination of captions of paired images, obtained by solving an optimal transport problem between unpaired and paired images. The keyword-level pseudo-label is given by a keyword in the caption of the nearest paired image, trained through partial label learning that assumes a candidate set of labels for supervision instead of the exact one. By combining these objectives, S-CLIP significantly enhances the training of CLIP using only a few image-text pairs, as demonstrated in various specialist domains, including remote sensing, fashion, scientific figures, and comics. For instance, S-CLIP improves CLIP by 10% for zero-shot classification and 4% for image-text retrieval on the remote sensing benchmark, matching the performance of supervised CLIP while using three times fewer image-text pairs.
+        Vision-language models, such as contrastive language-image pre-training (CLIP), have demonstrated impressive results in natural image domains. However, these models often struggle when applied to specialized domains like remote sensing, and adapting to such domains is challenging due to the limited number of image-text pairs available for training. To address this, we propose S-CLIP, a semi-supervised learning method for training CLIP that utilizes additional unpaired images. S-CLIP employs two pseudo-labeling strategies specifically designed for contrastive learning and the language modality. The caption-level pseudo-label is given by a combination of captions of paired images, obtained by solving an optimal transport problem between unpaired and paired images. The keyword-level pseudo-label is given by a keyword in the caption of the nearest paired image, trained through partial label learning that assumes a candidate set of labels for supervision instead of the exact one. By combining these objectives, S-CLIP significantly enhances the training of CLIP using only a few image-text pairs, as demonstrated in various specialist domains, including remote sensing, fashion, scientific figures, and comics. For instance, S-CLIP improves CLIP by 10% for zero-shot classification and 4% for image-text retrieval on the remote sensing benchmark, matching the performance of supervised CLIP while using three times fewer image-text pairs.
 
-----
+        ----
 
-## [2674] A3FL: Adversarially Adaptive Backdoor Attacks to Federated Learning
+        ## [2674] A3FL: Adversarially Adaptive Backdoor Attacks to Federated Learning
 
-**Authors**: *Hangfan Zhang, Jinyuan Jia, Jinghui Chen, Lu Lin, Dinghao Wu*
+        **Authors**: *Hangfan Zhang, Jinyuan Jia, Jinghui Chen, Lu Lin, Dinghao Wu*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c07d71ff0bc042e4b9acd626a79597fa-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c07d71ff0bc042e4b9acd626a79597fa-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c07d71ff0bc042e4b9acd626a79597fa-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c07d71ff0bc042e4b9acd626a79597fa-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Federated Learning (FL) is a distributed machine learning paradigm that allows multiple clients to train a global model collaboratively without sharing their local training data. Due to its distributed nature, many studies have shown that it is vulnerable to backdoor attacks. However, existing studies usually used a predetermined, fixed backdoor trigger or optimized it based solely on the local data and model without considering the global training dynamics. This leads to sub-optimal and less durable attack effectiveness, i.e., their attack success rate is low when the attack budget is limited and decreases quickly if the attacker can no longer perform attacks anymore. To address these limitations, we propose A3FL, a new backdoor attack which adversarially adapts the backdoor trigger to make it less likely to be removed by the global training dynamics. Our key intuition is that the difference between the global model and the local model in FL makes the local-optimized trigger much less effective when transferred to the global model. We solve this by optimizing the trigger to even survive the worst-case scenario where the global model was trained to directly unlearn the trigger. Extensive experiments on benchmark datasets are conducted for twelve existing defenses to comprehensively evaluate the effectiveness of our A3FL. Our code is available at https://github.com/hfzhang31/A3FL.
+        Federated Learning (FL) is a distributed machine learning paradigm that allows multiple clients to train a global model collaboratively without sharing their local training data. Due to its distributed nature, many studies have shown that it is vulnerable to backdoor attacks. However, existing studies usually used a predetermined, fixed backdoor trigger or optimized it based solely on the local data and model without considering the global training dynamics. This leads to sub-optimal and less durable attack effectiveness, i.e., their attack success rate is low when the attack budget is limited and decreases quickly if the attacker can no longer perform attacks anymore. To address these limitations, we propose A3FL, a new backdoor attack which adversarially adapts the backdoor trigger to make it less likely to be removed by the global training dynamics. Our key intuition is that the difference between the global model and the local model in FL makes the local-optimized trigger much less effective when transferred to the global model. We solve this by optimizing the trigger to even survive the worst-case scenario where the global model was trained to directly unlearn the trigger. Extensive experiments on benchmark datasets are conducted for twelve existing defenses to comprehensively evaluate the effectiveness of our A3FL. Our code is available at https://github.com/hfzhang31/A3FL.
 
-----
+        ----
 
-## [2675] Towards Understanding the Dynamics of Gaussian-Stein Variational Gradient Descent
+        ## [2675] Towards Understanding the Dynamics of Gaussian-Stein Variational Gradient Descent
 
-**Authors**: *Tianle Liu, Promit Ghosal, Krishnakumar Balasubramanian, Natesh S. Pillai*
+        **Authors**: *Tianle Liu, Promit Ghosal, Krishnakumar Balasubramanian, Natesh S. Pillai*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c0ae487420ebc8d0ed7c541b4e3f09d4-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c0ae487420ebc8d0ed7c541b4e3f09d4-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c0ae487420ebc8d0ed7c541b4e3f09d4-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c0ae487420ebc8d0ed7c541b4e3f09d4-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Stein Variational Gradient Descent (SVGD) is a nonparametric particle-based deterministic sampling algorithm. Despite its wide usage, understanding the theoretical properties of SVGD has remained a challenging problem. For sampling from a Gaussian target, the SVGD dynamics with a bilinear kernel will remain Gaussian as long as the initializer is Gaussian. Inspired by this fact, we undertake a detailed theoretical study of the Gaussian-SVGD, i.e., SVGD projected to the family of Gaussian distributions via the bilinear kernel, or equivalently Gaussian variational inference (GVI) with SVGD. We present a complete picture by considering both the mean-field PDE and discrete particle systems. When the target is strongly log-concave, the mean-field Gaussian-SVGD dynamics is proven to converge linearly to the Gaussian distribution closest to the target in KL divergence. In the finite-particle setting, there is both uniform in time convergence to the mean-field limit and linear convergence in time to the equilibrium if the target is Gaussian. In the general case, we propose a density-based and a particle-based implementation of the Gaussian-SVGD, and show that several recent algorithms for GVI, proposed from different perspectives, emerge as special cases of our unified framework. Interestingly, one of the new particle-based instance from this framework empirically outperforms existing approaches. Our results make concrete contributions towards obtaining a deeper understanding of both SVGD and GVI.
+        Stein Variational Gradient Descent (SVGD) is a nonparametric particle-based deterministic sampling algorithm. Despite its wide usage, understanding the theoretical properties of SVGD has remained a challenging problem. For sampling from a Gaussian target, the SVGD dynamics with a bilinear kernel will remain Gaussian as long as the initializer is Gaussian. Inspired by this fact, we undertake a detailed theoretical study of the Gaussian-SVGD, i.e., SVGD projected to the family of Gaussian distributions via the bilinear kernel, or equivalently Gaussian variational inference (GVI) with SVGD. We present a complete picture by considering both the mean-field PDE and discrete particle systems. When the target is strongly log-concave, the mean-field Gaussian-SVGD dynamics is proven to converge linearly to the Gaussian distribution closest to the target in KL divergence. In the finite-particle setting, there is both uniform in time convergence to the mean-field limit and linear convergence in time to the equilibrium if the target is Gaussian. In the general case, we propose a density-based and a particle-based implementation of the Gaussian-SVGD, and show that several recent algorithms for GVI, proposed from different perspectives, emerge as special cases of our unified framework. Interestingly, one of the new particle-based instance from this framework empirically outperforms existing approaches. Our results make concrete contributions towards obtaining a deeper understanding of both SVGD and GVI.
 
-----
+        ----
 
-## [2676] Validated Image Caption Rating Dataset
+        ## [2676] Validated Image Caption Rating Dataset
 
-**Authors**: *Lothar D. Narins, Andrew T. Scott, Aakash Gautam, Anagha Kulkarni, Mar Castanon, Benjamin Kao, Shasta Ihorn, Yue-Ting Siu, James M. Mason, Alexander Blum, Ilmi Yoon*
+        **Authors**: *Lothar D. Narins, Andrew T. Scott, Aakash Gautam, Anagha Kulkarni, Mar Castanon, Benjamin Kao, Shasta Ihorn, Yue-Ting Siu, James M. Mason, Alexander Blum, Ilmi Yoon*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c0b91f9a3587bf35287f41dba5d20233-Abstract-Datasets_and_Benchmarks.html](http://papers.nips.cc/paper_files/paper/2023/hash/c0b91f9a3587bf35287f41dba5d20233-Abstract-Datasets_and_Benchmarks.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c0b91f9a3587bf35287f41dba5d20233-Abstract-Datasets_and_Benchmarks.html](http://papers.nips.cc/paper_files/paper/2023/hash/c0b91f9a3587bf35287f41dba5d20233-Abstract-Datasets_and_Benchmarks.html)
 
-**Abstract**:
+        **Abstract**:
 
-We present a new high-quality validated image caption rating (VICR) dataset. How well a caption fits an image can be difficult to assess due to the subjective nature of caption quality. How do we evaluate whether a caption is good? We generated a new dataset to help answer this question by using our new image caption rating system, which consists of a novel robust rating scale and gamified approach to gathering human ratings. We show that our approach is consistent and teachable. 113 participants were involved in generating the dataset, which is composed of 68,217 ratings among 15,646 image-caption pairs. Our new dataset has greater inter-rater agreement than the state of the art, and custom machine learning rating predictors that were trained on our dataset outperform previous metrics. We improve over Flickr8k-Expert in Kendall's $W$ by 12\% and in Fleiss' $\kappa$ by 19\%, and thus provide a new benchmark dataset for image caption rating.
+        We present a new high-quality validated image caption rating (VICR) dataset. How well a caption fits an image can be difficult to assess due to the subjective nature of caption quality. How do we evaluate whether a caption is good? We generated a new dataset to help answer this question by using our new image caption rating system, which consists of a novel robust rating scale and gamified approach to gathering human ratings. We show that our approach is consistent and teachable. 113 participants were involved in generating the dataset, which is composed of 68,217 ratings among 15,646 image-caption pairs. Our new dataset has greater inter-rater agreement than the state of the art, and custom machine learning rating predictors that were trained on our dataset outperform previous metrics. We improve over Flickr8k-Expert in Kendall's $W$ by 12\% and in Fleiss' $\kappa$ by 19\%, and thus provide a new benchmark dataset for image caption rating.
 
-----
+        ----
 
-## [2677] Provable benefits of score matching
+        ## [2677] Provable benefits of score matching
 
-**Authors**: *Chirag Pabbaraju, Dhruv Rohatgi, Anish Prasad Sevekari, Holden Lee, Ankur Moitra, Andrej Risteski*
+        **Authors**: *Chirag Pabbaraju, Dhruv Rohatgi, Anish Prasad Sevekari, Holden Lee, Ankur Moitra, Andrej Risteski*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c11f8d40c119867e30e3421f696f931d-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c11f8d40c119867e30e3421f696f931d-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c11f8d40c119867e30e3421f696f931d-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c11f8d40c119867e30e3421f696f931d-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Score matching is an alternative to maximum likelihood (ML) for estimating a probability distribution parametrized up to a constant of proportionality. By fitting the ''score'' of the distribution, it sidesteps the need to compute this constant of proportionality (which is often intractable).While score matching and variants thereof are popular in practice, precise theoretical understanding of the benefits and tradeoffs with maximum likelihood---both computational and statistical---are not well understood. In this work, we give the first example of a natural exponential family of distributions such that the score matching loss is computationally efficient to optimize, and has a comparable statistical efficiency to ML, while the ML loss is intractable to optimize using a gradient-based method. The family consists of exponentials of polynomials of fixed degree, and our result can be viewed as a continuous analogue of recent developments in the discrete setting. Precisely, we show: (1) Designing a zeroth-order or first-order oracle for optimizing the maximum likelihood loss is NP-hard. (2) Maximum likelihood has a statistical efficiency polynomial in the ambient dimension and the radius of the parameters of the family. (3) Minimizing the score matching loss is both computationally and statistically efficient, with complexity polynomial in the ambient dimension.
+        Score matching is an alternative to maximum likelihood (ML) for estimating a probability distribution parametrized up to a constant of proportionality. By fitting the ''score'' of the distribution, it sidesteps the need to compute this constant of proportionality (which is often intractable).While score matching and variants thereof are popular in practice, precise theoretical understanding of the benefits and tradeoffs with maximum likelihood---both computational and statistical---are not well understood. In this work, we give the first example of a natural exponential family of distributions such that the score matching loss is computationally efficient to optimize, and has a comparable statistical efficiency to ML, while the ML loss is intractable to optimize using a gradient-based method. The family consists of exponentials of polynomials of fixed degree, and our result can be viewed as a continuous analogue of recent developments in the discrete setting. Precisely, we show: (1) Designing a zeroth-order or first-order oracle for optimizing the maximum likelihood loss is NP-hard. (2) Maximum likelihood has a statistical efficiency polynomial in the ambient dimension and the radius of the parameters of the family. (3) Minimizing the score matching loss is both computationally and statistically efficient, with complexity polynomial in the ambient dimension.
 
-----
+        ----
 
-## [2678] Oracle Complexity of Single-Loop Switching Subgradient Methods for Non-Smooth Weakly Convex Functional Constrained Optimization
+        ## [2678] Oracle Complexity of Single-Loop Switching Subgradient Methods for Non-Smooth Weakly Convex Functional Constrained Optimization
 
-**Authors**: *Yankun Huang, Qihang Lin*
+        **Authors**: *Yankun Huang, Qihang Lin*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c132c02176577c4319a878f6417a331a-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c132c02176577c4319a878f6417a331a-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c132c02176577c4319a878f6417a331a-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c132c02176577c4319a878f6417a331a-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-We consider a non-convex constrained optimization problem, where the objective function is weakly convex and the constraint function is either convex or weakly convex. To solve this problem, we consider the classical switching subgradient method, which is an intuitive and easily implementable first-order method whose oracle complexity was only known for convex problems. This paper provides the first analysis on the oracle complexity of the switching subgradient method for finding a nearly stationary point of non-convex problems. Our results are derived separately for convex and weakly convex constraints. Compared to existing approaches, especially the double-loop methods, the switching gradient method can be applied to non-smooth problems and achieves the same complexity using only a single loop, which saves the effort on tuning the number of inner iterations.
+        We consider a non-convex constrained optimization problem, where the objective function is weakly convex and the constraint function is either convex or weakly convex. To solve this problem, we consider the classical switching subgradient method, which is an intuitive and easily implementable first-order method whose oracle complexity was only known for convex problems. This paper provides the first analysis on the oracle complexity of the switching subgradient method for finding a nearly stationary point of non-convex problems. Our results are derived separately for convex and weakly convex constraints. Compared to existing approaches, especially the double-loop methods, the switching gradient method can be applied to non-smooth problems and achieves the same complexity using only a single loop, which saves the effort on tuning the number of inner iterations.
 
-----
+        ----
 
-## [2679] Performance Scaling via Optimal Transport: Enabling Data Selection from Partially Revealed Sources
+        ## [2679] Performance Scaling via Optimal Transport: Enabling Data Selection from Partially Revealed Sources
 
-**Authors**: *Feiyang Kang, Hoang Anh Just, Anit Kumar Sahu, Ruoxi Jia*
+        **Authors**: *Feiyang Kang, Hoang Anh Just, Anit Kumar Sahu, Ruoxi Jia*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c142c14699223f7417cad706fd6f652e-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c142c14699223f7417cad706fd6f652e-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c142c14699223f7417cad706fd6f652e-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c142c14699223f7417cad706fd6f652e-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Traditionally, data selection has been studied in settings where all samples from prospective sources are fully revealed to a machine learning developer. However, in practical data exchange scenarios, data providers often reveal only a limited subset of samples before an acquisition decision is made. Recently, there have been efforts to fit scaling functions that predict model performance at any size and data source composition using the limited available samples. However, these scaling functions are usually black-box, computationally expensive to fit, highly susceptible to overfitting, or/and difficult to optimize for data selection. This paper proposes a framework called , which predicts model performance and supports data selection decisions based on partial samples of prospective data sources. Our approach distinguishes itself from existing work by introducing a novel two-stage performance inference process. In the first stage, we leverage the Optimal Transport distance to predict the model's performance for any data mixture ratio within the range of disclosed data sizes. In the second stage, we extrapolate the performance to larger undisclosed data sizes based on a novel parameter-free mapping technique inspired by neural scaling laws. We further derive an efficient gradient-based method to select data sources based on the projected model performance. Evaluation over a diverse range of applications (e.g., vision, text, fine-tuning, noisy data sources, etc.) demonstrates that  significantly improves existing performance scaling approaches in terms of both the accuracy of performance inference and the computation costs associated with constructing the performance predictor. Also,  outperforms by a wide margin in data selection effectiveness compared to a range of other off-the-shelf solutions. We provide  an open-source toolkit.
+        Traditionally, data selection has been studied in settings where all samples from prospective sources are fully revealed to a machine learning developer. However, in practical data exchange scenarios, data providers often reveal only a limited subset of samples before an acquisition decision is made. Recently, there have been efforts to fit scaling functions that predict model performance at any size and data source composition using the limited available samples. However, these scaling functions are usually black-box, computationally expensive to fit, highly susceptible to overfitting, or/and difficult to optimize for data selection. This paper proposes a framework called , which predicts model performance and supports data selection decisions based on partial samples of prospective data sources. Our approach distinguishes itself from existing work by introducing a novel two-stage performance inference process. In the first stage, we leverage the Optimal Transport distance to predict the model's performance for any data mixture ratio within the range of disclosed data sizes. In the second stage, we extrapolate the performance to larger undisclosed data sizes based on a novel parameter-free mapping technique inspired by neural scaling laws. We further derive an efficient gradient-based method to select data sources based on the projected model performance. Evaluation over a diverse range of applications (e.g., vision, text, fine-tuning, noisy data sources, etc.) demonstrates that  significantly improves existing performance scaling approaches in terms of both the accuracy of performance inference and the computation costs associated with constructing the performance predictor. Also,  outperforms by a wide margin in data selection effectiveness compared to a range of other off-the-shelf solutions. We provide  an open-source toolkit.
 
-----
+        ----
 
-## [2680] The Rank-Reduced Kalman Filter: Approximate Dynamical-Low-Rank Filtering In High Dimensions
+        ## [2680] The Rank-Reduced Kalman Filter: Approximate Dynamical-Low-Rank Filtering In High Dimensions
 
-**Authors**: *Jonathan Schmidt, Philipp Hennig, Jörg Nick, Filip Tronarp*
+        **Authors**: *Jonathan Schmidt, Philipp Hennig, Jörg Nick, Filip Tronarp*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c14d902be45c72833018b2ccfac071e4-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c14d902be45c72833018b2ccfac071e4-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c14d902be45c72833018b2ccfac071e4-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c14d902be45c72833018b2ccfac071e4-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Inference and simulation in the context of high-dimensional dynamical systems remain computationally challenging problems.Some form of dimensionality reduction is required to make the problem tractable in general.In this paper, we propose a novel approximate Gaussian filtering and smoothing methodwhich propagates low-rank approximations of the covariance matrices.This is accomplished by projecting the Lyapunov equations associated with the prediction step to a manifold of low-rank matrices,which are then solved by a recently developed, numerically stable, dynamical low-rank integrator.Meanwhile, the update steps are made tractable by noting that the covariance update only transforms the column space of the covariance matrix, which is low-rank by construction.The algorithm differentiates itself from existing ensemble-based approaches in thatthe low-rank approximations of the covariance matrices are deterministic, rather than stochastic.Crucially, this enables the method to reproduce the exact Kalman filter as the low-rank dimension approaches the true dimensionality of the problem.Our method reduces computational complexity from cubic (for the Kalman filter) to quadratic in the state-space size in the worst-case, and can achieve linear complexity if the state-space model satisfies certain criteria.Through a set of experiments in classical data-assimilation and spatio-temporal regression, we show that the proposed method consistently outperforms the ensemble-based methods in terms of error in the mean and covariance with respect to the exact Kalman filter. This comes at no additional cost in terms of asymptotic computational complexity.
+        Inference and simulation in the context of high-dimensional dynamical systems remain computationally challenging problems.Some form of dimensionality reduction is required to make the problem tractable in general.In this paper, we propose a novel approximate Gaussian filtering and smoothing methodwhich propagates low-rank approximations of the covariance matrices.This is accomplished by projecting the Lyapunov equations associated with the prediction step to a manifold of low-rank matrices,which are then solved by a recently developed, numerically stable, dynamical low-rank integrator.Meanwhile, the update steps are made tractable by noting that the covariance update only transforms the column space of the covariance matrix, which is low-rank by construction.The algorithm differentiates itself from existing ensemble-based approaches in thatthe low-rank approximations of the covariance matrices are deterministic, rather than stochastic.Crucially, this enables the method to reproduce the exact Kalman filter as the low-rank dimension approaches the true dimensionality of the problem.Our method reduces computational complexity from cubic (for the Kalman filter) to quadratic in the state-space size in the worst-case, and can achieve linear complexity if the state-space model satisfies certain criteria.Through a set of experiments in classical data-assimilation and spatio-temporal regression, we show that the proposed method consistently outperforms the ensemble-based methods in terms of error in the mean and covariance with respect to the exact Kalman filter. This comes at no additional cost in terms of asymptotic computational complexity.
 
-----
+        ----
 
-## [2681] Cognitive Model Discovery via Disentangled RNNs
+        ## [2681] Cognitive Model Discovery via Disentangled RNNs
 
-**Authors**: *Kevin J. Miller, Maria Eckstein, Matt M. Botvinick, Zeb Kurth-Nelson*
+        **Authors**: *Kevin J. Miller, Maria Eckstein, Matt M. Botvinick, Zeb Kurth-Nelson*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c194ced51c857ec2c1928b02250e0ac8-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c194ced51c857ec2c1928b02250e0ac8-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c194ced51c857ec2c1928b02250e0ac8-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c194ced51c857ec2c1928b02250e0ac8-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Computational cognitive models are a fundamental tool in behavioral neuroscience. They embody in software precise hypotheses about the cognitive mechanisms underlying a particular behavior. Constructing these models is typically a difficult iterative process that requires both inspiration from the literature and the creativity of an individual researcher. Here, we adopt an alternative approach to learn parsimonious cognitive models directly from data. We fit behavior data using a recurrent neural network that is penalized for carrying excess information between timesteps, leading to sparse, interpretable representations and dynamics. When fitting synthetic behavioral data from known cognitive models, our method recovers the underlying form of those models. When fit to choice data from rats performing a bandit task, our method recovers simple and interpretable models that make testable predictions about neural mechanisms.
+        Computational cognitive models are a fundamental tool in behavioral neuroscience. They embody in software precise hypotheses about the cognitive mechanisms underlying a particular behavior. Constructing these models is typically a difficult iterative process that requires both inspiration from the literature and the creativity of an individual researcher. Here, we adopt an alternative approach to learn parsimonious cognitive models directly from data. We fit behavior data using a recurrent neural network that is penalized for carrying excess information between timesteps, leading to sparse, interpretable representations and dynamics. When fitting synthetic behavioral data from known cognitive models, our method recovers the underlying form of those models. When fit to choice data from rats performing a bandit task, our method recovers simple and interpretable models that make testable predictions about neural mechanisms.
 
-----
+        ----
 
-## [2682] Offline Reinforcement Learning with Differential Privacy
+        ## [2682] Offline Reinforcement Learning with Differential Privacy
 
-**Authors**: *Dan Qiao, Yu-Xiang Wang*
+        **Authors**: *Dan Qiao, Yu-Xiang Wang*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c1aaf7c3f306fe94f77236dc0756d771-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c1aaf7c3f306fe94f77236dc0756d771-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c1aaf7c3f306fe94f77236dc0756d771-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c1aaf7c3f306fe94f77236dc0756d771-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-The offline reinforcement learning (RL) problem is often motivated by the need to learn data-driven decision policies in financial, legal and healthcare applications.  However, the learned policy could retain sensitive information of individuals in the training data (e.g., treatment and outcome of patients), thus susceptible to various privacy risks. We design offline RL algorithms with differential privacy guarantees which provably prevent such risks. These algorithms also enjoy strong instance-dependent learning bounds under both tabular and linear Markov Decision Process (MDP) settings. Our theory and simulation suggest that the privacy guarantee comes at (almost) no drop in utility comparing to the non-private counterpart for a medium-size dataset.
+        The offline reinforcement learning (RL) problem is often motivated by the need to learn data-driven decision policies in financial, legal and healthcare applications.  However, the learned policy could retain sensitive information of individuals in the training data (e.g., treatment and outcome of patients), thus susceptible to various privacy risks. We design offline RL algorithms with differential privacy guarantees which provably prevent such risks. These algorithms also enjoy strong instance-dependent learning bounds under both tabular and linear Markov Decision Process (MDP) settings. Our theory and simulation suggest that the privacy guarantee comes at (almost) no drop in utility comparing to the non-private counterpart for a medium-size dataset.
 
-----
+        ----
 
-## [2683] Chatting Makes Perfect: Chat-based Image Retrieval
+        ## [2683] Chatting Makes Perfect: Chat-based Image Retrieval
 
-**Authors**: *Matan Levy, Rami Ben-Ari, Nir Darshan, Dani Lischinski*
+        **Authors**: *Matan Levy, Rami Ben-Ari, Nir Darshan, Dani Lischinski*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c1b3d1e2cf53bb28cabd801bd58b3521-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c1b3d1e2cf53bb28cabd801bd58b3521-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c1b3d1e2cf53bb28cabd801bd58b3521-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c1b3d1e2cf53bb28cabd801bd58b3521-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Chats emerge as an effective user-friendly approach for information retrieval, and are successfully employed in many domains, such as customer service, healthcare, and finance. However, existing image retrieval approaches typically address the case of a single query-to-image round, and the use of chats for image retrieval has been mostly overlooked. In this work, we introduce ChatIR: a chat-based image retrieval system that engages in a conversation with the user to elicit information, in addition to an initial query, in order to clarify the user's search intent. Motivated by the capabilities of today's foundation models, we leverage Large Language Models to generate follow-up questions to an initial image description. These questions form a dialog with the user in order to retrieve the desired image from a large corpus. In this study, we explore the capabilities of such a system tested on a large dataset and reveal that engaging in a dialog yields significant gains in image retrieval. We start by building an evaluation pipeline from an existing manually generated dataset and explore different modules and training strategies for ChatIR. Our comparison includes strong baselines derived from related applications trained with Reinforcement Learning. Our system is capable of retrieving the target image from a pool of 50K images with over 78% success rate after 5 dialogue rounds, compared to 75% when questions are asked by humans, and 64% for a single shot text-to-image retrieval. Extensive evaluations reveal the strong capabilities and examine the limitations of CharIR under different settings. Project repository is available at https://github.com/levymsn/ChatIR.
+        Chats emerge as an effective user-friendly approach for information retrieval, and are successfully employed in many domains, such as customer service, healthcare, and finance. However, existing image retrieval approaches typically address the case of a single query-to-image round, and the use of chats for image retrieval has been mostly overlooked. In this work, we introduce ChatIR: a chat-based image retrieval system that engages in a conversation with the user to elicit information, in addition to an initial query, in order to clarify the user's search intent. Motivated by the capabilities of today's foundation models, we leverage Large Language Models to generate follow-up questions to an initial image description. These questions form a dialog with the user in order to retrieve the desired image from a large corpus. In this study, we explore the capabilities of such a system tested on a large dataset and reveal that engaging in a dialog yields significant gains in image retrieval. We start by building an evaluation pipeline from an existing manually generated dataset and explore different modules and training strategies for ChatIR. Our comparison includes strong baselines derived from related applications trained with Reinforcement Learning. Our system is capable of retrieving the target image from a pool of 50K images with over 78% success rate after 5 dialogue rounds, compared to 75% when questions are asked by humans, and 64% for a single shot text-to-image retrieval. Extensive evaluations reveal the strong capabilities and examine the limitations of CharIR under different settings. Project repository is available at https://github.com/levymsn/ChatIR.
 
-----
+        ----
 
-## [2684] SHOT: Suppressing the Hessian along the Optimization Trajectory for Gradient-Based Meta-Learning
+        ## [2684] SHOT: Suppressing the Hessian along the Optimization Trajectory for Gradient-Based Meta-Learning
 
-**Authors**: *Junhoo Lee, Jayeon Yoo, Nojun Kwak*
+        **Authors**: *Junhoo Lee, Jayeon Yoo, Nojun Kwak*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c1cdf3236050ad902c6581458e55f0c5-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c1cdf3236050ad902c6581458e55f0c5-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c1cdf3236050ad902c6581458e55f0c5-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c1cdf3236050ad902c6581458e55f0c5-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-In this paper, we hypothesize that gradient-based meta-learning (GBML) implicitly suppresses the Hessian along the optimization  trajectory in the inner loop. Based on this hypothesis, we introduce an algorithm called  SHOT (Suppressing the Hessian along the Optimization Trajectory) that minimizes the distance between the parameters of the target and reference models to suppress the Hessian in the inner loop. Despite dealing with  high-order terms, SHOT does not increase the computational complexity of the baseline model much.  It is agnostic to both the algorithm and architecture used in GBML, making it highly  versatile and applicable to any GBML baseline. To validate the effectiveness of SHOT,  we conduct empirical tests on standard few-shot learning tasks and qualitatively  analyze its dynamics. We confirm our hypothesis empirically and demonstrate that SHOT  outperforms the corresponding baseline.
+        In this paper, we hypothesize that gradient-based meta-learning (GBML) implicitly suppresses the Hessian along the optimization  trajectory in the inner loop. Based on this hypothesis, we introduce an algorithm called  SHOT (Suppressing the Hessian along the Optimization Trajectory) that minimizes the distance between the parameters of the target and reference models to suppress the Hessian in the inner loop. Despite dealing with  high-order terms, SHOT does not increase the computational complexity of the baseline model much.  It is agnostic to both the algorithm and architecture used in GBML, making it highly  versatile and applicable to any GBML baseline. To validate the effectiveness of SHOT,  we conduct empirical tests on standard few-shot learning tasks and qualitatively  analyze its dynamics. We confirm our hypothesis empirically and demonstrate that SHOT  outperforms the corresponding baseline.
 
-----
+        ----
 
-## [2685] ViCA-NeRF: View-Consistency-Aware 3D Editing of Neural Radiance Fields
+        ## [2685] ViCA-NeRF: View-Consistency-Aware 3D Editing of Neural Radiance Fields
 
-**Authors**: *Jiahua Dong, Yu-Xiong Wang*
+        **Authors**: *Jiahua Dong, Yu-Xiong Wang*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c1e2faff6f588870935f114ebe04a3e5-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c1e2faff6f588870935f114ebe04a3e5-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c1e2faff6f588870935f114ebe04a3e5-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c1e2faff6f588870935f114ebe04a3e5-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-We introduce ViCA-NeRF, the first view-consistency-aware method for 3D editing with text instructions. In addition to the implicit neural radiance field (NeRF) modeling, our key insight is to exploit two sources of regularization that explicitly propagate the editing information across different views, thus ensuring multi-view consistency. For geometric regularization, we leverage the depth information derived from NeRF to establish image correspondences between different views. For learned regularization, we align the latent codes in the 2D diffusion model between edited and unedited images, enabling us to edit key views and propagate the update throughout the entire scene. Incorporating these two strategies, our ViCA-NeRF operates in two stages. In the initial stage, we blend edits from different views to create a preliminary 3D edit. This is followed by a second stage of NeRF training, dedicated to further refining the scene's appearance. Experimental results demonstrate that ViCA-NeRF provides more flexible, efficient (3 times faster) editing with higher levels of consistency and details, compared with the state of the art. Our code is available at: https://github.com/Dongjiahua/VICA-NeRF
+        We introduce ViCA-NeRF, the first view-consistency-aware method for 3D editing with text instructions. In addition to the implicit neural radiance field (NeRF) modeling, our key insight is to exploit two sources of regularization that explicitly propagate the editing information across different views, thus ensuring multi-view consistency. For geometric regularization, we leverage the depth information derived from NeRF to establish image correspondences between different views. For learned regularization, we align the latent codes in the 2D diffusion model between edited and unedited images, enabling us to edit key views and propagate the update throughout the entire scene. Incorporating these two strategies, our ViCA-NeRF operates in two stages. In the initial stage, we blend edits from different views to create a preliminary 3D edit. This is followed by a second stage of NeRF training, dedicated to further refining the scene's appearance. Experimental results demonstrate that ViCA-NeRF provides more flexible, efficient (3 times faster) editing with higher levels of consistency and details, compared with the state of the art. Our code is available at: https://github.com/Dongjiahua/VICA-NeRF
 
-----
+        ----
 
-## [2686] Are aligned neural networks adversarially aligned?
+        ## [2686] Are aligned neural networks adversarially aligned?
 
-**Authors**: *Nicholas Carlini, Milad Nasr, Christopher A. Choquette-Choo, Matthew Jagielski, Irena Gao, Pang Wei Koh, Daphne Ippolito, Florian Tramèr, Ludwig Schmidt*
+        **Authors**: *Nicholas Carlini, Milad Nasr, Christopher A. Choquette-Choo, Matthew Jagielski, Irena Gao, Pang Wei Koh, Daphne Ippolito, Florian Tramèr, Ludwig Schmidt*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c1f0b856a35986348ab3414177266f75-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c1f0b856a35986348ab3414177266f75-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c1f0b856a35986348ab3414177266f75-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c1f0b856a35986348ab3414177266f75-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Large language models are now tuned to align with the goals of their creators, namely to be "helpful and harmless." These models should respond helpfully to user questions, but refuse to answer requests that could cause harm. However, adversarial users can construct inputs which circumvent attempts at alignment. In this work, we study adversarial alignment, and ask to what extent these models remain aligned when interacting with an adversarial user who constructs worst-case inputs (adversarial examples). These inputs are designed to cause the model to emit harmful content that would otherwise be prohibited.We show that existing NLP-based optimization attacks are insufficiently powerful to reliably attack aligned text models: even when current NLP-based attacks fail, we can find adversarial inputs with brute force. As a result, the failure of current attacks should not be seen as proof that aligned text models remain aligned under adversarial inputs. However the recent trend in large-scale ML models is multimodal models that allow users to provide images that influence the text that is generated. We show these models can be easily attacked, i.e., induced to perform arbitrary un-aligned behavior through adversarial perturbation of the input image. We conjecture that improved NLP attacks may demonstrate this same level of adversarial control over text-only models.
+        Large language models are now tuned to align with the goals of their creators, namely to be "helpful and harmless." These models should respond helpfully to user questions, but refuse to answer requests that could cause harm. However, adversarial users can construct inputs which circumvent attempts at alignment. In this work, we study adversarial alignment, and ask to what extent these models remain aligned when interacting with an adversarial user who constructs worst-case inputs (adversarial examples). These inputs are designed to cause the model to emit harmful content that would otherwise be prohibited.We show that existing NLP-based optimization attacks are insufficiently powerful to reliably attack aligned text models: even when current NLP-based attacks fail, we can find adversarial inputs with brute force. As a result, the failure of current attacks should not be seen as proof that aligned text models remain aligned under adversarial inputs. However the recent trend in large-scale ML models is multimodal models that allow users to provide images that influence the text that is generated. We show these models can be easily attacked, i.e., induced to perform arbitrary un-aligned behavior through adversarial perturbation of the input image. We conjecture that improved NLP attacks may demonstrate this same level of adversarial control over text-only models.
 
-----
+        ----
 
-## [2687] VisionLLM: Large Language Model is also an Open-Ended Decoder for Vision-Centric Tasks
+        ## [2687] VisionLLM: Large Language Model is also an Open-Ended Decoder for Vision-Centric Tasks
 
-**Authors**: *Wenhai Wang, Zhe Chen, Xiaokang Chen, Jiannan Wu, Xizhou Zhu, Gang Zeng, Ping Luo, Tong Lu, Jie Zhou, Yu Qiao, Jifeng Dai*
+        **Authors**: *Wenhai Wang, Zhe Chen, Xiaokang Chen, Jiannan Wu, Xizhou Zhu, Gang Zeng, Ping Luo, Tong Lu, Jie Zhou, Yu Qiao, Jifeng Dai*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c1f7b1ed763e9c75e4db74b49b76db5f-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c1f7b1ed763e9c75e4db74b49b76db5f-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c1f7b1ed763e9c75e4db74b49b76db5f-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c1f7b1ed763e9c75e4db74b49b76db5f-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Large language models (LLMs) have notably accelerated progress towards artificial general intelligence (AGI), with their impressive zero-shot capacity for user-tailored tasks, endowing them with immense potential across a range of applications. However, in the field of computer vision, despite the availability of numerous powerful vision foundation models (VFMs), they are still restricted to tasks in a pre-defined form, struggling to match the open-ended task capabilities of LLMs. In this work, we present an LLM-based framework for vision-centric tasks, termed VisionLLM. This framework provides a unified perspective for vision and language tasks by treating images as a foreign language and aligning vision-centric tasks with language tasks that can be flexibly defined and managed using language instructions. An LLM-based decoder can then make appropriate predictions based on these instructions for open-ended tasks. Extensive experiments show that the proposed VisionLLM can achieve different levels of task customization through language instructions, from fine-grained object-level to coarse-grained task-level customization, all with good results. It's noteworthy that, with a generalist LLM-based framework, our model can achieve over 60% mAP on COCO, on par with detection-specific models. We hope this model can set a new baseline for generalist vision and language models. The code shall be released.
+        Large language models (LLMs) have notably accelerated progress towards artificial general intelligence (AGI), with their impressive zero-shot capacity for user-tailored tasks, endowing them with immense potential across a range of applications. However, in the field of computer vision, despite the availability of numerous powerful vision foundation models (VFMs), they are still restricted to tasks in a pre-defined form, struggling to match the open-ended task capabilities of LLMs. In this work, we present an LLM-based framework for vision-centric tasks, termed VisionLLM. This framework provides a unified perspective for vision and language tasks by treating images as a foreign language and aligning vision-centric tasks with language tasks that can be flexibly defined and managed using language instructions. An LLM-based decoder can then make appropriate predictions based on these instructions for open-ended tasks. Extensive experiments show that the proposed VisionLLM can achieve different levels of task customization through language instructions, from fine-grained object-level to coarse-grained task-level customization, all with good results. It's noteworthy that, with a generalist LLM-based framework, our model can achieve over 60% mAP on COCO, on par with detection-specific models. We hope this model can set a new baseline for generalist vision and language models. The code shall be released.
 
-----
+        ----
 
-## [2688] Object-Centric Learning for Real-World Videos by Predicting Temporal Feature Similarities
+        ## [2688] Object-Centric Learning for Real-World Videos by Predicting Temporal Feature Similarities
 
-**Authors**: *Andrii Zadaianchuk, Maximilian Seitzer, Georg Martius*
+        **Authors**: *Andrii Zadaianchuk, Maximilian Seitzer, Georg Martius*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c1fdec0d7ea1affa15bd09dd0fd3af05-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c1fdec0d7ea1affa15bd09dd0fd3af05-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c1fdec0d7ea1affa15bd09dd0fd3af05-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c1fdec0d7ea1affa15bd09dd0fd3af05-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Unsupervised video-based object-centric learning is a promising avenue to learn structured representations from large, unlabeled video collections, but previous approaches have only managed to scale to real-world datasets in restricted domains.Recently, it was shown that the reconstruction of pre-trained self-supervised features leads to object-centric representations on unconstrained real-world image datasets.Building on this approach, we propose a novel way to use such pre-trained features in the form of a temporal feature similarity loss.This loss encodes semantic and temporal correlations between image patches and is a natural way to introduce a motion bias for object discovery.We demonstrate that this loss leads to state-of-the-art performance on the challenging synthetic MOVi datasets.When used in combination with the feature reconstruction loss, our model is the first object-centric video model that scales to unconstrained video datasets such as YouTube-VIS.https://martius-lab.github.io/videosaur/
+        Unsupervised video-based object-centric learning is a promising avenue to learn structured representations from large, unlabeled video collections, but previous approaches have only managed to scale to real-world datasets in restricted domains.Recently, it was shown that the reconstruction of pre-trained self-supervised features leads to object-centric representations on unconstrained real-world image datasets.Building on this approach, we propose a novel way to use such pre-trained features in the form of a temporal feature similarity loss.This loss encodes semantic and temporal correlations between image patches and is a natural way to introduce a motion bias for object discovery.We demonstrate that this loss leads to state-of-the-art performance on the challenging synthetic MOVi datasets.When used in combination with the feature reconstruction loss, our model is the first object-centric video model that scales to unconstrained video datasets such as YouTube-VIS.https://martius-lab.github.io/videosaur/
 
-----
+        ----
 
-## [2689] Regret Matching+: (In)Stability and Fast Convergence in Games
+        ## [2689] Regret Matching+: (In)Stability and Fast Convergence in Games
 
-**Authors**: *Gabriele Farina, Julien Grand-Clément, Christian Kroer, Chung-Wei Lee, Haipeng Luo*
+        **Authors**: *Gabriele Farina, Julien Grand-Clément, Christian Kroer, Chung-Wei Lee, Haipeng Luo*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c209cd57e13f3344a4cad4ce84d0ee1b-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c209cd57e13f3344a4cad4ce84d0ee1b-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c209cd57e13f3344a4cad4ce84d0ee1b-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c209cd57e13f3344a4cad4ce84d0ee1b-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Regret Matching$^+$ (RM$^+$) and its variants are important algorithms for solving large-scale games.However, a theoretical understanding of their success in practice is still a mystery.Moreover, recent advances on fast convergence in games are limited to no-regret algorithms such as online mirror descent, which satisfy stability.In this paper, we first give counterexamples showing that RM+ and its predictive version can be unstable, which might cause other players to suffer large regret. We then provide two fixes: restarting and chopping off the positive orthant that RM$^+$ works in.We show that these fixes are sufficient to get $O(T^{1/4})$ individual regret and $O(1)$ social regret in normal-form games via RM$^+$ with predictions.We also apply our stabilizing techniques to clairvoyant updates in the uncoupled learning setting for RM$^+$ and prove desirable results akin to recent works for Clairvoyant online mirror descent. Our experiments show the advantages of our algorithms over vanilla RM$^+$-based algorithms in matrix and extensive-form games.
+        Regret Matching$^+$ (RM$^+$) and its variants are important algorithms for solving large-scale games.However, a theoretical understanding of their success in practice is still a mystery.Moreover, recent advances on fast convergence in games are limited to no-regret algorithms such as online mirror descent, which satisfy stability.In this paper, we first give counterexamples showing that RM+ and its predictive version can be unstable, which might cause other players to suffer large regret. We then provide two fixes: restarting and chopping off the positive orthant that RM$^+$ works in.We show that these fixes are sufficient to get $O(T^{1/4})$ individual regret and $O(1)$ social regret in normal-form games via RM$^+$ with predictions.We also apply our stabilizing techniques to clairvoyant updates in the uncoupled learning setting for RM$^+$ and prove desirable results akin to recent works for Clairvoyant online mirror descent. Our experiments show the advantages of our algorithms over vanilla RM$^+$-based algorithms in matrix and extensive-form games.
 
-----
+        ----
 
-## [2690] For SALE: State-Action Representation Learning for Deep Reinforcement Learning
+        ## [2690] For SALE: State-Action Representation Learning for Deep Reinforcement Learning
 
-**Authors**: *Scott Fujimoto, Wei-Di Chang, Edward J. Smith, Shixiang Gu, Doina Precup, David Meger*
+        **Authors**: *Scott Fujimoto, Wei-Di Chang, Edward J. Smith, Shixiang Gu, Doina Precup, David Meger*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c20ac0df6c213db6d3a930fe9c7296c8-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c20ac0df6c213db6d3a930fe9c7296c8-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c20ac0df6c213db6d3a930fe9c7296c8-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c20ac0df6c213db6d3a930fe9c7296c8-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-In reinforcement learning (RL), representation learning is a proven tool for complex image-based tasks, but is often overlooked for environments with low-level states, such as physical control problems. This paper introduces SALE, a novel approach for learning embeddings that model the nuanced interaction between state and action, enabling effective representation learning from low-level states. We extensively study the design space of these embeddings and highlight important design considerations. We integrate SALE and an adaptation of checkpoints for RL into TD3 to form the TD7 algorithm, which significantly outperforms existing continuous control algorithms. On OpenAI gym benchmark tasks, TD7 has an average performance gain of 276.7% and 50.7% over TD3 at 300k and 5M time steps, respectively, and works in both the online and offline settings.
+        In reinforcement learning (RL), representation learning is a proven tool for complex image-based tasks, but is often overlooked for environments with low-level states, such as physical control problems. This paper introduces SALE, a novel approach for learning embeddings that model the nuanced interaction between state and action, enabling effective representation learning from low-level states. We extensively study the design space of these embeddings and highlight important design considerations. We integrate SALE and an adaptation of checkpoints for RL into TD3 to form the TD7 algorithm, which significantly outperforms existing continuous control algorithms. On OpenAI gym benchmark tasks, TD7 has an average performance gain of 276.7% and 50.7% over TD3 at 300k and 5M time steps, respectively, and works in both the online and offline settings.
 
-----
+        ----
 
-## [2691] First- and Second-Order Bounds for Adversarial Linear Contextual Bandits
+        ## [2691] First- and Second-Order Bounds for Adversarial Linear Contextual Bandits
 
-**Authors**: *Julia Olkhovskaya, Jack J. Mayo, Tim van Erven, Gergely Neu, Chen-Yu Wei*
+        **Authors**: *Julia Olkhovskaya, Jack J. Mayo, Tim van Erven, Gergely Neu, Chen-Yu Wei*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c2201e444d2b22a10ca50116a522b9a9-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c2201e444d2b22a10ca50116a522b9a9-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c2201e444d2b22a10ca50116a522b9a9-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c2201e444d2b22a10ca50116a522b9a9-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-We consider the adversarial linear contextual bandit setting, whichallows for the loss functions associated with each of $K$ arms to changeover time without restriction. Assuming the $d$-dimensional contexts aredrawn from a fixed known distribution, the worst-case expected regretover the course of $T$ rounds is known to scale as $\tilde O(\sqrt{KdT})$. Under the additional assumption that the density of the contextsis log-concave, we obtain a second-order bound of order $\tildeO(K\sqrt{d V_T})$ in terms of the cumulative second moment of thelearner's losses $V_T$, and a closely related first-order bound of order$\tilde O(K\sqrt{d L_T^*})$ in terms of the cumulative loss of the bestpolicy $L_T^*$. Since $V_T$ or $L_T^*$ may be significantly smaller than$T$, these improve over the worst-case regret whenever the environmentis relatively benign. Our results are obtained using a truncated versionof the continuous exponential weights algorithm over the probabilitysimplex, which we analyse by exploiting a novel connection to the linearbandit setting without contexts.
+        We consider the adversarial linear contextual bandit setting, whichallows for the loss functions associated with each of $K$ arms to changeover time without restriction. Assuming the $d$-dimensional contexts aredrawn from a fixed known distribution, the worst-case expected regretover the course of $T$ rounds is known to scale as $\tilde O(\sqrt{KdT})$. Under the additional assumption that the density of the contextsis log-concave, we obtain a second-order bound of order $\tildeO(K\sqrt{d V_T})$ in terms of the cumulative second moment of thelearner's losses $V_T$, and a closely related first-order bound of order$\tilde O(K\sqrt{d L_T^*})$ in terms of the cumulative loss of the bestpolicy $L_T^*$. Since $V_T$ or $L_T^*$ may be significantly smaller than$T$, these improve over the worst-case regret whenever the environmentis relatively benign. Our results are obtained using a truncated versionof the continuous exponential weights algorithm over the probabilitysimplex, which we analyse by exploiting a novel connection to the linearbandit setting without contexts.
 
-----
+        ----
 
-## [2692] Calibrated Stackelberg Games: Learning Optimal Commitments Against Calibrated Agents
+        ## [2692] Calibrated Stackelberg Games: Learning Optimal Commitments Against Calibrated Agents
 
-**Authors**: *Nika Haghtalab, Chara Podimata, Kunhe Yang*
+        **Authors**: *Nika Haghtalab, Chara Podimata, Kunhe Yang*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c23ccf9eedf87e4380e92b75b24955bb-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c23ccf9eedf87e4380e92b75b24955bb-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c23ccf9eedf87e4380e92b75b24955bb-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c23ccf9eedf87e4380e92b75b24955bb-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-In this paper, we introduce a generalization of the standard Stackelberg Games (SGs) framework: Calibrated Stackelberg Games. In CSGs, a principal repeatedly interacts with an agent who (contrary to standard SGs) does not have direct access to the principal's action but instead best responds to calibrated forecasts about it. CSG is a powerful modeling tool that goes beyond assuming that agents use ad hoc and highly specified algorithms for interacting in strategic settings to infer the principal's actions  and thus more robustly addresses real-life applications that SGs were originally intended to capture. Along with CSGs, we also introduce a stronger notion of calibration, termed adaptive calibration, that provides fine-grained any-time calibration guarantees against adversarial sequences. We give a general approach for obtaining adaptive calibration algorithms and specialize them for finite CSGs. In our main technical result, we show that in CSGs, the principal can achieve utility that converges to the optimum Stackelberg value of the game both in finite and continuous settings and that no higher utility is achievable. Two prominent and immediate applications of our results are the settings of learning in Stackelberg Security Games and strategic classification, both against calibrated agents.
+        In this paper, we introduce a generalization of the standard Stackelberg Games (SGs) framework: Calibrated Stackelberg Games. In CSGs, a principal repeatedly interacts with an agent who (contrary to standard SGs) does not have direct access to the principal's action but instead best responds to calibrated forecasts about it. CSG is a powerful modeling tool that goes beyond assuming that agents use ad hoc and highly specified algorithms for interacting in strategic settings to infer the principal's actions  and thus more robustly addresses real-life applications that SGs were originally intended to capture. Along with CSGs, we also introduce a stronger notion of calibration, termed adaptive calibration, that provides fine-grained any-time calibration guarantees against adversarial sequences. We give a general approach for obtaining adaptive calibration algorithms and specialize them for finite CSGs. In our main technical result, we show that in CSGs, the principal can achieve utility that converges to the optimum Stackelberg value of the game both in finite and continuous settings and that no higher utility is achievable. Two prominent and immediate applications of our results are the settings of learning in Stackelberg Security Games and strategic classification, both against calibrated agents.
 
-----
+        ----
 
-## [2693] Density of States Prediction of Crystalline Materials via Prompt-guided Multi-Modal Transformer
+        ## [2693] Density of States Prediction of Crystalline Materials via Prompt-guided Multi-Modal Transformer
 
-**Authors**: *Namkyeong Lee, Heewoong Noh, Sungwon Kim, Dongmin Hyun, Gyoung S. Na, Chanyoung Park*
+        **Authors**: *Namkyeong Lee, Heewoong Noh, Sungwon Kim, Dongmin Hyun, Gyoung S. Na, Chanyoung Park*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c23fdcb9f8e28af705a87de1375a705c-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c23fdcb9f8e28af705a87de1375a705c-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c23fdcb9f8e28af705a87de1375a705c-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c23fdcb9f8e28af705a87de1375a705c-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-The density of states (DOS) is a spectral property of crystalline materials, which provides fundamental insights into various characteristics of the materials.While previous works mainly focus on obtaining high-quality representations of crystalline materials for DOS prediction, we focus on predicting the DOS from the obtained representations by reflecting the nature of DOS: DOS determines the general distribution of states as a function of energy.That is, DOS is not solely determined by the crystalline material but also by the energy levels, which has been neglected in previous works.In this paper, we propose to integrate heterogeneous information obtained from the crystalline materials and the energies via a multi-modal transformer, thereby modeling the complex relationships between the atoms in the crystalline materials and various energy levels for DOS prediction.Moreover, we propose to utilize prompts to guide the model to learn the crystal structural system-specific interactions between crystalline materials and energies.Extensive experiments on two types of DOS, i.e., Phonon DOS and Electron DOS, with various real-world scenarios demonstrate the superiority of DOSTransformer.The source code for DOSTransformer is available at https://github.com/HeewoongNoh/DOSTransformer.
+        The density of states (DOS) is a spectral property of crystalline materials, which provides fundamental insights into various characteristics of the materials.While previous works mainly focus on obtaining high-quality representations of crystalline materials for DOS prediction, we focus on predicting the DOS from the obtained representations by reflecting the nature of DOS: DOS determines the general distribution of states as a function of energy.That is, DOS is not solely determined by the crystalline material but also by the energy levels, which has been neglected in previous works.In this paper, we propose to integrate heterogeneous information obtained from the crystalline materials and the energies via a multi-modal transformer, thereby modeling the complex relationships between the atoms in the crystalline materials and various energy levels for DOS prediction.Moreover, we propose to utilize prompts to guide the model to learn the crystal structural system-specific interactions between crystalline materials and energies.Extensive experiments on two types of DOS, i.e., Phonon DOS and Electron DOS, with various real-world scenarios demonstrate the superiority of DOSTransformer.The source code for DOSTransformer is available at https://github.com/HeewoongNoh/DOSTransformer.
 
-----
+        ----
 
-## [2694] A Single-Loop Accelerated Extra-Gradient Difference Algorithm with Improved Complexity Bounds for Constrained Minimax Optimization
+        ## [2694] A Single-Loop Accelerated Extra-Gradient Difference Algorithm with Improved Complexity Bounds for Constrained Minimax Optimization
 
-**Authors**: *Yuanyuan Liu, Fanhua Shang, Weixin An, Junhao Liu, Hongying Liu, Zhouchen Lin*
+        **Authors**: *Yuanyuan Liu, Fanhua Shang, Weixin An, Junhao Liu, Hongying Liu, Zhouchen Lin*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c242f2b7f60d8c685b6481939330e241-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c242f2b7f60d8c685b6481939330e241-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c242f2b7f60d8c685b6481939330e241-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c242f2b7f60d8c685b6481939330e241-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-In this paper, we propose a novel extra-gradient difference acceleration algorithm for solving constrained nonconvex-nonconcave (NC-NC) minimax problems. In particular, we design a new extra-gradient difference step to obtain an important quasi-cocoercivity property, which plays a key role to significantly improve the convergence rate in the constrained NC-NC setting without additional structural assumption. Then momentum acceleration is also introduced into our dual accelerating update step. Moreover, we prove that, to find an $\epsilon$-stationary point of the function $f$, our algorithm attains the complexity $\mathcal{O}(\epsilon^{-2})$ in the constrained NC-NC setting, while the best-known complexity bound is $\widetilde{\mathcal{O}}(\epsilon^{-4})$, where $\widetilde{\mathcal{O}}(\cdot)$ hides logarithmic factors compared to $\mathcal{O}(\cdot)$. As the special cases of the constrained NC-NC setting, our algorithm can also obtain the same complexity $\mathcal{O}(\epsilon^{-2})$ for both the nonconvex-concave (NC-C) and convex-nonconcave (C-NC) cases, while the best-known complexity bounds are $\widetilde{\mathcal{O}}(\epsilon^{-2.5})$ for the NC-C case and $\widetilde{\mathcal{O}}(\epsilon^{-4})$ for the C-NC case. For fair comparison with existing algorithms, we also analyze the complexity bound to find $\epsilon$-stationary point of the primal function $\phi$ for the constrained NC-C problem, which shows that our algorithm can improve the complexity bound from $\widetilde{\mathcal{O}}(\epsilon^{-3})$ to $\mathcal{O}(\epsilon^{-2})$. To the best of our knowledge, this is the first time that the proposed algorithm improves the best-known complexity bounds from $\mathcal{O}(\epsilon^{-4})$ and $\widetilde{\mathcal{O}}(\epsilon^{-3})$ to $\mathcal{O}(\epsilon^{-2})$ in both the NC-NC and NC-C settings.
+        In this paper, we propose a novel extra-gradient difference acceleration algorithm for solving constrained nonconvex-nonconcave (NC-NC) minimax problems. In particular, we design a new extra-gradient difference step to obtain an important quasi-cocoercivity property, which plays a key role to significantly improve the convergence rate in the constrained NC-NC setting without additional structural assumption. Then momentum acceleration is also introduced into our dual accelerating update step. Moreover, we prove that, to find an $\epsilon$-stationary point of the function $f$, our algorithm attains the complexity $\mathcal{O}(\epsilon^{-2})$ in the constrained NC-NC setting, while the best-known complexity bound is $\widetilde{\mathcal{O}}(\epsilon^{-4})$, where $\widetilde{\mathcal{O}}(\cdot)$ hides logarithmic factors compared to $\mathcal{O}(\cdot)$. As the special cases of the constrained NC-NC setting, our algorithm can also obtain the same complexity $\mathcal{O}(\epsilon^{-2})$ for both the nonconvex-concave (NC-C) and convex-nonconcave (C-NC) cases, while the best-known complexity bounds are $\widetilde{\mathcal{O}}(\epsilon^{-2.5})$ for the NC-C case and $\widetilde{\mathcal{O}}(\epsilon^{-4})$ for the C-NC case. For fair comparison with existing algorithms, we also analyze the complexity bound to find $\epsilon$-stationary point of the primal function $\phi$ for the constrained NC-C problem, which shows that our algorithm can improve the complexity bound from $\widetilde{\mathcal{O}}(\epsilon^{-3})$ to $\mathcal{O}(\epsilon^{-2})$. To the best of our knowledge, this is the first time that the proposed algorithm improves the best-known complexity bounds from $\mathcal{O}(\epsilon^{-4})$ and $\widetilde{\mathcal{O}}(\epsilon^{-3})$ to $\mathcal{O}(\epsilon^{-2})$ in both the NC-NC and NC-C settings.
 
-----
+        ----
 
-## [2695] Unleashing the Full Potential of Product Quantization for Large-Scale Image Retrieval
+        ## [2695] Unleashing the Full Potential of Product Quantization for Large-Scale Image Retrieval
 
-**Authors**: *Yu Liang, Shiliang Zhang, Li Ken Li, Xiaoyu Wang*
+        **Authors**: *Yu Liang, Shiliang Zhang, Li Ken Li, Xiaoyu Wang*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c2469e35d469e3c0eca09dbe484eb474-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c2469e35d469e3c0eca09dbe484eb474-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c2469e35d469e3c0eca09dbe484eb474-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c2469e35d469e3c0eca09dbe484eb474-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Due to its promising performance, deep hashing has become a prevalent method for approximate nearest neighbors search (ANNs). However, most of current deep hashing methods are validated on relatively small-scale datasets, leaving potential threats when are applied to large-scale real-world scenarios. Specifically, they can be constrained either by the computational cost due to the large number of training categories and samples, or unsatisfactory accuracy. To tackle those issues, we propose a novel deep hashing framework based on product quantization (PQ). It uses a softmax-based differentiable PQ branch to learn a set of predefined PQ codes of the classes. Our method is easy to implement, does not involve large-scale matrix operations, and learns highly discriminate compact codes. We validate our method on multiple large-scaled datasets, including ImageNet100, ImageNet1K, and Glint360K, where the category size scales from 100 to 360K and sample number scales from 10K to 17 million, respectively. Extensive experiments demonstrate the superiority of our method. Code is available at https://github.com/yuleung/FPPQ.
+        Due to its promising performance, deep hashing has become a prevalent method for approximate nearest neighbors search (ANNs). However, most of current deep hashing methods are validated on relatively small-scale datasets, leaving potential threats when are applied to large-scale real-world scenarios. Specifically, they can be constrained either by the computational cost due to the large number of training categories and samples, or unsatisfactory accuracy. To tackle those issues, we propose a novel deep hashing framework based on product quantization (PQ). It uses a softmax-based differentiable PQ branch to learn a set of predefined PQ codes of the classes. Our method is easy to implement, does not involve large-scale matrix operations, and learns highly discriminate compact codes. We validate our method on multiple large-scaled datasets, including ImageNet100, ImageNet1K, and Glint360K, where the category size scales from 100 to 360K and sample number scales from 10K to 17 million, respectively. Extensive experiments demonstrate the superiority of our method. Code is available at https://github.com/yuleung/FPPQ.
 
-----
+        ----
 
-## [2696] The Bayesian Stability Zoo
+        ## [2696] The Bayesian Stability Zoo
 
-**Authors**: *Shay Moran, Hilla Schefler, Jonathan Shafer*
+        **Authors**: *Shay Moran, Hilla Schefler, Jonathan Shafer*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c2586b71fd150fb56952e253a9c551cc-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c2586b71fd150fb56952e253a9c551cc-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c2586b71fd150fb56952e253a9c551cc-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c2586b71fd150fb56952e253a9c551cc-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-We show that many definitions of stability found in the learning theory literature are equivalent to one another. We distinguish between two families of definitions of stability: distribution-dependent and distribution-independent Bayesian stability. Within each family, we establish equivalences between various definitions, encompassing approximate differential privacy, pure differential privacy, replicability, global stability, perfect generalization, TV stability, mutual information stability, KL-divergence stability, and RÃ©nyi-divergence stability. Along the way, we prove boosting results that enable the amplification of the stability of a learning rule. This work is a step towards a more systematic taxonomy of stability notions in learning theory,  which can promote clarity and an improved understanding of an array of stability concepts that have emerged in recent years.
+        We show that many definitions of stability found in the learning theory literature are equivalent to one another. We distinguish between two families of definitions of stability: distribution-dependent and distribution-independent Bayesian stability. Within each family, we establish equivalences between various definitions, encompassing approximate differential privacy, pure differential privacy, replicability, global stability, perfect generalization, TV stability, mutual information stability, KL-divergence stability, and RÃ©nyi-divergence stability. Along the way, we prove boosting results that enable the amplification of the stability of a learning rule. This work is a step towards a more systematic taxonomy of stability notions in learning theory,  which can promote clarity and an improved understanding of an array of stability concepts that have emerged in recent years.
 
-----
+        ----
 
-## [2697] Improving the Knowledge Gradient Algorithm
+        ## [2697] Improving the Knowledge Gradient Algorithm
 
-**Authors**: *Le Yang, Siyang Gao, Chin Pang Ho*
+        **Authors**: *Le Yang, Siyang Gao, Chin Pang Ho*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c272409133942e2f4b7631c8cb7e507e-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c272409133942e2f4b7631c8cb7e507e-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c272409133942e2f4b7631c8cb7e507e-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c272409133942e2f4b7631c8cb7e507e-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-The knowledge gradient (KG) algorithm is a popular policy for the best arm identification (BAI) problem. It is built on the simple idea of always choosing the measurement that yields the greatest expected one-step improvement in the estimate of the best mean of the arms. In this research, we show that this policy has limitations, causing the algorithm not asymptotically optimal. We next provide a remedy for it, by following the manner of one-step look ahead of KG, but instead choosing the measurement that yields the greatest one-step improvement in the probability of selecting the best arm. The new policy is called improved knowledge gradient (iKG). iKG can be shown to be asymptotically optimal. In addition, we show that compared to KG, it is easier to extend iKG to variant problems of BAI, with the $\epsilon$-good arm identification and feasible arm identification as two examples. The superior performances of iKG on these problems are further demonstrated using numerical examples.
+        The knowledge gradient (KG) algorithm is a popular policy for the best arm identification (BAI) problem. It is built on the simple idea of always choosing the measurement that yields the greatest expected one-step improvement in the estimate of the best mean of the arms. In this research, we show that this policy has limitations, causing the algorithm not asymptotically optimal. We next provide a remedy for it, by following the manner of one-step look ahead of KG, but instead choosing the measurement that yields the greatest one-step improvement in the probability of selecting the best arm. The new policy is called improved knowledge gradient (iKG). iKG can be shown to be asymptotically optimal. In addition, we show that compared to KG, it is easier to extend iKG to variant problems of BAI, with the $\epsilon$-good arm identification and feasible arm identification as two examples. The superior performances of iKG on these problems are further demonstrated using numerical examples.
 
-----
+        ----
 
-## [2698] Hierarchical Multi-Agent Skill Discovery
+        ## [2698] Hierarchical Multi-Agent Skill Discovery
 
-**Authors**: *Mingyu Yang, Yaodong Yang, Zhenbo Lu, Wengang Zhou, Houqiang Li*
+        **Authors**: *Mingyu Yang, Yaodong Yang, Zhenbo Lu, Wengang Zhou, Houqiang Li*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c276c3303c0723c83a43b95a44a1fcbf-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c276c3303c0723c83a43b95a44a1fcbf-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c276c3303c0723c83a43b95a44a1fcbf-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c276c3303c0723c83a43b95a44a1fcbf-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Skill discovery has shown significant progress in unsupervised reinforcement learning. This approach enables the discovery of a wide range of skills without any extrinsic reward, which can be effectively combined to tackle complex tasks. However, such unsupervised skill learning has not been well applied to multi-agent reinforcement learning (MARL) due to two primary challenges. One is how to learn skills not only for the individual agents but also for the entire team, and the other is how to coordinate the skills of different agents to accomplish multi-agent tasks. To address these challenges, we present Hierarchical Multi-Agent Skill Discovery (HMASD), a two-level hierarchical algorithm for discovering both team and individual skills in MARL. The high-level policy employs a transformer structure to realize sequential skill assignment, while the low-level policy learns to discover valuable team and individual skills. We evaluate HMASD on sparse reward multi-agent benchmarks, and the results show that HMASD achieves significant performance improvements compared to strong MARL baselines.
+        Skill discovery has shown significant progress in unsupervised reinforcement learning. This approach enables the discovery of a wide range of skills without any extrinsic reward, which can be effectively combined to tackle complex tasks. However, such unsupervised skill learning has not been well applied to multi-agent reinforcement learning (MARL) due to two primary challenges. One is how to learn skills not only for the individual agents but also for the entire team, and the other is how to coordinate the skills of different agents to accomplish multi-agent tasks. To address these challenges, we present Hierarchical Multi-Agent Skill Discovery (HMASD), a two-level hierarchical algorithm for discovering both team and individual skills in MARL. The high-level policy employs a transformer structure to realize sequential skill assignment, while the low-level policy learns to discover valuable team and individual skills. We evaluate HMASD on sparse reward multi-agent benchmarks, and the results show that HMASD achieves significant performance improvements compared to strong MARL baselines.
 
-----
+        ----
 
-## [2699] Deep Optimal Transport: A Practical Algorithm for Photo-realistic Image Restoration
+        ## [2699] Deep Optimal Transport: A Practical Algorithm for Photo-realistic Image Restoration
 
-**Authors**: *Theo Adrai, Guy Ohayon, Michael Elad, Tomer Michaeli*
+        **Authors**: *Theo Adrai, Guy Ohayon, Michael Elad, Tomer Michaeli*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c281c5a17ad2e55e1ac1ca825071f991-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c281c5a17ad2e55e1ac1ca825071f991-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c281c5a17ad2e55e1ac1ca825071f991-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c281c5a17ad2e55e1ac1ca825071f991-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-We propose an image restoration algorithm that can control the perceptual quality and/or the mean square error (MSE) of any pre-trained model, trading one over the other at test time. Our algorithm is few-shot: Given about a dozen images restored by the model, it can significantly improve the perceptual quality and/or the MSE of the model for newly restored images without further training. Our approach is motivated by a recent theoretical result that links between the minimum MSE (MMSE) predictor and the predictor that minimizes the MSE under a perfect perceptual quality constraint. Specifically, it has been shown that the latter can be obtained by optimally transporting the output of the former, such that its distribution matches that of the source data. Thus, to improve the perceptual quality of a predictor that was originally trained to minimize MSE, we approximate the optimal transport by a linear transformation in the latent space of a variational auto-encoder, which we compute in closed-form using empirical means and covariances. Going beyond the theory, we find that applying the same procedure on models that were initially trained to achieve high perceptual quality, typically improves their perceptual quality even further. And by interpolating the results with the original output of the model, we can improve their MSE on the expense of perceptual quality. We illustrate our method on a variety of degradations applied to general content images with arbitrary dimensions.
+        We propose an image restoration algorithm that can control the perceptual quality and/or the mean square error (MSE) of any pre-trained model, trading one over the other at test time. Our algorithm is few-shot: Given about a dozen images restored by the model, it can significantly improve the perceptual quality and/or the MSE of the model for newly restored images without further training. Our approach is motivated by a recent theoretical result that links between the minimum MSE (MMSE) predictor and the predictor that minimizes the MSE under a perfect perceptual quality constraint. Specifically, it has been shown that the latter can be obtained by optimally transporting the output of the former, such that its distribution matches that of the source data. Thus, to improve the perceptual quality of a predictor that was originally trained to minimize MSE, we approximate the optimal transport by a linear transformation in the latent space of a variational auto-encoder, which we compute in closed-form using empirical means and covariances. Going beyond the theory, we find that applying the same procedure on models that were initially trained to achieve high perceptual quality, typically improves their perceptual quality even further. And by interpolating the results with the original output of the model, we can improve their MSE on the expense of perceptual quality. We illustrate our method on a variety of degradations applied to general content images with arbitrary dimensions.
 
-----
+        ----
 
-## [2700] DAW: Exploring the Better Weighting Function for Semi-supervised Semantic Segmentation
+        ## [2700] DAW: Exploring the Better Weighting Function for Semi-supervised Semantic Segmentation
 
-**Authors**: *Rui Sun, Huayu Mai, Tianzhu Zhang, Feng Wu*
+        **Authors**: *Rui Sun, Huayu Mai, Tianzhu Zhang, Feng Wu*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c28ef8449dc21c90696c80ce47b3b5cc-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c28ef8449dc21c90696c80ce47b3b5cc-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c28ef8449dc21c90696c80ce47b3b5cc-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c28ef8449dc21c90696c80ce47b3b5cc-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-The critical challenge of semi-supervised semantic segmentation lies in how to fully exploit a large volume of unlabeled data to improve the modelâ€™s generalization performance for robust segmentation.  Existing methods tend to employ certain criteria (weighting function) to select pixel-level pseudo labels. However, the trade-off exists between inaccurate yet utilized pseudo-labels, and correct yet discarded pseudo-labels in these methods when handling pseudo-labels without thoughtful consideration of the weighting function, hindering the generalization ability of the model. In this paper, we systematically analyze the trade-off in previous methods when dealing with pseudo-labels. We formally define the trade-off between inaccurate yet utilized pseudo-labels, and correct yet discarded pseudo-labels by explicitly modeling the confidence distribution of correct and inaccurate pseudo-labels, equipped with a unified weighting function. To this end, we propose Distribution-Aware Weighting (DAW) to strive to minimize the negative equivalence impact raised by the trade-off. We find an interesting fact that the optimal solution for the weighting function is a hard step function, with the jump point located at the intersection of the two confidence distributions. Besides, we devise distribution alignment to mitigate the issue of the discrepancy between the prediction distributions of labeled and unlabeled data. Extensive experimental results on multiple benchmarks including mitochondria segmentation demonstrate that DAW performs favorably against state-of-the-art methods.
+        The critical challenge of semi-supervised semantic segmentation lies in how to fully exploit a large volume of unlabeled data to improve the modelâ€™s generalization performance for robust segmentation.  Existing methods tend to employ certain criteria (weighting function) to select pixel-level pseudo labels. However, the trade-off exists between inaccurate yet utilized pseudo-labels, and correct yet discarded pseudo-labels in these methods when handling pseudo-labels without thoughtful consideration of the weighting function, hindering the generalization ability of the model. In this paper, we systematically analyze the trade-off in previous methods when dealing with pseudo-labels. We formally define the trade-off between inaccurate yet utilized pseudo-labels, and correct yet discarded pseudo-labels by explicitly modeling the confidence distribution of correct and inaccurate pseudo-labels, equipped with a unified weighting function. To this end, we propose Distribution-Aware Weighting (DAW) to strive to minimize the negative equivalence impact raised by the trade-off. We find an interesting fact that the optimal solution for the weighting function is a hard step function, with the jump point located at the intersection of the two confidence distributions. Besides, we devise distribution alignment to mitigate the issue of the discrepancy between the prediction distributions of labeled and unlabeled data. Extensive experimental results on multiple benchmarks including mitochondria segmentation demonstrate that DAW performs favorably against state-of-the-art methods.
 
-----
+        ----
 
-## [2701] Feature Dropout: Revisiting the Role of Augmentations in Contrastive Learning
+        ## [2701] Feature Dropout: Revisiting the Role of Augmentations in Contrastive Learning
 
-**Authors**: *Alex Tamkin, Margalit Glasgow, Xiluo He, Noah D. Goodman*
+        **Authors**: *Alex Tamkin, Margalit Glasgow, Xiluo He, Noah D. Goodman*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c290d4373c495b2cad0625d6288260f0-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c290d4373c495b2cad0625d6288260f0-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c290d4373c495b2cad0625d6288260f0-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c290d4373c495b2cad0625d6288260f0-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-What role do augmentations play in contrastive learning? Recent work suggests that good augmentations are label-preserving with respect to a specific downstream task. We complicate this picture by showing that label-destroying augmentations can be useful in the foundation model setting, where the goal is to learn diverse, general-purpose representations for multiple downstream tasks. We perform contrastive learning experiments on a range of image and audio datasets with multiple downstream tasks (e.g. for digits superimposed on photographs, predicting the class of one vs. the other). We find that Viewmaker Networks, a recently proposed model for learning augmentations for contrastive learning, produce label-destroying augmentations that stochastically destroy features needed for different downstream tasks. These augmentations are interpretable (e.g. altering shapes, digits, or letters added to images) and surprisingly often result in better performance compared to expert-designed augmentations, despite not preserving label information. To support our empirical results, we theoretically analyze a simple contrastive learning setting with a linear model. In this setting, label-destroying augmentations are crucial for preventing one set of features from suppressing the learning of features useful for another downstream task. Our results highlight the need for analyzing the interaction between multiple downstream tasks when trying to explain the success of foundation models.
+        What role do augmentations play in contrastive learning? Recent work suggests that good augmentations are label-preserving with respect to a specific downstream task. We complicate this picture by showing that label-destroying augmentations can be useful in the foundation model setting, where the goal is to learn diverse, general-purpose representations for multiple downstream tasks. We perform contrastive learning experiments on a range of image and audio datasets with multiple downstream tasks (e.g. for digits superimposed on photographs, predicting the class of one vs. the other). We find that Viewmaker Networks, a recently proposed model for learning augmentations for contrastive learning, produce label-destroying augmentations that stochastically destroy features needed for different downstream tasks. These augmentations are interpretable (e.g. altering shapes, digits, or letters added to images) and surprisingly often result in better performance compared to expert-designed augmentations, despite not preserving label information. To support our empirical results, we theoretically analyze a simple contrastive learning setting with a linear model. In this setting, label-destroying augmentations are crucial for preventing one set of features from suppressing the learning of features useful for another downstream task. Our results highlight the need for analyzing the interaction between multiple downstream tasks when trying to explain the success of foundation models.
 
-----
+        ----
 
-## [2702] On the Exploitability of Instruction Tuning
+        ## [2702] On the Exploitability of Instruction Tuning
 
-**Authors**: *Manli Shu, Jiongxiao Wang, Chen Zhu, Jonas Geiping, Chaowei Xiao, Tom Goldstein*
+        **Authors**: *Manli Shu, Jiongxiao Wang, Chen Zhu, Jonas Geiping, Chaowei Xiao, Tom Goldstein*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c2a8060fd22744b38177d9e428a052e0-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c2a8060fd22744b38177d9e428a052e0-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c2a8060fd22744b38177d9e428a052e0-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c2a8060fd22744b38177d9e428a052e0-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Instruction tuning is an effective technique to align large language models (LLMs) with human intent. In this work, we investigate how an adversary can exploit instruction tuning by injecting specific instruction-following examples into the training data that intentionally changes the model's behavior. For example, an adversary can achieve content injection by injecting training examples that mention target content and eliciting such behavior from downstream models. To achieve this goal, we propose \textit{AutoPoison}, an automated data poisoning pipeline. It naturally and coherently incorporates versatile attack goals into poisoned data with the help of an oracle LLM. We showcase two example attacks: content injection and over-refusal attacks, each aiming to induce a specific exploitable behavior. We quantify and benchmark the strength and the stealthiness of our data poisoning scheme. Our results show that AutoPoison allows an adversary to change a model's behavior by poisoning only a small fraction of data while maintaining a high level of stealthiness in the poisoned examples. We hope our work sheds light on how data quality affects the behavior of instruction-tuned models and raises awareness of the importance of data quality for responsible deployments of LLMs.
+        Instruction tuning is an effective technique to align large language models (LLMs) with human intent. In this work, we investigate how an adversary can exploit instruction tuning by injecting specific instruction-following examples into the training data that intentionally changes the model's behavior. For example, an adversary can achieve content injection by injecting training examples that mention target content and eliciting such behavior from downstream models. To achieve this goal, we propose \textit{AutoPoison}, an automated data poisoning pipeline. It naturally and coherently incorporates versatile attack goals into poisoned data with the help of an oracle LLM. We showcase two example attacks: content injection and over-refusal attacks, each aiming to induce a specific exploitable behavior. We quantify and benchmark the strength and the stealthiness of our data poisoning scheme. Our results show that AutoPoison allows an adversary to change a model's behavior by poisoning only a small fraction of data while maintaining a high level of stealthiness in the poisoned examples. We hope our work sheds light on how data quality affects the behavior of instruction-tuned models and raises awareness of the importance of data quality for responsible deployments of LLMs.
 
-----
+        ----
 
-## [2703] Residual Q-Learning: Offline and Online Policy Customization without Value
+        ## [2703] Residual Q-Learning: Offline and Online Policy Customization without Value
 
-**Authors**: *Chenran Li, Chen Tang, Haruki Nishimura, Jean Mercat, Masayoshi Tomizuka, Wei Zhan*
+        **Authors**: *Chenran Li, Chen Tang, Haruki Nishimura, Jean Mercat, Masayoshi Tomizuka, Wei Zhan*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c2e4cebba2fdb3dac7d2022421062765-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c2e4cebba2fdb3dac7d2022421062765-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c2e4cebba2fdb3dac7d2022421062765-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c2e4cebba2fdb3dac7d2022421062765-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Imitation Learning (IL) is a widely used framework for learning imitative behavior from demonstrations. It is especially appealing for solving complex real-world tasks where handcrafting reward function is difficult, or when the goal is to mimic human expert behavior. However, the learned imitative policy can only follow the behavior in the demonstration. When applying the imitative policy, we may need to customize the policy behavior to meet different requirements coming from diverse downstream tasks. Meanwhile, we still want the customized policy to maintain its imitative nature. To this end, we formulate a new problem setting called policy customization. It defines the learning task as training a policy that inherits the characteristics of the prior policy while satisfying some additional requirements imposed by a target downstream task. We propose a novel and principled approach to interpret and determine the trade-off between the two task objectives. Specifically, we formulate the customization problem as a Markov Decision Process (MDP) with a reward function that combines 1) the inherent reward of the demonstration; and 2) the add-on reward specified by the downstream task. We propose a novel framework, Residual Q-learning, which can solve the formulated MDP by leveraging the prior policy without knowing the inherent reward or value function of the prior policy. We derive a family of residual Q-learning algorithms that can realize offline and online policy customization, and show that the proposed algorithms can effectively accomplish policy customization tasks in various environments. Demo videos and code are available on our website: https://sites.google.com/view/residualq-learning.
+        Imitation Learning (IL) is a widely used framework for learning imitative behavior from demonstrations. It is especially appealing for solving complex real-world tasks where handcrafting reward function is difficult, or when the goal is to mimic human expert behavior. However, the learned imitative policy can only follow the behavior in the demonstration. When applying the imitative policy, we may need to customize the policy behavior to meet different requirements coming from diverse downstream tasks. Meanwhile, we still want the customized policy to maintain its imitative nature. To this end, we formulate a new problem setting called policy customization. It defines the learning task as training a policy that inherits the characteristics of the prior policy while satisfying some additional requirements imposed by a target downstream task. We propose a novel and principled approach to interpret and determine the trade-off between the two task objectives. Specifically, we formulate the customization problem as a Markov Decision Process (MDP) with a reward function that combines 1) the inherent reward of the demonstration; and 2) the add-on reward specified by the downstream task. We propose a novel framework, Residual Q-learning, which can solve the formulated MDP by leveraging the prior policy without knowing the inherent reward or value function of the prior policy. We derive a family of residual Q-learning algorithms that can realize offline and online policy customization, and show that the proposed algorithms can effectively accomplish policy customization tasks in various environments. Demo videos and code are available on our website: https://sites.google.com/view/residualq-learning.
 
-----
+        ----
 
-## [2704] LICO: Explainable Models with Language-Image COnsistency
+        ## [2704] LICO: Explainable Models with Language-Image COnsistency
 
-**Authors**: *Yiming Lei, Zilong Li, Yangyang Li, Junping Zhang, Hongming Shan*
+        **Authors**: *Yiming Lei, Zilong Li, Yangyang Li, Junping Zhang, Hongming Shan*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c2eac51b6353a4441e8b7426f8e8db78-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c2eac51b6353a4441e8b7426f8e8db78-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c2eac51b6353a4441e8b7426f8e8db78-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c2eac51b6353a4441e8b7426f8e8db78-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Interpreting the decisions of deep learning models has been actively studied since the explosion of deep neural networks. One of the most convincing interpretation approaches is salience-based visual interpretation, such as Grad-CAM, where the generation of attention maps depends merely on categorical labels. Although existing interpretation methods can provide explainable decision clues, they often yield partial correspondence between image and saliency maps due to the limited discriminative information from one-hot labels. This paper develops a Language-Image COnsistency model for explainable image classification, termed LICO,  by correlating learnable linguistic prompts with corresponding visual features in a coarse-to-fine manner. Specifically, we first establish a coarse global manifold structure alignment by minimizing the distance between the distributions of image and language features. We then achieve fine-grained saliency maps by applying optimal transport (OT) theory to assign local feature maps with class-specific prompts. Extensive experimental results on eight benchmark datasets demonstrate that the proposed LICO achieves a significant improvement in generating more explainable attention maps in conjunction with existing interpretation methods such as Grad-CAM. Remarkably, LICO improves the classification performance of existing  models without introducing any computational overhead during inference.
+        Interpreting the decisions of deep learning models has been actively studied since the explosion of deep neural networks. One of the most convincing interpretation approaches is salience-based visual interpretation, such as Grad-CAM, where the generation of attention maps depends merely on categorical labels. Although existing interpretation methods can provide explainable decision clues, they often yield partial correspondence between image and saliency maps due to the limited discriminative information from one-hot labels. This paper develops a Language-Image COnsistency model for explainable image classification, termed LICO,  by correlating learnable linguistic prompts with corresponding visual features in a coarse-to-fine manner. Specifically, we first establish a coarse global manifold structure alignment by minimizing the distance between the distributions of image and language features. We then achieve fine-grained saliency maps by applying optimal transport (OT) theory to assign local feature maps with class-specific prompts. Extensive experimental results on eight benchmark datasets demonstrate that the proposed LICO achieves a significant improvement in generating more explainable attention maps in conjunction with existing interpretation methods such as Grad-CAM. Remarkably, LICO improves the classification performance of existing  models without introducing any computational overhead during inference.
 
-----
+        ----
 
-## [2705] Solving Inverse Physics Problems with Score Matching
+        ## [2705] Solving Inverse Physics Problems with Score Matching
 
-**Authors**: *Benjamin J. Holzschuh, Simona Vegetti, Nils Thuerey*
+        **Authors**: *Benjamin J. Holzschuh, Simona Vegetti, Nils Thuerey*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c2f2230abc7ccf669f403be881d3ffb7-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c2f2230abc7ccf669f403be881d3ffb7-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c2f2230abc7ccf669f403be881d3ffb7-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c2f2230abc7ccf669f403be881d3ffb7-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-We propose to solve inverse problems involving the temporal evolution of physics systems by leveraging recent advances from diffusion models. Our method moves the system's current state backward in time step by step by combining an approximate inverse physics simulator and a learned correction function. A central insight of our work is that training the learned correction with a single-step loss is equivalent to a score matching objective, while recursively predicting longer parts of the trajectory during training relates to maximum likelihood training of a corresponding probability flow.We highlight the advantages of our algorithm compared to standard denoising score matching and implicit score matching, as well as fully learned baselines for a wide range of inverse physics problems. The resulting inverse solver has excellent accuracy and temporal stability and, in contrast to other learned inverse solvers, allows for sampling the posterior of the solutions. Code and experiments are available at https://github.com/tum-pbs/SMDP.
+        We propose to solve inverse problems involving the temporal evolution of physics systems by leveraging recent advances from diffusion models. Our method moves the system's current state backward in time step by step by combining an approximate inverse physics simulator and a learned correction function. A central insight of our work is that training the learned correction with a single-step loss is equivalent to a score matching objective, while recursively predicting longer parts of the trajectory during training relates to maximum likelihood training of a corresponding probability flow.We highlight the advantages of our algorithm compared to standard denoising score matching and implicit score matching, as well as fully learned baselines for a wide range of inverse physics problems. The resulting inverse solver has excellent accuracy and temporal stability and, in contrast to other learned inverse solvers, allows for sampling the posterior of the solutions. Code and experiments are available at https://github.com/tum-pbs/SMDP.
 
-----
+        ----
 
-## [2706] Embedding Space Interpolation Beyond Mini-Batch, Beyond Pairs and Beyond Examples
+        ## [2706] Embedding Space Interpolation Beyond Mini-Batch, Beyond Pairs and Beyond Examples
 
-**Authors**: *Shashanka Venkataramanan, Ewa Kijak, Laurent Amsaleg, Yannis Avrithis*
+        **Authors**: *Shashanka Venkataramanan, Ewa Kijak, Laurent Amsaleg, Yannis Avrithis*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c3532dd633e600e9f6db57aa7ae0c858-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c3532dd633e600e9f6db57aa7ae0c858-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c3532dd633e600e9f6db57aa7ae0c858-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c3532dd633e600e9f6db57aa7ae0c858-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Mixup refers to interpolation-based data augmentation, originally motivated as a way to go beyond empirical risk minimization (ERM). Its extensions mostly focus on the definition of interpolation and the space (input or feature) where it takes place, while the augmentation process itself is less studied. In most methods, the number of generated examples is limited to the mini-batch size and the number of examples being interpolated is limited to two (pairs), in the input space.We make progress in this direction by introducing MultiMix, which generates an arbitrarily large number of interpolated examples beyond the mini-batch size and interpolates the entire mini-batch in the embedding space. Effectively, we sample on the entire convex hull of the mini-batch rather than along linear segments between pairs of examples.On sequence data, we further extend to Dense MultiMix. We densely interpolate features and target labels at each spatial location and also apply the loss densely. To mitigate the lack of dense labels, we inherit labels from examples and weight interpolation factors by attention as a measure of confidence.Overall, we increase the number of loss terms per mini-batch by orders of magnitude at little additional cost. This is only possible because of interpolating in the embedding space. We empirically show that our solutions yield significant improvement over state-of-the-art mixup methods on four different benchmarks, despite interpolation being only linear. By analyzing the embedding space, we show that the classes are more tightly clustered and uniformly spread over the embedding space, thereby explaining the improved behavior.
+        Mixup refers to interpolation-based data augmentation, originally motivated as a way to go beyond empirical risk minimization (ERM). Its extensions mostly focus on the definition of interpolation and the space (input or feature) where it takes place, while the augmentation process itself is less studied. In most methods, the number of generated examples is limited to the mini-batch size and the number of examples being interpolated is limited to two (pairs), in the input space.We make progress in this direction by introducing MultiMix, which generates an arbitrarily large number of interpolated examples beyond the mini-batch size and interpolates the entire mini-batch in the embedding space. Effectively, we sample on the entire convex hull of the mini-batch rather than along linear segments between pairs of examples.On sequence data, we further extend to Dense MultiMix. We densely interpolate features and target labels at each spatial location and also apply the loss densely. To mitigate the lack of dense labels, we inherit labels from examples and weight interpolation factors by attention as a measure of confidence.Overall, we increase the number of loss terms per mini-batch by orders of magnitude at little additional cost. This is only possible because of interpolating in the embedding space. We empirically show that our solutions yield significant improvement over state-of-the-art mixup methods on four different benchmarks, despite interpolation being only linear. By analyzing the embedding space, we show that the classes are more tightly clustered and uniformly spread over the embedding space, thereby explaining the improved behavior.
 
-----
+        ----
 
-## [2707] Approximation-Generalization Trade-offs under (Approximate) Group Equivariance
+        ## [2707] Approximation-Generalization Trade-offs under (Approximate) Group Equivariance
 
-**Authors**: *Mircea Petrache, Shubhendu Trivedi*
+        **Authors**: *Mircea Petrache, Shubhendu Trivedi*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c35f8e2fc6d81f195009a1d2ae5f6ae9-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c35f8e2fc6d81f195009a1d2ae5f6ae9-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c35f8e2fc6d81f195009a1d2ae5f6ae9-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c35f8e2fc6d81f195009a1d2ae5f6ae9-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-The explicit incorporation of task-specific inductive biases through symmetry has emerged as a general design precept in the development of high-performance machine learning models. For example, group equivariant neural networks have demonstrated impressive performance across various domains and applications such as protein and drug design. A prevalent intuition about such models is that the integration of relevant symmetry results in enhanced generalization. Moreover, it is posited that when the data and/or the model exhibits only approximate or partial symmetry, the optimal or best-performing model is one where the model symmetry aligns with the data symmetry. In this paper, we conduct a formal unified investigation of these intuitions. To begin, we present quantitative bounds that demonstrate how models capturing task-specific symmetries lead to improved generalization. Utilizing this quantification, we examine the more general question of dealing with approximate/partial symmetries. We establish, for a given symmetry group, a quantitative comparison between the approximate equivariance of the model and that of the data distribution, precisely connecting model equivariance error and data equivariance error. Our result delineates the conditions under which the model equivariance error is optimal, thereby yielding the best-performing model for the given task and data.
+        The explicit incorporation of task-specific inductive biases through symmetry has emerged as a general design precept in the development of high-performance machine learning models. For example, group equivariant neural networks have demonstrated impressive performance across various domains and applications such as protein and drug design. A prevalent intuition about such models is that the integration of relevant symmetry results in enhanced generalization. Moreover, it is posited that when the data and/or the model exhibits only approximate or partial symmetry, the optimal or best-performing model is one where the model symmetry aligns with the data symmetry. In this paper, we conduct a formal unified investigation of these intuitions. To begin, we present quantitative bounds that demonstrate how models capturing task-specific symmetries lead to improved generalization. Utilizing this quantification, we examine the more general question of dealing with approximate/partial symmetries. We establish, for a given symmetry group, a quantitative comparison between the approximate equivariance of the model and that of the data distribution, precisely connecting model equivariance error and data equivariance error. Our result delineates the conditions under which the model equivariance error is optimal, thereby yielding the best-performing model for the given task and data.
 
-----
+        ----
 
-## [2708] Equivariant Neural Operator Learning with Graphon Convolution
+        ## [2708] Equivariant Neural Operator Learning with Graphon Convolution
 
-**Authors**: *Chaoran Cheng, Jian Peng*
+        **Authors**: *Chaoran Cheng, Jian Peng*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c362fbc0d182c6b4b8dadb90177239e4-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c362fbc0d182c6b4b8dadb90177239e4-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c362fbc0d182c6b4b8dadb90177239e4-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c362fbc0d182c6b4b8dadb90177239e4-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-We propose a general architecture that combines the coefficient learning scheme with a residual operator layer for learning mappings between continuous functions in the 3D Euclidean space. Our proposed model is guaranteed to achieve SE(3)-equivariance by design. From the graph spectrum view, our method can be interpreted as convolution on graphons (dense graphs with infinitely many nodes), which we term InfGCN. By leveraging both the continuous graphon structure and the discrete graph structure of the input data, our model can effectively capture the geometric information while preserving equivariance. Through extensive experiments on large-scale electron density datasets, we observed that our model significantly outperformed the current state-of-the-art architectures. Multiple ablation studies were also carried out to demonstrate the effectiveness of the proposed architecture.
+        We propose a general architecture that combines the coefficient learning scheme with a residual operator layer for learning mappings between continuous functions in the 3D Euclidean space. Our proposed model is guaranteed to achieve SE(3)-equivariance by design. From the graph spectrum view, our method can be interpreted as convolution on graphons (dense graphs with infinitely many nodes), which we term InfGCN. By leveraging both the continuous graphon structure and the discrete graph structure of the input data, our model can effectively capture the geometric information while preserving equivariance. Through extensive experiments on large-scale electron density datasets, we observed that our model significantly outperformed the current state-of-the-art architectures. Multiple ablation studies were also carried out to demonstrate the effectiveness of the proposed architecture.
 
-----
+        ----
 
-## [2709] Reinforcement Learning with Simple Sequence Priors
+        ## [2709] Reinforcement Learning with Simple Sequence Priors
 
-**Authors**: *Tankred Saanum, Noémi Élteto, Peter Dayan, Marcel Binz, Eric Schulz*
+        **Authors**: *Tankred Saanum, Noémi Élteto, Peter Dayan, Marcel Binz, Eric Schulz*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c3909e3abe8ebdb20c42a42ce0bc907d-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c3909e3abe8ebdb20c42a42ce0bc907d-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c3909e3abe8ebdb20c42a42ce0bc907d-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c3909e3abe8ebdb20c42a42ce0bc907d-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-In reinforcement learning (RL), simplicity is typically quantified on an action-by-action basis -- but this timescale ignores temporal regularities, like repetitions, often present in sequential strategies. We therefore propose an RL algorithm that learns to solve tasks with sequences of actions that are compressible. We explore two possible sources of simple action sequences: Sequences that can be learned by autoregressive models, and sequences that are compressible with off-the-shelf data compression algorithms. Distilling these preferences into sequence priors, we derive a novel information-theoretic objective that incentivizes agents to learn policies that maximize rewards while conforming to these priors. We show that the resulting RL algorithm leads to faster learning, and attains higher returns than state-of-the-art model-free approaches in a series of continuous control tasks from the DeepMind Control Suite. These priors also produce a powerful information-regularized agent that is robust to noisy observations and can perform open-loop control.
+        In reinforcement learning (RL), simplicity is typically quantified on an action-by-action basis -- but this timescale ignores temporal regularities, like repetitions, often present in sequential strategies. We therefore propose an RL algorithm that learns to solve tasks with sequences of actions that are compressible. We explore two possible sources of simple action sequences: Sequences that can be learned by autoregressive models, and sequences that are compressible with off-the-shelf data compression algorithms. Distilling these preferences into sequence priors, we derive a novel information-theoretic objective that incentivizes agents to learn policies that maximize rewards while conforming to these priors. We show that the resulting RL algorithm leads to faster learning, and attains higher returns than state-of-the-art model-free approaches in a series of continuous control tasks from the DeepMind Control Suite. These priors also produce a powerful information-regularized agent that is robust to noisy observations and can perform open-loop control.
 
-----
+        ----
 
-## [2710] Fed-FA: Theoretically Modeling Client Data Divergence for Federated Language Backdoor Defense
+        ## [2710] Fed-FA: Theoretically Modeling Client Data Divergence for Federated Language Backdoor Defense
 
-**Authors**: *Zhiyuan Zhang, Deli Chen, Hao Zhou, Fandong Meng, Jie Zhou, Xu Sun*
+        **Authors**: *Zhiyuan Zhang, Deli Chen, Hao Zhou, Fandong Meng, Jie Zhou, Xu Sun*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c39578c86423df5f9e8834ce1cd456e4-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c39578c86423df5f9e8834ce1cd456e4-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c39578c86423df5f9e8834ce1cd456e4-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c39578c86423df5f9e8834ce1cd456e4-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Federated learning algorithms enable neural network models to be trained across multiple decentralized edge devices without sharing private data. However, they are susceptible to backdoor attacks launched by malicious clients. Existing robust federated aggregation algorithms heuristically detect and exclude suspicious clients based on their parameter distances, but they are ineffective on Natural Language Processing (NLP) tasks. The main reason is that, although text backdoor patterns are obvious at the underlying dataset level, they are usually hidden at the parameter level, since injecting backdoors into texts with discrete feature space has less impact on the statistics of the model parameters. To settle this issue, we propose to identify backdoor clients by explicitly modeling the data divergence among clients in federated NLP systems. Through theoretical analysis, we derive the f-divergence indicator to estimate the client data divergence with aggregation updates and Hessians. Furthermore, we devise a dataset synthesization method with a Hessian reassignment mechanism guided by the diffusion theory to address the key challenge of inaccessible datasets in calculating clients' data Hessians.We then present the novel Federated F-Divergence-Based Aggregation~(\textbf{Fed-FA}) algorithm, which leverages the f-divergence indicator to detect and discard suspicious clients. Extensive empirical results show that Fed-FA outperforms all the parameter distance-based methods in defending against backdoor attacks among various natural language backdoor attack scenarios.
+        Federated learning algorithms enable neural network models to be trained across multiple decentralized edge devices without sharing private data. However, they are susceptible to backdoor attacks launched by malicious clients. Existing robust federated aggregation algorithms heuristically detect and exclude suspicious clients based on their parameter distances, but they are ineffective on Natural Language Processing (NLP) tasks. The main reason is that, although text backdoor patterns are obvious at the underlying dataset level, they are usually hidden at the parameter level, since injecting backdoors into texts with discrete feature space has less impact on the statistics of the model parameters. To settle this issue, we propose to identify backdoor clients by explicitly modeling the data divergence among clients in federated NLP systems. Through theoretical analysis, we derive the f-divergence indicator to estimate the client data divergence with aggregation updates and Hessians. Furthermore, we devise a dataset synthesization method with a Hessian reassignment mechanism guided by the diffusion theory to address the key challenge of inaccessible datasets in calculating clients' data Hessians.We then present the novel Federated F-Divergence-Based Aggregation~(\textbf{Fed-FA}) algorithm, which leverages the f-divergence indicator to detect and discard suspicious clients. Extensive empirical results show that Fed-FA outperforms all the parameter distance-based methods in defending against backdoor attacks among various natural language backdoor attack scenarios.
 
-----
+        ----
 
-## [2711] One Less Reason for Filter Pruning: Gaining Free Adversarial Robustness with Structured Grouped Kernel Pruning
+        ## [2711] One Less Reason for Filter Pruning: Gaining Free Adversarial Robustness with Structured Grouped Kernel Pruning
 
-**Authors**: *Shaochen (Henry) Zhong, Zaichuan You, Jiamu Zhang, Sebastian Zhao, Zachary LeClaire, Zirui Liu, Daochen Zha, Vipin Chaudhary, Shuai Xu, Xia Hu*
+        **Authors**: *Shaochen (Henry) Zhong, Zaichuan You, Jiamu Zhang, Sebastian Zhao, Zachary LeClaire, Zirui Liu, Daochen Zha, Vipin Chaudhary, Shuai Xu, Xia Hu*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c3aba4234afd1c8116d879ba183f4835-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c3aba4234afd1c8116d879ba183f4835-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c3aba4234afd1c8116d879ba183f4835-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c3aba4234afd1c8116d879ba183f4835-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Densely structured pruning methods utilizing simple pruning heuristics can deliver immediate compression and acceleration benefits with acceptable benign performances. However, empirical findings indicate such naively pruned networks are extremely fragile under simple adversarial attacks. Naturally, we would be interested in knowing if such a phenomenon also holds for carefully designed modern structured pruning methods. If so, then to what extent is the severity? And what kind of remedies are available? Unfortunately, both the questions and the solution remain largely unaddressed: no prior art is able to provide a thorough investigation on the adversarial performance of modern structured pruning methods (spoiler: it is not good), yet the few works that attempt to provide mitigation often do so at various extra costs with only to-be-desired performance.In this work, we answer both questions by fairly and comprehensively investigating the adversarial performance of 10+ popular structured pruning methods. Solution-wise, we take advantage of Grouped Kernel Pruning (GKP)'s recent success in pushing densely structured pruning freedom to a more fine-grained level. By mixing up kernel smoothness — a classic robustness-related kernel-level metric — into a modified GKP procedure, we present a one-shot-post-train-weight-dependent GKP method capable of advancing SOTA performance on both the benign and adversarial scale, while requiring no extra (in fact, often less) cost than a standard pruning procedure. Please refer to our GitHub repository for code implementation, tool sharing, and model checkpoints.
+        Densely structured pruning methods utilizing simple pruning heuristics can deliver immediate compression and acceleration benefits with acceptable benign performances. However, empirical findings indicate such naively pruned networks are extremely fragile under simple adversarial attacks. Naturally, we would be interested in knowing if such a phenomenon also holds for carefully designed modern structured pruning methods. If so, then to what extent is the severity? And what kind of remedies are available? Unfortunately, both the questions and the solution remain largely unaddressed: no prior art is able to provide a thorough investigation on the adversarial performance of modern structured pruning methods (spoiler: it is not good), yet the few works that attempt to provide mitigation often do so at various extra costs with only to-be-desired performance.In this work, we answer both questions by fairly and comprehensively investigating the adversarial performance of 10+ popular structured pruning methods. Solution-wise, we take advantage of Grouped Kernel Pruning (GKP)'s recent success in pushing densely structured pruning freedom to a more fine-grained level. By mixing up kernel smoothness — a classic robustness-related kernel-level metric — into a modified GKP procedure, we present a one-shot-post-train-weight-dependent GKP method capable of advancing SOTA performance on both the benign and adversarial scale, while requiring no extra (in fact, often less) cost than a standard pruning procedure. Please refer to our GitHub repository for code implementation, tool sharing, and model checkpoints.
 
-----
+        ----
 
-## [2712] Survival Instinct in Offline Reinforcement Learning
+        ## [2712] Survival Instinct in Offline Reinforcement Learning
 
-**Authors**: *Anqi Li, Dipendra Misra, Andrey Kolobov, Ching-An Cheng*
+        **Authors**: *Anqi Li, Dipendra Misra, Andrey Kolobov, Ching-An Cheng*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c3e969ea20542a6a11e6caeac736a0b9-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c3e969ea20542a6a11e6caeac736a0b9-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c3e969ea20542a6a11e6caeac736a0b9-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c3e969ea20542a6a11e6caeac736a0b9-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-We present a novel observation about the behavior of offline reinforcement learning (RL) algorithms: on many benchmark datasets, offline RL can produce well-performing and safe policies even when trained with "wrong" reward labels, such as those that are zero everywhere or are negatives of the true rewards. This phenomenon cannot be easily explained by offline RL's return maximization objective. Moreover, it gives offline RL a degree of robustness that is uncharacteristic of its online RL counterparts, which are known to be sensitive to reward design. We demonstrate that this surprising robustness property is attributable to an interplay between the notion of pessimism in offline RL algorithms and certain implicit biases in common data collection practices. As we prove in this work, pessimism endows the agent with a survival instinct, i.e., an incentive to stay within the data support in the long term, while the limited and biased data coverage further constrains the set of survival policies. Formally, given a reward class -- which may not even contain the true reward -- we identify conditions on the training data distribution that enable offline RL to learn a near-optimal and safe policy from any reward within the class. We argue that the survival instinct should be taken into account when interpreting results from existing offline RL benchmarks and when creating future ones. Our empirical and theoretical results suggest a new paradigm for offline RL, whereby an agent is "nudged" to learn a desirable behavior with imperfect reward but purposely biased data coverage. Please visit our website https://survival-instinct.github.io for accompanied code and videos.
+        We present a novel observation about the behavior of offline reinforcement learning (RL) algorithms: on many benchmark datasets, offline RL can produce well-performing and safe policies even when trained with "wrong" reward labels, such as those that are zero everywhere or are negatives of the true rewards. This phenomenon cannot be easily explained by offline RL's return maximization objective. Moreover, it gives offline RL a degree of robustness that is uncharacteristic of its online RL counterparts, which are known to be sensitive to reward design. We demonstrate that this surprising robustness property is attributable to an interplay between the notion of pessimism in offline RL algorithms and certain implicit biases in common data collection practices. As we prove in this work, pessimism endows the agent with a survival instinct, i.e., an incentive to stay within the data support in the long term, while the limited and biased data coverage further constrains the set of survival policies. Formally, given a reward class -- which may not even contain the true reward -- we identify conditions on the training data distribution that enable offline RL to learn a near-optimal and safe policy from any reward within the class. We argue that the survival instinct should be taken into account when interpreting results from existing offline RL benchmarks and when creating future ones. Our empirical and theoretical results suggest a new paradigm for offline RL, whereby an agent is "nudged" to learn a desirable behavior with imperfect reward but purposely biased data coverage. Please visit our website https://survival-instinct.github.io for accompanied code and videos.
 
-----
+        ----
 
-## [2713] Recurrent Hypernetworks are Surprisingly Strong in Meta-RL
+        ## [2713] Recurrent Hypernetworks are Surprisingly Strong in Meta-RL
 
-**Authors**: *Jacob Beck, Risto Vuorio, Zheng Xiong, Shimon Whiteson*
+        **Authors**: *Jacob Beck, Risto Vuorio, Zheng Xiong, Shimon Whiteson*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c3fa3a7d50b34732c6d08f6f66380d75-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c3fa3a7d50b34732c6d08f6f66380d75-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c3fa3a7d50b34732c6d08f6f66380d75-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c3fa3a7d50b34732c6d08f6f66380d75-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Deep reinforcement learning (RL) is notoriously impractical to deploy due to sample inefficiency. Meta-RL directly addresses this sample inefficiency by learning to perform few-shot learning when a distribution of related tasks is available for meta-training. While many specialized meta-RL methods have been proposed, recent work suggests that end-to-end learning in conjunction with an off-the-shelf sequential model, such as a recurrent network, is a surprisingly strong baseline. However, such claims have been controversial due to limited supporting evidence, particularly in the face of prior work establishing precisely the opposite. In this paper, we conduct an empirical investigation. While we likewise find that a recurrent network can achieve strong performance, we demonstrate that the use of hypernetworks is crucial to maximizing their potential. Surprisingly, when combined with hypernetworks, the recurrent baselines that are far simpler than existing specialized methods actually achieve the strongest performance of all methods evaluated. We provide code at https://github.com/jacooba/hyper.
+        Deep reinforcement learning (RL) is notoriously impractical to deploy due to sample inefficiency. Meta-RL directly addresses this sample inefficiency by learning to perform few-shot learning when a distribution of related tasks is available for meta-training. While many specialized meta-RL methods have been proposed, recent work suggests that end-to-end learning in conjunction with an off-the-shelf sequential model, such as a recurrent network, is a surprisingly strong baseline. However, such claims have been controversial due to limited supporting evidence, particularly in the face of prior work establishing precisely the opposite. In this paper, we conduct an empirical investigation. While we likewise find that a recurrent network can achieve strong performance, we demonstrate that the use of hypernetworks is crucial to maximizing their potential. Surprisingly, when combined with hypernetworks, the recurrent baselines that are far simpler than existing specialized methods actually achieve the strongest performance of all methods evaluated. We provide code at https://github.com/jacooba/hyper.
 
-----
+        ----
 
-## [2714] The Target-Charging Technique for Privacy Analysis across Interactive Computations
+        ## [2714] The Target-Charging Technique for Privacy Analysis across Interactive Computations
 
-**Authors**: *Edith Cohen, Xin Lyu*
+        **Authors**: *Edith Cohen, Xin Lyu*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c3fe2a07ec47b89c50e89706d2e23358-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c3fe2a07ec47b89c50e89706d2e23358-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c3fe2a07ec47b89c50e89706d2e23358-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c3fe2a07ec47b89c50e89706d2e23358-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-We propose the \emph{Target Charging Technique} (TCT), a unified privacy analysis framework for interactive settings where a sensitive dataset is accessed multiple times using differentially private algorithms. Unlike traditional composition, where privacy guarantees deteriorate quickly with the number of accesses, TCT allows computations that don't hit a specified \emph{target}, often the vast majority, to be essentially free (while incurring instead a small overhead on those that do hit their targets). TCT generalizes tools such as the sparse vector technique and top-k selection from private candidates and extends their remarkable privacy enhancement benefits from noisy Lipschitz functions to general private algorithms.
+        We propose the \emph{Target Charging Technique} (TCT), a unified privacy analysis framework for interactive settings where a sensitive dataset is accessed multiple times using differentially private algorithms. Unlike traditional composition, where privacy guarantees deteriorate quickly with the number of accesses, TCT allows computations that don't hit a specified \emph{target}, often the vast majority, to be essentially free (while incurring instead a small overhead on those that do hit their targets). TCT generalizes tools such as the sparse vector technique and top-k selection from private candidates and extends their remarkable privacy enhancement benefits from noisy Lipschitz functions to general private algorithms.
 
-----
+        ----
 
-## [2715] EV-Eye: Rethinking High-frequency Eye Tracking through the Lenses of Event Cameras
+        ## [2715] EV-Eye: Rethinking High-frequency Eye Tracking through the Lenses of Event Cameras
 
-**Authors**: *Guangrong Zhao, Yurun Yang, Jingwei Liu, Ning Chen, Yiran Shen, Hongkai Wen, Guohao Lan*
+        **Authors**: *Guangrong Zhao, Yurun Yang, Jingwei Liu, Ning Chen, Yiran Shen, Hongkai Wen, Guohao Lan*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c41b5d8c1ba15b2aa83e4fa1541f02c8-Abstract-Datasets_and_Benchmarks.html](http://papers.nips.cc/paper_files/paper/2023/hash/c41b5d8c1ba15b2aa83e4fa1541f02c8-Abstract-Datasets_and_Benchmarks.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c41b5d8c1ba15b2aa83e4fa1541f02c8-Abstract-Datasets_and_Benchmarks.html](http://papers.nips.cc/paper_files/paper/2023/hash/c41b5d8c1ba15b2aa83e4fa1541f02c8-Abstract-Datasets_and_Benchmarks.html)
 
-**Abstract**:
+        **Abstract**:
 
-In this paper, we present EV-Eye, a first-of-its-kind large scale multimodal eye tracking dataset aimed at inspiring research on high-frequency eye/gaze tracking. EV-Eye utilizes an emerging bio-inspired event camera to capture independent pixel-level intensity changes induced by eye movements, achieving sub-microsecond latency. Our dataset was curated over a two-week period and collected from 48 participants encompassing diverse genders and age groups. It comprises over 1.5 million near-eye grayscale images and 2.7 billion event samples generated by two DAVIS346 event cameras. Additionally, the dataset contains 675 thousands scene images and 2.7 million gaze references captured by Tobii Pro Glasses 3 eye tracker for cross-modality validation. Compared with existing event-based high-frequency eye tracking datasets, our dataset is significantly larger in size, and the gaze references involve more natural eye movement patterns, i.e., fixation, saccade and smooth pursuit. Alongside the event data, we also present a hybrid eye tracking method as benchmark, which leverages both the near-eye grayscale images and event data for robust and high-frequency eye tracking. We show that our method achieves higher accuracy for both pupil and gaze estimation tasks compared to the existing solution.
+        In this paper, we present EV-Eye, a first-of-its-kind large scale multimodal eye tracking dataset aimed at inspiring research on high-frequency eye/gaze tracking. EV-Eye utilizes an emerging bio-inspired event camera to capture independent pixel-level intensity changes induced by eye movements, achieving sub-microsecond latency. Our dataset was curated over a two-week period and collected from 48 participants encompassing diverse genders and age groups. It comprises over 1.5 million near-eye grayscale images and 2.7 billion event samples generated by two DAVIS346 event cameras. Additionally, the dataset contains 675 thousands scene images and 2.7 million gaze references captured by Tobii Pro Glasses 3 eye tracker for cross-modality validation. Compared with existing event-based high-frequency eye tracking datasets, our dataset is significantly larger in size, and the gaze references involve more natural eye movement patterns, i.e., fixation, saccade and smooth pursuit. Alongside the event data, we also present a hybrid eye tracking method as benchmark, which leverages both the near-eye grayscale images and event data for robust and high-frequency eye tracking. We show that our method achieves higher accuracy for both pupil and gaze estimation tasks compared to the existing solution.
 
-----
+        ----
 
-## [2716] Diffusion Schrödinger Bridge Matching
+        ## [2716] Diffusion Schrödinger Bridge Matching
 
-**Authors**: *Yuyang Shi, Valentin De Bortoli, Andrew Campbell, Arnaud Doucet*
+        **Authors**: *Yuyang Shi, Valentin De Bortoli, Andrew Campbell, Arnaud Doucet*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c428adf74782c2092d254329b6b02482-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c428adf74782c2092d254329b6b02482-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c428adf74782c2092d254329b6b02482-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c428adf74782c2092d254329b6b02482-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Solving transport problems, i.e. finding a map transporting one given distribution to another, has numerous applications in machine learning. Novel mass transport methods motivated by generative modeling have recently been proposed, e.g. Denoising Diffusion Models (DDMs) and Flow Matching Models (FMMs) implement such a transport through a Stochastic Differential Equation (SDE) or an Ordinary Differential Equation (ODE). However, while it is desirable in many applications to approximate the deterministic dynamic Optimal Transport (OT) map which admits attractive properties, DDMs and FMMs are not guaranteed to provide transports close to the OT map. In contrast, Schrödinger bridges (SBs) compute stochastic dynamic mappings which recover entropy-regularized versions of OT. Unfortunately, existing numerical methods approximating SBs either scale poorly with dimension or accumulate errors across iterations. In this work, we introduce Iterative Markovian Fitting (IMF), a new methodology for solving SB problems, and Diffusion Schrödinger Bridge Matching (DSBM), a novel numerical algorithm for computing IMF iterates. DSBM significantly improves over previous SB numerics and recovers as special/limiting cases various recent transport methods. We demonstrate the performance of DSBM on a variety of problems.
+        Solving transport problems, i.e. finding a map transporting one given distribution to another, has numerous applications in machine learning. Novel mass transport methods motivated by generative modeling have recently been proposed, e.g. Denoising Diffusion Models (DDMs) and Flow Matching Models (FMMs) implement such a transport through a Stochastic Differential Equation (SDE) or an Ordinary Differential Equation (ODE). However, while it is desirable in many applications to approximate the deterministic dynamic Optimal Transport (OT) map which admits attractive properties, DDMs and FMMs are not guaranteed to provide transports close to the OT map. In contrast, Schrödinger bridges (SBs) compute stochastic dynamic mappings which recover entropy-regularized versions of OT. Unfortunately, existing numerical methods approximating SBs either scale poorly with dimension or accumulate errors across iterations. In this work, we introduce Iterative Markovian Fitting (IMF), a new methodology for solving SB problems, and Diffusion Schrödinger Bridge Matching (DSBM), a novel numerical algorithm for computing IMF iterates. DSBM significantly improves over previous SB numerics and recovers as special/limiting cases various recent transport methods. We demonstrate the performance of DSBM on a variety of problems.
 
-----
+        ----
 
-## [2717] Interpreting Unsupervised Anomaly Detection in Security via Rule Extraction
+        ## [2717] Interpreting Unsupervised Anomaly Detection in Security via Rule Extraction
 
-**Authors**: *Ruoyu Li, Qing Li, Yu Zhang, Dan Zhao, Yong Jiang, Yong Yang*
+        **Authors**: *Ruoyu Li, Qing Li, Yu Zhang, Dan Zhao, Yong Jiang, Yong Yang*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c43b987f23fd5ea840df2b2be426315c-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c43b987f23fd5ea840df2b2be426315c-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c43b987f23fd5ea840df2b2be426315c-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c43b987f23fd5ea840df2b2be426315c-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Many security applications require unsupervised anomaly detection, as malicious data are extremely rare and often only unlabeled normal data are available for training (i.e., zero-positive). However, security operators are concerned about the high stakes of trusting black-box models due to their lack of interpretability. In this paper, we propose a post-hoc method to globally explain a black-box unsupervised anomaly detection model via rule extraction.First, we propose the concept of distribution decomposition rules that decompose the complex distribution of normal data into multiple compositional distributions. To find such rules, we design an unsupervised Interior Clustering Tree that incorporates the model prediction into the splitting criteria. Then, we propose the Compositional Boundary Exploration (CBE) algorithm to obtain the boundary inference rules that estimate the decision boundary of the original model on each compositional distribution. By merging these two types of rules into a rule set, we can present the inferential process of the unsupervised black-box model in a human-understandable way, and build a surrogate rule-based model for online deployment at the same time. We conduct comprehensive experiments on the explanation of four distinct unsupervised anomaly detection models on various real-world datasets. The evaluation shows that our method outperforms existing methods in terms of diverse metrics including fidelity, correctness and robustness.
+        Many security applications require unsupervised anomaly detection, as malicious data are extremely rare and often only unlabeled normal data are available for training (i.e., zero-positive). However, security operators are concerned about the high stakes of trusting black-box models due to their lack of interpretability. In this paper, we propose a post-hoc method to globally explain a black-box unsupervised anomaly detection model via rule extraction.First, we propose the concept of distribution decomposition rules that decompose the complex distribution of normal data into multiple compositional distributions. To find such rules, we design an unsupervised Interior Clustering Tree that incorporates the model prediction into the splitting criteria. Then, we propose the Compositional Boundary Exploration (CBE) algorithm to obtain the boundary inference rules that estimate the decision boundary of the original model on each compositional distribution. By merging these two types of rules into a rule set, we can present the inferential process of the unsupervised black-box model in a human-understandable way, and build a surrogate rule-based model for online deployment at the same time. We conduct comprehensive experiments on the explanation of four distinct unsupervised anomaly detection models on various real-world datasets. The evaluation shows that our method outperforms existing methods in terms of diverse metrics including fidelity, correctness and robustness.
 
-----
+        ----
 
-## [2718] Cal-QL: Calibrated Offline RL Pre-Training for Efficient Online Fine-Tuning
+        ## [2718] Cal-QL: Calibrated Offline RL Pre-Training for Efficient Online Fine-Tuning
 
-**Authors**: *Mitsuhiko Nakamoto, Simon Zhai, Anikait Singh, Max Sobol Mark, Yi Ma, Chelsea Finn, Aviral Kumar, Sergey Levine*
+        **Authors**: *Mitsuhiko Nakamoto, Simon Zhai, Anikait Singh, Max Sobol Mark, Yi Ma, Chelsea Finn, Aviral Kumar, Sergey Levine*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c44a04289beaf0a7d968a94066a1d696-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c44a04289beaf0a7d968a94066a1d696-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c44a04289beaf0a7d968a94066a1d696-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c44a04289beaf0a7d968a94066a1d696-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-A compelling use case of offline reinforcement learning (RL) is to obtain a policy initialization from existing datasets followed by fast online fine-tuning with limited interaction. However, existing offline RL methods tend to behave poorly during fine-tuning. In this paper, we devise an approach for learning an effective initialization from offline data that also enables fast online fine-tuning capabilities. Our approach, calibrated Q-learning (Cal-QL), accomplishes this by learning a conservative value function initialization that underestimates the value of the learned policy from offline data, while also being calibrated, in the sense that the learned Q-values are at a reasonable scale. We refer to this property as calibration, and define it formally as providing a lower bound on the true value function of the learned policy and an upper bound on the value of some other (suboptimal) reference policy, which may simply be the behavior policy. We show that offline RL algorithms that learn such calibrated value functions lead to effective online fine-tuning, enabling us to take the benefits of offline initializations in online fine-tuning. In practice, Cal-QL can be implemented on top of the conservative Q learning (CQL) for offline RL within a one-line code change. Empirically, Cal-QL outperforms state-of-the-art methods on 9/11 fine-tuning benchmark tasks that we study in this paper. Code and video are available at https://nakamotoo.github.io/Cal-QL
+        A compelling use case of offline reinforcement learning (RL) is to obtain a policy initialization from existing datasets followed by fast online fine-tuning with limited interaction. However, existing offline RL methods tend to behave poorly during fine-tuning. In this paper, we devise an approach for learning an effective initialization from offline data that also enables fast online fine-tuning capabilities. Our approach, calibrated Q-learning (Cal-QL), accomplishes this by learning a conservative value function initialization that underestimates the value of the learned policy from offline data, while also being calibrated, in the sense that the learned Q-values are at a reasonable scale. We refer to this property as calibration, and define it formally as providing a lower bound on the true value function of the learned policy and an upper bound on the value of some other (suboptimal) reference policy, which may simply be the behavior policy. We show that offline RL algorithms that learn such calibrated value functions lead to effective online fine-tuning, enabling us to take the benefits of offline initializations in online fine-tuning. In practice, Cal-QL can be implemented on top of the conservative Q learning (CQL) for offline RL within a one-line code change. Empirically, Cal-QL outperforms state-of-the-art methods on 9/11 fine-tuning benchmark tasks that we study in this paper. Code and video are available at https://nakamotoo.github.io/Cal-QL
 
-----
+        ----
 
-## [2719] PLASTIC: Improving Input and Label Plasticity for Sample Efficient Reinforcement Learning
+        ## [2719] PLASTIC: Improving Input and Label Plasticity for Sample Efficient Reinforcement Learning
 
-**Authors**: *Hojoon Lee, Hanseul Cho, Hyunseung Kim, Daehoon Gwak, Joonkee Kim, Jaegul Choo, Se-Young Yun, Chulhee Yun*
+        **Authors**: *Hojoon Lee, Hanseul Cho, Hyunseung Kim, Daehoon Gwak, Joonkee Kim, Jaegul Choo, Se-Young Yun, Chulhee Yun*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c464fc4516aca4e68f2a14e67c6f0402-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c464fc4516aca4e68f2a14e67c6f0402-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c464fc4516aca4e68f2a14e67c6f0402-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c464fc4516aca4e68f2a14e67c6f0402-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-In Reinforcement Learning (RL), enhancing sample efficiency is crucial, particularly in scenarios when data acquisition is costly and risky. In principle, off-policy RL algorithms can improve sample efficiency by allowing multiple updates per environment interaction. However, these multiple updates often lead the model to overfit to earlier interactions, which is referred to as the loss of plasticity. Our study investigates the underlying causes of this phenomenon by dividing plasticity into two aspects. Input plasticity, which denotes the model's adaptability to changing input data, and label plasticity, which denotes the model's adaptability to evolving input-output relationships. Synthetic experiments on the CIFAR-10 dataset reveal that finding smoother minima of loss landscape enhances input plasticity, whereas refined gradient propagation improves label plasticity. Leveraging these findings, we introduce the PLASTIC algorithm, which harmoniously combines techniques to address both concerns. With minimal architectural modifications, PLASTIC achieves competitive performance on benchmarks including Atari-100k and Deepmind Control Suite. This result emphasizes the importance of preserving the model's plasticity to elevate the sample efficiency in RL. The code is available at https://github.com/dojeon-ai/plastic.
+        In Reinforcement Learning (RL), enhancing sample efficiency is crucial, particularly in scenarios when data acquisition is costly and risky. In principle, off-policy RL algorithms can improve sample efficiency by allowing multiple updates per environment interaction. However, these multiple updates often lead the model to overfit to earlier interactions, which is referred to as the loss of plasticity. Our study investigates the underlying causes of this phenomenon by dividing plasticity into two aspects. Input plasticity, which denotes the model's adaptability to changing input data, and label plasticity, which denotes the model's adaptability to evolving input-output relationships. Synthetic experiments on the CIFAR-10 dataset reveal that finding smoother minima of loss landscape enhances input plasticity, whereas refined gradient propagation improves label plasticity. Leveraging these findings, we introduce the PLASTIC algorithm, which harmoniously combines techniques to address both concerns. With minimal architectural modifications, PLASTIC achieves competitive performance on benchmarks including Atari-100k and Deepmind Control Suite. This result emphasizes the importance of preserving the model's plasticity to elevate the sample efficiency in RL. The code is available at https://github.com/dojeon-ai/plastic.
 
-----
+        ----
 
-## [2720] Metropolis Sampling for Constrained Diffusion Models
+        ## [2720] Metropolis Sampling for Constrained Diffusion Models
 
-**Authors**: *Nic Fishman, Leo Klarner, Emile Mathieu, Michael Hutchinson, Valentin De Bortoli*
+        **Authors**: *Nic Fishman, Leo Klarner, Emile Mathieu, Michael Hutchinson, Valentin De Bortoli*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c47bfcc8e2eccdc540fad1e25f13aa4d-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c47bfcc8e2eccdc540fad1e25f13aa4d-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c47bfcc8e2eccdc540fad1e25f13aa4d-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c47bfcc8e2eccdc540fad1e25f13aa4d-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Denoising diffusion models have recently emerged as the predominant paradigm for generative modelling on image domains. In addition, their extension to Riemannian manifolds has facilitated a range of applications across the natural sciences. While many of these problems stand to benefit from the ability to specify arbitrary, domain-informed constraints, this setting is not covered by the existing (Riemannian) diffusion model methodology. Recent work has attempted to address this issue by constructing novel noising processes based on the reflected Brownian motion and logarithmic barrier methods. However, the associated samplers are either computationally burdensome or only apply to convex subsets of Euclidean space. In this paper, we introduce an alternative, simple noising scheme based on Metropolis sampling that affords substantial gains in computational efficiency and empirical performance compared to the earlier samplers. Of independent interest, we prove that this new process corresponds to a valid discretisation of the reflected Brownian motion. We demonstrate the scalability and flexibility of our approach on a range of problem settings with convex and non-convex constraints, including applications from geospatial modelling, robotics and protein design.
+        Denoising diffusion models have recently emerged as the predominant paradigm for generative modelling on image domains. In addition, their extension to Riemannian manifolds has facilitated a range of applications across the natural sciences. While many of these problems stand to benefit from the ability to specify arbitrary, domain-informed constraints, this setting is not covered by the existing (Riemannian) diffusion model methodology. Recent work has attempted to address this issue by constructing novel noising processes based on the reflected Brownian motion and logarithmic barrier methods. However, the associated samplers are either computationally burdensome or only apply to convex subsets of Euclidean space. In this paper, we introduce an alternative, simple noising scheme based on Metropolis sampling that affords substantial gains in computational efficiency and empirical performance compared to the earlier samplers. Of independent interest, we prove that this new process corresponds to a valid discretisation of the reflected Brownian motion. We demonstrate the scalability and flexibility of our approach on a range of problem settings with convex and non-convex constraints, including applications from geospatial modelling, robotics and protein design.
 
-----
+        ----
 
-## [2721] ReTR: Modeling Rendering Via Transformer for Generalizable Neural Surface Reconstruction
+        ## [2721] ReTR: Modeling Rendering Via Transformer for Generalizable Neural Surface Reconstruction
 
-**Authors**: *Yixun Liang, Hao He, Yingcong Chen*
+        **Authors**: *Yixun Liang, Hao He, Yingcong Chen*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c47ec10bc135be5c3663ba344d29a6a5-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c47ec10bc135be5c3663ba344d29a6a5-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c47ec10bc135be5c3663ba344d29a6a5-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c47ec10bc135be5c3663ba344d29a6a5-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Generalizable neural surface reconstruction techniques have attracted great attention in recent years. However, they encounter limitations of low confidence depth distribution and inaccurate surface reasoning due to the oversimplified volume rendering process employed. In this paper, we present Reconstruction TRansformer (ReTR), a novel framework that leverages the transformer architecture to redesign the rendering process, enabling complex render interaction modeling. It introduces a learnable $\textit{meta-ray token}$ and utilizes the cross-attention mechanism to simulate the interaction of rendering process with sampled points and render the observed color. Meanwhile, by operating within a high-dimensional feature space rather than the color space, ReTR mitigates sensitivity to projected colors in source views. Such improvements result in accurate surface assessment with high confidence. We demonstrate the effectiveness of our approach on various datasets, showcasing how our method outperforms the current state-of-the-art approaches in terms of reconstruction quality and generalization ability. $\textit{Our code is available at }$ https://github.com/YixunLiang/ReTR.
+        Generalizable neural surface reconstruction techniques have attracted great attention in recent years. However, they encounter limitations of low confidence depth distribution and inaccurate surface reasoning due to the oversimplified volume rendering process employed. In this paper, we present Reconstruction TRansformer (ReTR), a novel framework that leverages the transformer architecture to redesign the rendering process, enabling complex render interaction modeling. It introduces a learnable $\textit{meta-ray token}$ and utilizes the cross-attention mechanism to simulate the interaction of rendering process with sampled points and render the observed color. Meanwhile, by operating within a high-dimensional feature space rather than the color space, ReTR mitigates sensitivity to projected colors in source views. Such improvements result in accurate surface assessment with high confidence. We demonstrate the effectiveness of our approach on various datasets, showcasing how our method outperforms the current state-of-the-art approaches in terms of reconstruction quality and generalization ability. $\textit{Our code is available at }$ https://github.com/YixunLiang/ReTR.
 
-----
+        ----
 
-## [2722] FETV: A Benchmark for Fine-Grained Evaluation of Open-Domain Text-to-Video Generation
+        ## [2722] FETV: A Benchmark for Fine-Grained Evaluation of Open-Domain Text-to-Video Generation
 
-**Authors**: *Yuanxin Liu, Lei Li, Shuhuai Ren, Rundong Gao, Shicheng Li, Sishuo Chen, Xu Sun, Lu Hou*
+        **Authors**: *Yuanxin Liu, Lei Li, Shuhuai Ren, Rundong Gao, Shicheng Li, Sishuo Chen, Xu Sun, Lu Hou*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c481049f7410f38e788f67c171c64ad5-Abstract-Datasets_and_Benchmarks.html](http://papers.nips.cc/paper_files/paper/2023/hash/c481049f7410f38e788f67c171c64ad5-Abstract-Datasets_and_Benchmarks.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c481049f7410f38e788f67c171c64ad5-Abstract-Datasets_and_Benchmarks.html](http://papers.nips.cc/paper_files/paper/2023/hash/c481049f7410f38e788f67c171c64ad5-Abstract-Datasets_and_Benchmarks.html)
 
-**Abstract**:
+        **Abstract**:
 
-Recently, open-domain text-to-video (T2V) generation models have made remarkable progress. However, the promising results are mainly shown by the qualitative cases of generated videos, while the quantitative evaluation of T2V models still faces two critical problems. Firstly, existing studies lack fine-grained evaluation of T2V models on different categories of text prompts. Although some benchmarks have categorized the prompts, their categorization either only focuses on a single aspect or fails to consider the temporal information in video generation. Secondly, it is unclear whether the automatic evaluation metrics are consistent with human standards. To address these problems, we propose FETV, a benchmark for Fine-grained Evaluation of Text-to-Video generation. FETV is multi-aspect, categorizing the prompts based on three orthogonal aspects: the major content, the attributes to control and the prompt complexity. FETV is also temporal-aware, which introduces several temporal categories tailored for video generation. Based on FETV, we conduct comprehensive manual evaluations of four representative T2V models, revealing their pros and cons on different categories of prompts from different aspects. We also extend FETV as a testbed to evaluate the reliability of automatic T2V metrics. The multi-aspect categorization of FETV enables fine-grained analysis of the metrics' reliability in different scenarios. We find that existing automatic metrics (e.g., CLIPScore and FVD) correlate poorly with human evaluation. To address this problem, we explore several solutions to improve CLIPScore and FVD, and develop two automatic metrics that exhibit significant higher correlation with humans than existing metrics. Benchmark page: https://github.com/llyx97/FETV.
+        Recently, open-domain text-to-video (T2V) generation models have made remarkable progress. However, the promising results are mainly shown by the qualitative cases of generated videos, while the quantitative evaluation of T2V models still faces two critical problems. Firstly, existing studies lack fine-grained evaluation of T2V models on different categories of text prompts. Although some benchmarks have categorized the prompts, their categorization either only focuses on a single aspect or fails to consider the temporal information in video generation. Secondly, it is unclear whether the automatic evaluation metrics are consistent with human standards. To address these problems, we propose FETV, a benchmark for Fine-grained Evaluation of Text-to-Video generation. FETV is multi-aspect, categorizing the prompts based on three orthogonal aspects: the major content, the attributes to control and the prompt complexity. FETV is also temporal-aware, which introduces several temporal categories tailored for video generation. Based on FETV, we conduct comprehensive manual evaluations of four representative T2V models, revealing their pros and cons on different categories of prompts from different aspects. We also extend FETV as a testbed to evaluate the reliability of automatic T2V metrics. The multi-aspect categorization of FETV enables fine-grained analysis of the metrics' reliability in different scenarios. We find that existing automatic metrics (e.g., CLIPScore and FVD) correlate poorly with human evaluation. To address this problem, we explore several solutions to improve CLIPScore and FVD, and develop two automatic metrics that exhibit significant higher correlation with humans than existing metrics. Benchmark page: https://github.com/llyx97/FETV.
 
-----
+        ----
 
-## [2723] Stability Guarantees for Feature Attributions with Multiplicative Smoothing
+        ## [2723] Stability Guarantees for Feature Attributions with Multiplicative Smoothing
 
-**Authors**: *Anton Xue, Rajeev Alur, Eric Wong*
+        **Authors**: *Anton Xue, Rajeev Alur, Eric Wong*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c4889bd7f7ce643003746526da2c2fc4-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c4889bd7f7ce643003746526da2c2fc4-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c4889bd7f7ce643003746526da2c2fc4-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c4889bd7f7ce643003746526da2c2fc4-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Explanation methods for machine learning models tend not to provide any formal guarantees and may not reflect the underlying decision-making process.In this work, we analyze stability as a property for reliable feature attribution methods. We prove that relaxed variants of stability are guaranteed if the model is sufficiently Lipschitz with respect to the masking of features. We develop a smoothing method called Multiplicative Smoothing (MuS) to achieve such a model.We show that MuS overcomes the theoretical limitations of standard smoothing techniques and can be integrated with any classifier and feature attribution method.We evaluate MuS on vision and language models with various feature attribution methods, such as LIME and SHAP, and demonstrate that MuS endows feature attributions with non-trivial stability guarantees.
+        Explanation methods for machine learning models tend not to provide any formal guarantees and may not reflect the underlying decision-making process.In this work, we analyze stability as a property for reliable feature attribution methods. We prove that relaxed variants of stability are guaranteed if the model is sufficiently Lipschitz with respect to the masking of features. We develop a smoothing method called Multiplicative Smoothing (MuS) to achieve such a model.We show that MuS overcomes the theoretical limitations of standard smoothing techniques and can be integrated with any classifier and feature attribution method.We evaluate MuS on vision and language models with various feature attribution methods, such as LIME and SHAP, and demonstrate that MuS endows feature attributions with non-trivial stability guarantees.
 
-----
+        ----
 
-## [2724] Pruning vs Quantization: Which is Better?
+        ## [2724] Pruning vs Quantization: Which is Better?
 
-**Authors**: *Andrey Kuzmin, Markus Nagel, Mart van Baalen, Arash Behboodi, Tijmen Blankevoort*
+        **Authors**: *Andrey Kuzmin, Markus Nagel, Mart van Baalen, Arash Behboodi, Tijmen Blankevoort*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c48bc80aa5d3cbbdd712d1cc107b8319-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c48bc80aa5d3cbbdd712d1cc107b8319-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c48bc80aa5d3cbbdd712d1cc107b8319-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c48bc80aa5d3cbbdd712d1cc107b8319-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Neural network pruning and quantization techniques are almost as old as neural networks themselves. However, to date, only ad-hoc comparisons between the two have been published. In this paper, we set out to answer the question of which is better: neural network quantization or pruning? By answering this question, we hope to inform design decisions made on neural network hardware going forward. We provide an extensive comparison between the two techniques for compressing deep neural networks. First, we give an analytical comparison of expected quantization and pruning error for general data distributions.Then, we provide lower and upper bounds for the per-layer pruning and quantization error in trained networks and compare these to empirical error after optimization.Finally, we provide an extensive experimental comparison for training 8 large-scale models trained on 3 tasks and provide insights into the representations learned during fine-tuning with quantization and pruning in the loop.Our results show that in most cases quantization outperforms pruning. Only in some scenarios with a very high compression ratio, compression might be beneficial from an accuracy standpoint.
+        Neural network pruning and quantization techniques are almost as old as neural networks themselves. However, to date, only ad-hoc comparisons between the two have been published. In this paper, we set out to answer the question of which is better: neural network quantization or pruning? By answering this question, we hope to inform design decisions made on neural network hardware going forward. We provide an extensive comparison between the two techniques for compressing deep neural networks. First, we give an analytical comparison of expected quantization and pruning error for general data distributions.Then, we provide lower and upper bounds for the per-layer pruning and quantization error in trained networks and compare these to empirical error after optimization.Finally, we provide an extensive experimental comparison for training 8 large-scale models trained on 3 tasks and provide insights into the representations learned during fine-tuning with quantization and pruning in the loop.Our results show that in most cases quantization outperforms pruning. Only in some scenarios with a very high compression ratio, compression might be beneficial from an accuracy standpoint.
 
-----
+        ----
 
-## [2725] EvoFed: Leveraging Evolutionary Strategies for Communication-Efficient Federated Learning
+        ## [2725] EvoFed: Leveraging Evolutionary Strategies for Communication-Efficient Federated Learning
 
-**Authors**: *Mohammad Mahdi Rahimi, Hasnain Irshad Bhatti, Younghyun Park, Humaira Kousar, Do-Yeon Kim, Jaekyun Moon*
+        **Authors**: *Mohammad Mahdi Rahimi, Hasnain Irshad Bhatti, Younghyun Park, Humaira Kousar, Do-Yeon Kim, Jaekyun Moon*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c48fe446e651cd49fb58a6833e015103-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c48fe446e651cd49fb58a6833e015103-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c48fe446e651cd49fb58a6833e015103-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c48fe446e651cd49fb58a6833e015103-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Federated Learning (FL) is a decentralized machine learning paradigm that enables collaborative model training across dispersed nodes without having to force individual nodes to share data.However, its broad adoption is hindered by the high communication costs of transmitting a large number of model parameters. This paper presents EvoFed, a novel approach that integrates Evolutionary Strategies (ES) with FL to address these challenges.EvoFed employs a concept of `fitness-based information sharingâ€™, deviating significantly from the conventional model-based FL. Rather than exchanging the actual updated model parameters, each node transmits a distance-based similarity measure between the locally updated model and each member of the noise-perturbed model population. Each node, as well as the server, generates an identical population set of perturbed models in a completely synchronized fashion using the same random seeds. With properly chosen noise variance and population size, perturbed models can be combined to closely reflect the actual model updated using the local dataset, allowing the transmitted similarity measures (or fitness values) to carry nearly the complete information about the model parameters.As the population size is typically much smaller than the number of model parameters, the savings in communication load is large. The server aggregates these fitness values and is able to update the global model. This global fitness vector is then disseminated back to the nodes, each of which applies the same update to be synchronized to the global model. Our analysis shows that EvoFed converges, and our experimental results validate that at the cost of increased local processing loads, EvoFed achieves performance comparable to FedAvg while reducing overall communication requirements drastically in various practical settings.
+        Federated Learning (FL) is a decentralized machine learning paradigm that enables collaborative model training across dispersed nodes without having to force individual nodes to share data.However, its broad adoption is hindered by the high communication costs of transmitting a large number of model parameters. This paper presents EvoFed, a novel approach that integrates Evolutionary Strategies (ES) with FL to address these challenges.EvoFed employs a concept of `fitness-based information sharingâ€™, deviating significantly from the conventional model-based FL. Rather than exchanging the actual updated model parameters, each node transmits a distance-based similarity measure between the locally updated model and each member of the noise-perturbed model population. Each node, as well as the server, generates an identical population set of perturbed models in a completely synchronized fashion using the same random seeds. With properly chosen noise variance and population size, perturbed models can be combined to closely reflect the actual model updated using the local dataset, allowing the transmitted similarity measures (or fitness values) to carry nearly the complete information about the model parameters.As the population size is typically much smaller than the number of model parameters, the savings in communication load is large. The server aggregates these fitness values and is able to update the global model. This global fitness vector is then disseminated back to the nodes, each of which applies the same update to be synchronized to the global model. Our analysis shows that EvoFed converges, and our experimental results validate that at the cost of increased local processing loads, EvoFed achieves performance comparable to FedAvg while reducing overall communication requirements drastically in various practical settings.
 
-----
+        ----
 
-## [2726] UUKG: Unified Urban Knowledge Graph Dataset for Urban Spatiotemporal Prediction
+        ## [2726] UUKG: Unified Urban Knowledge Graph Dataset for Urban Spatiotemporal Prediction
 
-**Authors**: *Yansong Ning, Hao Liu, Hao Wang, Zhenyu Zeng, Hui Xiong*
+        **Authors**: *Yansong Ning, Hao Liu, Hao Wang, Zhenyu Zeng, Hui Xiong*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c4a30a4dd840cfeff30ba4d2661ff097-Abstract-Datasets_and_Benchmarks.html](http://papers.nips.cc/paper_files/paper/2023/hash/c4a30a4dd840cfeff30ba4d2661ff097-Abstract-Datasets_and_Benchmarks.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c4a30a4dd840cfeff30ba4d2661ff097-Abstract-Datasets_and_Benchmarks.html](http://papers.nips.cc/paper_files/paper/2023/hash/c4a30a4dd840cfeff30ba4d2661ff097-Abstract-Datasets_and_Benchmarks.html)
 
-**Abstract**:
+        **Abstract**:
 
-Accurate Urban SpatioTemporal Prediction (USTP) is of great importance to the development and operation of the smart city. As an emerging building block, multi-sourced urban data are usually integrated as urban knowledge graphs (UrbanKGs) to provide critical knowledge for urban spatiotemporal prediction models. However, existing UrbanKGs are often tailored for specific downstream prediction tasks and are not publicly available, which limits the potential advancement. This paper presents UUKG, the unified urban knowledge graph dataset for knowledge-enhanced urban spatiotemporal predictions. Specifically, we first construct UrbanKGs consisting of millions of triplets for two metropolises by connecting heterogeneous urban entities such as administrative boroughs, POIs, and road segments. Moreover, we conduct qualitative and quantitative analysis on constructed UrbanKGs and uncover diverse high-order structural patterns, such as hierarchies and cycles, that can be leveraged to benefit downstream USTP tasks. To validate and facilitate the use of UrbanKGs, we implement and evaluate 15 KG embedding methods on the KG completion task and integrate the learned KG embeddings into 9 spatiotemporal models for five different USTP tasks. The extensive experimental results not only provide benchmarks of knowledge-enhanced USTP models under different task settings but also highlight the potential of state-of-the-art high-order structure-aware UrbanKG embedding methods. We hope the proposed UUKG fosters research on urban knowledge graphs and broad smart city applications. The dataset and source code are available at https://github.com/usail-hkust/UUKG/.
+        Accurate Urban SpatioTemporal Prediction (USTP) is of great importance to the development and operation of the smart city. As an emerging building block, multi-sourced urban data are usually integrated as urban knowledge graphs (UrbanKGs) to provide critical knowledge for urban spatiotemporal prediction models. However, existing UrbanKGs are often tailored for specific downstream prediction tasks and are not publicly available, which limits the potential advancement. This paper presents UUKG, the unified urban knowledge graph dataset for knowledge-enhanced urban spatiotemporal predictions. Specifically, we first construct UrbanKGs consisting of millions of triplets for two metropolises by connecting heterogeneous urban entities such as administrative boroughs, POIs, and road segments. Moreover, we conduct qualitative and quantitative analysis on constructed UrbanKGs and uncover diverse high-order structural patterns, such as hierarchies and cycles, that can be leveraged to benefit downstream USTP tasks. To validate and facilitate the use of UrbanKGs, we implement and evaluate 15 KG embedding methods on the KG completion task and integrate the learned KG embeddings into 9 spatiotemporal models for five different USTP tasks. The extensive experimental results not only provide benchmarks of knowledge-enhanced USTP models under different task settings but also highlight the potential of state-of-the-art high-order structure-aware UrbanKG embedding methods. We hope the proposed UUKG fosters research on urban knowledge graphs and broad smart city applications. The dataset and source code are available at https://github.com/usail-hkust/UUKG/.
 
-----
+        ----
 
-## [2727] StateMask: Explaining Deep Reinforcement Learning through State Mask
+        ## [2727] StateMask: Explaining Deep Reinforcement Learning through State Mask
 
-**Authors**: *Zelei Cheng, Xian Wu, Jiahao Yu, Wenhai Sun, Wenbo Guo, Xinyu Xing*
+        **Authors**: *Zelei Cheng, Xian Wu, Jiahao Yu, Wenhai Sun, Wenbo Guo, Xinyu Xing*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c4bf73386022473a652a18941e9ea6f8-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c4bf73386022473a652a18941e9ea6f8-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c4bf73386022473a652a18941e9ea6f8-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c4bf73386022473a652a18941e9ea6f8-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Despite the promising performance of deep reinforcement learning (DRL) agents in many challenging scenarios, the black-box nature of these agents greatly limits their applications in critical domains. Prior research has proposed several explanation techniques to understand the deep learning-based policies in RL. Most existing methods explain why an agent takes individual actions rather than pinpointing the critical steps to its final reward. To fill this gap, we propose StateMask, a novel method to identify the states most critical to the agent's final reward. The high-level idea of StateMask is to learn a mask net that blinds a target agent and forces it to take random actions at some steps without compromising the agent's performance. Through careful design, we can theoretically ensure that the masked agent performs similarly to the original agent. We evaluate StateMask in various popular RL environments and show its superiority over existing explainers in explanation fidelity. We also show that StateMask  has better utilities, such as launching adversarial attacks and patching policy errors.
+        Despite the promising performance of deep reinforcement learning (DRL) agents in many challenging scenarios, the black-box nature of these agents greatly limits their applications in critical domains. Prior research has proposed several explanation techniques to understand the deep learning-based policies in RL. Most existing methods explain why an agent takes individual actions rather than pinpointing the critical steps to its final reward. To fill this gap, we propose StateMask, a novel method to identify the states most critical to the agent's final reward. The high-level idea of StateMask is to learn a mask net that blinds a target agent and forces it to take random actions at some steps without compromising the agent's performance. Through careful design, we can theoretically ensure that the masked agent performs similarly to the original agent. We evaluate StateMask in various popular RL environments and show its superiority over existing explainers in explanation fidelity. We also show that StateMask  has better utilities, such as launching adversarial attacks and patching policy errors.
 
-----
+        ----
 
-## [2728] Faster Margin Maximization Rates for Generic Optimization Methods
+        ## [2728] Faster Margin Maximization Rates for Generic Optimization Methods
 
-**Authors**: *Guanghui Wang, Zihao Hu, Vidya Muthukumar, Jacob D. Abernethy*
+        **Authors**: *Guanghui Wang, Zihao Hu, Vidya Muthukumar, Jacob D. Abernethy*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c4cfdc27b46659e70a142ac249485a49-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c4cfdc27b46659e70a142ac249485a49-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c4cfdc27b46659e70a142ac249485a49-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c4cfdc27b46659e70a142ac249485a49-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-First-order optimization methods tend to inherently favor certain solutions over others when minimizing a given training objective with multiple local optima. This phenomenon, known as \emph{implicit bias}, plays a critical role in understanding the generalization capabilities of optimization algorithms. Recent research has revealed that gradient-descent-based methods exhibit an implicit bias for the $\ell_2$-maximal margin classifier in the context of separable binary classification. In contrast, generic optimization methods, such as mirror descent and steepest descent, have been shown to converge to maximal margin classifiers defined by alternative geometries. However, while gradient-descent-based algorithms demonstrate fast implicit bias rates, the implicit bias rates of generic optimization methods have been relatively slow. To address this limitation, in this paper, we present a series of state-of-the-art implicit bias rates for mirror descent and steepest descent algorithms. Our primary technique involves transforming a generic optimization algorithm into an online learning dynamic that solves a regularized bilinear game, providing a unified framework for analyzing the implicit bias of various optimization methods. The accelerated rates are derived leveraging the regret bounds of online learning algorithms within this game framework.
+        First-order optimization methods tend to inherently favor certain solutions over others when minimizing a given training objective with multiple local optima. This phenomenon, known as \emph{implicit bias}, plays a critical role in understanding the generalization capabilities of optimization algorithms. Recent research has revealed that gradient-descent-based methods exhibit an implicit bias for the $\ell_2$-maximal margin classifier in the context of separable binary classification. In contrast, generic optimization methods, such as mirror descent and steepest descent, have been shown to converge to maximal margin classifiers defined by alternative geometries. However, while gradient-descent-based algorithms demonstrate fast implicit bias rates, the implicit bias rates of generic optimization methods have been relatively slow. To address this limitation, in this paper, we present a series of state-of-the-art implicit bias rates for mirror descent and steepest descent algorithms. Our primary technique involves transforming a generic optimization algorithm into an online learning dynamic that solves a regularized bilinear game, providing a unified framework for analyzing the implicit bias of various optimization methods. The accelerated rates are derived leveraging the regret bounds of online learning algorithms within this game framework.
 
-----
+        ----
 
-## [2729] Managing Temporal Resolution in Continuous Value Estimation: A Fundamental Trade-off
+        ## [2729] Managing Temporal Resolution in Continuous Value Estimation: A Fundamental Trade-off
 
-**Authors**: *Zichen Vincent Zhang, Johannes Kirschner, Junxi Zhang, Francesco Zanini, Alex Ayoub, Masood Dehghan, Dale Schuurmans*
+        **Authors**: *Zichen Vincent Zhang, Johannes Kirschner, Junxi Zhang, Francesco Zanini, Alex Ayoub, Masood Dehghan, Dale Schuurmans*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c4d66eae503694424123b93ac0fbaf17-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c4d66eae503694424123b93ac0fbaf17-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c4d66eae503694424123b93ac0fbaf17-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c4d66eae503694424123b93ac0fbaf17-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-A default assumption in reinforcement learning (RL) and optimal control is that observations arrive at discrete time points on a fixed clock cycle. Yet, many applications involve continuous-time systems where the time discretization, in principle, can be managed. The impact of time discretization on RL methods has not been fully characterized in existing theory, but a more detailed analysis of its effect could reveal opportunities for improving data-efficiency. We address this gap by analyzing Monte-Carlo policy evaluation for LQR systems and uncover a fundamental trade-off between approximation and statistical error in value estimation. Importantly, these two errors behave differently to time discretization, leading to an optimal choice of temporal resolution for a given data budget. These findings show that managing the temporal resolution can provably improve policy evaluation efficiency in LQR systems with finite data. Empirically, we demonstrate the trade-off in numerical simulations of LQR instances and standard RL benchmarks for non-linear continuous control.
+        A default assumption in reinforcement learning (RL) and optimal control is that observations arrive at discrete time points on a fixed clock cycle. Yet, many applications involve continuous-time systems where the time discretization, in principle, can be managed. The impact of time discretization on RL methods has not been fully characterized in existing theory, but a more detailed analysis of its effect could reveal opportunities for improving data-efficiency. We address this gap by analyzing Monte-Carlo policy evaluation for LQR systems and uncover a fundamental trade-off between approximation and statistical error in value estimation. Importantly, these two errors behave differently to time discretization, leading to an optimal choice of temporal resolution for a given data budget. These findings show that managing the temporal resolution can provably improve policy evaluation efficiency in LQR systems with finite data. Empirically, we demonstrate the trade-off in numerical simulations of LQR instances and standard RL benchmarks for non-linear continuous control.
 
-----
+        ----
 
-## [2730] Federated Linear Bandits with Finite Adversarial Actions
+        ## [2730] Federated Linear Bandits with Finite Adversarial Actions
 
-**Authors**: *Li Fan, Ruida Zhou, Chao Tian, Cong Shen*
+        **Authors**: *Li Fan, Ruida Zhou, Chao Tian, Cong Shen*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c4e380fb74dec9da9c7212e834657aa9-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c4e380fb74dec9da9c7212e834657aa9-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c4e380fb74dec9da9c7212e834657aa9-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c4e380fb74dec9da9c7212e834657aa9-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-We study a federated linear bandits model, where $M$ clients communicate with a central server to solve a linear contextual bandits problem with finite adversarial action sets that may be different across clients. To address the unique challenges of **adversarial finite** action sets, we propose the FedSupLinUCB algorithm, which extends the principles of SupLinUCB and OFUL algorithms in linear contextual bandits. We prove that FedSupLinUCB achieves a total regret of $\tilde{O}(\sqrt{d T})$, where $T$ is the total number of arm pulls from all clients, and $d$ is the ambient dimension of the linear model. This matches the minimax lower bound and thus is order-optimal (up to polylog terms). We study both asynchronous and synchronous cases and show that the communication cost can be controlled as $O(d M^2 \log(d)\log(T))$ and $O(\sqrt{d^3 M^3} \log(d))$, respectively. The FedSupLinUCB design is further extended to two scenarios: (1) variance-adaptive, where a total regret of $\tilde{O} (\sqrt{d \sum \nolimits_{t=1}^{T} \sigma_t^2})$ can be achieved with $\sigma_t^2$ being the noise variance of round $t$; and (2) adversarial corruption, where a total regret of $\tilde{O}(\sqrt{dT} + d C_p)$ can be achieved with $C_p$ being the total corruption budget. Experiment results corroborate the theoretical analysis and demonstrate the effectiveness of \alg on both synthetic and real-world datasets.
+        We study a federated linear bandits model, where $M$ clients communicate with a central server to solve a linear contextual bandits problem with finite adversarial action sets that may be different across clients. To address the unique challenges of **adversarial finite** action sets, we propose the FedSupLinUCB algorithm, which extends the principles of SupLinUCB and OFUL algorithms in linear contextual bandits. We prove that FedSupLinUCB achieves a total regret of $\tilde{O}(\sqrt{d T})$, where $T$ is the total number of arm pulls from all clients, and $d$ is the ambient dimension of the linear model. This matches the minimax lower bound and thus is order-optimal (up to polylog terms). We study both asynchronous and synchronous cases and show that the communication cost can be controlled as $O(d M^2 \log(d)\log(T))$ and $O(\sqrt{d^3 M^3} \log(d))$, respectively. The FedSupLinUCB design is further extended to two scenarios: (1) variance-adaptive, where a total regret of $\tilde{O} (\sqrt{d \sum \nolimits_{t=1}^{T} \sigma_t^2})$ can be achieved with $\sigma_t^2$ being the noise variance of round $t$; and (2) adversarial corruption, where a total regret of $\tilde{O}(\sqrt{dT} + d C_p)$ can be achieved with $C_p$ being the total corruption budget. Experiment results corroborate the theoretical analysis and demonstrate the effectiveness of \alg on both synthetic and real-world datasets.
 
-----
+        ----
 
-## [2731] BERT Lost Patience Won't Be Robust to Adversarial Slowdown
+        ## [2731] BERT Lost Patience Won't Be Robust to Adversarial Slowdown
 
-**Authors**: *Zachary Coalson, Gabriel Ritter, Rakesh Bobba, Sanghyun Hong*
+        **Authors**: *Zachary Coalson, Gabriel Ritter, Rakesh Bobba, Sanghyun Hong*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c50a537060022ba5fc3d6a856625b664-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c50a537060022ba5fc3d6a856625b664-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c50a537060022ba5fc3d6a856625b664-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c50a537060022ba5fc3d6a856625b664-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-In this paper, we systematically evaluate the robustness of multi-exit language models against adversarial slowdown. To audit their robustness, we design a slowdown attack that generates natural adversarial text bypassing early-exit points. We use the resulting WAFFLE attack as a vehicle to conduct a comprehensive evaluation of three multi-exit mechanisms with the GLUE benchmark against adversarial slowdown. We then show our attack significantly reduces the computational savings provided by the three methods in both white-box and black-box settings. The more complex a mechanism is, the more vulnerable it is to adversarial slowdown. We also perform a linguistic analysis of the perturbed text inputs, identifying common perturbation patterns that our attack generates, and comparing them with standard adversarial text attacks. Moreover, we show that adversarial training is ineffective in defeating our slowdown attack, but input sanitization with a conversational model, e.g., ChatGPT, can remove perturbations effectively. This result suggests that future work is needed for developing efficient yet robust multi-exit models. Our code is available at: https://github.com/ztcoalson/WAFFLE
+        In this paper, we systematically evaluate the robustness of multi-exit language models against adversarial slowdown. To audit their robustness, we design a slowdown attack that generates natural adversarial text bypassing early-exit points. We use the resulting WAFFLE attack as a vehicle to conduct a comprehensive evaluation of three multi-exit mechanisms with the GLUE benchmark against adversarial slowdown. We then show our attack significantly reduces the computational savings provided by the three methods in both white-box and black-box settings. The more complex a mechanism is, the more vulnerable it is to adversarial slowdown. We also perform a linguistic analysis of the perturbed text inputs, identifying common perturbation patterns that our attack generates, and comparing them with standard adversarial text attacks. Moreover, we show that adversarial training is ineffective in defeating our slowdown attack, but input sanitization with a conversational model, e.g., ChatGPT, can remove perturbations effectively. This result suggests that future work is needed for developing efficient yet robust multi-exit models. Our code is available at: https://github.com/ztcoalson/WAFFLE
 
-----
+        ----
 
-## [2732] RECKONING: Reasoning through Dynamic Knowledge Encoding
+        ## [2732] RECKONING: Reasoning through Dynamic Knowledge Encoding
 
-**Authors**: *Zeming Chen, Gail Weiss, Eric Mitchell, Asli Celikyilmaz, Antoine Bosselut*
+        **Authors**: *Zeming Chen, Gail Weiss, Eric Mitchell, Asli Celikyilmaz, Antoine Bosselut*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c518f504ad5894ccb264a9890f0f5544-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c518f504ad5894ccb264a9890f0f5544-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c518f504ad5894ccb264a9890f0f5544-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c518f504ad5894ccb264a9890f0f5544-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Recent studies on transformer-based language models show that they can answer questions by reasoning over knowledge provided as part of the context (i.e., in-context reasoning). However, since the available knowledge is often not filtered for a particular question, in-context reasoning can be sensitive to distractor facts, additional content that is irrelevant to a question but that may be relevant for a different question (i.e., not necessarily random noise). In these situations, the model fails todistinguish the necessary knowledge to answer the question, leading to spurious reasoning and degraded performance. This reasoning failure contrasts with the model’s apparent ability to distinguish its contextual knowledge from all the knowledge it has memorized during pre-training. Following this observation, we propose teaching the model to reason more robustly by folding the provided contextual knowledge into the model’s parameters before presenting it with a question. Our method, RECKONING, is a bi-level learning algorithm that teaches language models to reason by updating their parametric knowledge through back-propagation, allowing them to answer questions using the updated parameters. During training, the inner loop rapidly adapts a copy of the model weights to encode contextual knowledge into its parameters. In the outer loop, the model learns to use the updated weights to reproduce and answer reasoning questions about the memorized knowledge. Our experiments on three diverse multi-hop reasoning datasets show that RECKONING’s performance improves over the in-context reasoning baseline (by up to 4.5%). We also find that compared to in-context reasoning, RECKONING generalizes better to longer reasoning chains unseen during training, is more robust to distractors in the context, and is computationally more efficient when multiple questions are asked about the same knowledge.
+        Recent studies on transformer-based language models show that they can answer questions by reasoning over knowledge provided as part of the context (i.e., in-context reasoning). However, since the available knowledge is often not filtered for a particular question, in-context reasoning can be sensitive to distractor facts, additional content that is irrelevant to a question but that may be relevant for a different question (i.e., not necessarily random noise). In these situations, the model fails todistinguish the necessary knowledge to answer the question, leading to spurious reasoning and degraded performance. This reasoning failure contrasts with the model’s apparent ability to distinguish its contextual knowledge from all the knowledge it has memorized during pre-training. Following this observation, we propose teaching the model to reason more robustly by folding the provided contextual knowledge into the model’s parameters before presenting it with a question. Our method, RECKONING, is a bi-level learning algorithm that teaches language models to reason by updating their parametric knowledge through back-propagation, allowing them to answer questions using the updated parameters. During training, the inner loop rapidly adapts a copy of the model weights to encode contextual knowledge into its parameters. In the outer loop, the model learns to use the updated weights to reproduce and answer reasoning questions about the memorized knowledge. Our experiments on three diverse multi-hop reasoning datasets show that RECKONING’s performance improves over the in-context reasoning baseline (by up to 4.5%). We also find that compared to in-context reasoning, RECKONING generalizes better to longer reasoning chains unseen during training, is more robust to distractors in the context, and is computationally more efficient when multiple questions are asked about the same knowledge.
 
-----
+        ----
 
-## [2733] Regularity as Intrinsic Reward for Free Play
+        ## [2733] Regularity as Intrinsic Reward for Free Play
 
-**Authors**: *Cansu Sancaktar, Justus H. Piater, Georg Martius*
+        **Authors**: *Cansu Sancaktar, Justus H. Piater, Georg Martius*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c529dba08a146ea8d6cf715ae8930cbe-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c529dba08a146ea8d6cf715ae8930cbe-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c529dba08a146ea8d6cf715ae8930cbe-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c529dba08a146ea8d6cf715ae8930cbe-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-We propose regularity as a novel reward signal for intrinsically-motivated reinforcement learning. Taking inspiration from child development, we postulate that striving for structure and order helps guide exploration towards a subspace of tasks that are not favored by naive uncertainty-based intrinsic rewards. Our generalized formulation of Regularity as Intrinsic Reward (RaIR) allows us to operationalize it within model-based reinforcement learning. In a synthetic environment, we showcase the plethora of structured patterns that can emerge from pursuing this regularity objective. We also demonstrate the strength of our method in a multi-object robotic manipulation environment. We incorporate RaIR into free play and use it to complement the modelâ€™s epistemic uncertainty as an intrinsic reward. Doing so, we witness the autonomous construction of towers and other regular structures during free play, which leads to a substantial improvement in zero-shot downstream task performance on assembly tasks.
+        We propose regularity as a novel reward signal for intrinsically-motivated reinforcement learning. Taking inspiration from child development, we postulate that striving for structure and order helps guide exploration towards a subspace of tasks that are not favored by naive uncertainty-based intrinsic rewards. Our generalized formulation of Regularity as Intrinsic Reward (RaIR) allows us to operationalize it within model-based reinforcement learning. In a synthetic environment, we showcase the plethora of structured patterns that can emerge from pursuing this regularity objective. We also demonstrate the strength of our method in a multi-object robotic manipulation environment. We incorporate RaIR into free play and use it to complement the modelâ€™s epistemic uncertainty as an intrinsic reward. Doing so, we witness the autonomous construction of towers and other regular structures during free play, which leads to a substantial improvement in zero-shot downstream task performance on assembly tasks.
 
-----
+        ----
 
-## [2734] Guiding Large Language Models via Directional Stimulus Prompting
+        ## [2734] Guiding Large Language Models via Directional Stimulus Prompting
 
-**Authors**: *Zekun Li, Baolin Peng, Pengcheng He, Michel Galley, Jianfeng Gao, Xifeng Yan*
+        **Authors**: *Zekun Li, Baolin Peng, Pengcheng He, Michel Galley, Jianfeng Gao, Xifeng Yan*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c5601d99ed028448f29d1dae2e4a926d-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c5601d99ed028448f29d1dae2e4a926d-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c5601d99ed028448f29d1dae2e4a926d-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c5601d99ed028448f29d1dae2e4a926d-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-We introduce Directional Stimulus Prompting, a novel framework for guiding black-box large language models (LLMs) towards specific desired outputs. Instead of directly adjusting LLMs, our method employs a small tunable policy model (e.g., T5) to generate an auxiliary directional stimulus prompt for each input instance. These directional stimulus prompts act as nuanced, instance-specific hints and clues to guide LLMs in generating desired outcomes, such as including specific keywords in the generated summary. Our approach sidesteps the challenges of direct LLM tuning by optimizing the policy model to explore directional stimulus prompts that align LLMs with desired behaviors. The policy model can be optimized through 1) supervised fine-tuning using labeled data and 2) reinforcement learning from offline or online rewards based on the LLM's output. We evaluate our method across various tasks, including summarization, dialogue response generation, and chain-of-thought reasoning. Our experiments indicate a consistent improvement in the performance of LLMs such as ChatGPT, Codex, and InstructGPT on these supervised tasks with minimal labeled data. Remarkably, by utilizing merely 80 dialogues from the MultiWOZ dataset, our approach boosts ChatGPT's performance by a relative 41.4%, achieving or exceeding the performance of some fully supervised state-of-the-art models. Moreover, the instance-specific chain-of-thought prompt generated through our method enhances InstructGPT's reasoning accuracy, outperforming both generalized human-crafted prompts and those generated through automatic prompt engineering. The code and data are publicly available at https://github.com/Leezekun/Directional-Stimulus-Prompting.
+        We introduce Directional Stimulus Prompting, a novel framework for guiding black-box large language models (LLMs) towards specific desired outputs. Instead of directly adjusting LLMs, our method employs a small tunable policy model (e.g., T5) to generate an auxiliary directional stimulus prompt for each input instance. These directional stimulus prompts act as nuanced, instance-specific hints and clues to guide LLMs in generating desired outcomes, such as including specific keywords in the generated summary. Our approach sidesteps the challenges of direct LLM tuning by optimizing the policy model to explore directional stimulus prompts that align LLMs with desired behaviors. The policy model can be optimized through 1) supervised fine-tuning using labeled data and 2) reinforcement learning from offline or online rewards based on the LLM's output. We evaluate our method across various tasks, including summarization, dialogue response generation, and chain-of-thought reasoning. Our experiments indicate a consistent improvement in the performance of LLMs such as ChatGPT, Codex, and InstructGPT on these supervised tasks with minimal labeled data. Remarkably, by utilizing merely 80 dialogues from the MultiWOZ dataset, our approach boosts ChatGPT's performance by a relative 41.4%, achieving or exceeding the performance of some fully supervised state-of-the-art models. Moreover, the instance-specific chain-of-thought prompt generated through our method enhances InstructGPT's reasoning accuracy, outperforming both generalized human-crafted prompts and those generated through automatic prompt engineering. The code and data are publicly available at https://github.com/Leezekun/Directional-Stimulus-Prompting.
 
-----
+        ----
 
-## [2735] Distributionally Robust Ensemble of Lottery Tickets Towards Calibrated Sparse Network Training
+        ## [2735] Distributionally Robust Ensemble of Lottery Tickets Towards Calibrated Sparse Network Training
 
-**Authors**: *Hitesh Sapkota, Dingrong Wang, Zhiqiang Tao, Qi Yu*
+        **Authors**: *Hitesh Sapkota, Dingrong Wang, Zhiqiang Tao, Qi Yu*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c5cf13bfd3762821ef7607e63ee90075-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c5cf13bfd3762821ef7607e63ee90075-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c5cf13bfd3762821ef7607e63ee90075-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c5cf13bfd3762821ef7607e63ee90075-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-The recently developed sparse network training methods, such as Lottery Ticket Hypothesis (LTH) and its variants, have shown impressive learning capacity by finding sparse sub-networks from a dense one. While these methods could largely sparsify deep networks, they generally focus more on realizing comparable accuracy to dense counterparts yet neglect network calibration. However, how to achieve calibrated network predictions lies at the core of improving model reliability, especially when it comes to addressing the overconfident issue and out-of-distribution cases. In this study, we propose a novel Distributionally Robust Optimization (DRO) framework to achieve an ensemble of lottery tickets towards calibrated network sparsification. Specifically, the proposed DRO ensemble aims to learn multiple diverse and complementary sparse sub-networks (tickets) with the guidance of uncertainty sets, which encourage tickets to gradually capture different data distributions from easy to hard and naturally complement each other. We theoretically justify the strong calibration performance by showing how the proposed robust training process guarantees to lower the confidence of incorrect predictions. Extensive experimental results on several benchmarks show that our proposed lottery ticket ensemble leads to a clear calibration improvement without sacrificing accuracy and burdening inference costs. Furthermore, experiments on OOD datasets demonstrate the robustness of our approach in the open-set environment.
+        The recently developed sparse network training methods, such as Lottery Ticket Hypothesis (LTH) and its variants, have shown impressive learning capacity by finding sparse sub-networks from a dense one. While these methods could largely sparsify deep networks, they generally focus more on realizing comparable accuracy to dense counterparts yet neglect network calibration. However, how to achieve calibrated network predictions lies at the core of improving model reliability, especially when it comes to addressing the overconfident issue and out-of-distribution cases. In this study, we propose a novel Distributionally Robust Optimization (DRO) framework to achieve an ensemble of lottery tickets towards calibrated network sparsification. Specifically, the proposed DRO ensemble aims to learn multiple diverse and complementary sparse sub-networks (tickets) with the guidance of uncertainty sets, which encourage tickets to gradually capture different data distributions from easy to hard and naturally complement each other. We theoretically justify the strong calibration performance by showing how the proposed robust training process guarantees to lower the confidence of incorrect predictions. Extensive experimental results on several benchmarks show that our proposed lottery ticket ensemble leads to a clear calibration improvement without sacrificing accuracy and burdening inference costs. Furthermore, experiments on OOD datasets demonstrate the robustness of our approach in the open-set environment.
 
-----
+        ----
 
-## [2736] A Recurrent Neural Circuit Mechanism of Temporal-scaling Equivariant Representation
+        ## [2736] A Recurrent Neural Circuit Mechanism of Temporal-scaling Equivariant Representation
 
-**Authors**: *Junfeng Zuo, Xiao Liu, Ying Nian Wu, Si Wu, Wenhao Zhang*
+        **Authors**: *Junfeng Zuo, Xiao Liu, Ying Nian Wu, Si Wu, Wenhao Zhang*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c5e44243e16c9d61d3897ba1095f5f6c-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c5e44243e16c9d61d3897ba1095f5f6c-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c5e44243e16c9d61d3897ba1095f5f6c-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c5e44243e16c9d61d3897ba1095f5f6c-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Time perception is critical in our daily life. An important feature of time perception is temporal scaling (TS): the ability to generate temporal sequences (e.g., motor actions) at different speeds. However, it is largely unknown about the math principle underlying temporal scaling in recurrent circuits in the brain. To shed insight, the present study investigates the temporal scaling from the Lie group point of view. We propose a canonical nonlinear recurrent circuit dynamics, modeled as a continuous attractor network, whose neuronal population responses embed a temporal sequence that is TS equivariant. Furthermore, we found the TS group operators can be explicitly represented by a control input fed into the recurrent circuit, where the input gain determines the temporal scaling factor (group parameter), and the spatial offset between the control input and network state emerges the generator.  The neuronal responses in the recurrent circuit are also consistent with experimental findings. We illustrated that the recurrent circuit can drive a feedforward circuit to generate complex temporal sequences with different time scales, even in the case of negative time scaling (''time reversal'').  Our work for the first time analytically links the abstract temporal scaling group and concrete neural circuit dynamics.
+        Time perception is critical in our daily life. An important feature of time perception is temporal scaling (TS): the ability to generate temporal sequences (e.g., motor actions) at different speeds. However, it is largely unknown about the math principle underlying temporal scaling in recurrent circuits in the brain. To shed insight, the present study investigates the temporal scaling from the Lie group point of view. We propose a canonical nonlinear recurrent circuit dynamics, modeled as a continuous attractor network, whose neuronal population responses embed a temporal sequence that is TS equivariant. Furthermore, we found the TS group operators can be explicitly represented by a control input fed into the recurrent circuit, where the input gain determines the temporal scaling factor (group parameter), and the spatial offset between the control input and network state emerges the generator.  The neuronal responses in the recurrent circuit are also consistent with experimental findings. We illustrated that the recurrent circuit can drive a feedforward circuit to generate complex temporal sequences with different time scales, even in the case of negative time scaling (''time reversal'').  Our work for the first time analytically links the abstract temporal scaling group and concrete neural circuit dynamics.
 
-----
+        ----
 
-## [2737] Sample Complexity of Goal-Conditioned Hierarchical Reinforcement Learning
+        ## [2737] Sample Complexity of Goal-Conditioned Hierarchical Reinforcement Learning
 
-**Authors**: *Arnaud Robert, Ciara Pike-Burke, Aldo A. Faisal*
+        **Authors**: *Arnaud Robert, Ciara Pike-Burke, Aldo A. Faisal*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c5ed2c8acda8c3716b1b6f9c6c713aaa-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c5ed2c8acda8c3716b1b6f9c6c713aaa-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c5ed2c8acda8c3716b1b6f9c6c713aaa-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c5ed2c8acda8c3716b1b6f9c6c713aaa-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Hierarchical Reinforcement Learning (HRL) algorithms can perform planning at multiple levels of abstraction. Empirical results have shown that state or temporal abstractions might significantly improve the sample efficiency of algorithms. Yet, we still do not have a complete understanding of the basis of those efficiency gains nor any theoretically grounded design rules. In this paper, we derive a lower bound on the sample complexity for the considered class of goal-conditioned HRL algorithms. The proposed lower bound empowers us to quantify the benefits of hierarchical decomposition and leads to the design of a simple Q-learning-type algorithm that leverages hierarchical decompositions. We empirically validate our theoretical findings by investigating the sample complexity of the proposed hierarchical algorithm on a spectrum of tasks (hierarchical $n$-rooms, Gymnasium's Taxi). The hierarchical $n$-rooms tasks were designed to allow us to dial their complexity over multiple orders of magnitude. Our theory and algorithmic findings provide a step towards answering the foundational question of quantifying the improvement hierarchical decomposition offers over monolithic solutions in reinforcement learning.
+        Hierarchical Reinforcement Learning (HRL) algorithms can perform planning at multiple levels of abstraction. Empirical results have shown that state or temporal abstractions might significantly improve the sample efficiency of algorithms. Yet, we still do not have a complete understanding of the basis of those efficiency gains nor any theoretically grounded design rules. In this paper, we derive a lower bound on the sample complexity for the considered class of goal-conditioned HRL algorithms. The proposed lower bound empowers us to quantify the benefits of hierarchical decomposition and leads to the design of a simple Q-learning-type algorithm that leverages hierarchical decompositions. We empirically validate our theoretical findings by investigating the sample complexity of the proposed hierarchical algorithm on a spectrum of tasks (hierarchical $n$-rooms, Gymnasium's Taxi). The hierarchical $n$-rooms tasks were designed to allow us to dial their complexity over multiple orders of magnitude. Our theory and algorithmic findings provide a step towards answering the foundational question of quantifying the improvement hierarchical decomposition offers over monolithic solutions in reinforcement learning.
 
-----
+        ----
 
-## [2738] MiliPoint: A Point Cloud Dataset for mmWave Radar
+        ## [2738] MiliPoint: A Point Cloud Dataset for mmWave Radar
 
-**Authors**: *Han Cui, Shu Zhong, Jiacheng Wu, Zichao Shen, Naim Dahnoun, Yiren Zhao*
+        **Authors**: *Han Cui, Shu Zhong, Jiacheng Wu, Zichao Shen, Naim Dahnoun, Yiren Zhao*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c60468eca9cd0b0083f0ff9d0aeb171a-Abstract-Datasets_and_Benchmarks.html](http://papers.nips.cc/paper_files/paper/2023/hash/c60468eca9cd0b0083f0ff9d0aeb171a-Abstract-Datasets_and_Benchmarks.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c60468eca9cd0b0083f0ff9d0aeb171a-Abstract-Datasets_and_Benchmarks.html](http://papers.nips.cc/paper_files/paper/2023/hash/c60468eca9cd0b0083f0ff9d0aeb171a-Abstract-Datasets_and_Benchmarks.html)
 
-**Abstract**:
+        **Abstract**:
 
-Millimetre-wave (mmWave) radar has emerged as an attractive and cost-effective alternative for human activity sensing compared to traditional camera-based systems. mmWave radars are also non-intrusive, providing better protection for user privacy. However, as a Radio Frequency based technology, mmWave radars rely on capturing reflected signals from objects, making them more prone to noise compared to cameras. This raises an intriguing question for the deep learning community: Can we develop more effective point set-based deep learning methods for such attractive sensors?   To answer this question, our work, termed MiliPoint, delves into this idea by providing a large-scale, open dataset for the community to explore how mmWave radars can be utilised for human activity recognition. Moreover, MiliPoint stands out as it is larger in size than existing datasets, has more diverse human actions represented, and encompasses all three key tasks in human activity recognition. We have also established a range of point-based deep neural networks such as DGCNN, PointNet++ and PointTransformer, on MiliPoint, which can serve to set the ground baseline for further development.
+        Millimetre-wave (mmWave) radar has emerged as an attractive and cost-effective alternative for human activity sensing compared to traditional camera-based systems. mmWave radars are also non-intrusive, providing better protection for user privacy. However, as a Radio Frequency based technology, mmWave radars rely on capturing reflected signals from objects, making them more prone to noise compared to cameras. This raises an intriguing question for the deep learning community: Can we develop more effective point set-based deep learning methods for such attractive sensors?   To answer this question, our work, termed MiliPoint, delves into this idea by providing a large-scale, open dataset for the community to explore how mmWave radars can be utilised for human activity recognition. Moreover, MiliPoint stands out as it is larger in size than existing datasets, has more diverse human actions represented, and encompasses all three key tasks in human activity recognition. We have also established a range of point-based deep neural networks such as DGCNN, PointNet++ and PointTransformer, on MiliPoint, which can serve to set the ground baseline for further development.
 
-----
+        ----
 
-## [2739] NAR-Former V2: Rethinking Transformer for Universal Neural Network Representation Learning
+        ## [2739] NAR-Former V2: Rethinking Transformer for Universal Neural Network Representation Learning
 
-**Authors**: *Yun Yi, Haokui Zhang, Rong Xiao, Nannan Wang, Xiaoyu Wang*
+        **Authors**: *Yun Yi, Haokui Zhang, Rong Xiao, Nannan Wang, Xiaoyu Wang*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c60bd92a01804b7df0540ed7ca2f7c05-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c60bd92a01804b7df0540ed7ca2f7c05-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c60bd92a01804b7df0540ed7ca2f7c05-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c60bd92a01804b7df0540ed7ca2f7c05-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-As more deep learning models are being applied in real-world applications, there is a growing need for modeling and learning the representations of neural networks themselves. An effective representation can be used to predict target attributes of networks without the need for actual training and deployment procedures, facilitating efficient network design and deployment. Recently, inspired by the success of Transformer, some Transformer-based representation learning frameworks have been proposed and achieved promising performance in handling cell-structured models. However, graph neural network (GNN) based approaches still dominate the field of learning representation for the entire network. In this paper, we revisit the Transformer and compare it with GNN to analyze their different architectural characteristics. We then propose a modified Transformer-based universal neural network representation learning model NAR-Former V2. It can learn efficient representations from both cell-structured networks and entire networks. Specifically, we first take the network as a graph and design a straightforward tokenizer to encode the network into a sequence. Then, we incorporate the inductive representation learning capability of GNN into Transformer, enabling Transformer to generalize better when encountering unseen architecture. Additionally, we introduce a series of simple yet effective modifications to enhance the ability of the Transformer in learning representation from graph structures. In encoding entire networks and then predicting the latency, our proposed method surpasses the GNN-based method NNLP by a significant margin on the NNLQP dataset. Furthermore, regarding accuracy prediction on the cell-structured NASBench101 and NASBench201 datasets, our method achieves highly comparable performance to other state-of-the-art methods. The code is available at https://github.com/yuny220/NAR-Former-V2.
+        As more deep learning models are being applied in real-world applications, there is a growing need for modeling and learning the representations of neural networks themselves. An effective representation can be used to predict target attributes of networks without the need for actual training and deployment procedures, facilitating efficient network design and deployment. Recently, inspired by the success of Transformer, some Transformer-based representation learning frameworks have been proposed and achieved promising performance in handling cell-structured models. However, graph neural network (GNN) based approaches still dominate the field of learning representation for the entire network. In this paper, we revisit the Transformer and compare it with GNN to analyze their different architectural characteristics. We then propose a modified Transformer-based universal neural network representation learning model NAR-Former V2. It can learn efficient representations from both cell-structured networks and entire networks. Specifically, we first take the network as a graph and design a straightforward tokenizer to encode the network into a sequence. Then, we incorporate the inductive representation learning capability of GNN into Transformer, enabling Transformer to generalize better when encountering unseen architecture. Additionally, we introduce a series of simple yet effective modifications to enhance the ability of the Transformer in learning representation from graph structures. In encoding entire networks and then predicting the latency, our proposed method surpasses the GNN-based method NNLP by a significant margin on the NNLQP dataset. Furthermore, regarding accuracy prediction on the cell-structured NASBench101 and NASBench201 datasets, our method achieves highly comparable performance to other state-of-the-art methods. The code is available at https://github.com/yuny220/NAR-Former-V2.
 
-----
+        ----
 
-## [2740] Sensitivity in Translation Averaging
+        ## [2740] Sensitivity in Translation Averaging
 
-**Authors**: *Lalit Manam, Venu Madhav Govindu*
+        **Authors**: *Lalit Manam, Venu Madhav Govindu*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c62fe1daeb10814d33e5a33ba466ecaf-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c62fe1daeb10814d33e5a33ba466ecaf-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c62fe1daeb10814d33e5a33ba466ecaf-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c62fe1daeb10814d33e5a33ba466ecaf-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-In 3D computer vision, translation averaging solves for absolute translations given a set of pairwise relative translation directions. While there has been much work on robustness to outliers and studies on the uniqueness of the solution, this paper deals with a distinctly different problem of sensitivity in translation averaging under uncertainty. We first analyze sensitivity in estimating scales corresponding to relative directions under small perturbations of the relative directions. Then, we formally define the conditioning of the translation averaging problem, which assesses the reliability of estimated translations based solely on the input directions. We give a sufficient criterion to ensure that the problem is well-conditioned. Subsequently, we provide an efficient algorithm to identify and remove combinations of directions which make the problem ill-conditioned while ensuring uniqueness of the solution. We demonstrate the utility of such analysis in global structure-from-motion pipelines for obtaining 3D reconstructions, which reveals the benefits of filtering the ill-conditioned set of directions in translation averaging in terms of reduced translation errors, a higher number of 3D points triangulated and faster convergence of bundle adjustment.
+        In 3D computer vision, translation averaging solves for absolute translations given a set of pairwise relative translation directions. While there has been much work on robustness to outliers and studies on the uniqueness of the solution, this paper deals with a distinctly different problem of sensitivity in translation averaging under uncertainty. We first analyze sensitivity in estimating scales corresponding to relative directions under small perturbations of the relative directions. Then, we formally define the conditioning of the translation averaging problem, which assesses the reliability of estimated translations based solely on the input directions. We give a sufficient criterion to ensure that the problem is well-conditioned. Subsequently, we provide an efficient algorithm to identify and remove combinations of directions which make the problem ill-conditioned while ensuring uniqueness of the solution. We demonstrate the utility of such analysis in global structure-from-motion pipelines for obtaining 3D reconstructions, which reveals the benefits of filtering the ill-conditioned set of directions in translation averaging in terms of reduced translation errors, a higher number of 3D points triangulated and faster convergence of bundle adjustment.
 
-----
+        ----
 
-## [2741] Data-Dependent Bounds for Online Portfolio Selection Without Lipschitzness and Smoothness
+        ## [2741] Data-Dependent Bounds for Online Portfolio Selection Without Lipschitzness and Smoothness
 
-**Authors**: *Chung-En Tsai, Ying-Ting Lin, Yen-Huan Li*
+        **Authors**: *Chung-En Tsai, Ying-Ting Lin, Yen-Huan Li*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c6483c8a68083af3383f91ee0dc6db95-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c6483c8a68083af3383f91ee0dc6db95-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c6483c8a68083af3383f91ee0dc6db95-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c6483c8a68083af3383f91ee0dc6db95-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-This work introduces the first small-loss and gradual-variation regret bounds for online portfolio selection, marking the first instances of data-dependent bounds for online convex optimization with non-Lipschitz, non-smooth losses. The algorithms we propose exhibit sublinear regret rates in the worst cases and achieve logarithmic regrets when the data is "easy," with per-round time almost linear in the number of investment alternatives. The regret bounds are derived using novel smoothness characterizations of the logarithmic loss, a local norm-based analysis of following the regularized leader (FTRL) with self-concordant regularizers, which are not necessarily barriers, and an implicit variant of optimistic FTRL with the log-barrier.
+        This work introduces the first small-loss and gradual-variation regret bounds for online portfolio selection, marking the first instances of data-dependent bounds for online convex optimization with non-Lipschitz, non-smooth losses. The algorithms we propose exhibit sublinear regret rates in the worst cases and achieve logarithmic regrets when the data is "easy," with per-round time almost linear in the number of investment alternatives. The regret bounds are derived using novel smoothness characterizations of the logarithmic loss, a local norm-based analysis of following the regularized leader (FTRL) with self-concordant regularizers, which are not necessarily barriers, and an implicit variant of optimistic FTRL with the log-barrier.
 
-----
+        ----
 
-## [2742] Outlier-Robust Wasserstein DRO
+        ## [2742] Outlier-Robust Wasserstein DRO
 
-**Authors**: *Sloan Nietert, Ziv Goldfeld, Soroosh Shafiee*
+        **Authors**: *Sloan Nietert, Ziv Goldfeld, Soroosh Shafiee*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c67b138497305835e76fdedd48dd4e59-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c67b138497305835e76fdedd48dd4e59-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c67b138497305835e76fdedd48dd4e59-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c67b138497305835e76fdedd48dd4e59-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Distributionally robust optimization (DRO) is an effective approach for data-driven decision-making in the presence of uncertainty. Geometric uncertainty due to~sampling or localized perturbations of data points is captured by Wasserstein DRO (WDRO), which seeks to learn a model that performs uniformly well over a Wasserstein ball centered around the observed data distribution. However, WDRO fails to account for non-geometric perturbations such as adversarial outliers, which can greatly distort the Wasserstein distance measurement and impede the learned model. We address this gap by proposing a novel outlier-robust WDRO framework for decision-making under both geometric (Wasserstein) perturbations and non-geometric (total variation (TV)) contamination that allows an $\varepsilon$-fraction of data to be arbitrarily corrupted. We design an uncertainty set using a certain robust Wasserstein ball that accounts for both perturbation types and derive minimax optimal excess risk bounds for this procedure that explicitly capture the Wasserstein and TV risks. We prove a strong duality result that enables tractable convex reformulations and efficient computation of our outlier-robust WDRO problem. When the loss function depends only on low-dimensional features of the data, we eliminate certain dimension dependencies from the risk bounds that are unavoidable in the general setting. Finally, we present experiments validating our theory on standard regression and classification tasks.
+        Distributionally robust optimization (DRO) is an effective approach for data-driven decision-making in the presence of uncertainty. Geometric uncertainty due to~sampling or localized perturbations of data points is captured by Wasserstein DRO (WDRO), which seeks to learn a model that performs uniformly well over a Wasserstein ball centered around the observed data distribution. However, WDRO fails to account for non-geometric perturbations such as adversarial outliers, which can greatly distort the Wasserstein distance measurement and impede the learned model. We address this gap by proposing a novel outlier-robust WDRO framework for decision-making under both geometric (Wasserstein) perturbations and non-geometric (total variation (TV)) contamination that allows an $\varepsilon$-fraction of data to be arbitrarily corrupted. We design an uncertainty set using a certain robust Wasserstein ball that accounts for both perturbation types and derive minimax optimal excess risk bounds for this procedure that explicitly capture the Wasserstein and TV risks. We prove a strong duality result that enables tractable convex reformulations and efficient computation of our outlier-robust WDRO problem. When the loss function depends only on low-dimensional features of the data, we eliminate certain dimension dependencies from the risk bounds that are unavoidable in the general setting. Finally, we present experiments validating our theory on standard regression and classification tasks.
 
-----
+        ----
 
-## [2743] Certified Minimax Unlearning with Generalization Rates and Deletion Capacity
+        ## [2743] Certified Minimax Unlearning with Generalization Rates and Deletion Capacity
 
-**Authors**: *Jiaqi Liu, Jian Lou, Zhan Qin, Kui Ren*
+        **Authors**: *Jiaqi Liu, Jian Lou, Zhan Qin, Kui Ren*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c69465280855cfe25d566e359da140c1-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c69465280855cfe25d566e359da140c1-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c69465280855cfe25d566e359da140c1-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c69465280855cfe25d566e359da140c1-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-We study the problem of $(\epsilon,\delta)$-certified machine unlearning for minimax models. Most of the existing works focus on unlearning from standard statistical learning models that have a single variable and their unlearning steps hinge on the direct Hessian-based conventional Newton update. We develop a new $(\epsilon,\delta)$-certified machine unlearning algorithm for minimax models. It proposes a minimax unlearning step consisting of a total Hessian-based complete Newton update and the Gaussian mechanism borrowed from differential privacy. To obtain the unlearning certification, our method injects calibrated Gaussian noises by carefully analyzing the ''sensitivity'' of the minimax unlearning step (i.e., the closeness between the minimax unlearning variables and the retraining-from-scratch variables). We derive the generalization rates in terms of population strong and weak primal-dual risk for three different cases of loss functions, i.e., (strongly-)convex-(strongly-)concave losses. We also provide the deletion capacity to guarantee that a desired population risk can be maintained as long as the number of deleted samples does not exceed the derived amount. With training samples $n$ and model dimension $d$, it yields the order $\mathcal O(n/d^{1/4})$, which shows a strict gap over the baseline method of differentially private minimax learning that has $\mathcal O(n/d^{1/2})$. In addition, our rates of generalization and deletion capacity match the state-of-the-art rates derived previously for standard statistical learning models.
+        We study the problem of $(\epsilon,\delta)$-certified machine unlearning for minimax models. Most of the existing works focus on unlearning from standard statistical learning models that have a single variable and their unlearning steps hinge on the direct Hessian-based conventional Newton update. We develop a new $(\epsilon,\delta)$-certified machine unlearning algorithm for minimax models. It proposes a minimax unlearning step consisting of a total Hessian-based complete Newton update and the Gaussian mechanism borrowed from differential privacy. To obtain the unlearning certification, our method injects calibrated Gaussian noises by carefully analyzing the ''sensitivity'' of the minimax unlearning step (i.e., the closeness between the minimax unlearning variables and the retraining-from-scratch variables). We derive the generalization rates in terms of population strong and weak primal-dual risk for three different cases of loss functions, i.e., (strongly-)convex-(strongly-)concave losses. We also provide the deletion capacity to guarantee that a desired population risk can be maintained as long as the number of deleted samples does not exceed the derived amount. With training samples $n$ and model dimension $d$, it yields the order $\mathcal O(n/d^{1/4})$, which shows a strict gap over the baseline method of differentially private minimax learning that has $\mathcal O(n/d^{1/2})$. In addition, our rates of generalization and deletion capacity match the state-of-the-art rates derived previously for standard statistical learning models.
 
-----
+        ----
 
-## [2744] An Empirical Study Towards Prompt-Tuning for Graph Contrastive Pre-Training in Recommendations
+        ## [2744] An Empirical Study Towards Prompt-Tuning for Graph Contrastive Pre-Training in Recommendations
 
-**Authors**: *Haoran Yang, Xiangyu Zhao, Yicong Li, Hongxu Chen, Guandong Xu*
+        **Authors**: *Haoran Yang, Xiangyu Zhao, Yicong Li, Hongxu Chen, Guandong Xu*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c6af791af7ef0f3e02bccef011211ca5-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c6af791af7ef0f3e02bccef011211ca5-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c6af791af7ef0f3e02bccef011211ca5-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c6af791af7ef0f3e02bccef011211ca5-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Graph contrastive learning (GCL) has emerged as a potent technology for numerous graph learning tasks. It has been successfully applied to real-world recommender systems, where the contrastive loss and the downstream recommendation objectives are always combined to form the overall objective function. Such a strategy is inconsistent with the original GCL paradigm, where graph embeddings are pre-trained without involving downstream training objectives. In this paper, we innovatively propose a prompt-enhanced framework for GCL-based recommender systems, namely CPTPP, which can fully leverage the advantages of the original GCL protocol through prompt tuning. Specifically, we first summarise user profiles in graph recommender systems to automatically generate personalized user prompts. These prompts will then be combined with pre-trained user embeddings to conduct prompt-tuning in downstream tasks, thereby narrowing the distinct targets between pre-training and downstream tasks. Extensive experiments on three benchmark datasets validate the effectiveness of CPTPP against state-of-the-art baselines. A further visualization experiment demonstrates that user embeddings generated by CPTPP have a more uniform distribution, indicating a better capacity to model the diversity of user preferences.The implementation code is available online to ease reproducibility: https://anonymous.4open.science/r/CPTPP-F8F4
+        Graph contrastive learning (GCL) has emerged as a potent technology for numerous graph learning tasks. It has been successfully applied to real-world recommender systems, where the contrastive loss and the downstream recommendation objectives are always combined to form the overall objective function. Such a strategy is inconsistent with the original GCL paradigm, where graph embeddings are pre-trained without involving downstream training objectives. In this paper, we innovatively propose a prompt-enhanced framework for GCL-based recommender systems, namely CPTPP, which can fully leverage the advantages of the original GCL protocol through prompt tuning. Specifically, we first summarise user profiles in graph recommender systems to automatically generate personalized user prompts. These prompts will then be combined with pre-trained user embeddings to conduct prompt-tuning in downstream tasks, thereby narrowing the distinct targets between pre-training and downstream tasks. Extensive experiments on three benchmark datasets validate the effectiveness of CPTPP against state-of-the-art baselines. A further visualization experiment demonstrates that user embeddings generated by CPTPP have a more uniform distribution, indicating a better capacity to model the diversity of user preferences.The implementation code is available online to ease reproducibility: https://anonymous.4open.science/r/CPTPP-F8F4
 
-----
+        ----
 
-## [2745] Can Language Models Teach? Teacher Explanations Improve Student Performance via Personalization
+        ## [2745] Can Language Models Teach? Teacher Explanations Improve Student Performance via Personalization
 
-**Authors**: *Swarnadeep Saha, Peter Hase, Mohit Bansal*
+        **Authors**: *Swarnadeep Saha, Peter Hase, Mohit Bansal*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c6afe9a5d1e1068796d32613ddca1ab7-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c6afe9a5d1e1068796d32613ddca1ab7-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c6afe9a5d1e1068796d32613ddca1ab7-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c6afe9a5d1e1068796d32613ddca1ab7-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-A hallmark property of explainable AI models is the ability to teach other agents, communicating knowledge of how to perform a task. While Large Language Models (LLMs) perform complex reasoning by generating explanations for their predictions, it is unclear whether they also make good teachers for weaker agents. To address this, we consider a student-teacher framework between two LLM agents and study if, when, and how the teacher should intervene with natural language explanations to improve the student’s performance. Since communication is expensive, we define a budget such that the teacher only communicates explanations for a fraction of the data, after which the student should perform well on its own. We decompose the teaching problem along four axes: (1) if teacher’s test time in- tervention improve student predictions, (2) when it is worth explaining a data point, (3) how the teacher should personalize explanations to better teach the student, and (4) if teacher explanations also improve student performance on future unexplained data. We first show that teacher LLMs can indeed intervene on student reasoning to improve their performance. Next, inspired by the Theory of Mind abilities of effective teachers, we propose building two few-shot mental models of the student. The first model defines an Intervention Function that simulates the utility of an intervention, allowing the teacher to intervene when this utility is the highest and improving student performance at lower budgets. The second model enables the teacher to personalize explanations for a particular student and outperform unpersonalized teachers. We also demonstrate that in multi-turn interactions, teacher explanations generalize and learning from explained data improves student performance on future unexplained data. Finally, we also verify that misaligned teachers can lower student performance to random chance by intentionally misleading them.
+        A hallmark property of explainable AI models is the ability to teach other agents, communicating knowledge of how to perform a task. While Large Language Models (LLMs) perform complex reasoning by generating explanations for their predictions, it is unclear whether they also make good teachers for weaker agents. To address this, we consider a student-teacher framework between two LLM agents and study if, when, and how the teacher should intervene with natural language explanations to improve the student’s performance. Since communication is expensive, we define a budget such that the teacher only communicates explanations for a fraction of the data, after which the student should perform well on its own. We decompose the teaching problem along four axes: (1) if teacher’s test time in- tervention improve student predictions, (2) when it is worth explaining a data point, (3) how the teacher should personalize explanations to better teach the student, and (4) if teacher explanations also improve student performance on future unexplained data. We first show that teacher LLMs can indeed intervene on student reasoning to improve their performance. Next, inspired by the Theory of Mind abilities of effective teachers, we propose building two few-shot mental models of the student. The first model defines an Intervention Function that simulates the utility of an intervention, allowing the teacher to intervene when this utility is the highest and improving student performance at lower budgets. The second model enables the teacher to personalize explanations for a particular student and outperform unpersonalized teachers. We also demonstrate that in multi-turn interactions, teacher explanations generalize and learning from explained data improves student performance on future unexplained data. Finally, we also verify that misaligned teachers can lower student performance to random chance by intentionally misleading them.
 
-----
+        ----
 
-## [2746] Finding Local Minima Efficiently in Decentralized Optimization
+        ## [2746] Finding Local Minima Efficiently in Decentralized Optimization
 
-**Authors**: *Wenhan Xian, Heng Huang*
+        **Authors**: *Wenhan Xian, Heng Huang*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c6b84d35d783cf289bb0cd7c7b897ea6-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c6b84d35d783cf289bb0cd7c7b897ea6-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c6b84d35d783cf289bb0cd7c7b897ea6-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c6b84d35d783cf289bb0cd7c7b897ea6-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-In this paper we study the second-order optimality of decentralized stochastic algorithm that escapes saddle point efficiently for nonconvex optimization problems. We propose a new pure gradient-based decentralized stochastic algorithm PEDESTAL with a novel convergence analysis framework to address the technical challenges unique to the decentralized stochastic setting. Our method is the first decentralized stochastic algorithm to achieve second-order optimality with non-asymptotic analysis. We provide theoretical guarantees with the gradient complexity of $\tilde{O} (\epsilon^{-3})$ to find $O(\epsilon, \sqrt{\epsilon})$-second-order stationary point, which matches state-of-the-art results of centralized counterparts or decentralized methods to find first-order stationary point. We also conduct two decentralized tasks in our experiments, a matrix sensing task with synthetic data and a matrix factorization task with a real-world dataset to validate the performance of our method.
+        In this paper we study the second-order optimality of decentralized stochastic algorithm that escapes saddle point efficiently for nonconvex optimization problems. We propose a new pure gradient-based decentralized stochastic algorithm PEDESTAL with a novel convergence analysis framework to address the technical challenges unique to the decentralized stochastic setting. Our method is the first decentralized stochastic algorithm to achieve second-order optimality with non-asymptotic analysis. We provide theoretical guarantees with the gradient complexity of $\tilde{O} (\epsilon^{-3})$ to find $O(\epsilon, \sqrt{\epsilon})$-second-order stationary point, which matches state-of-the-art results of centralized counterparts or decentralized methods to find first-order stationary point. We also conduct two decentralized tasks in our experiments, a matrix sensing task with synthetic data and a matrix factorization task with a real-world dataset to validate the performance of our method.
 
-----
+        ----
 
-## [2747] Clifford Group Equivariant Neural Networks
+        ## [2747] Clifford Group Equivariant Neural Networks
 
-**Authors**: *David Ruhe, Johannes Brandstetter, Patrick Forré*
+        **Authors**: *David Ruhe, Johannes Brandstetter, Patrick Forré*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c6e0125e14ea3d1a3de3c33fd2d49fc4-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c6e0125e14ea3d1a3de3c33fd2d49fc4-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c6e0125e14ea3d1a3de3c33fd2d49fc4-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c6e0125e14ea3d1a3de3c33fd2d49fc4-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-We introduce Clifford Group Equivariant Neural Networks: a novel approach for constructing $\mathrm{O}(n)$- and $\mathrm{E}(n)$-equivariant models. We identify and study the *Clifford group*: a subgroup inside the Clifford algebra tailored to achieve several favorable properties. Primarily, the group's action forms an orthogonal automorphism that extends beyond the typical vector space to the entire Clifford algebra while respecting the multivector grading. This leads to several non-equivalent subrepresentations corresponding to the multivector decomposition. Furthermore, we prove that the action respects not just the vector space structure of the Clifford algebra but also its multiplicative structure, i.e., the geometric product. These findings imply that every polynomial in multivectors, including their grade projections, constitutes an equivariant map with respect to the Clifford group, allowing us to parameterize equivariant neural network layers. An advantage worth mentioning is that we obtain expressive layers that can elegantly generalize to inner-product spaces of any dimension. We demonstrate, notably from a single core implementation, state-of-the-art performance on several distinct tasks, including a three-dimensional $n$-body experiment, a four-dimensional Lorentz-equivariant high-energy physics experiment, and a five-dimensional convex hull experiment.
+        We introduce Clifford Group Equivariant Neural Networks: a novel approach for constructing $\mathrm{O}(n)$- and $\mathrm{E}(n)$-equivariant models. We identify and study the *Clifford group*: a subgroup inside the Clifford algebra tailored to achieve several favorable properties. Primarily, the group's action forms an orthogonal automorphism that extends beyond the typical vector space to the entire Clifford algebra while respecting the multivector grading. This leads to several non-equivalent subrepresentations corresponding to the multivector decomposition. Furthermore, we prove that the action respects not just the vector space structure of the Clifford algebra but also its multiplicative structure, i.e., the geometric product. These findings imply that every polynomial in multivectors, including their grade projections, constitutes an equivariant map with respect to the Clifford group, allowing us to parameterize equivariant neural network layers. An advantage worth mentioning is that we obtain expressive layers that can elegantly generalize to inner-product spaces of any dimension. We demonstrate, notably from a single core implementation, state-of-the-art performance on several distinct tasks, including a three-dimensional $n$-body experiment, a four-dimensional Lorentz-equivariant high-energy physics experiment, and a five-dimensional convex hull experiment.
 
-----
+        ----
 
-## [2748] C-Eval: A Multi-Level Multi-Discipline Chinese Evaluation Suite for Foundation Models
+        ## [2748] C-Eval: A Multi-Level Multi-Discipline Chinese Evaluation Suite for Foundation Models
 
-**Authors**: *Yuzhen Huang, Yuzhuo Bai, Zhihao Zhu, Junlei Zhang, Jinghan Zhang, Tangjun Su, Junteng Liu, Chuancheng Lv, Yikai Zhang, Jiayi Lei, Yao Fu, Maosong Sun, Junxian He*
+        **Authors**: *Yuzhen Huang, Yuzhuo Bai, Zhihao Zhu, Junlei Zhang, Jinghan Zhang, Tangjun Su, Junteng Liu, Chuancheng Lv, Yikai Zhang, Jiayi Lei, Yao Fu, Maosong Sun, Junxian He*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c6ec1844bec96d6d32ae95ae694e23d8-Abstract-Datasets_and_Benchmarks.html](http://papers.nips.cc/paper_files/paper/2023/hash/c6ec1844bec96d6d32ae95ae694e23d8-Abstract-Datasets_and_Benchmarks.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c6ec1844bec96d6d32ae95ae694e23d8-Abstract-Datasets_and_Benchmarks.html](http://papers.nips.cc/paper_files/paper/2023/hash/c6ec1844bec96d6d32ae95ae694e23d8-Abstract-Datasets_and_Benchmarks.html)
 
-**Abstract**:
+        **Abstract**:
 
-New NLP benchmarks are urgently needed to align with the rapid development of large language models (LLMs). We present C-Eval, the first comprehensive Chinese evaluation suite designed to assess advanced knowledge and reasoning abilities of foundation models in a Chinese context. C-Eval comprises multiple-choice questions across four difficulty levels: middle school, high school, college, and professional. The questions span 52 diverse disciplines, ranging from humanities to science and engineering. C-Eval is accompanied by C-Eval Hard, a subset of very challenging subjects in C-Eval that requires advanced reasoning abilities to solve. We conduct a comprehensive evaluation of the most advanced LLMs on C-Eval, including both English- and Chinese-oriented models. Results indicate that only GPT-4 could achieve an average accuracy of over 60%, suggesting that there is still significant room for improvement for current LLMs. We anticipate C-Eval will help analyze important strengths and shortcomings of foundation models, and foster their development and growth for Chinese users.
+        New NLP benchmarks are urgently needed to align with the rapid development of large language models (LLMs). We present C-Eval, the first comprehensive Chinese evaluation suite designed to assess advanced knowledge and reasoning abilities of foundation models in a Chinese context. C-Eval comprises multiple-choice questions across four difficulty levels: middle school, high school, college, and professional. The questions span 52 diverse disciplines, ranging from humanities to science and engineering. C-Eval is accompanied by C-Eval Hard, a subset of very challenging subjects in C-Eval that requires advanced reasoning abilities to solve. We conduct a comprehensive evaluation of the most advanced LLMs on C-Eval, including both English- and Chinese-oriented models. Results indicate that only GPT-4 could achieve an average accuracy of over 60%, suggesting that there is still significant room for improvement for current LLMs. We anticipate C-Eval will help analyze important strengths and shortcomings of foundation models, and foster their development and growth for Chinese users.
 
-----
+        ----
 
-## [2749] NU-MCC: Multiview Compressive Coding with Neighborhood Decoder and Repulsive UDF
+        ## [2749] NU-MCC: Multiview Compressive Coding with Neighborhood Decoder and Repulsive UDF
 
-**Authors**: *Stefan Lionar, Xiangyu Xu, Min Lin, Gim Hee Lee*
+        **Authors**: *Stefan Lionar, Xiangyu Xu, Min Lin, Gim Hee Lee*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c6f1e44be16e87887b7b894d59ba7f29-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c6f1e44be16e87887b7b894d59ba7f29-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c6f1e44be16e87887b7b894d59ba7f29-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c6f1e44be16e87887b7b894d59ba7f29-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Remarkable progress has been made in 3D reconstruction from single-view RGB-D inputs. MCC is the current state-of-the-art method in this field, which achieves unprecedented success by combining vision Transformers with large-scale training. However, we identified two key limitations of MCC: 1) The Transformer decoder is inefficient in handling large number of query points; 2) The 3D representation struggles to recover high-fidelity details. In this paper, we propose a new approach called NU-MCC that addresses these limitations. NU-MCC includes two key innovations: a Neighborhood decoder and a Repulsive Unsigned Distance Function (Repulsive UDF). First, our Neighborhood decoder introduces center points as an efficient proxy of input visual features, allowing each query point to only attend to a small neighborhood. This design not only results in much faster inference speed but also enables the exploitation of finer-scale visual features for improved recovery of 3D textures. Second, our Repulsive UDF is a novel alternative to the occupancy field used in MCC, significantly improving the quality of 3D object reconstruction. Compared to standard UDFs that suffer from holes in results, our proposed Repulsive UDF can achieve more complete surface reconstruction. Experimental results demonstrate that NU-MCC is able to learn a strong 3D representation, significantly advancing the state of the art in single-view 3D reconstruction. Particularly, it outperforms MCC by 9.7% in terms of the F1-score on the CO3D-v2 dataset with more than 5x faster running speed.
+        Remarkable progress has been made in 3D reconstruction from single-view RGB-D inputs. MCC is the current state-of-the-art method in this field, which achieves unprecedented success by combining vision Transformers with large-scale training. However, we identified two key limitations of MCC: 1) The Transformer decoder is inefficient in handling large number of query points; 2) The 3D representation struggles to recover high-fidelity details. In this paper, we propose a new approach called NU-MCC that addresses these limitations. NU-MCC includes two key innovations: a Neighborhood decoder and a Repulsive Unsigned Distance Function (Repulsive UDF). First, our Neighborhood decoder introduces center points as an efficient proxy of input visual features, allowing each query point to only attend to a small neighborhood. This design not only results in much faster inference speed but also enables the exploitation of finer-scale visual features for improved recovery of 3D textures. Second, our Repulsive UDF is a novel alternative to the occupancy field used in MCC, significantly improving the quality of 3D object reconstruction. Compared to standard UDFs that suffer from holes in results, our proposed Repulsive UDF can achieve more complete surface reconstruction. Experimental results demonstrate that NU-MCC is able to learn a strong 3D representation, significantly advancing the state of the art in single-view 3D reconstruction. Particularly, it outperforms MCC by 9.7% in terms of the F1-score on the CO3D-v2 dataset with more than 5x faster running speed.
 
-----
+        ----
 
-## [2750] Convergence analysis of ODE models for accelerated first-order methods via positive semidefinite kernels
+        ## [2750] Convergence analysis of ODE models for accelerated first-order methods via positive semidefinite kernels
 
-**Authors**: *Jungbin Kim, Insoon Yang*
+        **Authors**: *Jungbin Kim, Insoon Yang*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c70741145c2c4f1d0c2e91b98729a49a-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c70741145c2c4f1d0c2e91b98729a49a-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c70741145c2c4f1d0c2e91b98729a49a-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c70741145c2c4f1d0c2e91b98729a49a-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-We propose a novel methodology that systematically analyzes ordinary differential equation (ODE) models for first-order optimization methods by converting the task of proving convergence rates into verifying the positive semidefiniteness of specific Hilbert-Schmidt integral operators. Our approach is based on the performance estimation problems (PEP) introduced by Drori and Teboulle. Unlike previous works on PEP, which rely on finite-dimensional linear algebra, we use tools from functional analysis. Using the proposed method, we establish convergence rates of various accelerated gradient flow models, some of which are new. As an immediate consequence of our framework, we show a correspondence between minimizing function values and minimizing gradient norms.
+        We propose a novel methodology that systematically analyzes ordinary differential equation (ODE) models for first-order optimization methods by converting the task of proving convergence rates into verifying the positive semidefiniteness of specific Hilbert-Schmidt integral operators. Our approach is based on the performance estimation problems (PEP) introduced by Drori and Teboulle. Unlike previous works on PEP, which rely on finite-dimensional linear algebra, we use tools from functional analysis. Using the proposed method, we establish convergence rates of various accelerated gradient flow models, some of which are new. As an immediate consequence of our framework, we show a correspondence between minimizing function values and minimizing gradient norms.
 
-----
+        ----
 
-## [2751] Curvature Filtrations for Graph Generative Model Evaluation
+        ## [2751] Curvature Filtrations for Graph Generative Model Evaluation
 
-**Authors**: *Joshua Southern, Jeremy Wayland, Michael Bronstein, Bastian Rieck*
+        **Authors**: *Joshua Southern, Jeremy Wayland, Michael Bronstein, Bastian Rieck*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c710d6b4507e70c6332bee871b8d1ca5-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c710d6b4507e70c6332bee871b8d1ca5-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c710d6b4507e70c6332bee871b8d1ca5-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c710d6b4507e70c6332bee871b8d1ca5-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Graph generative model evaluation necessitates understanding differences between graphs on the distributional level. This entails being able to harness salient attributes of graphs in an efficient manner. Curvature constitutes one such property of graphs, and has recently started to prove useful in characterising graphs. Its expressive properties, stability, and practical utility in model evaluation remain largely unexplored, however. We combine graph curvature descriptors with emerging methods from topological data analysis to obtain robust, expressive descriptors for evaluating graph generative models.
+        Graph generative model evaluation necessitates understanding differences between graphs on the distributional level. This entails being able to harness salient attributes of graphs in an efficient manner. Curvature constitutes one such property of graphs, and has recently started to prove useful in characterising graphs. Its expressive properties, stability, and practical utility in model evaluation remain largely unexplored, however. We combine graph curvature descriptors with emerging methods from topological data analysis to obtain robust, expressive descriptors for evaluating graph generative models.
 
-----
+        ----
 
-## [2752] DiffUTE: Universal Text Editing Diffusion Model
+        ## [2752] DiffUTE: Universal Text Editing Diffusion Model
 
-**Authors**: *Haoxing Chen, Zhuoer Xu, Zhangxuan Gu, Jun Lan, Xing Zheng, Yaohui Li, Changhua Meng, Huijia Zhu, Weiqiang Wang*
+        **Authors**: *Haoxing Chen, Zhuoer Xu, Zhangxuan Gu, Jun Lan, Xing Zheng, Yaohui Li, Changhua Meng, Huijia Zhu, Weiqiang Wang*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c7138635035501eb71b0adf6ddc319d6-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c7138635035501eb71b0adf6ddc319d6-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c7138635035501eb71b0adf6ddc319d6-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c7138635035501eb71b0adf6ddc319d6-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Diffusion model based language-guided image editing has achieved great success recently. However, existing state-of-the-art diffusion models struggle with rendering correct text and text style during generation. To tackle this problem, we propose a universal self-supervised text editing diffusion model (DiffUTE), which aims to replace or modify words in the source image with another one while maintaining its realistic appearance. Specifically, we build our model on a diffusion model and carefully modify the network structure to enable the model for drawing multilingual characters with the help of glyph and position information. Moreover, we design a self-supervised learning framework to leverage large amounts of web data to improve the representation ability of the model. Experimental results show that our method achieves an impressive performance and enables controllable editing on in-the-wild images with high fidelity. Our code will be avaliable in \url{https://github.com/chenhaoxing/DiffUTE}.
+        Diffusion model based language-guided image editing has achieved great success recently. However, existing state-of-the-art diffusion models struggle with rendering correct text and text style during generation. To tackle this problem, we propose a universal self-supervised text editing diffusion model (DiffUTE), which aims to replace or modify words in the source image with another one while maintaining its realistic appearance. Specifically, we build our model on a diffusion model and carefully modify the network structure to enable the model for drawing multilingual characters with the help of glyph and position information. Moreover, we design a self-supervised learning framework to leverage large amounts of web data to improve the representation ability of the model. Experimental results show that our method achieves an impressive performance and enables controllable editing on in-the-wild images with high fidelity. Our code will be avaliable in \url{https://github.com/chenhaoxing/DiffUTE}.
 
-----
+        ----
 
-## [2753] Sampling weights of deep neural networks
+        ## [2753] Sampling weights of deep neural networks
 
-**Authors**: *Erik Lien Bolager, Iryna Burak, Chinmay Datar, Qing Sun, Felix Dietrich*
+        **Authors**: *Erik Lien Bolager, Iryna Burak, Chinmay Datar, Qing Sun, Felix Dietrich*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c7201deff8d507a8fe2e86d34094e154-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c7201deff8d507a8fe2e86d34094e154-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c7201deff8d507a8fe2e86d34094e154-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c7201deff8d507a8fe2e86d34094e154-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-We introduce a probability distribution, combined with an efficient sampling algorithm, for weights and biases of fully-connected neural networks. In a supervised learning context, no iterative optimization or gradient computations of internal network parameters are needed to obtain a trained network. The sampling is based on the idea of random feature models. However, instead of a data-agnostic distribution, e.g., a normal distribution, we use both the input and the output training data to sample shallow and deep networks. We prove that sampled networks are universal approximators. For Barron functions, we show that the $L^2$-approximation error of sampled shallow networks decreases with the square root of the number of neurons. Our sampling scheme is invariant to rigid body transformations and scaling of the input data, which implies many popular pre-processing techniques are not required. In numerical experiments, we demonstrate that sampled networks achieve accuracy comparable to iteratively trained ones, but can be constructed orders of magnitude faster. Our test cases involve a classification benchmark from OpenML, sampling of neural operators to represent maps in function spaces, and transfer learning using well-known architectures.
+        We introduce a probability distribution, combined with an efficient sampling algorithm, for weights and biases of fully-connected neural networks. In a supervised learning context, no iterative optimization or gradient computations of internal network parameters are needed to obtain a trained network. The sampling is based on the idea of random feature models. However, instead of a data-agnostic distribution, e.g., a normal distribution, we use both the input and the output training data to sample shallow and deep networks. We prove that sampled networks are universal approximators. For Barron functions, we show that the $L^2$-approximation error of sampled shallow networks decreases with the square root of the number of neurons. Our sampling scheme is invariant to rigid body transformations and scaling of the input data, which implies many popular pre-processing techniques are not required. In numerical experiments, we demonstrate that sampled networks achieve accuracy comparable to iteratively trained ones, but can be constructed orders of magnitude faster. Our test cases involve a classification benchmark from OpenML, sampling of neural operators to represent maps in function spaces, and transfer learning using well-known architectures.
 
-----
+        ----
 
-## [2754] Fast Attention Requires Bounded Entries
+        ## [2754] Fast Attention Requires Bounded Entries
 
-**Authors**: *Josh Alman, Zhao Song*
+        **Authors**: *Josh Alman, Zhao Song*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c72861451d6fa9dfa64831102b9bb71a-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c72861451d6fa9dfa64831102b9bb71a-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c72861451d6fa9dfa64831102b9bb71a-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c72861451d6fa9dfa64831102b9bb71a-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-In modern machine learning, inner product attention computation is a fundamental task for training large language models such as Transformer, GPT-1, BERT, GPT-2, GPT-3 and ChatGPT. Formally, in this problem, one is given as input three matrices $Q, K, V \in [-B,B]^{n \times d}$, and the goal is to construct the matrix $\mathrm{Att}(Q,K,V) := \mathrm{diag}(A {\bf 1}_n)^{-1} A V \in \mathbb{R}^{n \times d}$, where $A = \exp(QK^\top/d)$ is the `attention matrix', and $\exp$ is applied entry-wise. Straightforward methods for this problem explicitly compute the $n \times n$ attention matrix $A$, and hence require time $\Omega(n^2)$ even when $d = n^{o(1)}$ is small. In this paper, we investigate whether faster algorithms are possible by \emph{implicitly} making use of the matrix $A$. We present two results, showing that there is a sharp transition at $B = \Theta(\sqrt{\log n})$.$\bullet$ If $d = O(\log n)$ and $B = o(\sqrt{\log n})$, there is an $n^{1+o(1)}$ time algorithm to approximate $\mathrm{Att}(Q,K,V)$ up to $1/\mathrm{poly}(n)$ additive error.$\bullet$ If $d = O(\log n)$ and $B = \Theta (\sqrt{\log n})$, assuming the Strong Exponential Time Hypothesis from fine-grained complexity theory, it is impossible to approximate $\mathrm{Att}(Q,K,V)$ up to $1/\mathrm{poly}(n)$ additive error in truly subquadratic time $n^{2 - \Omega(1)}$.This gives a theoretical explanation for the phenomenon observed in practice that attention computation is much more efficient when the input matrices have smaller entries.
+        In modern machine learning, inner product attention computation is a fundamental task for training large language models such as Transformer, GPT-1, BERT, GPT-2, GPT-3 and ChatGPT. Formally, in this problem, one is given as input three matrices $Q, K, V \in [-B,B]^{n \times d}$, and the goal is to construct the matrix $\mathrm{Att}(Q,K,V) := \mathrm{diag}(A {\bf 1}_n)^{-1} A V \in \mathbb{R}^{n \times d}$, where $A = \exp(QK^\top/d)$ is the `attention matrix', and $\exp$ is applied entry-wise. Straightforward methods for this problem explicitly compute the $n \times n$ attention matrix $A$, and hence require time $\Omega(n^2)$ even when $d = n^{o(1)}$ is small. In this paper, we investigate whether faster algorithms are possible by \emph{implicitly} making use of the matrix $A$. We present two results, showing that there is a sharp transition at $B = \Theta(\sqrt{\log n})$.$\bullet$ If $d = O(\log n)$ and $B = o(\sqrt{\log n})$, there is an $n^{1+o(1)}$ time algorithm to approximate $\mathrm{Att}(Q,K,V)$ up to $1/\mathrm{poly}(n)$ additive error.$\bullet$ If $d = O(\log n)$ and $B = \Theta (\sqrt{\log n})$, assuming the Strong Exponential Time Hypothesis from fine-grained complexity theory, it is impossible to approximate $\mathrm{Att}(Q,K,V)$ up to $1/\mathrm{poly}(n)$ additive error in truly subquadratic time $n^{2 - \Omega(1)}$.This gives a theoretical explanation for the phenomenon observed in practice that attention computation is much more efficient when the input matrices have smaller entries.
 
-----
+        ----
 
-## [2755] Open Compound Domain Adaptation with Object Style Compensation for Semantic Segmentation
+        ## [2755] Open Compound Domain Adaptation with Object Style Compensation for Semantic Segmentation
 
-**Authors**: *Tingliang Feng, Hao Shi, Xueyang Liu, Wei Feng, Liang Wan, Yanlin Zhou, Di Lin*
+        **Authors**: *Tingliang Feng, Hao Shi, Xueyang Liu, Wei Feng, Liang Wan, Yanlin Zhou, Di Lin*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c74a3a6f44a44b204e26b1a6d7fe4a66-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c74a3a6f44a44b204e26b1a6d7fe4a66-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c74a3a6f44a44b204e26b1a6d7fe4a66-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c74a3a6f44a44b204e26b1a6d7fe4a66-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Many methods of semantic image segmentation have borrowed the success of open compound domain adaptation. They minimize the style gap between the images of source and target domains, more easily predicting the accurate pseudo annotations for target domain's images that train segmentation network. The existing methods globally adapt the scene style of the images, whereas the object styles of different categories or instances are adapted improperly. This paper proposes the Object Style Compensation, where we construct the Object-Level Discrepancy Memory with multiple sets of discrepancy features. The discrepancy features in a set capture the style changes of the same category's object instances adapted from target to source domains. We learn the discrepancy features from the images of source and target domains, storing the discrepancy features in memory. With this memory, we select appropriate discrepancy features for compensating the style information of the object instances of various categories, adapting the object styles to a unified style of source domain. Our method enables a more accurate computation of the pseudo annotations for target domain's images, thus yielding state-of-the-art results on different datasets.
+        Many methods of semantic image segmentation have borrowed the success of open compound domain adaptation. They minimize the style gap between the images of source and target domains, more easily predicting the accurate pseudo annotations for target domain's images that train segmentation network. The existing methods globally adapt the scene style of the images, whereas the object styles of different categories or instances are adapted improperly. This paper proposes the Object Style Compensation, where we construct the Object-Level Discrepancy Memory with multiple sets of discrepancy features. The discrepancy features in a set capture the style changes of the same category's object instances adapted from target to source domains. We learn the discrepancy features from the images of source and target domains, storing the discrepancy features in memory. With this memory, we select appropriate discrepancy features for compensating the style information of the object instances of various categories, adapting the object styles to a unified style of source domain. Our method enables a more accurate computation of the pseudo annotations for target domain's images, thus yielding state-of-the-art results on different datasets.
 
-----
+        ----
 
-## [2756] Going beyond persistent homology using persistent homology
+        ## [2756] Going beyond persistent homology using persistent homology
 
-**Authors**: *Johanna Immonen, Amauri H. Souza, Vikas Garg*
+        **Authors**: *Johanna Immonen, Amauri H. Souza, Vikas Garg*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c78f81a878a72566422f37279bca0fd0-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c78f81a878a72566422f37279bca0fd0-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c78f81a878a72566422f37279bca0fd0-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c78f81a878a72566422f37279bca0fd0-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Representational limits of message-passing graph neural networks (MP-GNNs), e.g., in terms of the Weisfeiler-Leman (WL) test for isomorphism, are well understood. Augmenting these graph models with topological features via persistent homology (PH) has gained prominence, but identifying the class of attributed graphs that PH can recognize remains open.  We introduce a novel concept of color-separating sets to provide a complete resolution to this important problem. Specifically, we establish the necessary and sufficient conditions for distinguishing graphs based on the persistence of their connected components, obtained from filter functions on vertex and edge colors. Our constructions expose the limits of vertex- and edge-level PH, proving that neither category subsumes the other. Leveraging these theoretical insights, we propose RePHINE for learning topological features on graphs. RePHINE efficiently combines vertex- and edge-level PH, achieving a scheme that is provably more powerful than both. Integrating RePHINE into MP-GNNs boosts their expressive power, resulting in gains over standard PH on several benchmarks for graph classification.
+        Representational limits of message-passing graph neural networks (MP-GNNs), e.g., in terms of the Weisfeiler-Leman (WL) test for isomorphism, are well understood. Augmenting these graph models with topological features via persistent homology (PH) has gained prominence, but identifying the class of attributed graphs that PH can recognize remains open.  We introduce a novel concept of color-separating sets to provide a complete resolution to this important problem. Specifically, we establish the necessary and sufficient conditions for distinguishing graphs based on the persistence of their connected components, obtained from filter functions on vertex and edge colors. Our constructions expose the limits of vertex- and edge-level PH, proving that neither category subsumes the other. Leveraging these theoretical insights, we propose RePHINE for learning topological features on graphs. RePHINE efficiently combines vertex- and edge-level PH, achieving a scheme that is provably more powerful than both. Integrating RePHINE into MP-GNNs boosts their expressive power, resulting in gains over standard PH on several benchmarks for graph classification.
 
-----
+        ----
 
-## [2757] Explore to Generalize in Zero-Shot RL
+        ## [2757] Explore to Generalize in Zero-Shot RL
 
-**Authors**: *Ev Zisselman, Itai Lavie, Daniel Soudry, Aviv Tamar*
+        **Authors**: *Ev Zisselman, Itai Lavie, Daniel Soudry, Aviv Tamar*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c793577b644268259b1416464a6cdb8c-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c793577b644268259b1416464a6cdb8c-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c793577b644268259b1416464a6cdb8c-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c793577b644268259b1416464a6cdb8c-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-We study zero-shot generalization in reinforcement learning - optimizing a policy on a set of training tasks to perform well on a similar but unseen test task. To mitigate overfitting, previous work explored different notions of invariance to the task. However, on problems such as the ProcGen Maze, an adequate solution that is invariant to the task visualization does not exist, and therefore invariance-based approaches fail. Our insight is that learning a policy that effectively $\textit{explores}$ the domain is harder to memorize than a policy that maximizes reward for a specific task, and therefore we expect such learned behavior to generalize well; we indeed demonstrate this empirically on several domains that are difficult for invariance-based approaches. Our $\textit{Explore to Generalize}$ algorithm (ExpGen) builds on this insight: we train an additional ensemble of agents that optimize reward. At test time, either the ensemble agrees on an action, and we generalize well, or we take exploratory actions, which generalize well and drive us to a novel part of the state space, where the ensemble may potentially agree again. We show that our approach is the state-of-the-art on tasks of the ProcGen challenge that have thus far eluded effective generalization, yielding a success rate of 83% on the Maze task and 74% on Heist with $200$ training levels. ExpGen can also be combined with an invariance based approach to gain the best of both worlds, setting new state-of-the-art results on ProcGen.Code available at [https://github.com/EvZissel/expgen](https://github.com/EvZissel/expgen).
+        We study zero-shot generalization in reinforcement learning - optimizing a policy on a set of training tasks to perform well on a similar but unseen test task. To mitigate overfitting, previous work explored different notions of invariance to the task. However, on problems such as the ProcGen Maze, an adequate solution that is invariant to the task visualization does not exist, and therefore invariance-based approaches fail. Our insight is that learning a policy that effectively $\textit{explores}$ the domain is harder to memorize than a policy that maximizes reward for a specific task, and therefore we expect such learned behavior to generalize well; we indeed demonstrate this empirically on several domains that are difficult for invariance-based approaches. Our $\textit{Explore to Generalize}$ algorithm (ExpGen) builds on this insight: we train an additional ensemble of agents that optimize reward. At test time, either the ensemble agrees on an action, and we generalize well, or we take exploratory actions, which generalize well and drive us to a novel part of the state space, where the ensemble may potentially agree again. We show that our approach is the state-of-the-art on tasks of the ProcGen challenge that have thus far eluded effective generalization, yielding a success rate of 83% on the Maze task and 74% on Heist with $200$ training levels. ExpGen can also be combined with an invariance based approach to gain the best of both worlds, setting new state-of-the-art results on ProcGen.Code available at [https://github.com/EvZissel/expgen](https://github.com/EvZissel/expgen).
 
-----
+        ----
 
-## [2758] CoLLAT: On Adding Fine-grained Audio Understanding to Language Models using Token-Level Locked-Language Tuning
+        ## [2758] CoLLAT: On Adding Fine-grained Audio Understanding to Language Models using Token-Level Locked-Language Tuning
 
-**Authors**: *Dadallage A. R. Silva, Spencer Whitehead, Christopher T. Lengerich, Hugh Leather*
+        **Authors**: *Dadallage A. R. Silva, Spencer Whitehead, Christopher T. Lengerich, Hugh Leather*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c7b5a35ea98b62512a869c19ea7b03cb-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c7b5a35ea98b62512a869c19ea7b03cb-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c7b5a35ea98b62512a869c19ea7b03cb-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c7b5a35ea98b62512a869c19ea7b03cb-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Humans can easily understand various audio concepts, but conventional audio classification models fail due to their inability to predict unseen classes during training. To address this challenge, recent literature has explored contrastive language-audio pretraining to learn an audio understanding model using natural language supervision from a pretrained language model. However, despite their reasonable zero-shot performance in audio understanding, these models typically fail to achieve optimal performance while preserving the text understanding capabilities of the pretrained language model. They also perform poorly when comprehending audio clips with multiple audio concepts. To bridge these gaps, we propose $CoLLAT$: $Co$ntrastive $L$ocked $L$anguage and $A$udio $T$uning. This is a framework to effectively learn an audio understanding model with a locked language model, which is learned using a novel pretraining objective for audio-to-text grounding to yield fine-grained audio understanding. Our extensive experiments, which include several downstream applications such as audio classification, cross-modal retrieval, and audio-guided image generation, demonstrate that $CoLLAT$ yields state-of-the-art performance for audio understanding. Additionally, it unlocks audio guidance to applications built on top of pretrained language models.
+        Humans can easily understand various audio concepts, but conventional audio classification models fail due to their inability to predict unseen classes during training. To address this challenge, recent literature has explored contrastive language-audio pretraining to learn an audio understanding model using natural language supervision from a pretrained language model. However, despite their reasonable zero-shot performance in audio understanding, these models typically fail to achieve optimal performance while preserving the text understanding capabilities of the pretrained language model. They also perform poorly when comprehending audio clips with multiple audio concepts. To bridge these gaps, we propose $CoLLAT$: $Co$ntrastive $L$ocked $L$anguage and $A$udio $T$uning. This is a framework to effectively learn an audio understanding model with a locked language model, which is learned using a novel pretraining objective for audio-to-text grounding to yield fine-grained audio understanding. Our extensive experiments, which include several downstream applications such as audio classification, cross-modal retrieval, and audio-guided image generation, demonstrate that $CoLLAT$ yields state-of-the-art performance for audio understanding. Additionally, it unlocks audio guidance to applications built on top of pretrained language models.
 
-----
+        ----
 
-## [2759] Abide by the law and follow the flow: conservation laws for gradient flows
+        ## [2759] Abide by the law and follow the flow: conservation laws for gradient flows
 
-**Authors**: *Sibylle Marcotte, Rémi Gribonval, Gabriel Peyré*
+        **Authors**: *Sibylle Marcotte, Rémi Gribonval, Gabriel Peyré*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c7bee9b76be21146fd592fc2b46614d5-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c7bee9b76be21146fd592fc2b46614d5-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c7bee9b76be21146fd592fc2b46614d5-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c7bee9b76be21146fd592fc2b46614d5-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Understanding the geometric properties of gradient descent dynamics is a key ingredient in deciphering the recent success of very large machine learning models. A striking observation is that trained over-parameterized models retain some properties of the optimization initialization. This "implicit bias" is believed to be responsible for some favorable properties of the trained models and could explain their good generalization properties. The purpose of this article is threefold. First, we rigorously expose the definition and basic properties of "conservation laws", that define quantities conserved during gradient flows of a given model (e.g. of a ReLU network with a given architecture) with any training data and any loss. Then we explain how to find the maximal number of independent conservation lawsby performing finite-dimensional algebraic manipulations on the Lie algebra generated by the Jacobian of the model. Finally, we provide algorithms to: a) compute a family of polynomial laws; b) compute the maximal number of (not necessarily polynomial) independent conservation laws. We provide showcase examples that we fully work out theoretically. Besides, applying the two algorithms confirms for a number of ReLU network architectures that all known laws are recovered by the algorithm, and that there are no other independent laws. Such computational tools pave the way to understanding desirable properties of optimization initialization in large machine learning models.
+        Understanding the geometric properties of gradient descent dynamics is a key ingredient in deciphering the recent success of very large machine learning models. A striking observation is that trained over-parameterized models retain some properties of the optimization initialization. This "implicit bias" is believed to be responsible for some favorable properties of the trained models and could explain their good generalization properties. The purpose of this article is threefold. First, we rigorously expose the definition and basic properties of "conservation laws", that define quantities conserved during gradient flows of a given model (e.g. of a ReLU network with a given architecture) with any training data and any loss. Then we explain how to find the maximal number of independent conservation lawsby performing finite-dimensional algebraic manipulations on the Lie algebra generated by the Jacobian of the model. Finally, we provide algorithms to: a) compute a family of polynomial laws; b) compute the maximal number of (not necessarily polynomial) independent conservation laws. We provide showcase examples that we fully work out theoretically. Besides, applying the two algorithms confirms for a number of ReLU network architectures that all known laws are recovered by the algorithm, and that there are no other independent laws. Such computational tools pave the way to understanding desirable properties of optimization initialization in large machine learning models.
 
-----
+        ----
 
-## [2760] Breadcrumbs to the Goal: Supervised Goal Selection from Human-in-the-Loop Feedback
+        ## [2760] Breadcrumbs to the Goal: Supervised Goal Selection from Human-in-the-Loop Feedback
 
-**Authors**: *Marcel Torne Villasevil, Max Balsells, Zihan Wang, Samedh Desai, Tao Chen, Pulkit Agrawal, Abhishek Gupta*
+        **Authors**: *Marcel Torne Villasevil, Max Balsells, Zihan Wang, Samedh Desai, Tao Chen, Pulkit Agrawal, Abhishek Gupta*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c7c7cf10082e454b9662a686ce6f1b6f-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c7c7cf10082e454b9662a686ce6f1b6f-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c7c7cf10082e454b9662a686ce6f1b6f-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c7c7cf10082e454b9662a686ce6f1b6f-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Exploration and reward specification are fundamental and intertwined challenges for reinforcement learning. Solving sequential decision making tasks with a non-trivial element of exploration requires either specifying carefully designed reward functions or relying on indiscriminate, novelty seeking exploration bonuses. Human supervisors can provide effective guidance in the loop to direct the exploration process, but prior methods to leverage this guidance require constant synchronous high-quality human feedback, which is expensive and impractical to obtain. In this work, we propose a technique - Human Guided Exploration (HUGE), that is able to leverage low-quality feedback from non-expert users, which is infrequent, asynchronous and noisy, to guide exploration for reinforcement learning, without requiring careful reward specification. The key idea is to separate the challenges of directed exploration and policy learning - human feedback is used to direct exploration, while self-supervised policy learning is used to independently learn unbiased behaviors from the collected data. We show that this procedure can leverage noisy, asynchronous human feedback to learn tasks with no hand-crafted reward design or exploration bonuses. We show that HUGE is able to learn a variety of challenging multi-stage robotic navigation and manipulation tasks in simulation using crowdsourced feedback from non-expert users. Moreover, this paradigm can be scaled to learning directly on real-world robots.
+        Exploration and reward specification are fundamental and intertwined challenges for reinforcement learning. Solving sequential decision making tasks with a non-trivial element of exploration requires either specifying carefully designed reward functions or relying on indiscriminate, novelty seeking exploration bonuses. Human supervisors can provide effective guidance in the loop to direct the exploration process, but prior methods to leverage this guidance require constant synchronous high-quality human feedback, which is expensive and impractical to obtain. In this work, we propose a technique - Human Guided Exploration (HUGE), that is able to leverage low-quality feedback from non-expert users, which is infrequent, asynchronous and noisy, to guide exploration for reinforcement learning, without requiring careful reward specification. The key idea is to separate the challenges of directed exploration and policy learning - human feedback is used to direct exploration, while self-supervised policy learning is used to independently learn unbiased behaviors from the collected data. We show that this procedure can leverage noisy, asynchronous human feedback to learn tasks with no hand-crafted reward design or exploration bonuses. We show that HUGE is able to learn a variety of challenging multi-stage robotic navigation and manipulation tasks in simulation using crowdsourced feedback from non-expert users. Moreover, this paradigm can be scaled to learning directly on real-world robots.
 
-----
+        ----
 
-## [2761] Embroid: Unsupervised Prediction Smoothing Can Improve Few-Shot Classification
+        ## [2761] Embroid: Unsupervised Prediction Smoothing Can Improve Few-Shot Classification
 
-**Authors**: *Neel Guha, Mayee F. Chen, Kush Bhatia, Azalia Mirhoseini, Frederic Sala, Christopher Ré*
+        **Authors**: *Neel Guha, Mayee F. Chen, Kush Bhatia, Azalia Mirhoseini, Frederic Sala, Christopher Ré*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c7f35864fef057d6fa315afa0275b3ad-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c7f35864fef057d6fa315afa0275b3ad-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c7f35864fef057d6fa315afa0275b3ad-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c7f35864fef057d6fa315afa0275b3ad-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Recent work has shown that language models' (LMs) prompt-based learning capabilities make them well suited for automating data labeling in domains where manual annotation is expensive. The challenge is that while writing an initial prompt is cheap, improving a prompt is costly---practitioners often require significant labeled data in order to evaluate the impact of prompt modifications. Our work asks whether it is possible to improve prompt-based learning without additional labeled data. We approach this problem by attempting to modify the predictions of a prompt, rather than the prompt itself. Our intuition is that accurate predictions should also be consistent: samples which are similar under some feature representation should receive the same prompt prediction. We propose Embroid, a method which computes multiple representations of a dataset under different embedding functions, and uses the consistency between the LM predictions for neighboring samples to identify mispredictions. Embroid then uses these neighborhoods to create additional predictions for each sample, and combines these predictions with a simple latent variable graphical model in order to generate a final corrected prediction. In addition to providing a theoretical analysis of Embroid, we conduct a rigorous empirical evaluation across six different LMs and up to 95 different tasks. We find that (1) Embroid substantially improves performance over original prompts (e.g., by an average of 7.3 points on GPT-JT), (2) also realizes improvements for more sophisticated prompting strategies (e.g., chain-of-thought), and (3) can be specialized to domains like law through the embedding functions.
+        Recent work has shown that language models' (LMs) prompt-based learning capabilities make them well suited for automating data labeling in domains where manual annotation is expensive. The challenge is that while writing an initial prompt is cheap, improving a prompt is costly---practitioners often require significant labeled data in order to evaluate the impact of prompt modifications. Our work asks whether it is possible to improve prompt-based learning without additional labeled data. We approach this problem by attempting to modify the predictions of a prompt, rather than the prompt itself. Our intuition is that accurate predictions should also be consistent: samples which are similar under some feature representation should receive the same prompt prediction. We propose Embroid, a method which computes multiple representations of a dataset under different embedding functions, and uses the consistency between the LM predictions for neighboring samples to identify mispredictions. Embroid then uses these neighborhoods to create additional predictions for each sample, and combines these predictions with a simple latent variable graphical model in order to generate a final corrected prediction. In addition to providing a theoretical analysis of Embroid, we conduct a rigorous empirical evaluation across six different LMs and up to 95 different tasks. We find that (1) Embroid substantially improves performance over original prompts (e.g., by an average of 7.3 points on GPT-JT), (2) also realizes improvements for more sophisticated prompting strategies (e.g., chain-of-thought), and (3) can be specialized to domains like law through the embedding functions.
 
-----
+        ----
 
-## [2762] Perceptual Kalman Filters: Online State Estimation under a Perfect Perceptual-Quality Constraint
+        ## [2762] Perceptual Kalman Filters: Online State Estimation under a Perfect Perceptual-Quality Constraint
 
-**Authors**: *Dror Freirich, Tomer Michaeli, Ron Meir*
+        **Authors**: *Dror Freirich, Tomer Michaeli, Ron Meir*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c7f43ada17acc234f568dc66da527418-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c7f43ada17acc234f568dc66da527418-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c7f43ada17acc234f568dc66da527418-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c7f43ada17acc234f568dc66da527418-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Many practical settings call for the reconstruction of temporal signals from corrupted or missing data. Classic examples include decoding, tracking, signal enhancement and denoising. Since the reconstructed signals are ultimately viewed by humans, it is desirable to achieve reconstructions that are pleasing to human perception.Mathematically, perfect perceptual-quality is achieved when the distribution of restored signals is the same as that of natural signals, a requirement which has been heavily researched in static estimation settings (i.e. when a whole signal is processed at once). Here, we study the problem of optimal causal  filtering under a perfect perceptual-quality constraint, which is a task of fundamentally different nature.  Specifically, we analyze a Gaussian Markov signal observed through a linear noisy transformation. In the absence of perceptual constraints, the Kalman filter is known to be optimal in the MSE sense for this setting. Here, we show that adding the perfect perceptual quality constraint (i.e. the requirement of temporal consistency), introduces a fundamental dilemma whereby the filter may have to ``knowingly'' ignore new information revealed by the observations in order to conform to its past decisions. This often comes at the cost of a significant increase in the MSE (beyond that encountered in static settings). Our analysis goes beyond the classic innovation process of the Kalman filter, and introduces the novel concept of an unutilized information process. Using this tool, we present a recursive formula for perceptual filters, and demonstrate the qualitative effects of perfect perceptual-quality estimation on a video reconstruction problem.
+        Many practical settings call for the reconstruction of temporal signals from corrupted or missing data. Classic examples include decoding, tracking, signal enhancement and denoising. Since the reconstructed signals are ultimately viewed by humans, it is desirable to achieve reconstructions that are pleasing to human perception.Mathematically, perfect perceptual-quality is achieved when the distribution of restored signals is the same as that of natural signals, a requirement which has been heavily researched in static estimation settings (i.e. when a whole signal is processed at once). Here, we study the problem of optimal causal  filtering under a perfect perceptual-quality constraint, which is a task of fundamentally different nature.  Specifically, we analyze a Gaussian Markov signal observed through a linear noisy transformation. In the absence of perceptual constraints, the Kalman filter is known to be optimal in the MSE sense for this setting. Here, we show that adding the perfect perceptual quality constraint (i.e. the requirement of temporal consistency), introduces a fundamental dilemma whereby the filter may have to ``knowingly'' ignore new information revealed by the observations in order to conform to its past decisions. This often comes at the cost of a significant increase in the MSE (beyond that encountered in static settings). Our analysis goes beyond the classic innovation process of the Kalman filter, and introduces the novel concept of an unutilized information process. Using this tool, we present a recursive formula for perceptual filters, and demonstrate the qualitative effects of perfect perceptual-quality estimation on a video reconstruction problem.
 
-----
+        ----
 
-## [2763] SEENN: Towards Temporal Spiking Early Exit Neural Networks
+        ## [2763] SEENN: Towards Temporal Spiking Early Exit Neural Networks
 
-**Authors**: *Yuhang Li, Tamar Geller, Youngeun Kim, Priyadarshini Panda*
+        **Authors**: *Yuhang Li, Tamar Geller, Youngeun Kim, Priyadarshini Panda*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c801e68207da477bbc44182b9fac1129-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c801e68207da477bbc44182b9fac1129-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c801e68207da477bbc44182b9fac1129-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c801e68207da477bbc44182b9fac1129-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Spiking Neural Networks (SNNs) have recently become more popular as a biologically plausible substitute for traditional Artificial Neural Networks (ANNs). SNNs are cost-efficient and deployment-friendly because they process input in both spatial and temporal manner using binary spikes. However, we observe that the information capacity in SNNs is affected by the number of timesteps, leading to an accuracy-efficiency tradeoff. In this work, we study a fine-grained adjustment of the number of timesteps in SNNs. Specifically, we treat the number of timesteps as a variable conditioned on different input samples to reduce redundant timesteps for certain data. We call our method Spiking Early-Exit Neural Networks (SEENNs). To determine the appropriate number of timesteps, we propose SEENN-I which uses a confidence score thresholding to filter out the uncertain predictions, and SEENN-II which determines the number of timesteps by reinforcement learning. Moreover, we demonstrate that SEENN is compatible with both the directly trained SNN and the ANN-SNN conversion. By dynamically adjusting the number of timesteps, our SEENN achieves a remarkable reduction in the average number of timesteps during inference. For example, our SEENN-II ResNet-19 can achieve 96.1\% accuracy with an average of 1.08 timesteps on the CIFAR-10 test dataset. Code is shared at https://github.com/Intelligent-Computing-Lab-Yale/SEENN.
+        Spiking Neural Networks (SNNs) have recently become more popular as a biologically plausible substitute for traditional Artificial Neural Networks (ANNs). SNNs are cost-efficient and deployment-friendly because they process input in both spatial and temporal manner using binary spikes. However, we observe that the information capacity in SNNs is affected by the number of timesteps, leading to an accuracy-efficiency tradeoff. In this work, we study a fine-grained adjustment of the number of timesteps in SNNs. Specifically, we treat the number of timesteps as a variable conditioned on different input samples to reduce redundant timesteps for certain data. We call our method Spiking Early-Exit Neural Networks (SEENNs). To determine the appropriate number of timesteps, we propose SEENN-I which uses a confidence score thresholding to filter out the uncertain predictions, and SEENN-II which determines the number of timesteps by reinforcement learning. Moreover, we demonstrate that SEENN is compatible with both the directly trained SNN and the ANN-SNN conversion. By dynamically adjusting the number of timesteps, our SEENN achieves a remarkable reduction in the average number of timesteps during inference. For example, our SEENN-II ResNet-19 can achieve 96.1\% accuracy with an average of 1.08 timesteps on the CIFAR-10 test dataset. Code is shared at https://github.com/Intelligent-Computing-Lab-Yale/SEENN.
 
-----
+        ----
 
-## [2764] Distributionally Robust Skeleton Learning of Discrete Bayesian Networks
+        ## [2764] Distributionally Robust Skeleton Learning of Discrete Bayesian Networks
 
-**Authors**: *Yeshu Li, Brian D. Ziebart*
+        **Authors**: *Yeshu Li, Brian D. Ziebart*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c80addda8bcd95339921cba7581ac7bd-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c80addda8bcd95339921cba7581ac7bd-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c80addda8bcd95339921cba7581ac7bd-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c80addda8bcd95339921cba7581ac7bd-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-We consider the problem of learning the exact skeleton of general discrete Bayesian networks from potentially corrupted data. Building on distributionally robust optimization and a regression approach, we propose to optimize the most adverse risk over a family of distributions within bounded Wasserstein distance or KL divergence to the empirical distribution. The worst-case risk accounts for the effect of outliers. The proposed approach applies for general categorical random variables without assuming faithfulness, an ordinal relationship or a specific form of conditional distribution. We present efficient algorithms and show the proposed methods are closely related to the standard regularized regression approach. Under mild assumptions, we derive non-asymptotic guarantees for successful structure learning with logarithmic sample complexities for bounded-degree graphs. Numerical study on synthetic and real datasets validates the effectiveness of our method.
+        We consider the problem of learning the exact skeleton of general discrete Bayesian networks from potentially corrupted data. Building on distributionally robust optimization and a regression approach, we propose to optimize the most adverse risk over a family of distributions within bounded Wasserstein distance or KL divergence to the empirical distribution. The worst-case risk accounts for the effect of outliers. The proposed approach applies for general categorical random variables without assuming faithfulness, an ordinal relationship or a specific form of conditional distribution. We present efficient algorithms and show the proposed methods are closely related to the standard regularized regression approach. Under mild assumptions, we derive non-asymptotic guarantees for successful structure learning with logarithmic sample complexities for bounded-degree graphs. Numerical study on synthetic and real datasets validates the effectiveness of our method.
 
-----
+        ----
 
-## [2765] Test-Time Amendment with a Coarse Classifier for Fine-Grained Classification
+        ## [2765] Test-Time Amendment with a Coarse Classifier for Fine-Grained Classification
 
-**Authors**: *Kanishk Jain, Shyamgopal Karthik, Vineet Gandhi*
+        **Authors**: *Kanishk Jain, Shyamgopal Karthik, Vineet Gandhi*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c81690e2cfe63aede8519ad448f56d71-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c81690e2cfe63aede8519ad448f56d71-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c81690e2cfe63aede8519ad448f56d71-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c81690e2cfe63aede8519ad448f56d71-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-We investigate the problem of reducing mistake severity for fine-grained classification. Fine-grained classification can be challenging, mainly due to the requirement of knowledge or domain expertise for accurate annotation. However, humans are particularly adept at performing coarse classification as it requires relatively low levels of expertise. To this end, we present a novel approach for Post-Hoc Correction called Hierarchical Ensembles (HiE) that utilizes label hierarchy to improve the performance of fine-grained classification at test-time using the coarse-grained predictions. By only requiring the parents of leaf nodes, our method significantly reduces avg. mistake severity while improving top-1 accuracy on the iNaturalist-19 and tieredImageNet-H datasets, achieving a new state-of-the-art on both benchmarks. We also investigate the efficacy of our approach in the semi-supervised setting. Our approach brings notable gains in top-1 accuracy while significantly decreasing the severity of mistakes as training data decreases for the fine-grained classes. The simplicity and post-hoc nature of HiE renders it practical to be used with any off-the-shelf trained model to improve its predictions further.
+        We investigate the problem of reducing mistake severity for fine-grained classification. Fine-grained classification can be challenging, mainly due to the requirement of knowledge or domain expertise for accurate annotation. However, humans are particularly adept at performing coarse classification as it requires relatively low levels of expertise. To this end, we present a novel approach for Post-Hoc Correction called Hierarchical Ensembles (HiE) that utilizes label hierarchy to improve the performance of fine-grained classification at test-time using the coarse-grained predictions. By only requiring the parents of leaf nodes, our method significantly reduces avg. mistake severity while improving top-1 accuracy on the iNaturalist-19 and tieredImageNet-H datasets, achieving a new state-of-the-art on both benchmarks. We also investigate the efficacy of our approach in the semi-supervised setting. Our approach brings notable gains in top-1 accuracy while significantly decreasing the severity of mistakes as training data decreases for the fine-grained classes. The simplicity and post-hoc nature of HiE renders it practical to be used with any off-the-shelf trained model to improve its predictions further.
 
-----
+        ----
 
-## [2766] Robust Matrix Sensing in the Semi-Random Model
+        ## [2766] Robust Matrix Sensing in the Semi-Random Model
 
-**Authors**: *Xing Gao, Yu Cheng*
+        **Authors**: *Xing Gao, Yu Cheng*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c836d71b4702d9046b14ce1228c4c11b-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c836d71b4702d9046b14ce1228c4c11b-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c836d71b4702d9046b14ce1228c4c11b-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c836d71b4702d9046b14ce1228c4c11b-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Low-rank matrix recovery is a fundamental problem in machine learning with numerous applications. In practice, the problem can be solved by convex optimization namely nuclear norm minimization, or by non-convex optimization as it is well-known that for low-rank matrix problems like matrix sensing and matrix completion, all local optima of the natural non-convex objectives are also globally optimal under certain ideal assumptions.In this paper, we study new approaches for matrix sensing in a semi-random model where an adversary can add any number of arbitrary sensing matrices. More precisely, the problem is to recover a low-rank matrix $X^\star$ from linear measurements $b_i = \langle A_i, X^\star \rangle$, where an unknown subset of the sensing matrices satisfies the Restricted Isometry Property (RIP) and the rest of the $A_i$'s are chosen adversarially.It is known that in the semi-random model, existing non-convex objectives can have bad local optima. To fix this, we present a descent-style algorithm that provably recovers the ground-truth matrix $X^\star$. For the closely-related problem of semi-random matrix completion, prior work [CG18] showed that all bad local optima can be eliminated by reweighting the input data. However, the analogous approach for matrix sensing requires reweighting a set of matrices to satisfy RIP, which is a condition that is NP-hard to check. Instead, we build on the framework proposed in [KLL$^+$23] for semi-random sparse linear regression, where the algorithm in each iteration reweights the input based on the current solution, and then takes a weighted gradient step that is guaranteed to work well locally. Our analysis crucially exploits the connection between sparsity in vector problems and low-rankness in matrix problems, which may have other applications in obtaining robust algorithms for sparse and low-rank problems.
+        Low-rank matrix recovery is a fundamental problem in machine learning with numerous applications. In practice, the problem can be solved by convex optimization namely nuclear norm minimization, or by non-convex optimization as it is well-known that for low-rank matrix problems like matrix sensing and matrix completion, all local optima of the natural non-convex objectives are also globally optimal under certain ideal assumptions.In this paper, we study new approaches for matrix sensing in a semi-random model where an adversary can add any number of arbitrary sensing matrices. More precisely, the problem is to recover a low-rank matrix $X^\star$ from linear measurements $b_i = \langle A_i, X^\star \rangle$, where an unknown subset of the sensing matrices satisfies the Restricted Isometry Property (RIP) and the rest of the $A_i$'s are chosen adversarially.It is known that in the semi-random model, existing non-convex objectives can have bad local optima. To fix this, we present a descent-style algorithm that provably recovers the ground-truth matrix $X^\star$. For the closely-related problem of semi-random matrix completion, prior work [CG18] showed that all bad local optima can be eliminated by reweighting the input data. However, the analogous approach for matrix sensing requires reweighting a set of matrices to satisfy RIP, which is a condition that is NP-hard to check. Instead, we build on the framework proposed in [KLL$^+$23] for semi-random sparse linear regression, where the algorithm in each iteration reweights the input based on the current solution, and then takes a weighted gradient step that is guaranteed to work well locally. Our analysis crucially exploits the connection between sparsity in vector problems and low-rankness in matrix problems, which may have other applications in obtaining robust algorithms for sparse and low-rank problems.
 
-----
+        ----
 
-## [2767] Implicit variance regularization in non-contrastive SSL
+        ## [2767] Implicit variance regularization in non-contrastive SSL
 
-**Authors**: *Manu Srinath Halvagal, Axel Laborieux, Friedemann Zenke*
+        **Authors**: *Manu Srinath Halvagal, Axel Laborieux, Friedemann Zenke*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c837ab3eebe77bffac634939f22ac458-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c837ab3eebe77bffac634939f22ac458-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c837ab3eebe77bffac634939f22ac458-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c837ab3eebe77bffac634939f22ac458-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Non-contrastive SSL methods like BYOL and SimSiam rely on asymmetric predictor networks to avoid representational collapse without negative samples. Yet, how predictor networks facilitate stable learning is not fully understood. While previous theoretical analyses assumed Euclidean losses, most practical implementations rely on cosine similarity. To gain further theoretical insight into non-contrastive SSL, we analytically study learning dynamics in conjunction with Euclidean and cosine similarity in the eigenspace of closed-form linear predictor networks. We show that both avoid collapse through implicit variance regularization albeit through different dynamical mechanisms. Moreover, we find that the eigenvalues act as effective learning rate multipliers and propose a family of isotropic loss functions (IsoLoss) that equalize convergence rates across eigenmodes. Empirically, IsoLoss speeds up the initial learning dynamics and increases robustness, thereby allowing us to dispense with the EMA target network typically used with non-contrastive methods. Our analysis sheds light on the variance regularization mechanisms of non-contrastive SSL and lays the theoretical grounds for crafting novel loss functions that shape the learning dynamics of the predictor's spectrum.
+        Non-contrastive SSL methods like BYOL and SimSiam rely on asymmetric predictor networks to avoid representational collapse without negative samples. Yet, how predictor networks facilitate stable learning is not fully understood. While previous theoretical analyses assumed Euclidean losses, most practical implementations rely on cosine similarity. To gain further theoretical insight into non-contrastive SSL, we analytically study learning dynamics in conjunction with Euclidean and cosine similarity in the eigenspace of closed-form linear predictor networks. We show that both avoid collapse through implicit variance regularization albeit through different dynamical mechanisms. Moreover, we find that the eigenvalues act as effective learning rate multipliers and propose a family of isotropic loss functions (IsoLoss) that equalize convergence rates across eigenmodes. Empirically, IsoLoss speeds up the initial learning dynamics and increases robustness, thereby allowing us to dispense with the EMA target network typically used with non-contrastive methods. Our analysis sheds light on the variance regularization mechanisms of non-contrastive SSL and lays the theoretical grounds for crafting novel loss functions that shape the learning dynamics of the predictor's spectrum.
 
-----
+        ----
 
-## [2768] ATMAN: Understanding Transformer Predictions Through Memory Efficient Attention Manipulation
+        ## [2768] ATMAN: Understanding Transformer Predictions Through Memory Efficient Attention Manipulation
 
-**Authors**: *Björn Deiseroth, Mayukh Deb, Samuel Weinbach, Manuel Brack, Patrick Schramowski, Kristian Kersting*
+        **Authors**: *Björn Deiseroth, Mayukh Deb, Samuel Weinbach, Manuel Brack, Patrick Schramowski, Kristian Kersting*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c83bc020a020cdeb966ed10804619664-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c83bc020a020cdeb966ed10804619664-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c83bc020a020cdeb966ed10804619664-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c83bc020a020cdeb966ed10804619664-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Generative transformer models have become increasingly complex, with large numbers of parameters and the ability to process multiple input modalities. Current methods for explaining their predictions are resource-intensive. Most crucially, they require prohibitively large amounts of additional memory, since they rely on backpropagation which allocates almost twice as much GPU memory as the forward pass. This makes it difficult, if not impossible, to use explanations in production. We present AtMan that provides explanations of generative transformer models at almost no extra cost. Specifically, AtMan is a modality-agnostic perturbation method that manipulates the attention mechanisms of transformers to produce relevance maps for the input with respect to the output prediction. Instead of using backpropagation, AtMan applies a parallelizable token-based search method relying on cosine similarity neighborhood in the embedding space. Our exhaustive experiments on text and image-text benchmarks demonstrate that AtMan outperforms current state-of-the-art gradient-based methods on several metrics while being computationally efficient. As such, AtMan is suitable for use in large model inference deployments.
+        Generative transformer models have become increasingly complex, with large numbers of parameters and the ability to process multiple input modalities. Current methods for explaining their predictions are resource-intensive. Most crucially, they require prohibitively large amounts of additional memory, since they rely on backpropagation which allocates almost twice as much GPU memory as the forward pass. This makes it difficult, if not impossible, to use explanations in production. We present AtMan that provides explanations of generative transformer models at almost no extra cost. Specifically, AtMan is a modality-agnostic perturbation method that manipulates the attention mechanisms of transformers to produce relevance maps for the input with respect to the output prediction. Instead of using backpropagation, AtMan applies a parallelizable token-based search method relying on cosine similarity neighborhood in the embedding space. Our exhaustive experiments on text and image-text benchmarks demonstrate that AtMan outperforms current state-of-the-art gradient-based methods on several metrics while being computationally efficient. As such, AtMan is suitable for use in large model inference deployments.
 
-----
+        ----
 
-## [2769] Wasserstein Quantum Monte Carlo: A Novel Approach for Solving the Quantum Many-Body Schrödinger Equation
+        ## [2769] Wasserstein Quantum Monte Carlo: A Novel Approach for Solving the Quantum Many-Body Schrödinger Equation
 
-**Authors**: *Kirill Neklyudov, Jannes Nys, Luca Thiede, Juan Carrasquilla, Qiang Liu, Max Welling, Alireza Makhzani*
+        **Authors**: *Kirill Neklyudov, Jannes Nys, Luca Thiede, Juan Carrasquilla, Qiang Liu, Max Welling, Alireza Makhzani*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c8450235f227f136242f774b2799581f-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c8450235f227f136242f774b2799581f-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c8450235f227f136242f774b2799581f-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c8450235f227f136242f774b2799581f-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Solving the quantum many-body Schrödinger equation is a fundamental and challenging problem in the fields of quantum physics, quantum chemistry, and material sciences. One of the common computational approaches to this problem is Quantum Variational Monte Carlo (QVMC), in which ground-state solutions are obtained by minimizing the energy of the system within a restricted family of parameterized wave functions. Deep learning methods partially address the limitations of traditional QVMC by representing a rich family of wave functions in terms of neural networks. However, the optimization objective in QVMC remains notoriously hard to minimize and requires second-order optimization methods such as natural gradient. In this paper, we first reformulate energy functional minimization in the space of Born distributions corresponding to particle-permutation (anti-)symmetric wave functions, rather than the space of wave functions. We then interpret QVMC as the Fisher--Rao gradient flow in this distributional space, followed by a projection step onto the variational manifold. This perspective provides us with a principled framework to derive new QMC algorithms, by endowing the distributional space with better metrics, and following the projected gradient flow induced by those metrics. More specifically, we propose "Wasserstein Quantum Monte Carlo" (WQMC), which uses the gradient flow induced by the Wasserstein metric, rather than the Fisher--Rao metric, and corresponds to transporting the probability mass, rather than teleporting it. We demonstrate empirically that the dynamics of WQMC results in faster convergence to the ground state of molecular systems.
+        Solving the quantum many-body Schrödinger equation is a fundamental and challenging problem in the fields of quantum physics, quantum chemistry, and material sciences. One of the common computational approaches to this problem is Quantum Variational Monte Carlo (QVMC), in which ground-state solutions are obtained by minimizing the energy of the system within a restricted family of parameterized wave functions. Deep learning methods partially address the limitations of traditional QVMC by representing a rich family of wave functions in terms of neural networks. However, the optimization objective in QVMC remains notoriously hard to minimize and requires second-order optimization methods such as natural gradient. In this paper, we first reformulate energy functional minimization in the space of Born distributions corresponding to particle-permutation (anti-)symmetric wave functions, rather than the space of wave functions. We then interpret QVMC as the Fisher--Rao gradient flow in this distributional space, followed by a projection step onto the variational manifold. This perspective provides us with a principled framework to derive new QMC algorithms, by endowing the distributional space with better metrics, and following the projected gradient flow induced by those metrics. More specifically, we propose "Wasserstein Quantum Monte Carlo" (WQMC), which uses the gradient flow induced by the Wasserstein metric, rather than the Fisher--Rao metric, and corresponds to transporting the probability mass, rather than teleporting it. We demonstrate empirically that the dynamics of WQMC results in faster convergence to the ground state of molecular systems.
 
-----
+        ----
 
-## [2770] Textually Pretrained Speech Language Models
+        ## [2770] Textually Pretrained Speech Language Models
 
-**Authors**: *Michael Hassid, Tal Remez, Tu Anh Nguyen, Itai Gat, Alexis Conneau, Felix Kreuk, Jade Copet, Alexandre Défossez, Gabriel Synnaeve, Emmanuel Dupoux, Roy Schwartz, Yossi Adi*
+        **Authors**: *Michael Hassid, Tal Remez, Tu Anh Nguyen, Itai Gat, Alexis Conneau, Felix Kreuk, Jade Copet, Alexandre Défossez, Gabriel Synnaeve, Emmanuel Dupoux, Roy Schwartz, Yossi Adi*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c859b99b5d717c9035e79d43dfd69435-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c859b99b5d717c9035e79d43dfd69435-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c859b99b5d717c9035e79d43dfd69435-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c859b99b5d717c9035e79d43dfd69435-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Speech language models (SpeechLMs) process and generate acoustic data only, without textual supervision. In this work, we propose TWIST, a method for training SpeechLMs using a warm-start from a pretrained textual language models. We show using both automatic and human evaluations that TWIST outperforms a cold-start SpeechLM across the board. We empirically analyze the effect of different model design choices such as the speech tokenizer, the pretrained textual model, and the dataset size. We find that model and dataset scale both play an important role in constructing better-performing SpeechLMs. Based on our observations, we present the largest (to the best of our knowledge) SpeechLM both in terms of number of parameters and training data. We additionally introduce two spoken versions of the StoryCloze textual benchmark to further improve model evaluation and advance future research in the field. We make speech samples, code and models publicly available.
+        Speech language models (SpeechLMs) process and generate acoustic data only, without textual supervision. In this work, we propose TWIST, a method for training SpeechLMs using a warm-start from a pretrained textual language models. We show using both automatic and human evaluations that TWIST outperforms a cold-start SpeechLM across the board. We empirically analyze the effect of different model design choices such as the speech tokenizer, the pretrained textual model, and the dataset size. We find that model and dataset scale both play an important role in constructing better-performing SpeechLMs. Based on our observations, we present the largest (to the best of our knowledge) SpeechLM both in terms of number of parameters and training data. We additionally introduce two spoken versions of the StoryCloze textual benchmark to further improve model evaluation and advance future research in the field. We make speech samples, code and models publicly available.
 
-----
+        ----
 
-## [2771] Riemannian Residual Neural Networks
+        ## [2771] Riemannian Residual Neural Networks
 
-**Authors**: *Isay Katsman, Eric Chen, Sidhanth Holalkere, Anna Asch, Aaron Lou, Ser Nam Lim, Christopher De Sa*
+        **Authors**: *Isay Katsman, Eric Chen, Sidhanth Holalkere, Anna Asch, Aaron Lou, Ser Nam Lim, Christopher De Sa*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c868aa7437dc9b29e674cd2e25689021-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c868aa7437dc9b29e674cd2e25689021-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c868aa7437dc9b29e674cd2e25689021-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c868aa7437dc9b29e674cd2e25689021-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Recent methods in geometric deep learning have introduced various neural networks to operate over data that lie on Riemannian manifolds. Such networks are often necessary to learn well over graphs with a hierarchical structure or to learn over manifold-valued data encountered in the natural sciences. These networks are often inspired by and directly generalize standard Euclidean neural networks. However, extending Euclidean networks is difficult and has only been done for a select few manifolds. In this work, we examine the residual neural network (ResNet) and show how to extend this construction to general Riemannian manifolds in a geometrically principled manner. Originally introduced to help solve the vanishing gradient problem, ResNets have become ubiquitous in machine learning due to their beneficial learning properties, excellent empirical results, and easy-to-incorporate nature when building varied neural networks. We find that our Riemannian ResNets mirror these desirable properties: when compared to existing manifold neural networks designed to learn over hyperbolic space and the manifold of symmetric positive definite matrices, we outperform both kinds of networks in terms of relevant testing metrics and training dynamics.
+        Recent methods in geometric deep learning have introduced various neural networks to operate over data that lie on Riemannian manifolds. Such networks are often necessary to learn well over graphs with a hierarchical structure or to learn over manifold-valued data encountered in the natural sciences. These networks are often inspired by and directly generalize standard Euclidean neural networks. However, extending Euclidean networks is difficult and has only been done for a select few manifolds. In this work, we examine the residual neural network (ResNet) and show how to extend this construction to general Riemannian manifolds in a geometrically principled manner. Originally introduced to help solve the vanishing gradient problem, ResNets have become ubiquitous in machine learning due to their beneficial learning properties, excellent empirical results, and easy-to-incorporate nature when building varied neural networks. We find that our Riemannian ResNets mirror these desirable properties: when compared to existing manifold neural networks designed to learn over hyperbolic space and the manifold of symmetric positive definite matrices, we outperform both kinds of networks in terms of relevant testing metrics and training dynamics.
 
-----
+        ----
 
-## [2772] Aligning Gradient and Hessian for Neural Signed Distance Function
+        ## [2772] Aligning Gradient and Hessian for Neural Signed Distance Function
 
-**Authors**: *Ruian Wang, Zixiong Wang, Yunxiao Zhang, Shuang-Min Chen, Shiqing Xin, Changhe Tu, Wenping Wang*
+        **Authors**: *Ruian Wang, Zixiong Wang, Yunxiao Zhang, Shuang-Min Chen, Shiqing Xin, Changhe Tu, Wenping Wang*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c87bd5843849884e9430f1693b018d71-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c87bd5843849884e9430f1693b018d71-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c87bd5843849884e9430f1693b018d71-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c87bd5843849884e9430f1693b018d71-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-The Signed Distance Function (SDF), as an implicit surface representation, provides a crucial method for reconstructing a watertight surface from unorganized point clouds. The SDF has a fundamental relationship with the principles of surface vector calculus. Given a smooth surface, there exists a thin-shell space in which the SDF is differentiable everywhere such that the gradient of the SDF is an eigenvector of its Hessian matrix, with a corresponding eigenvalue of zero. In this paper, we introduce a method to directly learn the SDF from point clouds in the absence of normals. Our motivation is grounded in a fundamental observation: aligning the gradient and the Hessian of the SDF provides a more efficient mechanism to govern gradient directions. This, in turn, ensures that gradient changes more accurately reflect the true underlying variations in shape. Extensive experimental results demonstrate its ability to accurately recover the underlying shape while effectively suppressing the presence of ghost geometry.
+        The Signed Distance Function (SDF), as an implicit surface representation, provides a crucial method for reconstructing a watertight surface from unorganized point clouds. The SDF has a fundamental relationship with the principles of surface vector calculus. Given a smooth surface, there exists a thin-shell space in which the SDF is differentiable everywhere such that the gradient of the SDF is an eigenvector of its Hessian matrix, with a corresponding eigenvalue of zero. In this paper, we introduce a method to directly learn the SDF from point clouds in the absence of normals. Our motivation is grounded in a fundamental observation: aligning the gradient and the Hessian of the SDF provides a more efficient mechanism to govern gradient directions. This, in turn, ensures that gradient changes more accurately reflect the true underlying variations in shape. Extensive experimental results demonstrate its ability to accurately recover the underlying shape while effectively suppressing the presence of ghost geometry.
 
-----
+        ----
 
-## [2773] Achieving Cross Modal Generalization with Multimodal Unified Representation
+        ## [2773] Achieving Cross Modal Generalization with Multimodal Unified Representation
 
-**Authors**: *Yan Xia, Hai Huang, Jieming Zhu, Zhou Zhao*
+        **Authors**: *Yan Xia, Hai Huang, Jieming Zhu, Zhou Zhao*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c89f09849eb5af489abb122394ff0f0b-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c89f09849eb5af489abb122394ff0f0b-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c89f09849eb5af489abb122394ff0f0b-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c89f09849eb5af489abb122394ff0f0b-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-This paper introduces a novel task called Cross Modal Generalization (CMG), which addresses the challenge of learning a unified discrete representation from paired multimodal data during pre-training. Then in downstream tasks, the model can achieve zero-shot generalization ability in other modalities when only one modal is labeled. Existing approaches in multimodal representation learning focus more on coarse-grained alignment or rely on the assumption that  information from different modalities is completely aligned, which is impractical in real-world scenarios. To overcome this limitation, we propose \textbf{Uni-Code}, which contains two key contributions: the Dual Cross-modal Information Disentangling (DCID) module and the Multi-Modal Exponential Moving Average (MM-EMA). These methods facilitate bidirectional supervision between modalities and align semantically equivalent information in a shared discrete latent space, enabling fine-grained unified representation of multimodal sequences. During pre-training, we investigate various modality combinations, including audio-visual, audio-text, and the tri-modal combination of audio-visual-text. Extensive experiments on various downstream tasks, i.e., cross-modal event classification, localization, cross-modal retrieval, query-based video segmentation, and cross-dataset event localization, demonstrate the effectiveness of our proposed methods. The code is available at https://github.com/haihuangcode/CMG.
+        This paper introduces a novel task called Cross Modal Generalization (CMG), which addresses the challenge of learning a unified discrete representation from paired multimodal data during pre-training. Then in downstream tasks, the model can achieve zero-shot generalization ability in other modalities when only one modal is labeled. Existing approaches in multimodal representation learning focus more on coarse-grained alignment or rely on the assumption that  information from different modalities is completely aligned, which is impractical in real-world scenarios. To overcome this limitation, we propose \textbf{Uni-Code}, which contains two key contributions: the Dual Cross-modal Information Disentangling (DCID) module and the Multi-Modal Exponential Moving Average (MM-EMA). These methods facilitate bidirectional supervision between modalities and align semantically equivalent information in a shared discrete latent space, enabling fine-grained unified representation of multimodal sequences. During pre-training, we investigate various modality combinations, including audio-visual, audio-text, and the tri-modal combination of audio-visual-text. Extensive experiments on various downstream tasks, i.e., cross-modal event classification, localization, cross-modal retrieval, query-based video segmentation, and cross-dataset event localization, demonstrate the effectiveness of our proposed methods. The code is available at https://github.com/haihuangcode/CMG.
 
-----
+        ----
 
-## [2774] Temperature Balancing, Layer-wise Weight Analysis, and Neural Network Training
+        ## [2774] Temperature Balancing, Layer-wise Weight Analysis, and Neural Network Training
 
-**Authors**: *Yefan Zhou, Tianyu Pang, Keqin Liu, Charles H. Martin, Michael W. Mahoney, Yaoqing Yang*
+        **Authors**: *Yefan Zhou, Tianyu Pang, Keqin Liu, Charles H. Martin, Michael W. Mahoney, Yaoqing Yang*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c8a4dd7d9e13583d714ce8580da7bbc7-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c8a4dd7d9e13583d714ce8580da7bbc7-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c8a4dd7d9e13583d714ce8580da7bbc7-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c8a4dd7d9e13583d714ce8580da7bbc7-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Regularization in modern machine learning is crucial, and it can take various forms in algorithmic design: training set, model family, error function, regularization terms, and optimizations. In particular, the learning rate, which can be interpreted as a temperature-like parameter within the statistical mechanics of learning, plays a crucial role in neural network training. Indeed, many widely adopted training strategies basically just define the decay of the learning rate over time. This process can be interpreted as decreasing a temperature, using either a global learning rate (for the entire model) or a learning rate that varies for each parameter. This paper proposes TempBalance, a straightforward yet effective layer-wise learning rate method. TempBalance is based on Heavy-Tailed Self-Regularization (HT-SR) Theory, an approach which characterizes the implicit self-regularization of different layers in trained models. We demonstrate the efficacy of using HT-SR-motivated metrics to guide the scheduling and balancing of temperature across all network layers during model training, resulting in improved performance during testing. We implement TempBalance on CIFAR10, CIFAR100, SVHN, and TinyImageNet datasets using ResNets, VGGs and WideResNets with various depths and widths. Our results show that TempBalance significantly outperforms ordinary SGD and carefully-tuned spectral norm regularization. We also show that TempBalance outperforms a number of state-of-the-art optimizers and learning rate schedulers.
+        Regularization in modern machine learning is crucial, and it can take various forms in algorithmic design: training set, model family, error function, regularization terms, and optimizations. In particular, the learning rate, which can be interpreted as a temperature-like parameter within the statistical mechanics of learning, plays a crucial role in neural network training. Indeed, many widely adopted training strategies basically just define the decay of the learning rate over time. This process can be interpreted as decreasing a temperature, using either a global learning rate (for the entire model) or a learning rate that varies for each parameter. This paper proposes TempBalance, a straightforward yet effective layer-wise learning rate method. TempBalance is based on Heavy-Tailed Self-Regularization (HT-SR) Theory, an approach which characterizes the implicit self-regularization of different layers in trained models. We demonstrate the efficacy of using HT-SR-motivated metrics to guide the scheduling and balancing of temperature across all network layers during model training, resulting in improved performance during testing. We implement TempBalance on CIFAR10, CIFAR100, SVHN, and TinyImageNet datasets using ResNets, VGGs and WideResNets with various depths and widths. Our results show that TempBalance significantly outperforms ordinary SGD and carefully-tuned spectral norm regularization. We also show that TempBalance outperforms a number of state-of-the-art optimizers and learning rate schedulers.
 
-----
+        ----
 
-## [2775] Gaussian Process Probes (GPP) for Uncertainty-Aware Probing
+        ## [2775] Gaussian Process Probes (GPP) for Uncertainty-Aware Probing
 
-**Authors**: *Zi Wang, Alexander Ku, Jason Baldridge, Tom Griffiths, Been Kim*
+        **Authors**: *Zi Wang, Alexander Ku, Jason Baldridge, Tom Griffiths, Been Kim*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c8b100b376a7b338c84801b699935098-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c8b100b376a7b338c84801b699935098-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c8b100b376a7b338c84801b699935098-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c8b100b376a7b338c84801b699935098-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Understanding which concepts models can and cannot represent has been fundamental to many tasks: from effective and responsible use of models to detecting out of distribution data. We introduce Gaussian process probes (GPP), a unified and simple framework for probing and measuring uncertainty about concepts represented by models. As a Bayesian extension of linear probing methods, GPP asks what kind of distribution over classifiers (of concepts) is induced by the model. This distribution can be used to measure both what the model represents and how confident the probe is about what the model represents.  GPP can be applied to any pre-trained  model with vector representations of inputs (e.g., activations). It does not require access to training data, gradients, or the architecture. We validate GPP on datasets containing both synthetic and real images. Our experiments show it can (1) probe a model's representations of concepts even with a very small number of examples, (2) accurately measure both epistemic uncertainty (how confident the probe is) and aleatory uncertainty (how fuzzy the concepts are to the model), and (3) detect out of distribution data using those uncertainty measures as well as classic methods do. By using Gaussian processes to expand what probing can offer, GPP provides a data-efficient, versatile and uncertainty-aware tool for understanding and evaluating the capabilities of machine learning models.
+        Understanding which concepts models can and cannot represent has been fundamental to many tasks: from effective and responsible use of models to detecting out of distribution data. We introduce Gaussian process probes (GPP), a unified and simple framework for probing and measuring uncertainty about concepts represented by models. As a Bayesian extension of linear probing methods, GPP asks what kind of distribution over classifiers (of concepts) is induced by the model. This distribution can be used to measure both what the model represents and how confident the probe is about what the model represents.  GPP can be applied to any pre-trained  model with vector representations of inputs (e.g., activations). It does not require access to training data, gradients, or the architecture. We validate GPP on datasets containing both synthetic and real images. Our experiments show it can (1) probe a model's representations of concepts even with a very small number of examples, (2) accurately measure both epistemic uncertainty (how confident the probe is) and aleatory uncertainty (how fuzzy the concepts are to the model), and (3) detect out of distribution data using those uncertainty measures as well as classic methods do. By using Gaussian processes to expand what probing can offer, GPP provides a data-efficient, versatile and uncertainty-aware tool for understanding and evaluating the capabilities of machine learning models.
 
-----
+        ----
 
-## [2776] Inferring Hybrid Neural Fluid Fields from Videos
+        ## [2776] Inferring Hybrid Neural Fluid Fields from Videos
 
-**Authors**: *Hong-Xing Yu, Yang Zheng, Yuan Gao, Yitong Deng, Bo Zhu, Jiajun Wu*
+        **Authors**: *Hong-Xing Yu, Yang Zheng, Yuan Gao, Yitong Deng, Bo Zhu, Jiajun Wu*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c8e1620b29d546c2999a9339ab29aa82-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c8e1620b29d546c2999a9339ab29aa82-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c8e1620b29d546c2999a9339ab29aa82-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c8e1620b29d546c2999a9339ab29aa82-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-We study recovering fluid density and velocity from sparse multiview videos. Existing neural dynamic reconstruction methods predominantly rely on optical flows; therefore, they cannot accurately estimate the density and uncover the underlying velocity due to the inherent visual ambiguities of fluid velocity, as fluids are often shapeless and lack stable visual features. The challenge is further pronounced by the turbulent nature of fluid flows, which calls for properly designed fluid velocity representations. To address these challenges, we propose hybrid neural fluid fields (HyFluid), a neural approach to jointly infer fluid density and velocity fields. Specifically, to deal with visual ambiguities of fluid velocity, we introduce a set of physics-based losses that enforce inferring a physically plausible velocity field, which is divergence-free and drives the transport of density. To deal with the turbulent nature of fluid velocity, we design a hybrid neural velocity representation that includes a base neural velocity field that captures most irrotational energy and a vortex particle-based velocity that models residual turbulent velocity. We show that our method enables recovering vortical flow details. Our approach opens up possibilities for various learning and reconstruction applications centered around 3D incompressible flow, including fluid re-simulation and editing, future prediction, and neural dynamic scene composition. Project website: https://kovenyu.com/HyFluid/
+        We study recovering fluid density and velocity from sparse multiview videos. Existing neural dynamic reconstruction methods predominantly rely on optical flows; therefore, they cannot accurately estimate the density and uncover the underlying velocity due to the inherent visual ambiguities of fluid velocity, as fluids are often shapeless and lack stable visual features. The challenge is further pronounced by the turbulent nature of fluid flows, which calls for properly designed fluid velocity representations. To address these challenges, we propose hybrid neural fluid fields (HyFluid), a neural approach to jointly infer fluid density and velocity fields. Specifically, to deal with visual ambiguities of fluid velocity, we introduce a set of physics-based losses that enforce inferring a physically plausible velocity field, which is divergence-free and drives the transport of density. To deal with the turbulent nature of fluid velocity, we design a hybrid neural velocity representation that includes a base neural velocity field that captures most irrotational energy and a vortex particle-based velocity that models residual turbulent velocity. We show that our method enables recovering vortical flow details. Our approach opens up possibilities for various learning and reconstruction applications centered around 3D incompressible flow, including fluid re-simulation and editing, future prediction, and neural dynamic scene composition. Project website: https://kovenyu.com/HyFluid/
 
-----
+        ----
 
-## [2777] MeGraph: Capturing Long-Range Interactions by Alternating Local and Hierarchical Aggregation on Multi-Scaled Graph Hierarchy
+        ## [2777] MeGraph: Capturing Long-Range Interactions by Alternating Local and Hierarchical Aggregation on Multi-Scaled Graph Hierarchy
 
-**Authors**: *Honghua Dong, Jiawei Xu, Yu Yang, Rui Zhao, Shiwen Wu, Chun Yuan, Xiu Li, Chris J. Maddison, Lei Han*
+        **Authors**: *Honghua Dong, Jiawei Xu, Yu Yang, Rui Zhao, Shiwen Wu, Chun Yuan, Xiu Li, Chris J. Maddison, Lei Han*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c9034f4f90fbfad5b80f47fe3dd6cf51-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c9034f4f90fbfad5b80f47fe3dd6cf51-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c9034f4f90fbfad5b80f47fe3dd6cf51-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c9034f4f90fbfad5b80f47fe3dd6cf51-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Graph neural networks, which typically exchange information between local neighbors, often struggle to capture long-range interactions (LRIs) within the graph. Building a graph hierarchy via graph pooling methods is a promising approach to address this challenge; however, hierarchical information propagation cannot entirely take over the role of local information aggregation. To balance locality and hierarchy, we integrate the local and hierarchical structures, represented by intra- and inter-graphs respectively, of a multi-scale graph hierarchy into a single mega graph. Our proposed MeGraph model consists of multiple layers alternating between local and hierarchical information aggregation on the mega graph. Each layer first performs local-aware message-passing on graphs of varied scales via the intra-graph edges, then fuses information across the entire hierarchy along the bidirectional pathways formed by inter-graph edges. By repeating this fusion process, local and hierarchical information could intertwine and complement each other. To evaluate our model, we establish a new Graph Theory Benchmark designed to assess LRI capture ability, in which MeGraph demonstrates dominant performance. Furthermore, MeGraph exhibits superior or equivalent performance to state-of-the-art models on the Long Range Graph Benchmark. The experimental results on commonly adopted real-world datasets further demonstrate the broad applicability of MeGraph.
+        Graph neural networks, which typically exchange information between local neighbors, often struggle to capture long-range interactions (LRIs) within the graph. Building a graph hierarchy via graph pooling methods is a promising approach to address this challenge; however, hierarchical information propagation cannot entirely take over the role of local information aggregation. To balance locality and hierarchy, we integrate the local and hierarchical structures, represented by intra- and inter-graphs respectively, of a multi-scale graph hierarchy into a single mega graph. Our proposed MeGraph model consists of multiple layers alternating between local and hierarchical information aggregation on the mega graph. Each layer first performs local-aware message-passing on graphs of varied scales via the intra-graph edges, then fuses information across the entire hierarchy along the bidirectional pathways formed by inter-graph edges. By repeating this fusion process, local and hierarchical information could intertwine and complement each other. To evaluate our model, we establish a new Graph Theory Benchmark designed to assess LRI capture ability, in which MeGraph demonstrates dominant performance. Furthermore, MeGraph exhibits superior or equivalent performance to state-of-the-art models on the Long Range Graph Benchmark. The experimental results on commonly adopted real-world datasets further demonstrate the broad applicability of MeGraph.
 
-----
+        ----
 
-## [2778] Double and Single Descent in Causal Inference with an Application to High-Dimensional Synthetic Control
+        ## [2778] Double and Single Descent in Causal Inference with an Application to High-Dimensional Synthetic Control
 
-**Authors**: *Jann Spiess, Guido Imbens, Amar Venugopal*
+        **Authors**: *Jann Spiess, Guido Imbens, Amar Venugopal*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c904c5d43d8a01177063977bd67bf6fc-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c904c5d43d8a01177063977bd67bf6fc-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c904c5d43d8a01177063977bd67bf6fc-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c904c5d43d8a01177063977bd67bf6fc-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Motivated by a recent literature on the double-descent phenomenon in machine learning, we consider highly over-parameterized models in causal inference, including synthetic control with many control units. In such models, there may be so many free parameters that the model fits the training data perfectly. We first investigate high-dimensional linear regression for imputing wage data and estimating average treatment effects, where we find that models with many more covariates than sample size can outperform simple ones. We then document the performance of high-dimensional synthetic control estimators with many control units. We find that adding control units can help improve imputation performance even beyond the point where the pre-treatment fit is perfect. We provide a unified theoretical perspective on the performance of these high-dimensional models. Specifically, we show that more complex models can be interpreted as model-averaging estimators over simpler ones, which we link to an improvement in average performance. This perspective yields concrete insights into the use of synthetic control when control units are many relative to the number of pre-treatment periods.
+        Motivated by a recent literature on the double-descent phenomenon in machine learning, we consider highly over-parameterized models in causal inference, including synthetic control with many control units. In such models, there may be so many free parameters that the model fits the training data perfectly. We first investigate high-dimensional linear regression for imputing wage data and estimating average treatment effects, where we find that models with many more covariates than sample size can outperform simple ones. We then document the performance of high-dimensional synthetic control estimators with many control units. We find that adding control units can help improve imputation performance even beyond the point where the pre-treatment fit is perfect. We provide a unified theoretical perspective on the performance of these high-dimensional models. Specifically, we show that more complex models can be interpreted as model-averaging estimators over simpler ones, which we link to an improvement in average performance. This perspective yields concrete insights into the use of synthetic control when control units are many relative to the number of pre-treatment periods.
 
-----
+        ----
 
-## [2779] IPMix: Label-Preserving Data Augmentation Method for Training Robust Classifiers
+        ## [2779] IPMix: Label-Preserving Data Augmentation Method for Training Robust Classifiers
 
-**Authors**: *Zhenglin Huang, Xiaoan Bao, Na Zhang, Qingqi Zhang, Xiao Tu, Biao Wu, Xi Yang*
+        **Authors**: *Zhenglin Huang, Xiaoan Bao, Na Zhang, Qingqi Zhang, Xiao Tu, Biao Wu, Xi Yang*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c917d8b9e01427f3184d80ade22f4d1f-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c917d8b9e01427f3184d80ade22f4d1f-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c917d8b9e01427f3184d80ade22f4d1f-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c917d8b9e01427f3184d80ade22f4d1f-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Data augmentation has been proven effective for training high-accuracy convolutional neural network classifiers by preventing overfitting. However, building deep neural networks in real-world scenarios requires not only high accuracy on clean data but also robustness when data distributions shift. While prior methods have proposed that there is a trade-off between accuracy and robustness, we propose IPMix, a simple data augmentation approach to improve robustness without hurting clean accuracy. IPMix integrates three levels of data augmentation (image-level, patch-level, and pixel-level) into a coherent and label-preserving technique to increase the diversity of training data with limited computational overhead. To further improve the robustness, IPMix introduces structural complexity at different levels to generate more diverse images and adopts the random mixing method for multi-scale information fusion. Experiments demonstrate that IPMix outperforms state-of-the-art corruption robustness on CIFAR-C and ImageNet-C. In addition, we show that IPMix also significantly improves the other safety measures, including robustness to adversarial perturbations, calibration, prediction consistency, and anomaly detection, achieving state-of-the-art or comparable results on several benchmarks, including ImageNet-R, ImageNet-A, and ImageNet-O.
+        Data augmentation has been proven effective for training high-accuracy convolutional neural network classifiers by preventing overfitting. However, building deep neural networks in real-world scenarios requires not only high accuracy on clean data but also robustness when data distributions shift. While prior methods have proposed that there is a trade-off between accuracy and robustness, we propose IPMix, a simple data augmentation approach to improve robustness without hurting clean accuracy. IPMix integrates three levels of data augmentation (image-level, patch-level, and pixel-level) into a coherent and label-preserving technique to increase the diversity of training data with limited computational overhead. To further improve the robustness, IPMix introduces structural complexity at different levels to generate more diverse images and adopts the random mixing method for multi-scale information fusion. Experiments demonstrate that IPMix outperforms state-of-the-art corruption robustness on CIFAR-C and ImageNet-C. In addition, we show that IPMix also significantly improves the other safety measures, including robustness to adversarial perturbations, calibration, prediction consistency, and anomaly detection, achieving state-of-the-art or comparable results on several benchmarks, including ImageNet-R, ImageNet-A, and ImageNet-O.
 
-----
+        ----
 
-## [2780] Discovering Hierarchical Achievements in Reinforcement Learning via Contrastive Learning
+        ## [2780] Discovering Hierarchical Achievements in Reinforcement Learning via Contrastive Learning
 
-**Authors**: *Seungyong Moon, Junyoung Yeom, Bumsoo Park, Hyun Oh Song*
+        **Authors**: *Seungyong Moon, Junyoung Yeom, Bumsoo Park, Hyun Oh Song*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c919a2b5ec1de69f2629f9119676e336-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c919a2b5ec1de69f2629f9119676e336-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c919a2b5ec1de69f2629f9119676e336-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c919a2b5ec1de69f2629f9119676e336-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Discovering achievements with a hierarchical structure in procedurally generated environments presents a significant challenge.This requires an agent to possess a broad range of abilities, including generalization and long-term reasoning. Many prior methods have been built upon model-based or hierarchical approaches, with the belief that an explicit module for long-term planning would be advantageous for learning hierarchical dependencies. However, these methods demand an excessive number of environment interactions or large model sizes, limiting their practicality. In this work, we demonstrate that proximal policy optimization (PPO), a simple yet versatile model-free algorithm, outperforms previous methods when optimized with recent implementation practices. Moreover, we find that the PPO agent can predict the next achievement to be unlocked to some extent, albeit with limited confidence. Based on this observation, we introduce a novel contrastive learning method, called achievement distillation, which strengthens the agent's ability to predict the next achievement. Our method exhibits a strong capacity for discovering hierarchical achievements and shows state-of-the-art performance on the challenging Crafter environment in a sample-efficient manner while utilizing fewer model parameters.
+        Discovering achievements with a hierarchical structure in procedurally generated environments presents a significant challenge.This requires an agent to possess a broad range of abilities, including generalization and long-term reasoning. Many prior methods have been built upon model-based or hierarchical approaches, with the belief that an explicit module for long-term planning would be advantageous for learning hierarchical dependencies. However, these methods demand an excessive number of environment interactions or large model sizes, limiting their practicality. In this work, we demonstrate that proximal policy optimization (PPO), a simple yet versatile model-free algorithm, outperforms previous methods when optimized with recent implementation practices. Moreover, we find that the PPO agent can predict the next achievement to be unlocked to some extent, albeit with limited confidence. Based on this observation, we introduce a novel contrastive learning method, called achievement distillation, which strengthens the agent's ability to predict the next achievement. Our method exhibits a strong capacity for discovering hierarchical achievements and shows state-of-the-art performance on the challenging Crafter environment in a sample-efficient manner while utilizing fewer model parameters.
 
-----
+        ----
 
-## [2781] VisoGender: A dataset for benchmarking gender bias in image-text pronoun resolution
+        ## [2781] VisoGender: A dataset for benchmarking gender bias in image-text pronoun resolution
 
-**Authors**: *Siobhan Mackenzie Hall, Fernanda Gonçalves Abrantes, Hanwen Zhu, Grace Sodunke, Aleksandar Shtedritski, Hannah Rose Kirk*
+        **Authors**: *Siobhan Mackenzie Hall, Fernanda Gonçalves Abrantes, Hanwen Zhu, Grace Sodunke, Aleksandar Shtedritski, Hannah Rose Kirk*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c93f26b1381b17693055a611a513f1e9-Abstract-Datasets_and_Benchmarks.html](http://papers.nips.cc/paper_files/paper/2023/hash/c93f26b1381b17693055a611a513f1e9-Abstract-Datasets_and_Benchmarks.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c93f26b1381b17693055a611a513f1e9-Abstract-Datasets_and_Benchmarks.html](http://papers.nips.cc/paper_files/paper/2023/hash/c93f26b1381b17693055a611a513f1e9-Abstract-Datasets_and_Benchmarks.html)
 
-**Abstract**:
+        **Abstract**:
 
-We introduce VisoGender, a novel dataset for benchmarking gender bias in vision-language models. We focus on occupation-related biases within a hegemonic system of binary gender, inspired by Winograd and Winogender schemas, where each image is associated with a caption containing a pronoun relationship of subjects and objects in the scene. VisoGender is balanced by gender representation in professional roles, supporting bias evaluation in two ways: i) resolution bias, where we evaluate the difference between pronoun resolution accuracies for image subjects with gender presentations perceived as masculine versus feminine by human annotators and ii) retrieval bias, where we compare ratios of professionals perceived to have masculine and feminine gender presentations retrieved for a gender-neutral search query. We benchmark several state-of-the-art vision-language models and find that they demonstrate bias in resolving binary gender in complex scenes. While the direction and magnitude of gender bias depends on the task and the model being evaluated, captioning models are generally less biased than Vision-Language Encoders.
+        We introduce VisoGender, a novel dataset for benchmarking gender bias in vision-language models. We focus on occupation-related biases within a hegemonic system of binary gender, inspired by Winograd and Winogender schemas, where each image is associated with a caption containing a pronoun relationship of subjects and objects in the scene. VisoGender is balanced by gender representation in professional roles, supporting bias evaluation in two ways: i) resolution bias, where we evaluate the difference between pronoun resolution accuracies for image subjects with gender presentations perceived as masculine versus feminine by human annotators and ii) retrieval bias, where we compare ratios of professionals perceived to have masculine and feminine gender presentations retrieved for a gender-neutral search query. We benchmark several state-of-the-art vision-language models and find that they demonstrate bias in resolving binary gender in complex scenes. While the direction and magnitude of gender bias depends on the task and the model being evaluated, captioning models are generally less biased than Vision-Language Encoders.
 
-----
+        ----
 
-## [2782] Concept Distillation: Leveraging Human-Centered Explanations for Model Improvement
+        ## [2782] Concept Distillation: Leveraging Human-Centered Explanations for Model Improvement
 
-**Authors**: *Avani Gupta, Saurabh Saini, P. J. Narayanan*
+        **Authors**: *Avani Gupta, Saurabh Saini, P. J. Narayanan*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c9450295fd667740a39a68148fc17f6e-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c9450295fd667740a39a68148fc17f6e-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c9450295fd667740a39a68148fc17f6e-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c9450295fd667740a39a68148fc17f6e-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Humans use abstract concepts for understanding instead of hard features. Recent interpretability research has focused on human-centered concept explanations of neural networks. Concept Activation Vectors (CAVs) estimate a model's sensitivity and possible biases to a given concept. We extend CAVs from post-hoc analysis to ante-hoc training to reduce model bias through fine-tuning using an additional Concept Loss. Concepts are defined on the final layer of the network in the past. We generalize it to intermediate layers, including the last convolution layer. We also introduce Concept Distillation, a method to define rich and effective concepts using a pre-trained knowledgeable model as the teacher. Our method can sensitize or desensitize a model towards concepts. We show applications of concept-sensitive training to debias several classification problems. We also show a way to induce prior knowledge into a reconstruction problem. We show that concept-sensitive training can improve model interpretability, reduce biases, and induce prior knowledge.
+        Humans use abstract concepts for understanding instead of hard features. Recent interpretability research has focused on human-centered concept explanations of neural networks. Concept Activation Vectors (CAVs) estimate a model's sensitivity and possible biases to a given concept. We extend CAVs from post-hoc analysis to ante-hoc training to reduce model bias through fine-tuning using an additional Concept Loss. Concepts are defined on the final layer of the network in the past. We generalize it to intermediate layers, including the last convolution layer. We also introduce Concept Distillation, a method to define rich and effective concepts using a pre-trained knowledgeable model as the teacher. Our method can sensitize or desensitize a model towards concepts. We show applications of concept-sensitive training to debias several classification problems. We also show a way to induce prior knowledge into a reconstruction problem. We show that concept-sensitive training can improve model interpretability, reduce biases, and induce prior knowledge.
 
-----
+        ----
 
-## [2783] Mitigating the Effect of Incidental Correlations on Part-based Learning
+        ## [2783] Mitigating the Effect of Incidental Correlations on Part-based Learning
 
-**Authors**: *Gaurav Bhatt, Deepayan Das, Leonid Sigal, Vineeth N. Balasubramanian*
+        **Authors**: *Gaurav Bhatt, Deepayan Das, Leonid Sigal, Vineeth N. Balasubramanian*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c9493f7cb0d1ec4ae5fc6e0c1a5aca63-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c9493f7cb0d1ec4ae5fc6e0c1a5aca63-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c9493f7cb0d1ec4ae5fc6e0c1a5aca63-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c9493f7cb0d1ec4ae5fc6e0c1a5aca63-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Intelligent systems possess a crucial characteristic of breaking complicated problems into smaller reusable components or parts and adjusting to new tasks using these part representations. However, current part-learners encounter difficulties in dealing with incidental correlations resulting from the limited observations of objects that may appear only in specific arrangements or with specific backgrounds. These incidental correlations may have a detrimental impact on the generalization and interpretability of learned part representations. This study asserts that part-based representations could be more interpretable and generalize better with limited data, employing two innovative regularization methods. The first regularization separates foreground and background information's generative process via a unique mixture-of-parts formulation. Structural constraints are imposed on the parts using a weakly-supervised loss, guaranteeing that the mixture-of-parts for foreground and background entails soft, object-agnostic masks. The second regularization assumes the form of a distillation loss, ensuring the invariance of the learned parts to the incidental background correlations. Furthermore, we incorporate sparse and orthogonal constraints to facilitate learning high-quality part representations.By reducing the impact of incidental background correlations on the learned parts, we exhibit state-of-the-art (SoTA) performance on few-shot learning tasks on benchmark datasets, including MiniImagenet, TieredImageNet, and FC100. We also demonstrate that the part-based representations acquired through our approach generalize better than existing techniques, even under domain shifts of the background and common data corruption on the ImageNet-9 dataset.
+        Intelligent systems possess a crucial characteristic of breaking complicated problems into smaller reusable components or parts and adjusting to new tasks using these part representations. However, current part-learners encounter difficulties in dealing with incidental correlations resulting from the limited observations of objects that may appear only in specific arrangements or with specific backgrounds. These incidental correlations may have a detrimental impact on the generalization and interpretability of learned part representations. This study asserts that part-based representations could be more interpretable and generalize better with limited data, employing two innovative regularization methods. The first regularization separates foreground and background information's generative process via a unique mixture-of-parts formulation. Structural constraints are imposed on the parts using a weakly-supervised loss, guaranteeing that the mixture-of-parts for foreground and background entails soft, object-agnostic masks. The second regularization assumes the form of a distillation loss, ensuring the invariance of the learned parts to the incidental background correlations. Furthermore, we incorporate sparse and orthogonal constraints to facilitate learning high-quality part representations.By reducing the impact of incidental background correlations on the learned parts, we exhibit state-of-the-art (SoTA) performance on few-shot learning tasks on benchmark datasets, including MiniImagenet, TieredImageNet, and FC100. We also demonstrate that the part-based representations acquired through our approach generalize better than existing techniques, even under domain shifts of the background and common data corruption on the ImageNet-9 dataset.
 
-----
+        ----
 
-## [2784] Towards In-context Scene Understanding
+        ## [2784] Towards In-context Scene Understanding
 
-**Authors**: *Ivana Balazevic, David Steiner, Nikhil Parthasarathy, Relja Arandjelovic, Olivier J. Hénaff*
+        **Authors**: *Ivana Balazevic, David Steiner, Nikhil Parthasarathy, Relja Arandjelovic, Olivier J. Hénaff*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c94a632545000531f0b47000e9caa5b6-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c94a632545000531f0b47000e9caa5b6-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c94a632545000531f0b47000e9caa5b6-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c94a632545000531f0b47000e9caa5b6-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-In-context learning––the ability to configure a model's behavior with different prompts––has revolutionized the field of natural language processing, alleviating the need for task-specific models and paving the way for generalist models capable of assisting with any query. Computer vision, in contrast, has largely stayed in the former regime: specialized decoders and finetuning protocols are generally required to perform dense tasks such as semantic segmentation and depth estimation. In this work we explore a simple mechanism for in-context learning of such scene understanding tasks: nearest neighbor retrieval from a prompt of annotated features. We propose a new pretraining protocol––leveraging attention within and across images––which yields representations particularly useful in this regime. The resulting Hummingbird model, suitably prompted, performs various scene understanding tasks without modification while approaching the performance of specialists that have been finetuned for each task. Moreover, Hummingbird can be configured to perform new tasks much more efficiently than finetuned models, raising the possibility of scene understanding in the interactive assistant regime.
+        In-context learning––the ability to configure a model's behavior with different prompts––has revolutionized the field of natural language processing, alleviating the need for task-specific models and paving the way for generalist models capable of assisting with any query. Computer vision, in contrast, has largely stayed in the former regime: specialized decoders and finetuning protocols are generally required to perform dense tasks such as semantic segmentation and depth estimation. In this work we explore a simple mechanism for in-context learning of such scene understanding tasks: nearest neighbor retrieval from a prompt of annotated features. We propose a new pretraining protocol––leveraging attention within and across images––which yields representations particularly useful in this regime. The resulting Hummingbird model, suitably prompted, performs various scene understanding tasks without modification while approaching the performance of specialists that have been finetuned for each task. Moreover, Hummingbird can be configured to perform new tasks much more efficiently than finetuned models, raising the possibility of scene understanding in the interactive assistant regime.
 
-----
+        ----
 
-## [2785] Prediction and Control in Continual Reinforcement Learning
+        ## [2785] Prediction and Control in Continual Reinforcement Learning
 
-**Authors**: *Nishanth Anand, Doina Precup*
+        **Authors**: *Nishanth Anand, Doina Precup*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c94bbbef466ab1b2cfa100e41413b3a8-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c94bbbef466ab1b2cfa100e41413b3a8-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c94bbbef466ab1b2cfa100e41413b3a8-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c94bbbef466ab1b2cfa100e41413b3a8-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Temporal difference (TD) learning is often used to update the estimate of the value function which is used by RL agents to extract useful policies. In this paper, we focus on value function estimation in continual reinforcement learning. We propose to decompose the value function into two components which update at different timescales: a permanent value function, which holds general knowledge that persists over time, and a transient value function, which allows quick adaptation to new situations. We establish theoretical results showing that our approach is well suited for continual learning and draw connections to the complementary learning systems (CLS) theory from neuroscience. Empirically, this approach improves performance significantly on both prediction and control problems.
+        Temporal difference (TD) learning is often used to update the estimate of the value function which is used by RL agents to extract useful policies. In this paper, we focus on value function estimation in continual reinforcement learning. We propose to decompose the value function into two components which update at different timescales: a permanent value function, which holds general knowledge that persists over time, and a transient value function, which allows quick adaptation to new situations. We establish theoretical results showing that our approach is well suited for continual learning and draw connections to the complementary learning systems (CLS) theory from neuroscience. Empirically, this approach improves performance significantly on both prediction and control problems.
 
-----
+        ----
 
-## [2786] EDGI: Equivariant Diffusion for Planning with Embodied Agents
+        ## [2786] EDGI: Equivariant Diffusion for Planning with Embodied Agents
 
-**Authors**: *Johann Brehmer, Joey Bose, Pim de Haan, Taco S. Cohen*
+        **Authors**: *Johann Brehmer, Joey Bose, Pim de Haan, Taco S. Cohen*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c95c049637c5c549c2a08e8d6dcbca4b-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c95c049637c5c549c2a08e8d6dcbca4b-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c95c049637c5c549c2a08e8d6dcbca4b-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c95c049637c5c549c2a08e8d6dcbca4b-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Embodied agents operate in a structured world, often solving tasks with spatial, temporal, and permutation symmetries. Most algorithms for planning and model-based reinforcement learning (MBRL) do not take this rich geometric structure into account, leading to sample inefficiency and poor generalization. We introduce the Equivariant Diffuser for Generating Interactions (EDGI), an algorithm for MBRL and planning that is equivariant with respect to the product of the spatial symmetry group SE(3), the discrete-time translation group ℤ, and the object permutation group Sₙ. EDGI follows the Diffuser framework by Janner et al. (2022) in treating both learning a world model and planning in it as a conditional generative modeling problem, training a diffusion model on an offline trajectory dataset. We introduce a new SE(3) × ℤ × Sₙ-equivariant diffusion model that supports multiple representations. We integrate this model in a planning loop, where conditioning and classifier guidance let us softly break the symmetry for specific tasks as needed. On object manipulation and navigation tasks, EDGI is substantially more sample efficient and generalizes better across the symmetry group than non-equivariant models.
+        Embodied agents operate in a structured world, often solving tasks with spatial, temporal, and permutation symmetries. Most algorithms for planning and model-based reinforcement learning (MBRL) do not take this rich geometric structure into account, leading to sample inefficiency and poor generalization. We introduce the Equivariant Diffuser for Generating Interactions (EDGI), an algorithm for MBRL and planning that is equivariant with respect to the product of the spatial symmetry group SE(3), the discrete-time translation group ℤ, and the object permutation group Sₙ. EDGI follows the Diffuser framework by Janner et al. (2022) in treating both learning a world model and planning in it as a conditional generative modeling problem, training a diffusion model on an offline trajectory dataset. We introduce a new SE(3) × ℤ × Sₙ-equivariant diffusion model that supports multiple representations. We integrate this model in a planning loop, where conditioning and classifier guidance let us softly break the symmetry for specific tasks as needed. On object manipulation and navigation tasks, EDGI is substantially more sample efficient and generalizes better across the symmetry group than non-equivariant models.
 
-----
+        ----
 
-## [2787] Topological RANSAC for instance verification and retrieval without fine-tuning
+        ## [2787] Topological RANSAC for instance verification and retrieval without fine-tuning
 
-**Authors**: *Guoyuan An, Ju-hyeong Seon, Inkyu An, Yuchi Huo, Sung-eui Yoon*
+        **Authors**: *Guoyuan An, Ju-hyeong Seon, Inkyu An, Yuchi Huo, Sung-eui Yoon*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c972859a984a21658432d7320c7df385-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c972859a984a21658432d7320c7df385-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c972859a984a21658432d7320c7df385-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c972859a984a21658432d7320c7df385-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-This paper presents an innovative approach to enhancing explainable image retrieval, particularly in situations where a fine-tuning set is unavailable. The widely-used SPatial verification (SP) method, despite its efficacy, relies on a spatial model and the hypothesis-testing strategy for instance recognition, leading to inherent limitations, including the assumption of planar structures and neglect of topological relations among features. To address these shortcomings, we introduce a pioneering technique that replaces the spatial model with a topological one within the RANSAC process. We propose bio-inspired saccade and fovea functions to verify the topological consistency among features, effectively circumventing the issues associated with SP's spatial model. Our experimental results demonstrate that our method significantly outperforms SP, achieving state-of-the-art performance in non-fine-tuning retrieval. Furthermore, our approach can enhance performance when used in conjunction with fine-tuned features. Importantly, our method retains high explainability and is lightweight, offering a practical and adaptable solution for a variety of real-world applications.
+        This paper presents an innovative approach to enhancing explainable image retrieval, particularly in situations where a fine-tuning set is unavailable. The widely-used SPatial verification (SP) method, despite its efficacy, relies on a spatial model and the hypothesis-testing strategy for instance recognition, leading to inherent limitations, including the assumption of planar structures and neglect of topological relations among features. To address these shortcomings, we introduce a pioneering technique that replaces the spatial model with a topological one within the RANSAC process. We propose bio-inspired saccade and fovea functions to verify the topological consistency among features, effectively circumventing the issues associated with SP's spatial model. Our experimental results demonstrate that our method significantly outperforms SP, achieving state-of-the-art performance in non-fine-tuning retrieval. Furthermore, our approach can enhance performance when used in conjunction with fine-tuned features. Importantly, our method retains high explainability and is lightweight, offering a practical and adaptable solution for a variety of real-world applications.
 
-----
+        ----
 
-## [2788] An Alternating Optimization Method for Bilevel Problems under the Polyak-Łojasiewicz Condition
+        ## [2788] An Alternating Optimization Method for Bilevel Problems under the Polyak-Łojasiewicz Condition
 
-**Authors**: *Quan Xiao, Songtao Lu, Tianyi Chen*
+        **Authors**: *Quan Xiao, Songtao Lu, Tianyi Chen*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c981fd12b1d5703f19bd8289da9fc996-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c981fd12b1d5703f19bd8289da9fc996-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c981fd12b1d5703f19bd8289da9fc996-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c981fd12b1d5703f19bd8289da9fc996-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Bilevel optimization has recently regained interest owing to its applications in emerging machine learning fields such as hyperparameter optimization, meta-learning, and reinforcement learning. Recent results have shown that simple alternating (implicit) gradient-based algorithms can match the convergence rate of single-level gradient descent (GD) when addressing bilevel problems with a strongly convex lower-level objective. However, it remains unclear whether this result can be generalized to bilevel problems beyond this basic setting. In this paper, we first introduce a stationary metric for the considered bilevel problems, which generalizes the existing metric, for a nonconvex lower-level objective that satisfies the Polyak-Łojasiewicz (PL) condition. We then propose a Generalized ALternating mEthod for bilevel opTimization (GALET) tailored to BLO with convex PL LL problem and establish that GALET achieves an $\epsilon$-stationary point for the considered problem within $\tilde{\cal O}(\epsilon^{-1})$ iterations, which matches the iteration complexity of GD for single-level smooth nonconvex problems.
+        Bilevel optimization has recently regained interest owing to its applications in emerging machine learning fields such as hyperparameter optimization, meta-learning, and reinforcement learning. Recent results have shown that simple alternating (implicit) gradient-based algorithms can match the convergence rate of single-level gradient descent (GD) when addressing bilevel problems with a strongly convex lower-level objective. However, it remains unclear whether this result can be generalized to bilevel problems beyond this basic setting. In this paper, we first introduce a stationary metric for the considered bilevel problems, which generalizes the existing metric, for a nonconvex lower-level objective that satisfies the Polyak-Łojasiewicz (PL) condition. We then propose a Generalized ALternating mEthod for bilevel opTimization (GALET) tailored to BLO with convex PL LL problem and establish that GALET achieves an $\epsilon$-stationary point for the considered problem within $\tilde{\cal O}(\epsilon^{-1})$ iterations, which matches the iteration complexity of GD for single-level smooth nonconvex problems.
 
-----
+        ----
 
-## [2789] Sub-optimality of the Naive Mean Field approximation for proportional high-dimensional Linear Regression
+        ## [2789] Sub-optimality of the Naive Mean Field approximation for proportional high-dimensional Linear Regression
 
-**Authors**: *Jiaze Qiu*
+        **Authors**: *Jiaze Qiu*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c9a7214961b9bd0ee93755bfa0abcea7-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c9a7214961b9bd0ee93755bfa0abcea7-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c9a7214961b9bd0ee93755bfa0abcea7-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c9a7214961b9bd0ee93755bfa0abcea7-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-The Na√Øve Mean Field (NMF) approximation is widely employed in modern Machine Learning due to the huge computational gains it bestows on the statistician. Despite its popularity in practice, theoretical guarantees for high-dimensional problems are only available under strong structural assumptions (e.g. sparsity). Moreover, existing theory often does not explain empirical observations noted in the existing literature.  In this paper, we take a step towards addressing these problems by deriving sharp asymptotic characterizations for the NMF approximation in high-dimensional linear regression. Our results apply to a wide class of natural priors and allow for model mismatch (i.e. the underlying statistical model can be different from the fitted model).  We work under an iid Gaussian design and the proportional asymptotic regime, where the number of features and number of observations grow at a proportional rate. As a consequence of our asymptotic characterization, we establish two concrete corollaries: (a) we establish the inaccuracy of the NMF approximation for the log-normalizing constant in this regime, and (b) we provide theoretical results backing the empirical observation that the NMF approximation can be overconfident in terms of uncertainty quantification.Our results utilize recent advances in the theory of Gaussian comparison inequalities. To the best of our knowledge, this is the first application of these ideas to the analysis of Bayesian variational inference problems. Our theoretical results are corroborated by numerical experiments. Lastly, we believe our results can be generalized to non-Gaussian designs and provide empirical evidence to support it.
+        The Na√Øve Mean Field (NMF) approximation is widely employed in modern Machine Learning due to the huge computational gains it bestows on the statistician. Despite its popularity in practice, theoretical guarantees for high-dimensional problems are only available under strong structural assumptions (e.g. sparsity). Moreover, existing theory often does not explain empirical observations noted in the existing literature.  In this paper, we take a step towards addressing these problems by deriving sharp asymptotic characterizations for the NMF approximation in high-dimensional linear regression. Our results apply to a wide class of natural priors and allow for model mismatch (i.e. the underlying statistical model can be different from the fitted model).  We work under an iid Gaussian design and the proportional asymptotic regime, where the number of features and number of observations grow at a proportional rate. As a consequence of our asymptotic characterization, we establish two concrete corollaries: (a) we establish the inaccuracy of the NMF approximation for the log-normalizing constant in this regime, and (b) we provide theoretical results backing the empirical observation that the NMF approximation can be overconfident in terms of uncertainty quantification.Our results utilize recent advances in the theory of Gaussian comparison inequalities. To the best of our knowledge, this is the first application of these ideas to the analysis of Bayesian variational inference problems. Our theoretical results are corroborated by numerical experiments. Lastly, we believe our results can be generalized to non-Gaussian designs and provide empirical evidence to support it.
 
-----
+        ----
 
-## [2790] The Gain from Ordering in Online Learning
+        ## [2790] The Gain from Ordering in Online Learning
 
-**Authors**: *Vasilis Kontonis, Mingchen Ma, Christos Tzamos*
+        **Authors**: *Vasilis Kontonis, Mingchen Ma, Christos Tzamos*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c9b1fe9c41f1eeec3a659154d575a282-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c9b1fe9c41f1eeec3a659154d575a282-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c9b1fe9c41f1eeec3a659154d575a282-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c9b1fe9c41f1eeec3a659154d575a282-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-We study fixed-design online learning where the learner is allowed to choose the order of the datapoints in order to minimize their regret (aka self-directed online learning).  We focus on the fundamental task of online linear regression: the learner is given a dataset $X$ with $n$ examples in $d$ dimensions and at step $t$  they select a point $x_t \in X$, predict a value $\widetilde y_t$,  and suffer loss $(\widetilde y_t - w^\ast \cdot x_t)^2$.  The goal is to design algorithms that order the examples and achieve better regret  than random- or worst-order online algorithms.For an arbitrary dataset $X$, we show that, under the Exponential Time Hypothesis, no efficient algorithm can approximate the optimal (best-order)  regret  within a factor of $d^{1/\poly(\log \log d)}$.We then show that, for structured datasets, we can bypass the above hardness result and achieve nearly optimal regret. When the examples of $X$ are drawn i.i.d.\ from the uniform distribution on the sphere, we present an algorithm based on the greedy heuristic of  selecting ``easiest'' examples first that achieves a $\log d$-approximation of the optimal regret.
+        We study fixed-design online learning where the learner is allowed to choose the order of the datapoints in order to minimize their regret (aka self-directed online learning).  We focus on the fundamental task of online linear regression: the learner is given a dataset $X$ with $n$ examples in $d$ dimensions and at step $t$  they select a point $x_t \in X$, predict a value $\widetilde y_t$,  and suffer loss $(\widetilde y_t - w^\ast \cdot x_t)^2$.  The goal is to design algorithms that order the examples and achieve better regret  than random- or worst-order online algorithms.For an arbitrary dataset $X$, we show that, under the Exponential Time Hypothesis, no efficient algorithm can approximate the optimal (best-order)  regret  within a factor of $d^{1/\poly(\log \log d)}$.We then show that, for structured datasets, we can bypass the above hardness result and achieve nearly optimal regret. When the examples of $X$ are drawn i.i.d.\ from the uniform distribution on the sphere, we present an algorithm based on the greedy heuristic of  selecting ``easiest'' examples first that achieves a $\log d$-approximation of the optimal regret.
 
-----
+        ----
 
-## [2791] Variational Annealing on Graphs for Combinatorial Optimization
+        ## [2791] Variational Annealing on Graphs for Combinatorial Optimization
 
-**Authors**: *Sebastian Sanokowski, Wilhelm Berghammer, Sepp Hochreiter, Sebastian Lehner*
+        **Authors**: *Sebastian Sanokowski, Wilhelm Berghammer, Sepp Hochreiter, Sebastian Lehner*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c9c54ac0dd5e942b99b2b51c297544fd-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c9c54ac0dd5e942b99b2b51c297544fd-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c9c54ac0dd5e942b99b2b51c297544fd-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c9c54ac0dd5e942b99b2b51c297544fd-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Several recent unsupervised learning methods use probabilistic approaches to solve combinatorial optimization (CO) problems based on the assumption of statistically independent solution variables. We demonstrate that this assumption imposes performance limitations in particular on difficult problem instances. Our results corroborate that an autoregressive approach which captures statistical dependencies among solution variables yields superior performance on many popular CO problems. We introduce Subgraph Tokenization in which the configuration of a set of solution variables is represented by a single token. This tokenization technique alleviates the drawback of the long sequential sampling procedure which is inherent to autoregressive methods without sacrificing expressivity. Importantly, we theoretically motivate an annealed entropy regularization and show empirically that it is essential for efficient and stable learning.
+        Several recent unsupervised learning methods use probabilistic approaches to solve combinatorial optimization (CO) problems based on the assumption of statistically independent solution variables. We demonstrate that this assumption imposes performance limitations in particular on difficult problem instances. Our results corroborate that an autoregressive approach which captures statistical dependencies among solution variables yields superior performance on many popular CO problems. We introduce Subgraph Tokenization in which the configuration of a set of solution variables is represented by a single token. This tokenization technique alleviates the drawback of the long sequential sampling procedure which is inherent to autoregressive methods without sacrificing expressivity. Importantly, we theoretically motivate an annealed entropy regularization and show empirically that it is essential for efficient and stable learning.
 
-----
+        ----
 
-## [2792] Chasing Fairness Under Distribution Shift: A Model Weight Perturbation Approach
+        ## [2792] Chasing Fairness Under Distribution Shift: A Model Weight Perturbation Approach
 
-**Authors**: *Zhimeng Stephen Jiang, Xiaotian Han, Hongye Jin, Guanchu Wang, Rui Chen, Na Zou, Xia Hu*
+        **Authors**: *Zhimeng Stephen Jiang, Xiaotian Han, Hongye Jin, Guanchu Wang, Rui Chen, Na Zou, Xia Hu*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c9cd2d12abe92f30b1442557bdbe8f5a-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c9cd2d12abe92f30b1442557bdbe8f5a-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c9cd2d12abe92f30b1442557bdbe8f5a-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c9cd2d12abe92f30b1442557bdbe8f5a-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Fairness in machine learning has attracted increasing attention in recent years. The fairness methods improving algorithmic fairness for in-distribution data may not perform well under distribution shifts. In this paper, we first theoretically demonstrate the inherent connection between distribution shift,  data perturbation, and model weight perturbation.Subsequently, we analyze the sufficient conditions to guarantee fairness (i.e., low demographic parity) for the target dataset, including fairness for the source dataset, and low prediction difference between the source and target datasets for each sensitive attribute group. Motivated by these sufficient conditions, we propose robust fairness regularization (RFR) by considering the worst case within the model weight perturbation ball for each sensitive attribute group. We evaluate the effectiveness of our proposed RFR algorithm on synthetic and real distribution shifts across various datasets. Experimental results demonstrate that RFR achieves better fairness-accuracy trade-off performance compared with several baselines. The source code is available at \url{https://github.com/zhimengj0326/RFR_NeurIPS23}.
+        Fairness in machine learning has attracted increasing attention in recent years. The fairness methods improving algorithmic fairness for in-distribution data may not perform well under distribution shifts. In this paper, we first theoretically demonstrate the inherent connection between distribution shift,  data perturbation, and model weight perturbation.Subsequently, we analyze the sufficient conditions to guarantee fairness (i.e., low demographic parity) for the target dataset, including fairness for the source dataset, and low prediction difference between the source and target datasets for each sensitive attribute group. Motivated by these sufficient conditions, we propose robust fairness regularization (RFR) by considering the worst case within the model weight perturbation ball for each sensitive attribute group. We evaluate the effectiveness of our proposed RFR algorithm on synthetic and real distribution shifts across various datasets. Experimental results demonstrate that RFR achieves better fairness-accuracy trade-off performance compared with several baselines. The source code is available at \url{https://github.com/zhimengj0326/RFR_NeurIPS23}.
 
-----
+        ----
 
-## [2793] Fast Scalable and Accurate Discovery of DAGs Using the Best Order Score Search and Grow Shrink Trees
+        ## [2793] Fast Scalable and Accurate Discovery of DAGs Using the Best Order Score Search and Grow Shrink Trees
 
-**Authors**: *Bryan Andrews, Joseph D. Ramsey, Ruben Sanchez-Romero, Jazmin Camchong, Erich Kummerfeld*
+        **Authors**: *Bryan Andrews, Joseph D. Ramsey, Ruben Sanchez-Romero, Jazmin Camchong, Erich Kummerfeld*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c9cde817d04811ba28e44071bd9f76a5-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c9cde817d04811ba28e44071bd9f76a5-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c9cde817d04811ba28e44071bd9f76a5-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c9cde817d04811ba28e44071bd9f76a5-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Learning graphical conditional independence structures is an important machine learning problem and a cornerstone of causal discovery. However, the accuracy and execution time of learning algorithms generally struggle to scale to problems with hundreds of highly connected variables---for instance, recovering brain networks from fMRI data. We introduce the best order score search (BOSS) and grow-shrink trees (GSTs) for learning directed acyclic graphs (DAGs) in this paradigm. BOSS greedily searches over permutations of variables, using GSTs to construct and score DAGs from permutations. GSTs efficiently cache scores to eliminate redundant calculations. BOSS achieves state-of-the-art performance in accuracy and execution time, comparing favorably to a variety of combinatorial and gradient-based learning algorithms under a broad range of conditions. To demonstrate its practicality, we apply BOSS to two sets of resting-state fMRI data: simulated data with pseudo-empirical noise distributions derived from randomized empirical fMRI cortical signals and clinical data from 3T fMRI scans processed into cortical parcels. BOSS is available for use within the TETRAD project which includes Python and R wrappers.
+        Learning graphical conditional independence structures is an important machine learning problem and a cornerstone of causal discovery. However, the accuracy and execution time of learning algorithms generally struggle to scale to problems with hundreds of highly connected variables---for instance, recovering brain networks from fMRI data. We introduce the best order score search (BOSS) and grow-shrink trees (GSTs) for learning directed acyclic graphs (DAGs) in this paradigm. BOSS greedily searches over permutations of variables, using GSTs to construct and score DAGs from permutations. GSTs efficiently cache scores to eliminate redundant calculations. BOSS achieves state-of-the-art performance in accuracy and execution time, comparing favorably to a variety of combinatorial and gradient-based learning algorithms under a broad range of conditions. To demonstrate its practicality, we apply BOSS to two sets of resting-state fMRI data: simulated data with pseudo-empirical noise distributions derived from randomized empirical fMRI cortical signals and clinical data from 3T fMRI scans processed into cortical parcels. BOSS is available for use within the TETRAD project which includes Python and R wrappers.
 
-----
+        ----
 
-## [2794] Bayesian Active Causal Discovery with Multi-Fidelity Experiments
+        ## [2794] Bayesian Active Causal Discovery with Multi-Fidelity Experiments
 
-**Authors**: *Zeyu Zhang, Chaozhuo Li, Xu Chen, Xing Xie*
+        **Authors**: *Zeyu Zhang, Chaozhuo Li, Xu Chen, Xing Xie*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c9d9659d1d960b53e8121469ef1f2df5-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c9d9659d1d960b53e8121469ef1f2df5-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c9d9659d1d960b53e8121469ef1f2df5-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c9d9659d1d960b53e8121469ef1f2df5-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-This paper studies the problem of active causal discovery when the experiments can be done based on multi-fidelity oracles, where higher fidelity experiments are more precise and expensive, while the lower ones are cheaper but less accurate. In this paper, we formally define the task of multi-fidelity active causal discovery, and design a probabilistic model for solving this problem. In specific, we first introduce a mutual-information based acquisition function to determine which variable should be intervened at which fidelity, and then a cascading model is proposed to capture the correlations between different fidelity oracles. Beyond the above basic framework, we also extend it to the batch intervention scenario. We find that the theoretical foundations behind the widely used and efficient greedy method do not hold in our problem. To solve this problem, we introduce a new concept called $\epsilon$-submodular, and design a constraint based fidelity model to theoretically validate the greedy method. We conduct extensive experiments to demonstrate the effectiveness of our model.
+        This paper studies the problem of active causal discovery when the experiments can be done based on multi-fidelity oracles, where higher fidelity experiments are more precise and expensive, while the lower ones are cheaper but less accurate. In this paper, we formally define the task of multi-fidelity active causal discovery, and design a probabilistic model for solving this problem. In specific, we first introduce a mutual-information based acquisition function to determine which variable should be intervened at which fidelity, and then a cascading model is proposed to capture the correlations between different fidelity oracles. Beyond the above basic framework, we also extend it to the batch intervention scenario. We find that the theoretical foundations behind the widely used and efficient greedy method do not hold in our problem. To solve this problem, we introduce a new concept called $\epsilon$-submodular, and design a constraint based fidelity model to theoretically validate the greedy method. We conduct extensive experiments to demonstrate the effectiveness of our model.
 
-----
+        ----
 
-## [2795] Meta-Learning with Neural Bandit Scheduler
+        ## [2795] Meta-Learning with Neural Bandit Scheduler
 
-**Authors**: *Yunzhe Qi, Yikun Ban, Tianxin Wei, Jiaru Zou, Huaxiu Yao, Jingrui He*
+        **Authors**: *Yunzhe Qi, Yikun Ban, Tianxin Wei, Jiaru Zou, Huaxiu Yao, Jingrui He*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c9e6ac15e689e06139d7b39e1667b165-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c9e6ac15e689e06139d7b39e1667b165-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c9e6ac15e689e06139d7b39e1667b165-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c9e6ac15e689e06139d7b39e1667b165-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Meta-learning has been proven an effective learning paradigm for training machine learning models with good generalization ability. Apart from the common practice of uniformly sampling the meta-training tasks, existing methods working on task scheduling strategies are mainly based on pre-defined sampling protocols or the assumed task-model correlations, and greedily make scheduling decisions, which can lead to sub-optimal performance bottlenecks of the meta-model. In this paper, we propose a novel task scheduling framework under Contextual Bandits settings, named BASS, which directly optimizes the task scheduling strategy based on the status of the meta-model. By balancing the exploitation and exploration in meta-learning task scheduling, BASS can help tackle the challenge of limited knowledge about the task distribution during the early stage of meta-training, while simultaneously exploring potential benefits for forthcoming meta-training iterations through an adaptive exploration strategy. Theoretical analysis and extensive experiments are presented to show the effectiveness of our proposed framework.
+        Meta-learning has been proven an effective learning paradigm for training machine learning models with good generalization ability. Apart from the common practice of uniformly sampling the meta-training tasks, existing methods working on task scheduling strategies are mainly based on pre-defined sampling protocols or the assumed task-model correlations, and greedily make scheduling decisions, which can lead to sub-optimal performance bottlenecks of the meta-model. In this paper, we propose a novel task scheduling framework under Contextual Bandits settings, named BASS, which directly optimizes the task scheduling strategy based on the status of the meta-model. By balancing the exploitation and exploration in meta-learning task scheduling, BASS can help tackle the challenge of limited knowledge about the task distribution during the early stage of meta-training, while simultaneously exploring potential benefits for forthcoming meta-training iterations through an adaptive exploration strategy. Theoretical analysis and extensive experiments are presented to show the effectiveness of our proposed framework.
 
-----
+        ----
 
-## [2796] ClusterFomer: Clustering As A Universal Visual Learner
+        ## [2796] ClusterFomer: Clustering As A Universal Visual Learner
 
-**Authors**: *James Liang, Yiming Cui, Qifan Wang, Tong Geng, Wenguan Wang, Dongfang Liu*
+        **Authors**: *James Liang, Yiming Cui, Qifan Wang, Tong Geng, Wenguan Wang, Dongfang Liu*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c9ef471a579197c4ed99df2aa542ce97-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c9ef471a579197c4ed99df2aa542ce97-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/c9ef471a579197c4ed99df2aa542ce97-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/c9ef471a579197c4ed99df2aa542ce97-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-This paper presents ClusterFormer, a universal vision model that is based on the Clustering paradigm with TransFormer. It comprises two novel designs: 1) recurrent cross-attention clustering, which reformulates the cross-attention mechanism in Transformer and enables recursive updates of cluster centers to facilitate strong representation learning; and 2) feature dispatching, which uses the updated cluster centers to redistribute image features through similarity-based metrics, resulting in a transparent pipeline. This elegant design streamlines an explainable and transferable workflow, capable of tackling heterogeneous vision tasks (i.e., image classification, object detection, and image segmentation) with varying levels of clustering granularity (i.e., image-, box-, and pixel-level). Empirical results demonstrate that ClusterFormer outperforms various well-known specialized architectures, achieving 83.41% top-1 acc. over ImageNet-1K for image classification, 54.2% and 47.0% mAP over MS COCO for object detection and instance segmentation, 52.4% mIoU over ADE20K for semantic segmentation, and 55.8% PQ over COCO Panoptic for panoptic segmentation. This work aims to initiate a paradigm shift in universal visual understanding and to benefit the broader field.
+        This paper presents ClusterFormer, a universal vision model that is based on the Clustering paradigm with TransFormer. It comprises two novel designs: 1) recurrent cross-attention clustering, which reformulates the cross-attention mechanism in Transformer and enables recursive updates of cluster centers to facilitate strong representation learning; and 2) feature dispatching, which uses the updated cluster centers to redistribute image features through similarity-based metrics, resulting in a transparent pipeline. This elegant design streamlines an explainable and transferable workflow, capable of tackling heterogeneous vision tasks (i.e., image classification, object detection, and image segmentation) with varying levels of clustering granularity (i.e., image-, box-, and pixel-level). Empirical results demonstrate that ClusterFormer outperforms various well-known specialized architectures, achieving 83.41% top-1 acc. over ImageNet-1K for image classification, 54.2% and 47.0% mAP over MS COCO for object detection and instance segmentation, 52.4% mIoU over ADE20K for semantic segmentation, and 55.8% PQ over COCO Panoptic for panoptic segmentation. This work aims to initiate a paradigm shift in universal visual understanding and to benefit the broader field.
 
-----
+        ----
 
-## [2797] Spike-driven Transformer
+        ## [2797] Spike-driven Transformer
 
-**Authors**: *Man Yao, Jiakui Hu, Zhaokun Zhou, Li Yuan, Yonghong Tian, Bo Xu, Guoqi Li*
+        **Authors**: *Man Yao, Jiakui Hu, Zhaokun Zhou, Li Yuan, Yonghong Tian, Bo Xu, Guoqi Li*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/ca0f5358dbadda74b3049711887e9ead-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/ca0f5358dbadda74b3049711887e9ead-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/ca0f5358dbadda74b3049711887e9ead-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/ca0f5358dbadda74b3049711887e9ead-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-Spiking Neural Networks (SNNs) provide an energy-efficient deep learning option due to their unique spike-based event-driven (i.e., spike-driven) paradigm. In this paper, we incorporate the spike-driven paradigm into Transformer by the proposed Spike-driven Transformer with four unique properties: (1) Event-driven, no calculation is triggered when the input of Transformer is zero; (2) Binary spike communication, all matrix multiplications associated with the spike matrix can be transformed into sparse additions; (3) Self-attention with linear complexity at both token and channel dimensions; (4) The operations between spike-form Query, Key, and Value are mask and addition. Together, there are only sparse addition operations in the Spike-driven Transformer. To this end, we design a novel Spike-Driven Self-Attention (SDSA), which exploits only mask and addition operations without any multiplication, and thus having up to $87.2\times$ lower computation energy than vanilla self-attention. Especially in SDSA, the matrix multiplication between Query, Key, and Value is designed as the mask operation. In addition, we rearrange all residual connections in the vanilla Transformer before the activation functions to ensure that all neurons transmit binary spike signals. It is shown that the Spike-driven Transformer can achieve 77.1\% top-1 accuracy on ImageNet-1K, which is the state-of-the-art result in the SNN field.
+        Spiking Neural Networks (SNNs) provide an energy-efficient deep learning option due to their unique spike-based event-driven (i.e., spike-driven) paradigm. In this paper, we incorporate the spike-driven paradigm into Transformer by the proposed Spike-driven Transformer with four unique properties: (1) Event-driven, no calculation is triggered when the input of Transformer is zero; (2) Binary spike communication, all matrix multiplications associated with the spike matrix can be transformed into sparse additions; (3) Self-attention with linear complexity at both token and channel dimensions; (4) The operations between spike-form Query, Key, and Value are mask and addition. Together, there are only sparse addition operations in the Spike-driven Transformer. To this end, we design a novel Spike-Driven Self-Attention (SDSA), which exploits only mask and addition operations without any multiplication, and thus having up to $87.2\times$ lower computation energy than vanilla self-attention. Especially in SDSA, the matrix multiplication between Query, Key, and Value is designed as the mask operation. In addition, we rearrange all residual connections in the vanilla Transformer before the activation functions to ensure that all neurons transmit binary spike signals. It is shown that the Spike-driven Transformer can achieve 77.1\% top-1 accuracy on ImageNet-1K, which is the state-of-the-art result in the SNN field.
 
-----
+        ----
 
-## [2798] Dis-inhibitory neuronal circuits can control the sign of synaptic plasticity
+        ## [2798] Dis-inhibitory neuronal circuits can control the sign of synaptic plasticity
 
-**Authors**: *Julian Rossbroich, Friedemann Zenke*
+        **Authors**: *Julian Rossbroich, Friedemann Zenke*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/ca22641c182b3b9608634edb4d09bc33-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/ca22641c182b3b9608634edb4d09bc33-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/ca22641c182b3b9608634edb4d09bc33-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/ca22641c182b3b9608634edb4d09bc33-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-How neuronal circuits achieve credit assignment remains a central unsolved question in systems neuroscience. Various studies have suggested plausible solutions for back-propagating error signals through multi-layer networks. These purely functionally motivated models assume distinct neuronal compartments to represent local error signals that determine the sign of synaptic plasticity. However, this explicit error modulation is inconsistent with phenomenological plasticity models in which the sign depends primarily on postsynaptic activity. Here we show how a plausible microcircuit model and Hebbian learning rule derived within an adaptive control theory framework can resolve this discrepancy. Assuming errors are encoded in top-down dis-inhibitory synaptic afferents, we show that error-modulated learning emerges naturally at the circuit level when recurrent inhibition explicitly influences Hebbian plasticity. The same learning rule accounts for experimentally observed plasticity in the absence of inhibition and performs comparably to back-propagation of error (BP) on several non-linearly separable benchmarks. Our findings bridge the gap between functional and experimentally observed plasticity rules and make concrete predictions on inhibitory modulation of excitatory plasticity.
+        How neuronal circuits achieve credit assignment remains a central unsolved question in systems neuroscience. Various studies have suggested plausible solutions for back-propagating error signals through multi-layer networks. These purely functionally motivated models assume distinct neuronal compartments to represent local error signals that determine the sign of synaptic plasticity. However, this explicit error modulation is inconsistent with phenomenological plasticity models in which the sign depends primarily on postsynaptic activity. Here we show how a plausible microcircuit model and Hebbian learning rule derived within an adaptive control theory framework can resolve this discrepancy. Assuming errors are encoded in top-down dis-inhibitory synaptic afferents, we show that error-modulated learning emerges naturally at the circuit level when recurrent inhibition explicitly influences Hebbian plasticity. The same learning rule accounts for experimentally observed plasticity in the absence of inhibition and performs comparably to back-propagation of error (BP) on several non-linearly separable benchmarks. Our findings bridge the gap between functional and experimentally observed plasticity rules and make concrete predictions on inhibitory modulation of excitatory plasticity.
 
-----
+        ----
 
-## [2799] Accelerated Zeroth-order Method for Non-Smooth Stochastic Convex Optimization Problem with Infinite Variance
+        ## [2799] Accelerated Zeroth-order Method for Non-Smooth Stochastic Convex Optimization Problem with Infinite Variance
 
-**Authors**: *Nikita Kornilov, Ohad Shamir, Aleksandr V. Lobanov, Darina Dvinskikh, Alexander V. Gasnikov, Innokentiy Shibaev, Eduard Gorbunov, Samuel Horváth*
+        **Authors**: *Nikita Kornilov, Ohad Shamir, Aleksandr V. Lobanov, Darina Dvinskikh, Alexander V. Gasnikov, Innokentiy Shibaev, Eduard Gorbunov, Samuel Horváth*
 
-**Conference**: *nips 2023*
+        **Conference**: *nips 2023*
 
-**URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/ca24eb48806df3af49e5ac59d8a46f67-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/ca24eb48806df3af49e5ac59d8a46f67-Abstract-Conference.html)
+        **URL**: [http://papers.nips.cc/paper_files/paper/2023/hash/ca24eb48806df3af49e5ac59d8a46f67-Abstract-Conference.html](http://papers.nips.cc/paper_files/paper/2023/hash/ca24eb48806df3af49e5ac59d8a46f67-Abstract-Conference.html)
 
-**Abstract**:
+        **Abstract**:
 
-In this paper, we consider non-smooth stochastic convex optimization with two function evaluations per round under infinite noise variance. In the classical setting when noise has finite variance, an optimal algorithm, built upon the batched accelerated gradient method, was proposed in (Gasnikov et. al., 2022). This optimality is defined in terms of iteration and oracle complexity, as well as the maximal admissible level of adversarial noise. However, the assumption of finite variance is burdensome and it might not hold in many practical scenarios. To address this, we demonstrate how to adapt a refined clipped version of the accelerated gradient (Stochastic Similar Triangles) method from (Sadiev et al., 2023) for a two-point zero-order oracle. This adaptation entails extending the batching technique to accommodate infinite variance — a non-trivial task that stands as a distinct contribution of this paper.
+        In this paper, we consider non-smooth stochastic convex optimization with two function evaluations per round under infinite noise variance. In the classical setting when noise has finite variance, an optimal algorithm, built upon the batched accelerated gradient method, was proposed in (Gasnikov et. al., 2022). This optimality is defined in terms of iteration and oracle complexity, as well as the maximal admissible level of adversarial noise. However, the assumption of finite variance is burdensome and it might not hold in many practical scenarios. To address this, we demonstrate how to adapt a refined clipped version of the accelerated gradient (Stochastic Similar Triangles) method from (Sadiev et al., 2023) for a two-point zero-order oracle. This adaptation entails extending the batching technique to accommodate infinite variance — a non-trivial task that stands as a distinct contribution of this paper.
 
-----
+        ----
 
-
+        
 
 [Go to the previous page](NIPS-2023-list13.md)
 

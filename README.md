@@ -25,9 +25,17 @@ Each article is presented in the following way so that you can browse **the titl
 
 ## Work completed
 
-:white_check_mark: [NIPS 2023](NIPS/2023/README.md)
+:white_check_mark: [NIPS 2021-2023](NIPS/README.md)
 
-:white_check_mark: [NIPS 2022](NIPS/2022/README.md)
+:white_check_mark: [AAAI 2023](AAAI/2023/README.md)
+
+:white_check_mark: [CVPR 2023](CVPR/2023/README.md)
+
+:white_check_mark: [ICML 2023](ICML/2023/README.md)
+
+:white_check_mark: [ICML 2022](ICML/2022/README.md)
+
+:white_check_mark: [IJCAI 2023](ICML/2023/README.md)
 
 
 ## Work in progress
